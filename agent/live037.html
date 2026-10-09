@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Antigense Daisy · Live run 037</title>
+<style>
+:root{color-scheme:dark;--bg:#101411;--panel:#19201a;--line:#354336;--text:#edf2e5;--muted:#a7b4a3;--green:#c4f280;--orange:#ffac65;--red:#ff6868}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:17px/1.45 system-ui}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 36px;border-bottom:1px solid var(--line)}
+.brand{font-size:24px;font-weight:800;letter-spacing:-1px}.brand span{color:var(--green)}.tag{font:13px monospace;letter-spacing:1.5px;color:var(--green)}
+main{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;padding:22px 36px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:18px}
+.k{font:12px monospace;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+table{border-collapse:collapse;width:100%;font:14px monospace}td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.OBSERVED{color:var(--green)}.FAILED{color:var(--red)}.NOT_TESTED{color:var(--orange)}
+.big{font:30px monospace;color:var(--green)}.mono{font:13px/1.6 monospace;overflow-wrap:anywhere}.bad{color:var(--red)}.ok{color:var(--green)}
+tr.new{animation:hl 1.5s}@keyframes hl{from{background:#2c4a2c}to{background:transparent}}
+</style></head><body>
+<header><div class="brand">antigense<span>.</span> daisy · live run</div><div class="tag">LIVE EXECUTION · each row is committed to custody as it happens</div></header>
+<main>
+<section class="card"><div class="k">Checkpoints (newest last)</div><table><thead><tr><th>#</th><th>observed at</th><th>step</th><th>state</th><th>result</th><th>MMR after step</th></tr></thead><tbody id="rows"></tbody></table></section>
+<section>
+<div class="card"><div class="k">Run</div><div class="mono" id="run">waiting…</div><div class="k" style="margin-top:10px">Phase</div><div class="big" id="phase">starting</div></div>
+<div class="card" style="margin-top:18px"><div class="k">Browser recomputation (every prefix)</div><div class="mono" id="rc">waiting for first checkpoint…</div><div class="big" id="rcres" style="font-size:22px;margin-top:8px"></div></div>
+<div class="card" style="margin-top:18px"><div class="k">Final</div><div class="mono" id="final">running</div></div>
+<p class="mono" style="color:var(--muted)">Hashes establish byte integrity, not truth, safety or causality. GPU identity is provider-reported, not attested. No credentials are shown.</p>
+</section></main>
+<script>
+const $=id=>document.getElementById(id);
+const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+const unhex=h=>new Uint8Array(h.match(/../g).map(x=>parseInt(x,16)));
+const sha=async u=>hex(await crypto.subtle.digest('SHA-256',u));
+const cat=(...a)=>{const n=a.reduce((s,x)=>s+x.length,0),o=new Uint8Array(n);let i=0;for(const x of a){o.set(x,i);i+=x.length}return o};
+async function prefixRoots(rows){const peaks=[],roots=[];for(let i=0;i<rows.length;i++){const r=rows[i];
+ let h=await sha(new TextEncoder().encode(JSON.stringify({cfmo_version_id:r.fco_id,event_hash:r.event_hash,event_index:r.event_index})));
+ let size=i+1;while(size%2===0){h=await sha(cat(unhex(peaks.pop()),unhex(h)));size/=2}peaks.push(h);
+ let acc=peaks[0];for(const p of peaks.slice(1))acc=await sha(cat(unhex(acc),unhex(p)));
+ roots.push(await sha(cat(new TextEncoder().encode('HYDRALAMP_MMR_BAG_V1:'),unhex(acc))))}return roots}
+let shown=0;
+async function tick(){let s;try{s=await (await fetch('/status',{cache:'no-store'})).json()}catch(e){return}
+ $('run').textContent=s.run||'—';$('phase').textContent=s.phase;
+ for(;shown<s.steps.length;shown++){const x=s.steps[shown],tr=document.createElement('tr');tr.className='new';
+  const sm=Object.entries(x.summary||{}).map(([k,v])=>k+'='+(typeof v==='object'?JSON.stringify(v):v)).join(' ');
+  tr.innerHTML=`<td>${x.seq}</td><td>${x.ts}</td><td>${x.name}</td><td class="${x.state}">${x.state}</td><td class="mono"></td><td class="mono">${x.mmr_root.slice(0,16)}…</td>`;
+  tr.children[4].textContent=sm;$('rows').append(tr)}
+ if(s.ledger.length){const roots=await prefixRoots(s.ledger);const recorded=s.steps.map(x=>x.mmr_root);
+  const tail=roots.slice(roots.length-recorded.length);const ok=tail.length===recorded.length&&tail.every((r,i)=>r===recorded[i]);
+  $('rc').textContent=`${roots.length} prefixes recomputed · latest ${roots[roots.length-1]}`;
+  $('rcres').textContent=ok?'PASS · every step root matches':'MISMATCH';$('rcres').className=ok?'ok':'bad'}
+ if(s.final){$('final').textContent=`verify PASS=${s.final.PASS} · ${s.final.leaves} leaves · ${s.final.mmr_root}`}}
+setInterval(tick,1000);tick();
+</script></body></html>
