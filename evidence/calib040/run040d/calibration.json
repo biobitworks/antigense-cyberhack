@@ -1,0 +1,169 @@
+{
+ "boundary_table": [
+  {
+   "expected_page_s": 13.0,
+   "observed_minus_expected_s": 0.0333,
+   "observed_video_s": 13.0333,
+   "scene": 2
+  },
+  {
+   "expected_page_s": 22.9,
+   "observed_minus_expected_s": 0.0667,
+   "observed_video_s": 22.9667,
+   "scene": 3
+  },
+  {
+   "expected_page_s": 38.0,
+   "observed_minus_expected_s": 0.0667,
+   "observed_video_s": 38.0667,
+   "scene": 4
+  },
+  {
+   "expected_page_s": 48.4,
+   "observed_minus_expected_s": 0.0667,
+   "observed_video_s": 48.4667,
+   "scene": 5
+  },
+  {
+   "expected_page_s": 65.2,
+   "observed_minus_expected_s": 0.0667,
+   "observed_video_s": 65.2667,
+   "scene": 6
+  },
+  {
+   "expected_page_s": 77.8,
+   "observed_minus_expected_s": 0.2333,
+   "observed_video_s": 78.0333,
+   "scene": 7
+  },
+  {
+   "expected_page_s": 96.3,
+   "observed_minus_expected_s": 0.2333,
+   "observed_video_s": 96.5333,
+   "scene": 8
+  },
+  {
+   "expected_page_s": 115.8,
+   "observed_minus_expected_s": 0.2333,
+   "observed_video_s": 116.0333,
+   "scene": 9
+  },
+  {
+   "expected_page_s": 127.5,
+   "observed_minus_expected_s": 0.2667,
+   "observed_video_s": 127.7667,
+   "scene": 10
+  },
+  {
+   "expected_page_s": 145.0,
+   "observed_minus_expected_s": 0.2333,
+   "observed_video_s": 145.2333,
+   "scene": 11
+  },
+  {
+   "expected_page_s": 165.0,
+   "observed_minus_expected_s": 0.2333,
+   "observed_video_s": 165.2333,
+   "scene": 12
+  }
+ ],
+ "event_to_video_calibration": {
+  "fit_on_first_half_median_offset_s": -0.0292,
+  "frame_period_s": 0.0333,
+  "holdout_max_abs_s": 0.2002,
+  "holdout_residuals_after_offset_s": [
+   0.172,
+   0.1619,
+   0.167,
+   0.2002,
+   0.1497,
+   0.1547
+  ],
+  "mapping_used_for_samples": "video_pts_s_anchored (offset of the latest OCR-confirmed scene cut); global-offset holdout is reported separately and is the honest drift measure",
+  "note": "recorder log vs frame cut; offset = unmeasured pipeline latency between page event and encoded frame, estimated from first-half scenes and tested on the held-out half",
+  "pairs": [
+   {
+    "frame_cut_s": 13.0333,
+    "log_s": 13.0945,
+    "residual_s": -0.0612,
+    "scene": 2
+   },
+   {
+    "frame_cut_s": 22.9667,
+    "log_s": 22.9955,
+    "residual_s": -0.0288,
+    "scene": 3
+   },
+   {
+    "frame_cut_s": 38.0667,
+    "log_s": 38.0959,
+    "residual_s": -0.0292,
+    "scene": 4
+   },
+   {
+    "frame_cut_s": 48.4667,
+    "log_s": 48.5023,
+    "residual_s": -0.0356,
+    "scene": 5
+   },
+   {
+    "frame_cut_s": 65.2667,
+    "log_s": 65.2952,
+    "residual_s": -0.0285,
+    "scene": 6
+   },
+   {
+    "frame_cut_s": 78.0333,
+    "log_s": 77.8905,
+    "residual_s": 0.1428,
+    "scene": 7
+   },
+   {
+    "frame_cut_s": 96.5333,
+    "log_s": 96.4006,
+    "residual_s": 0.1327,
+    "scene": 8
+   },
+   {
+    "frame_cut_s": 116.0333,
+    "log_s": 115.8955,
+    "residual_s": 0.1378,
+    "scene": 9
+   },
+   {
+    "frame_cut_s": 127.7667,
+    "log_s": 127.5957,
+    "residual_s": 0.171,
+    "scene": 10
+   },
+   {
+    "frame_cut_s": 145.2333,
+    "log_s": 145.1128,
+    "residual_s": 0.1205,
+    "scene": 11
+   },
+   {
+    "frame_cut_s": 165.2333,
+    "log_s": 165.1078,
+    "residual_s": 0.1255,
+    "scene": 12
+   }
+  ]
+ },
+ "frames": 6132,
+ "label": "run040d",
+ "method": "pixel spike + OCR-confirmed scene-counter change; no tolerance applied to expected manifest",
+ "offset_linear_fit": {
+  "intercept_s": 0.023,
+  "slope_s_per_s": 0.001618
+ },
+ "offset_max_s": 0.2667,
+ "offset_mean_s": 0.1576,
+ "offset_min_s": 0.0333,
+ "original_039_mismatch_preserved": {
+  "explanation_check": "boundary 4->5 observed at 48.4667s vs manifest 48.4s: frame at 48.0s lies after the observed cut",
+  "frame_at_48s_expected_scene": 4,
+  "observed_scene_at_48s": 4
+ },
+ "video_sha256": "16c7ead607f3bee3185e4e4758658a4018244f6fcc502e35cd5beeea10c55a32"
+}

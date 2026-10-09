@@ -1,0 +1,403 @@
+{
+ "breakpoints": {
+  "tamper_index": 0,
+  "trials": [
+   {
+    "comparisons": 6,
+    "correct": true,
+    "linear": 25,
+    "path": "agent/agent011.py"
+   },
+   {
+    "comparisons": 10,
+    "correct": true,
+    "linear": 25,
+    "path": "src/custody.py"
+   },
+   {
+    "comparisons": 8,
+    "correct": true,
+    "linear": 25,
+    "path": "src/server.py"
+   },
+   {
+    "comparisons": 6,
+    "correct": true,
+    "linear": 25,
+    "path": "agent/agent011.py"
+   }
+  ]
+ },
+ "demos": {
+  "admission_ignores_checks": true,
+  "cascade_exec": true,
+  "check035_blind": true,
+  "deny_all_rejected": true,
+  "exec_runs_fixture": true,
+  "safe_eval_blocks": true
+ },
+ "fcg": {
+  "edges": 114,
+  "expected_root": "3f3349e6481798b345181c270d98475d13e9cd2033d26750054947734bdd11f5",
+  "ledger": [
+   {
+    "event_hash": "8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+    "event_index": 1,
+    "fco_id": "fco:sha256:8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd"
+   },
+   {
+    "event_hash": "e0019de1cc693f3f4be18c004d88427596ebe143f0d26f200eb380ed22acbbe8",
+    "event_index": 2,
+    "fco_id": "fco:sha256:e0019de1cc693f3f4be18c004d88427596ebe143f0d26f200eb380ed22acbbe8"
+   },
+   {
+    "event_hash": "2206e44e316557ac798e749e4e699a216a9181d11f98b69a0fb0d4997a237d60",
+    "event_index": 3,
+    "fco_id": "fco:sha256:2206e44e316557ac798e749e4e699a216a9181d11f98b69a0fb0d4997a237d60"
+   },
+   {
+    "event_hash": "946cfa6d0ac881b4b29103e30174a7cdcb995b5e379a9f83c256af0b6ff9da3f",
+    "event_index": 4,
+    "fco_id": "fco:sha256:946cfa6d0ac881b4b29103e30174a7cdcb995b5e379a9f83c256af0b6ff9da3f"
+   },
+   {
+    "event_hash": "99de52fb31de862795bce31b5968ef724a60bebdb7a22e83a0f46d1b0aee9461",
+    "event_index": 5,
+    "fco_id": "fco:sha256:99de52fb31de862795bce31b5968ef724a60bebdb7a22e83a0f46d1b0aee9461"
+   },
+   {
+    "event_hash": "efc65d336b7dbb90372dfeafba39092168c3192e845f1ec6e90f93fe4969a51b",
+    "event_index": 6,
+    "fco_id": "fco:sha256:efc65d336b7dbb90372dfeafba39092168c3192e845f1ec6e90f93fe4969a51b"
+   },
+   {
+    "event_hash": "a5fda089d2ac572cfee2e131581f9feb82d499fcf89b4ec4da9a752b5327e5f0",
+    "event_index": 7,
+    "fco_id": "fco:sha256:a5fda089d2ac572cfee2e131581f9feb82d499fcf89b4ec4da9a752b5327e5f0"
+   },
+   {
+    "event_hash": "0b5c0e2255b930b56d83b7ae5d80d0508244dbd5daa14a2ca81d4dc87c943d17",
+    "event_index": 8,
+    "fco_id": "fco:sha256:0b5c0e2255b930b56d83b7ae5d80d0508244dbd5daa14a2ca81d4dc87c943d17"
+   }
+  ],
+  "nodes": 59,
+  "steps": [
+   {
+    "checks_false": 0,
+    "checks_true": 3,
+    "name": "scope_tree",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 0,
+    "checks_true": 2,
+    "name": "semgrep_full_scan",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 0,
+    "checks_true": 2,
+    "name": "review_verdicts",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 0,
+    "checks_true": 2,
+    "name": "findings_registry",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 0,
+    "checks_true": 3,
+    "name": "executed_demonstrations",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 0,
+    "checks_true": 2,
+    "name": "breakpoint_localization",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 0,
+    "checks_true": 2,
+    "name": "incremental_rereview_set",
+    "state": "OBSERVED"
+   },
+   {
+    "checks_false": 1,
+    "checks_true": 0,
+    "name": "review_time_saving",
+    "state": "NOT_TESTED"
+   }
+  ]
+ },
+ "findings": {
+  "list": [
+   {
+    "file": "src/custody.py",
+    "id": "F1",
+    "semgrep": false,
+    "severity": "medium",
+    "summary": "Custody admission is a function of the caller's state label only; supplied boolean checks are recorded but never enforced."
+   },
+   {
+    "file": "src/cascade.py",
+    "id": "F2",
+    "semgrep": false,
+    "severity": "low-medium",
+    "summary": "Policy fixtures are loaded with importlib exec_module (arbitrary code from fixtures/<name>.py). The 016 remediation replaced exec() only in agent011.r"
+   },
+   {
+    "file": "agent/agent011.py",
+    "id": "F2a",
+    "semgrep": true,
+    "severity": "low-medium",
+    "summary": "exec() on repository fixture source (the Semgrep finding)."
+   },
+   {
+    "file": "agent/akash_console023.py",
+    "id": "F7",
+    "semgrep": false,
+    "severity": "info",
+    "summary": "User-Agent changed after a Cloudflare 1010 client-signature block; docs/AKASH_ENDPOINT_CORRECTION_027.md later records a stop-on-block rule. akash020/"
+   },
+   {
+    "file": "agent/agent011.py",
+    "id": "F10",
+    "semgrep": false,
+    "severity": "low",
+    "summary": "run_id = sha256(now() at 1 s resolution)[:12]; two runs started in the same second share run_id and occurrence_id (run_id:seq), which a ReplacingMerge"
+   },
+   {
+    "file": "agent/frame_check035.py",
+    "id": "F12",
+    "semgrep": false,
+    "severity": "medium",
+    "summary": "Samples one frame 0.8 s before each scene's expected end and compares it with a reference render; any timing offset below ~0.8 s still passes. The mea"
+   }
+  ],
+  "semgrep_detectable": 1,
+  "total": 16
+ },
+ "incremental": {
+  "baseline": "43c2c65",
+  "changed": 8,
+  "files": 25,
+  "lines_changed": 491,
+  "lines_total": 1778,
+  "semgrep_changed_s": [
+   [
+    2.19,
+    0,
+    0
+   ],
+   [
+    2.26,
+    0,
+    0
+   ],
+   [
+    2.27,
+    0,
+    0
+   ]
+  ],
+  "semgrep_full_s": [
+   [
+    4.1,
+    1,
+    0
+   ],
+   [
+    4.01,
+    1,
+    0
+   ],
+   [
+    3.37,
+    1,
+    0
+   ]
+  ]
+ },
+ "semgrep": {
+  "files": 31,
+  "finding": "exec-detected agent/agent011.py:89",
+  "findings": 1,
+  "sets": [
+   "p/python",
+   "p/security-audit",
+   "p/secrets"
+  ],
+  "tree_files": 25,
+  "untracked_scanned": 6,
+  "version": "1.180.0"
+ },
+ "tree": {
+  "canon": [
+   "{\"findings\":[\"F3\",\"F10\",\"F2a\"],\"lines\":204,\"path\":\"agent/agent011.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[\"exec-detected@89\"],\"sha256\":\"ca75ffd1057473d6916b65b530306cbe8b7a19f3e11412f60ff79a9561e90127\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[],\"lines\":25,\"path\":\"agent/akash019.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"72e6c769b9f2236ecb0d9f17ba72d3883119cbf0137bfef3e9bf03d07db2124b\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F7\"],\"lines\":48,\"path\":\"agent/akash020.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"3c836d6f9e40dc67fc190c3aacea483e9c1b2f9071fc92036c7c5423c457a5c3\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F7\",\"F11\"],\"lines\":48,\"path\":\"agent/akash021.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"30150fe6a9f61ce7bb0502cb405f2c2587c118b0d9a93329e4bdb85c204ca067\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F6\"],\"lines\":31,\"path\":\"agent/akash_console022.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"c381671b77f59700571074c3bdeef5e9190b2d7c5728d2574b8be5da67fab495\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F7\"],\"lines\":31,\"path\":\"agent/akash_console023.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"d3663ba0511f6bf9e5f10cd649079e6d85af7058ab597026ca6766b58471dffc\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[\"F5\",\"F6\"],\"lines\":130,\"path\":\"agent/akash_gpu024.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"b4f990acd9785c9be23d6a68b7a9f3d081e2a5871c25dc1bb4a61717733ca902\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[\"F9\"],\"lines\":94,\"path\":\"agent/ch015.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"62e827271a72dae5a62978ca23ad0374a61155241416e350dcc2ff3c90c0c931\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F9\"],\"lines\":122,\"path\":\"agent/ch016.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"af89f2f33202aa5041c4f190de5a23a81b8e0ec653284330ec0b66e814315cfd\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F12\"],\"lines\":85,\"path\":\"agent/frame_audit039.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"26ddd771d4814bb52c873537ea941778bb8ac722e893c1a72302439bc5f2c7d3\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[\"F12\"],\"lines\":99,\"path\":\"agent/frame_check035.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"9bd1a0fb70aecfb2ed6fe1258c6c41124983a4cffe41841ba6797b624593de83\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[],\"lines\":17,\"path\":\"agent/frame_ocr039.swift\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"cf062ca871ea5a72b9f69f6a00ea556bba8d4d49f3cc8b14e42698e79c940efc\",\"verdict\":\"OK\"}",
+   "{\"findings\":[\"F12\"],\"lines\":31,\"path\":\"agent/frame_successor039r1.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"959809535aaecd682d88e8673f0b3dc67c89be92246f40025b2e2c34b3904d41\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F12\"],\"lines\":57,\"path\":\"agent/record_walkthrough034.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"0da7c762dd6b13728b8268e0b87534f1d0407f08448f40a468d8b6b73bad80c0\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[\"F2b\"],\"lines\":30,\"path\":\"agent/safe_eval016.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"683e15dee14df5be3e2f4679ba731401907f9a2208ffa352e2c3e28d5f4b53cf\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F13\"],\"lines\":47,\"path\":\"agent/telemetry012.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"55f79478f247caff4d749787e05b8ba05f83f62aa474761499db8dc767bb8939\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[],\"lines\":105,\"path\":\"agent/verify_all.py\",\"read_depth\":\"READ_PARTIAL\",\"semgrep\":[],\"sha256\":\"52c8939c1856e19390d58764d5a9e5f852cbac9a506808154053bdbc655a3c90\",\"verdict\":\"UNREVIEWED_REMAINDER\"}",
+   "{\"findings\":[],\"lines\":76,\"path\":\"agent/walkthrough034.py\",\"read_depth\":\"SKIMMED_PATTERNS\",\"semgrep\":[],\"sha256\":\"2ebb6cc952880f25ff85ab3721a570ceaef86a01b9a13a81b89eaf3691055e52\",\"verdict\":\"UNREVIEWED_REMAINDER\"}",
+   "{\"findings\":[],\"lines\":114,\"path\":\"agent/walkthrough_manifest035.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"ccfce4e476b614ecaa04bc6cef62b8ae1b2f409dac7637b1faef57e2cdcb3b77\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[],\"lines\":12,\"path\":\"agent/watermark039r1.swift\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"832d9bf180414fbed992846b3e615166a194041e13b703d8c82b44e4c129c4fd\",\"verdict\":\"OK\"}",
+   "{\"findings\":[],\"lines\":5,\"path\":\"scripts/demo.sh\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"a1c9b1e0c67de82b2d94bf856be197c82548198dac3bafdf3ad5f73c6621dea8\",\"verdict\":\"OK\"}",
+   "{\"findings\":[\"F8\"],\"lines\":6,\"path\":\"scripts/setup.sh\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"4788895b83c13ac105cea11baec6d65c9d3682479b5b545ac8ce826d1cbb3975\",\"verdict\":\"OK_WITH_NOTES\"}",
+   "{\"findings\":[\"F2\",\"F4\"],\"lines\":100,\"path\":\"src/cascade.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[\"F1\"],\"lines\":211,\"path\":\"src/custody.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391\",\"verdict\":\"FINDINGS\"}",
+   "{\"findings\":[\"F14\"],\"lines\":50,\"path\":\"src/server.py\",\"read_depth\":\"READ_FULL\",\"semgrep\":[],\"sha256\":\"a723d2fc18a047f7ba730d81b588ea4c32baa9eb281d72ba4d50f3eceacb166d\",\"verdict\":\"OK_WITH_NOTES\"}"
+  ],
+  "depth": [
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_PARTIAL",
+   "SKIMMED_PATTERNS",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL",
+   "READ_FULL"
+  ],
+  "has_finding": [
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "lines": [
+   204,
+   25,
+   48,
+   48,
+   31,
+   31,
+   130,
+   94,
+   122,
+   85,
+   99,
+   17,
+   31,
+   57,
+   30,
+   47,
+   105,
+   76,
+   114,
+   12,
+   5,
+   6,
+   100,
+   211,
+   50
+  ],
+  "paths": [
+   "agent/agent011.py",
+   "agent/akash019.py",
+   "agent/akash020.py",
+   "agent/akash021.py",
+   "agent/akash_console022.py",
+   "agent/akash_console023.py",
+   "agent/akash_gpu024.py",
+   "agent/ch015.py",
+   "agent/ch016.py",
+   "agent/frame_audit039.py",
+   "agent/frame_check035.py",
+   "agent/frame_ocr039.swift",
+   "agent/frame_successor039r1.py",
+   "agent/record_walkthrough034.py",
+   "agent/safe_eval016.py",
+   "agent/telemetry012.py",
+   "agent/verify_all.py",
+   "agent/walkthrough034.py",
+   "agent/walkthrough_manifest035.py",
+   "agent/watermark039r1.swift",
+   "scripts/demo.sh",
+   "scripts/setup.sh",
+   "src/cascade.py",
+   "src/custody.py",
+   "src/server.py"
+  ],
+  "root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57",
+  "semgrep": [
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ]
+ }
+}
