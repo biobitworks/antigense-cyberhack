@@ -1,0 +1,28 @@
+{
+  "combined_050_video": "NOT_RECEIVED",
+  "deployment_state": "READY",
+  "mmr": "NOT_COMPUTED",
+  "mp4_sha256_public_readback": "ed042018770c3d001f0ea3f63efcfd0c2f747c3db28d34add0b532e2275eb115",
+  "mp4_source_sha256_same": true,
+  "new_public_deployment": "dpl_4LAKqCMdVLFgRMDB9vQKhXcUkr2b",
+  "new_public_project": "prj_fpt3CkywhaKbmF1RPrgIgGsDTFqQ",
+  "observed_http": "200_EXPECTED_CONTENT_NOT_LOGIN",
+  "observed_routes": [
+    "/backup/",
+    "/video/",
+    "/judges/",
+    "/judges-043.html",
+    "/data/live-local-043-proof.json",
+    "/video/captions.vtt"
+  ],
+  "original_project_preview_protection": "ACCESS_PROTECTED_DO_NOT_SHARE",
+  "original_project_production": "UNMODIFIED_BY_THIS_DEPLOYMENT",
+  "pinned_deployment_url": "https://antigense-daisy-evidence-backup-bultil27g-biobitworks.vercel.app/backup/",
+  "public_url": "https://antigense-daisy-evidence-backup.vercel.app/backup/",
+  "schema": "antigense.backup052.vercel_deployment_receipt.v1",
+  "signature": "NOT_SIGNED",
+  "source_asset_manifest_sha256": "c36116624749a4548e1131312b35de3122e51a61d19dfd111a4790523ec64db5",
+  "source_commit": "a6d6aad7bcc8f18b07ec0f9fbf7a2397f30cee69",
+  "team_id": "team_TEJ9cyzfQl0o8E4XXaEcs9bk",
+  "tokensand_portal_mutation": "NOT_EXECUTED"
+}

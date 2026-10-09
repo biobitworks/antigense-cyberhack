@@ -1,0 +1,96 @@
+{
+  "asset_count": 12,
+  "assets": [
+    {
+      "bytes": 2466,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "data/live-local-043-index.json",
+      "sha256": "09536184c393f4f5dfebd8ef35c5fa168740ae44790e084b704ced561d40bb42",
+      "source_url": "https://antigense-cyberhack.vercel.app/data/live-local-043-index.json"
+    },
+    {
+      "bytes": 149567,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "data/live-local-043-proof.json",
+      "sha256": "6b6a40d51022b867489fb6d998b502f380d7c02dcb4260510113fead03c907e9",
+      "source_url": "https://antigense-cyberhack.vercel.app/data/live-local-043-proof.json"
+    },
+    {
+      "bytes": 6193866,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "demo-034.mp4",
+      "sha256": "ab69925bd19105f0876e06c79de48009bc5dd525a368081f683ce60217d0231c",
+      "source_url": "https://antigense-cyberhack.vercel.app/demo-034.mp4"
+    },
+    {
+      "bytes": 11051,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "judges-043.html",
+      "sha256": "5ab8c73e916c4766fb39c314586b04953d8803c7e42c02dd15eda55da00218b7",
+      "source_url": "https://antigense-cyberhack.vercel.app/judges-043.html"
+    },
+    {
+      "bytes": 9117,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "judges/index.html",
+      "sha256": "8677095c649986c359334db19cd5fd0df118eb0574514d951b03388d89874ff0",
+      "source_url": "https://antigense-cyberhack.vercel.app/judges/index.html"
+    },
+    {
+      "bytes": 5175,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "technical-029.html",
+      "sha256": "9a22815710f6e308cbc43fe2211777ca23377432cb0fe6adc8646756ad8e60ff",
+      "source_url": "https://antigense-cyberhack.vercel.app/technical-029.html"
+    },
+    {
+      "bytes": 6329684,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "video/antigense-039r1-audio-clean.mp4",
+      "sha256": "ed042018770c3d001f0ea3f63efcfd0c2f747c3db28d34add0b532e2275eb115",
+      "source_url": "https://antigense-cyberhack.vercel.app/video/antigense-039r1-audio-clean.mp4"
+    },
+    {
+      "bytes": 3994,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "video/captions-editorial.srt",
+      "sha256": "01b14f1c80cb9d7217cb6db57c01d7fdb243c318bf04767c79a3cf838c722322",
+      "source_url": "https://antigense-cyberhack.vercel.app/video/captions-editorial.srt"
+    },
+    {
+      "bytes": 3851,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "video/captions.vtt",
+      "sha256": "6aabd3dc2ca68a0c6084b243f4f8e5a91f98c3d045c719c0747365efd3d3e828",
+      "source_url": "https://antigense-cyberhack.vercel.app/video/captions.vtt"
+    },
+    {
+      "bytes": 8832,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "video/index.html",
+      "sha256": "ba977c01e7c67bf870860d06d41cb8922c45decf289c80050d6b9efaed68bcd2",
+      "source_url": "https://antigense-cyberhack.vercel.app/video/index.html"
+    },
+    {
+      "bytes": 59372,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "video/poster.jpg",
+      "sha256": "72095b7c655344cbf5566dbe20673fe6e243dadea573e7de36b975e7c07a44b6",
+      "source_url": "https://antigense-cyberhack.vercel.app/video/poster.jpg"
+    },
+    {
+      "bytes": 12956,
+      "provenance": "COPIED_FROM_EXISTING_PUBLIC_SITE; EXTERNAL_ORIGIN_NOT_ATTESTED",
+      "public_path": "video/transcript.json",
+      "sha256": "a7bcc5277101e8f4b7cd584201d81b72371413d57894acaaab30d3980ab59b95",
+      "source_url": "https://antigense-cyberhack.vercel.app/video/transcript.json"
+    }
+  ],
+  "captured_date": "2026-10-09",
+  "mmr": "NOT_COMPUTED",
+  "parent_source_commit": "265699cde9812977108455707e1ddfeb15093112",
+  "project": "antigense-cyberhack",
+  "schema": "antigense.backup052.asset_manifest.v1",
+  "scope": "PUBLISHED_STATIC_MIRROR; NO_NEW_SPONSOR_RUN",
+  "signature": "NOT_SIGNED"
+}
