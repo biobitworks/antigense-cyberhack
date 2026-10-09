@@ -1,0 +1,219 @@
+{
+  "schema": "antigense.video053.claim_matrix.v1",
+  "status": "FROZEN_PROPOSED_NOT_RENDERED",
+  "source_breakpoint": "817f486c50622cfa9807e2b2273eb943cf8cb820",
+  "truth_hierarchy": [
+    "byte_identity",
+    "custody_readback",
+    "attribution_if_independent",
+    "controlled_intervention_only_if_oracle"
+  ],
+  "signature": "NOT_SIGNED",
+  "video_mmr": "NOT_COMPUTED",
+  "source_edit_receipt": {
+    "name": "Antigense_051_media_receipt.json",
+    "library_reference": "file_00000000b81481fbbd0abda95490d6e9",
+    "receipt_only": true
+  },
+  "target": {
+    "duration_s": 180,
+    "aspect": "16:10",
+    "preferred_raster": "1440x900",
+    "format": "mp4/H.264/AAC"
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "time": "00:00-00:18",
+      "claim": "Software-injected byte corruption simulated; no physical GPU failure.",
+      "state": "SUPPORTED_HISTORICAL",
+      "evidence": [
+        "README.md",
+        "evidence/successor_011"
+      ],
+      "screen": "fault checksum mismatch and explicit SIMULATED_BYTE_XOR",
+      "oracle": "inspect bounded fault source and captured output"
+    },
+    {
+      "id": "C02",
+      "time": "00:18-00:45",
+      "claim": "Fail-open fallback exists in baseline and repaired AND authorization oracle passes all four cases.",
+      "state": "EXECUTED_SUPPORTED_LOCAL",
+      "evidence": [
+        "docs/EVIDENCE.md",
+        "docs/INTERVENTION_042.md",
+        "tests/test_guarded_intervention_042.py"
+      ],
+      "screen": "show 2x2 truth table: unauthorized blocked, healthy authorized allowed",
+      "oracle": "python3 -m unittest discover -s tests -q; deliberately incorrect OR control fails"
+    },
+    {
+      "id": "C03",
+      "time": "00:45-01:12",
+      "claim": "Semgrep CE custom-scoped before/after 1→0 and own-code execution sink corrected.",
+      "state": "SUPPORTED_HISTORICAL",
+      "evidence": [
+        "docs/EVIDENCE.md",
+        "docs/INTERVENTION_042.md",
+        "evidence/intervention_042/manifest.json"
+      ],
+      "screen": "real command scanner output and source before/after",
+      "oracle": "pinned rule and matching source hashes; zero only within rule scope"
+    },
+    {
+      "id": "C04",
+      "time": "01:12-01:34",
+      "claim": "Akash run: qwen2.5:0.5b HTTP 200 inference 3466.4ms; advice not applied; gpu not attested.",
+      "state": "SUPPORTED_SEPARATE_HISTORICAL",
+      "evidence": [
+        "docs/EVIDENCE.md",
+        "evidence/successor_024"
+      ],
+      "screen": "historical create inference close API receipts with different run label",
+      "oracle": "source API receipt identity verified; hardware GPU reported not attested"
+    },
+    {
+      "id": "C05",
+      "time": "01:34-01:56",
+      "claim": "ClickHouse Cloud 55 historical occurrences replayed 55 distinct and hash matched readback.",
+      "state": "SUPPORTED_SEPARATE_HISTORICAL",
+      "evidence": [
+        "docs/EVIDENCE.md",
+        "evidence/successor_016"
+      ],
+      "screen": "separate-run row counts, 55/55 readback and version",
+      "oracle": "receipt with exact readback SHA; negative formatting discrepancy preserved in successor_015"
+    },
+    {
+      "id": "C06",
+      "time": "01:56-02:21",
+      "claim": "FCO source and event IDs, typed FCG edges, MMR recomputed; bytes do not establish truth.",
+      "state": "SUPPORTED_LOCAL",
+      "evidence": [
+        "agent/intervention042.py",
+        "evidence/intervention_042/manifest.json"
+      ],
+      "screen": "042 verifier output 6 leaves and root 43522a82b0c2a4428cda56366f65689757d70085031e26997e90b583b846e5a0",
+      "oracle": "python3 agent/intervention042.py verify"
+    },
+    {
+      "id": "C07",
+      "time": "01:56-02:21",
+      "claim": "Previously hosted proof 043 has 12 leaves, separate from 042 and 050.",
+      "state": "SUPPORTED_HISTORICAL_WEB",
+      "evidence": [
+        "public/data/live-local-043-proof.json",
+        "public/judges-043.html"
+      ],
+      "screen": "explicit HISTORICAL 043 12-leaf label, never show as 050 root",
+      "oracle": "browser verifier 043 separate from 050"
+    },
+    {
+      "id": "C08",
+      "time": "02:21-02:50",
+      "claim": "Judge 050 local reviewer action DENY then ALLOW, four leaves, new final root independently recomputed.",
+      "state": "EXECUTED_OBSERVED_LOCAL",
+      "evidence": [
+        "docs/LIVE_JUDGE_050.md",
+        "local .runtime/judge050-video-r1/custody (private, excluded from public)"
+      ],
+      "screen": "real local click sequence SSE updates, public FCO IDs, final root 47a220fd28956dc77d7baf4299cf6e348c8ebe8736955fbc38c3e43de17deafb",
+      "oracle": "source order/peaks/root local recomputation PASS; scope not cryptographic identity"
+    },
+    {
+      "id": "C09",
+      "time": "02:21-02:50",
+      "claim": "Nimble visible; exposed API key must be obscured, branding and actual Nimble demo preserved.",
+      "state": "EDITORIAL_REQUIREMENT_NOT_YET_VERIFIED",
+      "evidence": [
+        "Antigense_051_media_receipt.json (prior note of opening visible key)"
+      ],
+      "screen": "Nimble UI remains visible with only secret value masked in pixel data",
+      "oracle": "manual frame-by-frame and spoken-audio credential exposure review; rotation independently"
+    },
+    {
+      "id": "C10",
+      "time": "02:21-02:50",
+      "claim": "Public SSE excludes reviewer private notes and bearer capability.",
+      "state": "TESTED_LOCAL_IMPLEMENTATION_FINAL_VIDEO_NOT_TESTED",
+      "evidence": [
+        "tests/test_judge_live050.py",
+        "docs/LIVE_JUDGE_050.md"
+      ],
+      "screen": "only public SSE; crop/mask private notes and capability fields",
+      "oracle": "public projection test PASSED 17/17; frame review mandatory"
+    },
+    {
+      "id": "C11",
+      "time": "02:50-03:00",
+      "claim": "Public primary Vercel and independent backed up public 039R1 media exist.",
+      "state": "OBSERVED_PUBLIC",
+      "evidence": [
+        "evidence/backup_052/deployment_receipt.json",
+        "docs/SUBMISSION_LINKS_052.md"
+      ],
+      "screen": "correct primary https://antigense-cyberhack.vercel.app/video/ and backup https://antigense-daisy-evidence-backup.vercel.app/backup/",
+      "oracle": "HTTP 200 and byte-verified 039R1 video, not yet 053"
+    },
+    {
+      "id": "C12",
+      "time": "00:00-03:00",
+      "claim": "Full final narration synchronizes word-by-word with displayed action.",
+      "state": "NOT_TESTED_NO_FINAL_MEDIA",
+      "evidence": [
+        "Antigense_051_media_receipt.json (prior NOT_VERIFIED)"
+      ],
+      "screen": "exact spoken word aligns with corresponding proof, no cropped secret in any frame",
+      "oracle": "manual full playback and edit-specific shot audit required"
+    },
+    {
+      "id": "C13",
+      "time": "00:00-03:00",
+      "claim": "Finished MP4 is 180.0 seconds with audible intelligible voice and no clipped claims.",
+      "state": "NOT_TESTED_NO_FINAL_MEDIA",
+      "evidence": [],
+      "screen": "3:00 final, 1440x900, captions synced",
+      "oracle": "scripts/verify_video053.py checks mechanical only; subjective listening required"
+    },
+    {
+      "id": "C14",
+      "time": "00:00-03:00",
+      "claim": "Nimble is a verified sponsor operation of this incident.",
+      "state": "NOT_SUPPORTED_DO_NOT_CLAIM",
+      "evidence": [],
+      "screen": "do not add such a badge or voice sentence absent a provider receipt",
+      "oracle": "preserving Nimble footage does not prove integration"
+    },
+    {
+      "id": "C15",
+      "time": "00:00-03:00",
+      "claim": "Live 050 resulted in cryptographic human identity, actual wallet payment, Akash rerun, or new ClickHouse ingestion.",
+      "state": "NOT_SUPPORTED_DO_NOT_CLAIM",
+      "evidence": [],
+      "screen": "avoid unverified labels; annotate NOT_TESTED",
+      "oracle": "none"
+    },
+    {
+      "id": "C16",
+      "time": "00:00-03:00",
+      "claim": "053 media or any FCO is signed or publicly MMR-committed.",
+      "state": "NOT_TESTED_NOT_SIGNED",
+      "evidence": [],
+      "screen": "explicit NOT_SIGNED and media MMR NOT_COMPUTED",
+      "oracle": "none"
+    }
+  ],
+  "release_gates": [
+    "final_180s_source_available",
+    "duration_codec_audio_mechanically_pass",
+    "voice_full_listening",
+    "actions_final_pixel_review",
+    "nimble_preserved_with_secret_masked",
+    "no_other_secret_disclosed",
+    "caption_transcript_synced",
+    "claim_to_receipt_bindings_checked",
+    "release_manifest_hash_recomputed",
+    "public_new_video_url_verified",
+    "old_video_preserved"
+  ]
+}

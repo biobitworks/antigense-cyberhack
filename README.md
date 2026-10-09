@@ -62,6 +62,14 @@ The Vercel project `antigense-cyberhack` serves static `public/` content through
 
 The new *combined* live-judge footage is being edited separately. Its final URL and bytes are **UNKNOWN** here. Never describe the archived 039R1 video as including 050, and never update the official submission's video field with an unverified URL. The tokens& site is the canonical entry; GitHub and Vercel are supporting evidence, not substitutes for portal acceptance.
 
+## Video successor 053 — 3:00 editorial verification (NOT_RENDERED)
+
+A new **180-second** release cut is specified in [the 053 storyboard, narration and QA gates](docs/VIDEO_053_THREE_MINUTE_RELEASE.md), with an [evidence-bound claim matrix](evidence/video_053/claim_matrix.json), [editing-lane handoff prompt](docs/VIDEO_053_EDITING_HANDOFF_PROMPT.md) and [FFmpeg/ffprobe mechanical verifier](scripts/verify_video053.py).
+
+The Nimble screen demonstration **must remain**. The 051 edited judge clip excluded original seconds 0–8 because they exposed a Nimble API key; the final version should reintroduce appropriate Nimble action only after permanently masking the secret value (plus any other credentials). Keeping Nimble **does not establish verified Nimble sponsor execution**.
+
+**Media access blocker:** a generated 4:03 051 draft and 23-second judge clip were located in the ChatGPT Library, but their raw bytes were unavailable to the current editing container and authorized hosts. In this branch **no 3:00 MP4 was rendered, listened to, frame-screened, MMR-committed or published**. The historical Vercel backup and original submitted Tokens& video link remain unchanged.
+
 ## Publication and safety
 
 - **Public:** sanitized video, transcript, hashed archival bytes, read-only status and synthetic proofs.
