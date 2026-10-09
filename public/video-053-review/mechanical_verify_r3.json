@@ -1,0 +1,37 @@
+{
+  "MMR": "NOT_COMPUTED",
+  "PASS_MECHANICAL": true,
+  "PUBLICATION": "NOT_AUTHORIZED_BY_MECHANICAL_PASS",
+  "SIGNATURE": "NOT_SIGNED",
+  "audio_codec": "aac",
+  "bytes": 6617781,
+  "captions_synced": "NOT_TESTED_NEEDS_HUMAN",
+  "checks": {
+    "aspect_16_to_10": true,
+    "audio_aac": true,
+    "audio_sampling_at_least_44100": true,
+    "duration_180_plusminus_0p25": true,
+    "expected_sha256_matches": true,
+    "loudness_integrated_minus16_plusminus2": true,
+    "raster_min_960x600": true,
+    "true_peak_at_most_minus1": true,
+    "video_frame_rate_at_least_24": true,
+    "video_h264": true
+  },
+  "frame_height": 900,
+  "frame_width": 1440,
+  "loudness": {
+    "integrated_lufs": -17.2,
+    "status": "MEASURED",
+    "true_peak_dbfs": -1.4
+  },
+  "nimble_segment_present": "NOT_TESTED_NEEDS_HUMAN",
+  "path_basename": "antigense-daisy-053-r3-three-minute-review.mp4",
+  "schema": "antigense.video053.mechanical_verification.v1",
+  "seconds": 180.0,
+  "secret_visibility": "NOT_TESTED_NEEDS_FULL_FRAME_REVIEW",
+  "semantic_claim_alignment": "NOT_TESTED_NEEDS_HUMAN",
+  "sha256": "047ce22506c41add4793e7762f212b6365bd679b67bf6e62e16840cdb0b3b7a0",
+  "video_codec": "h264",
+  "voice_intelligibility": "NOT_TESTED_NEEDS_HUMAN"
+}
