@@ -1,0 +1,22 @@
+{
+  "approval_scope": "Promote 053R3 as featured player on existing canonical Tokens& submission video URL; keep archived 039R1 and avoid changing competition project link",
+  "approval_wording": "time is up so approved",
+  "audio_video_mechanical": "PASS_PREDECESSOR_RECEIPT",
+  "deployment": "PENDING",
+  "editorial_human_approval": "USER_REPORTED_APPROVED",
+  "full_visual_privacy_screen": "NOT_INDEPENDENTLY_TESTED",
+  "mmr": "NOT_COMPUTED",
+  "nimble": "RETAINED_IN_EDIT_WITH_FULL_FRAME_BLUR_ON_SOURCE_CREDENTIAL_SEGMENT",
+  "nimble_provider_execution": "NOT_CLAIMED",
+  "parent_source_branch": "codex/video-audit-053",
+  "parent_source_commit": "2d7942560c7974ac884aff999635c16f481b0b4d",
+  "production_readback": "PENDING",
+  "project": "biobitworks/antigense-cyberhack",
+  "schema": "antigense.release054.user_approval.v1",
+  "signed": "NOT_SIGNED",
+  "tokensand_form_edit": "NOT_PLANNED_EXISTING_VIDEO_URL",
+  "user_approval": "USER_APPROVED_PUBLICATION_IN_CURRENT_CONVERSATION",
+  "video_relative_path": "public/video-053-review/antigense-daisy-053-r3-three-minute-review.mp4",
+  "video_sha256": "047ce22506c41add4793e7762f212b6365bd679b67bf6e62e16840cdb0b3b7a0",
+  "voice_screen_alignment": "NOT_INDEPENDENTLY_TESTED"
+}
