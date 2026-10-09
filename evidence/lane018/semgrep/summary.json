@@ -1,0 +1,22 @@
+{
+ "semgrep_ce": {
+  "version": "1.180.0",
+  "configs": [
+   "p/python",
+   "p/security-audit",
+   "p/secrets"
+  ],
+  "files_scanned": 10,
+  "rules": 236,
+  "findings": 1,
+  "finding": "exec-detected agent/agent011.py:89",
+  "exploitable_in_fixture_test": true
+ },
+ "guardian": {
+  "auth": "oauth ok",
+  "projects": 0,
+  "state": "NOT_TESTED",
+  "need": "onboard a sanitized project"
+ },
+ "scope": "FIXTURE_ONLY"
+}

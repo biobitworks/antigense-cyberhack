@@ -1,0 +1,12 @@
+{
+ "attempts": 1,
+ "attestation": "NOT_TESTED",
+ "gpu_lease": "NOT_TESTED",
+ "http": 401,
+ "inference": "NOT_TESTED",
+ "minimal_onboarding_need": "Confirm AKASHML_API_KEY is active/funded for api.akashml.com/v1 and AKASHML_MODEL is a model enabled on that key; official docs not retrievable from this session (curl hook-blocked, browser navigation denied) so auth format is unverified here",
+ "packet_sha256": "33fedee78a456a54793dad44c7c8bd1b04065b55beb6d58020bf82ba0ac6d0a5",
+ "reason": "HTTPError",
+ "state": "FAILED",
+ "ts": "2026-10-09T19:04:41.937126+00:00"
+}
