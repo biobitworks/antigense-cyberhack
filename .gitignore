@@ -8,3 +8,4 @@ __pycache__/
 media/*.webm
 media/*.mp4
 .vercel
+media/walkthrough-*/
