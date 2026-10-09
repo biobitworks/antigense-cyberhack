@@ -14,9 +14,9 @@
 
 **GitHub:** https://github.com/biobitworks/antigense-cyberhack
 
-**052 secondary Vercel deployment:** NOT_ASSIGNED until the separately verified preview URL is recorded in `docs/RELEASE_BACKUP_052.md`.
+**052 public Vercel backup (separate project):** https://antigense-daisy-evidence-backup.vercel.app/backup/ (READY, HTTP 200, MP4 SHA-256 matched).
 
-**052 backup page:** `/backup/` appended to that validated secondary deployment URL.
+**052 pinned backup snapshot:** https://antigense-daisy-evidence-backup-bultil27g-biobitworks.vercel.app/backup/ (deployment ID `dpl_4LAKqCMdVLFgRMDB9vQKhXcUkr2b`).
 
 **New combined video:** NOT_RECEIVED_BY_THIS_BRANCH / NOT_VALIDATED. Pending an independently confirmed uploaded URL and media SHA-256.
 
@@ -26,4 +26,6 @@ These are reference links, not a claim of an authenticated tokens& update. Keep 
 
 Once the final video is available, verify its bytes, duration, public HTTP access and identity. Publish a new successor on Vercel while retaining the 039R1 fallback; only then change the existing tokens& entry if editing is still permitted. Record the platform's actual acceptance/readback separately.
 
-Status: PREPARED / STATIC_BACKUP_NOT_YET_DEPLOYED / PORTAL_NOT_MODIFIED / NOT_SIGNED.
+Status: GITHUB_BRANCH_PUSHED / PUBLIC_BACKUP_DEPLOYED_VERIFIED / PORTAL_NOT_MODIFIED / NOT_SIGNED.
+
+Recommended additional public project link: https://antigense-daisy-evidence-backup.vercel.app/backup/ . Keep the earlier video as the actual primary Demo Video URL until the combined successor video is uploaded and checked. The original project preview 052 is SSO-protected; never use it for unauthenticated judges.

@@ -2,7 +2,7 @@
 
 **Hardware faults must not become security failures.** Antigense Daisy is a bounded, local-first cyberdefense prototype created for the [tokens& Cyberdefense Hackathon](https://tokensand.com/p/antigense-daisy) on October 9, 2026. It records source/evidence, event occurrences, declared FCG relationships, verification outcomes, and Merkle/MMR commitments rather than relying on an agent's narration.
 
-**Canonical submission:** [Antigense Daisy on tokens&](https://tokensand.com/p/antigense-daisy) · **Production website:** [antigense-cyberhack.vercel.app](https://antigense-cyberhack.vercel.app/) · **Video and transcript:** [hosted 039R1 recording](https://antigense-cyberhack.vercel.app/video/) · **Judge guide:** [public walkthrough](https://antigense-cyberhack.vercel.app/judges/) · **Archived-media backup in this branch:** [backup index](public/backup/index.html).
+**Canonical submission:** [Antigense Daisy on tokens&](https://tokensand.com/p/antigense-daisy) · **Production website:** [antigense-cyberhack.vercel.app](https://antigense-cyberhack.vercel.app/) · **Independent public Vercel backup:** [backup project /backup/](https://antigense-daisy-evidence-backup.vercel.app/backup/) · **Video and transcript:** [hosted 039R1 recording](https://antigense-cyberhack.vercel.app/video/) · **Judge guide:** [public walkthrough](https://antigense-cyberhack.vercel.app/judges/) · **Archived-media backup in this branch:** [backup index](public/backup/index.html).
 
 > **Scope:** The deployed Vercel pages are sanitized, static **recorded evidence**, not a hosted agent, multi-user review service, or live Semgrep/Akash/ClickHouse session. The separate live local judge 050 server uses a localhost-only bearer capability; it is **not deployed to Vercel**. Its capability and private notes must never be copied to this repository.
 
@@ -16,7 +16,7 @@
 | Judge instructions | [Judges](https://antigense-cyberhack.vercel.app/judges/) | Public walkthrough and evidence limits |
 | Browser proof | [Judge proof 043](https://antigense-cyberhack.vercel.app/judges-043.html) | **Separate 12-leaf** historical proof |
 | Alternative public recording | [YouTube](https://youtu.be/hpLH88V6PF0) | Existing fallback; not the new combined video |
-| Archival Vercel copy | [Backup landing page](public/backup/index.html) | Branch includes the 039R1 MP4 and source-hash manifest; deployment URL in [release record](docs/RELEASE_BACKUP_052.md) after verification |
+| Archival Vercel copy | [Independent Vercel backup](https://antigense-daisy-evidence-backup.vercel.app/backup/) · [source](public/backup/index.html) | PUBLIC / READY; archived 039R1 bytes independently checked; see [release receipt](docs/RELEASE_BACKUP_052.md) |
 
 ## Actual end-to-end evidence
 
@@ -58,7 +58,7 @@ For the earlier local interactive demonstration, use `sh scripts/demo.sh` on a t
 
 ## Hosting, backup and submission links
 
-The Vercel project `antigense-cyberhack` serves static `public/` content through [vercel.json](vercel.json). **Production** stays at [https://antigense-cyberhack.vercel.app/](https://antigense-cyberhack.vercel.app/). This branch adds an archival [`/backup/` landing page](public/backup/index.html) and an independently deployable copy of the *older verified-public* 039R1 MP4. An immutable deployment-specific preview URL should be used as the secondary link after a READY and HTTP readback check. See [052 deployment record](docs/RELEASE_BACKUP_052.md) and [submission link inventory](docs/SUBMISSION_LINKS_052.md).
+The Vercel project `antigense-cyberhack` serves static `public/` content through [vercel.json](vercel.json). **Production** stays at [https://antigense-cyberhack.vercel.app/](https://antigense-cyberhack.vercel.app/). This branch adds an archival [`/backup/` landing page](public/backup/index.html) and an independently deployable copy of the *older verified-public* 039R1 MP4. A second **public production domain on a separate backup Vercel project** is [https://antigense-daisy-evidence-backup.vercel.app/backup/](https://antigense-daisy-evidence-backup.vercel.app/backup/). The original project preview was access-protected and must **not** be offered to public judges. The separately deployed 052 backup is READY and its archived MP4 bytes passed an external HTTP SHA-256 readback. See [052 deployment record](docs/RELEASE_BACKUP_052.md) and [submission link inventory](docs/SUBMISSION_LINKS_052.md).
 
 The new *combined* live-judge footage is being edited separately. Its final URL and bytes are **UNKNOWN** here. Never describe the archived 039R1 video as including 050, and never update the official submission's video field with an unverified URL. The tokens& site is the canonical entry; GitHub and Vercel are supporting evidence, not substitutes for portal acceptance.
 
