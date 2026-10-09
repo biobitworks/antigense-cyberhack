@@ -1,0 +1,1 @@
+{"state": "FAILED", "operation": "visible watermark encode", "reason": "ffmpeg drawtext filter unavailable", "successor": "frame039r1"}

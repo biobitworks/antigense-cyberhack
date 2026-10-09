@@ -1,0 +1,11 @@
+{
+  "state": "OBSERVED",
+  "frame_mmr_independent_recompute": "PASS",
+  "original_decoded_frame_readback": "PASS",
+  "successor_decoded_frame_readback": "PASS",
+  "tamper_negative_control": "PASS",
+  "sample_scene_agreement": "8/9; 48s discrepancy preserved",
+  "narration_alignment": "NOT_TESTED",
+  "wall_clock_attestation": "NOT_TESTED",
+  "new_publication": "NOT_EXECUTED"
+}
