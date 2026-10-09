@@ -1,0 +1,126 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.authorization_bound_to_bytes": true,
+      "provided.deploy_ok": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.authorization_bound_to_bytes": "YES",
+      "provided.deploy_ok": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b\"}",
+        "index": 0,
+        "leaf_sha256": "0b01f0cc27c51807fcfd3d7c594b0d7e3d8043adc9ddfc27c89048c175cdc0ac"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:004c9eaa7c41d1a7e7ad496474a0ee7f29a4c5ee8cab0ce4d03fcb24c474d8d7\"}",
+        "index": 1,
+        "leaf_sha256": "a5196628a563b2ccd0ead13ad2e7f62289e0a1df11e14a602d34aee496b41bc5"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"49dcf19f7c7ba22bdfa017e8418c56d2420bc7479e6ccb3d7448923fc3296c12\"}",
+        "index": 2,
+        "leaf_sha256": "3ea8b96ad7e366bc5f1a4a4be7981c4722f20ca19513bc7561de7e9aa9fff639"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"authorization_bound_to_bytes\":true,\"deploy_ok\":true},\"details\":{\"artifact_sha256\":\"8e5bd43748774394ed5f23becaebbe457e280d278d6634183d30d45c8d589ca6\",\"bytes\":2109,\"deploy_exit\":0,\"deploy_log_tail\":\"5esupoPXDNp\\\",\\n    \\\"readyState\\\": \\\"READY\\\",\\n    \\\"target\\\": \\\"production\\\",\\n    \\\"deploymentApiUrl\\\": \\\"https://api.vercel.com/v13/deployments/dpl_8yWZsDW3MBofYEw5d5esupoPXDNp\\\"\\n  },\\n  \\\"message\\\": \\\"Deployment antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app ready.\\\",\\n  \\\"next\\\": [\\n    {\\n      \\\"command\\\": \\\"vercel inspect antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app\\\",\\n      \\\"when\\\": \\\"Inspect deployment\\\"\\n    },\\n    {\\n      \\\"command\\\": \\\"vercel deploy --prod\\\",\\n      \\\"when\\\": \\\"Promote to production\\\"\\n    }\\n  ]\\n}\\n<claude-code-hint v=\\\"1\\\" type=\\\"plugin\\\" value=\\\"vercel@claude-plugins-official\\\" />\\nRetrieving project…\\nDeploying biobitworks/antigense-cyberhack\\nUploading [--------------------] (0.0B/2.1KB)\\nUploading [====================] (2.1KB/2.1KB)\\nInspect: https://vercel.com/biobitworks/antigense-cyberhack/8yWZsDW3MBofYEw5d5esupoPXDNp [976ms]\\nProduction: https://antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app [976ms]\\nBuilding...\\nBuilding...\\nBuilding: Running build in Washington, D.C., USA (East) – iad1\\nBuilding: Build machine configuration: 2 cores, 8 GB\\nBuilding: Retrieving list of deployment files...\\nBuilding: Previous build caches not available.\\nBuilding: Downloading 7 deployment files...\\nBuilding: Running \\\"vercel build\\\"\\nBuilding: Vercel CLI 62.7.0\\nBuilding: Build Completed in /vercel/output [85ms]\\nBuilding: Deploying outputs...\\n\\u001b[2K\\u001b[1A\\u001b[2K\\u001b[GProduction: https://antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app [6s]\\nCompleting...\\nAliased: https://antigense-cyberhack.vercel.app [6s]\\n\",\"path\":\"public/data/defense-status.json\",\"url\":\"https://antigense-cyberhack.vercel.app/data/defense-status.json\"},\"name\":\"publication\",\"occurrence\":{\"run_id\":\"run011-22a04cb305e9\",\"seq\":18,\"ts\":\"2026-10-09T18:23:26+00:00\"},\"source\":{\"blob\":\"evidence/run_011/blobs/8e5bd43748774394ed5f23becaebbe457e280d278d6634183d30d45c8d589ca6\",\"bytes\":2109,\"sha256\":\"8e5bd43748774394ed5f23becaebbe457e280d278d6634183d30d45c8d589ca6\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "56e63ad6bbd8eb8a7489de63ffd6fbb3c07df74e7f2a26fec72ae7e8dd926cd2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.authorization_bound_to_bytes\":true,\"provided.deploy_ok\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.authorization_bound_to_bytes\":\"YES\",\"provided.deploy_ok\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "d2359b6d1d929a1e64495469f1ac57db7b1c59dd3ebb515e7959f82825f2a57b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.001303\",\"g_star\":\"0.028148\",\"inputs\":{\"admitted\":46,\"quarantined\":7,\"rejected\":1,\"steps\":54},\"normalized_entropy\":\"0.342857\",\"reference_g_star\":\"0.029451\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "e54f6b2ff4836a8bc4750331188ceb871e63dfdb81f0418350e59121f019b9fb"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "d67b4162ecdefce14fe4da204e7dec24d136311cbdcb83d4d587842e4e6b8b58"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "-0.001303",
+    "g_star": "0.028148",
+    "inputs": {
+      "admitted": 46,
+      "quarantined": 7,
+      "rejected": 1,
+      "steps": 54
+    },
+    "normalized_entropy": "0.342857",
+    "reference_g_star": "0.029451",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:d67b4162ecdefce14fe4da204e7dec24d136311cbdcb83d4d587842e4e6b8b58",
+  "observation": {
+    "checks": {
+      "authorization_bound_to_bytes": true,
+      "deploy_ok": true
+    },
+    "details": {
+      "artifact_sha256": "8e5bd43748774394ed5f23becaebbe457e280d278d6634183d30d45c8d589ca6",
+      "bytes": 2109,
+      "deploy_exit": 0,
+      "deploy_log_tail": "5esupoPXDNp\",\n    \"readyState\": \"READY\",\n    \"target\": \"production\",\n    \"deploymentApiUrl\": \"https://api.vercel.com/v13/deployments/dpl_8yWZsDW3MBofYEw5d5esupoPXDNp\"\n  },\n  \"message\": \"Deployment antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app ready.\",\n  \"next\": [\n    {\n      \"command\": \"vercel inspect antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app\",\n      \"when\": \"Inspect deployment\"\n    },\n    {\n      \"command\": \"vercel deploy --prod\",\n      \"when\": \"Promote to production\"\n    }\n  ]\n}\n<claude-code-hint v=\"1\" type=\"plugin\" value=\"vercel@claude-plugins-official\" />\nRetrieving project…\nDeploying biobitworks/antigense-cyberhack\nUploading [--------------------] (0.0B/2.1KB)\nUploading [====================] (2.1KB/2.1KB)\nInspect: https://vercel.com/biobitworks/antigense-cyberhack/8yWZsDW3MBofYEw5d5esupoPXDNp [976ms]\nProduction: https://antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app [976ms]\nBuilding...\nBuilding...\nBuilding: Running build in Washington, D.C., USA (East) – iad1\nBuilding: Build machine configuration: 2 cores, 8 GB\nBuilding: Retrieving list of deployment files...\nBuilding: Previous build caches not available.\nBuilding: Downloading 7 deployment files...\nBuilding: Running \"vercel build\"\nBuilding: Vercel CLI 62.7.0\nBuilding: Build Completed in /vercel/output [85ms]\nBuilding: Deploying outputs...\n\u001b[2K\u001b[1A\u001b[2K\u001b[GProduction: https://antigense-cyberhack-lgpkeam5k-biobitworks.vercel.app [6s]\nCompleting...\nAliased: https://antigense-cyberhack.vercel.app [6s]\n",
+      "path": "public/data/defense-status.json",
+      "url": "https://antigense-cyberhack.vercel.app/data/defense-status.json"
+    },
+    "name": "publication",
+    "occurrence": {
+      "run_id": "run011-22a04cb305e9",
+      "seq": 18,
+      "ts": "2026-10-09T18:23:26+00:00"
+    },
+    "source": {
+      "blob": "evidence/run_011/blobs/8e5bd43748774394ed5f23becaebbe457e280d278d6634183d30d45c8d589ca6",
+      "bytes": 2109,
+      "sha256": "8e5bd43748774394ed5f23becaebbe457e280d278d6634183d30d45c8d589ca6"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:004c9eaa7c41d1a7e7ad496474a0ee7f29a4c5ee8cab0ce4d03fcb24c474d8d7",
+  "previous_mmr_root": "49dcf19f7c7ba22bdfa017e8418c56d2420bc7479e6ccb3d7448923fc3296c12",
+  "project_root": "655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

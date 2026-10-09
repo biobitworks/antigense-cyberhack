@@ -1,0 +1,76 @@
+{
+ "cases": {
+  "healthy_after": {
+   "exec_path": {
+    "healthy_auth": true,
+    "healthy_unauth": false,
+    "unhealthy_auth": false,
+    "unhealthy_unauth": false
+   },
+   "safe_path": {
+    "healthy_auth": true,
+    "healthy_unauth": false,
+    "unhealthy_auth": false,
+    "unhealthy_unauth": false
+   }
+  },
+  "healthy_before": {
+   "exec_path": {
+    "healthy_auth": true,
+    "healthy_unauth": false,
+    "unhealthy_auth": true,
+    "unhealthy_unauth": true
+   },
+   "safe_path": {
+    "healthy_auth": true,
+    "healthy_unauth": false,
+    "unhealthy_auth": true,
+    "unhealthy_unauth": true
+   }
+  },
+  "healthy_equivalence": true,
+  "malicious_exec_path": {
+   "result": {
+    "healthy_auth": true,
+    "healthy_unauth": false,
+    "unhealthy_auth": true,
+    "unhealthy_unauth": false
+   },
+   "side_effect_executed": true
+  },
+  "malicious_safe_path": {
+   "result": {
+    "healthy_auth": true,
+    "healthy_unauth": false,
+    "unhealthy_auth": true,
+    "unhealthy_unauth": false
+   },
+   "side_effect_executed": false
+  }
+ },
+ "conclusion": "exec() path runs attacker-controlled fixture code: True; exec-free path does not execute module-level code (AST-evaluates authorize() only): True",
+ "negative_control_deny_all": {
+  "ACCEPTED": false,
+  "blocks_unauthorized": true,
+  "legitimate_work_preserved": false,
+  "outputs": {
+   "healthy_auth": false,
+   "healthy_unauth": false,
+   "unhealthy_auth": false,
+   "unhealthy_unauth": false
+  },
+  "reason": "denies healthy authorized request; rejected as negative control"
+ },
+ "pinned_repair_after": {
+  "blocks_unauthorized": true,
+  "legitimate_work_preserved": true,
+  "matches_expected": true,
+  "outputs": {
+   "healthy_auth": true,
+   "healthy_unauth": false,
+   "unhealthy_auth": false,
+   "unhealthy_unauth": false
+  }
+ },
+ "scope": "FIXTURE_ONLY; no general safety claim"
+}

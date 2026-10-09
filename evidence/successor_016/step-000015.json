@@ -1,0 +1,139 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.canonical_records_unmodified": true,
+      "provided.count_matches": true,
+      "provided.ids_and_values_exact": true,
+      "provided.replay_preserved_occurrence_count": true,
+      "provided.result_hashes_equal": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.canonical_records_unmodified": "YES",
+      "provided.count_matches": "YES",
+      "provided.ids_and_values_exact": "YES",
+      "provided.replay_preserved_occurrence_count": "YES",
+      "provided.result_hashes_equal": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"f4a535d67825ffc0f804e9fa7b96a75d93181a102bdcac98571d2ede698095c5\"}",
+        "index": 0,
+        "leaf_sha256": "18c05e60b9e4f5353c36d41c5b5a2a5af629fda5ed7c53a4552ec5921ba30e12"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:a3aefff2125b4dc43bf420bffaa03f4fdc258f48ab5b2d3677adf599b115e3a7\"}",
+        "index": 1,
+        "leaf_sha256": "aaad185d1d4bee9c4ea1b56d520371036d7a31db04d79c40f078dfb1a321fdaa"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"fc3a75ba7fba98e78e94c2bf7dae5d0c5979f8875e3171b3a164e3344820cb65\"}",
+        "index": 2,
+        "leaf_sha256": "961aa1b70929fcac058ac3b76c45e866a43bb106d201c066b4e872eb377ed3f6"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"canonical_records_unmodified\":true,\"count_matches\":true,\"ids_and_values_exact\":true,\"replay_preserved_occurrence_count\":true,\"result_hashes_equal\":true},\"details\":{\"canonical_rows\":55,\"canonical_sha256\":\"8744be18dd90b92cc2777c195ea55e5e5a5f9a0e1403d85bcbe2b95551e4dfd5\",\"extra\":[],\"final_count\":{\"n\":55,\"u\":55},\"http\":200,\"mismatched\":[],\"missing\":[],\"ms\":186.6,\"query_id\":\"ag015-760eed255f8b4d22\",\"readback_rows\":55,\"readback_sha256\":\"8744be18dd90b92cc2777c195ea55e5e5a5f9a0e1403d85bcbe2b95551e4dfd5\",\"sql\":\"SELECT occurrence_id,run_id,seq,event_index,fco_id,name,state,admission,ts,source_sha256,step_merkle_root,mmr_prefix_root,checks_true,checks_false,http_status,elapsed_ms FROM antigense_events_016 FINAL ORDER BY occurrence_id FORMAT JSONEachRow\"},\"name\":\"ch015_reconciliation\",\"occurrence\":{\"run_id\":\"run011-92b0a70d7bc2\",\"seq\":14,\"ts\":\"2026-10-09T18:55:52+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "1444ecb80151dc43036db19bc2d994491fae645b0ecdd55260dc25398afa8e6f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.canonical_records_unmodified\":true,\"provided.count_matches\":true,\"provided.ids_and_values_exact\":true,\"provided.replay_preserved_occurrence_count\":true,\"provided.result_hashes_equal\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.canonical_records_unmodified\":\"YES\",\"provided.count_matches\":\"YES\",\"provided.ids_and_values_exact\":\"YES\",\"provided.replay_preserved_occurrence_count\":\"YES\",\"provided.result_hashes_equal\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "954f90c64bda59db7c6dd6c426b42d80f2add91e49440c6abe2a37b592c752d4"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.001992\",\"g_star\":\"0.006463\",\"inputs\":{\"admitted\":13,\"quarantined\":1,\"rejected\":0,\"steps\":14},\"normalized_entropy\":\"0.185616\",\"reference_g_star\":\"0.008455\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "51b0d4e9073489ceb32b7edb5f1ab8d125861cf63eefeb7b1ce9ff93eb0e0891"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "12acbb2203aa73a07f45edb320d6bc6de2bbb1b378fcbff610c2a8d3710d871d"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "-0.001992",
+    "g_star": "0.006463",
+    "inputs": {
+      "admitted": 13,
+      "quarantined": 1,
+      "rejected": 0,
+      "steps": 14
+    },
+    "normalized_entropy": "0.185616",
+    "reference_g_star": "0.008455",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:12acbb2203aa73a07f45edb320d6bc6de2bbb1b378fcbff610c2a8d3710d871d",
+  "observation": {
+    "checks": {
+      "canonical_records_unmodified": true,
+      "count_matches": true,
+      "ids_and_values_exact": true,
+      "replay_preserved_occurrence_count": true,
+      "result_hashes_equal": true
+    },
+    "details": {
+      "canonical_rows": 55,
+      "canonical_sha256": "8744be18dd90b92cc2777c195ea55e5e5a5f9a0e1403d85bcbe2b95551e4dfd5",
+      "extra": [],
+      "final_count": {
+        "n": 55,
+        "u": 55
+      },
+      "http": 200,
+      "mismatched": [],
+      "missing": [],
+      "ms": 186.6,
+      "query_id": "ag015-760eed255f8b4d22",
+      "readback_rows": 55,
+      "readback_sha256": "8744be18dd90b92cc2777c195ea55e5e5a5f9a0e1403d85bcbe2b95551e4dfd5",
+      "sql": "SELECT occurrence_id,run_id,seq,event_index,fco_id,name,state,admission,ts,source_sha256,step_merkle_root,mmr_prefix_root,checks_true,checks_false,http_status,elapsed_ms FROM antigense_events_016 FINAL ORDER BY occurrence_id FORMAT JSONEachRow"
+    },
+    "name": "ch015_reconciliation",
+    "occurrence": {
+      "run_id": "run011-92b0a70d7bc2",
+      "seq": 14,
+      "ts": "2026-10-09T18:55:52+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:a3aefff2125b4dc43bf420bffaa03f4fdc258f48ab5b2d3677adf599b115e3a7",
+  "previous_mmr_root": "fc3a75ba7fba98e78e94c2bf7dae5d0c5979f8875e3171b3a164e3344820cb65",
+  "project_root": "f4a535d67825ffc0f804e9fa7b96a75d93181a102bdcac98571d2ede698095c5",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

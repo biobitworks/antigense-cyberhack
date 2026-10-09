@@ -1,0 +1,20 @@
+{
+ "status": "UNKNOWN",
+ "contract": "Seedgraph sentence-diagramming contract",
+ "agent_foundry_breakpoint_impl": "UNKNOWN",
+ "searched": [
+  "active/agent-foundry/{agent_foundry,docs,schemas,fco,fcg}",
+  "active/seedgraph",
+  "active/gettingsciencedone/docs",
+  "hackathon/"
+ ],
+ "patterns": [
+  "sentence.?diagram",
+  "diagram(ming)? (contract|sentence)",
+  "breakpoint",
+  "diagram"
+ ],
+ "result": "no matches",
+ "declared_fallback": "docs/requirement_map_017.json (DECLARED_MANUAL_MAPPING)",
+ "claim_ceiling": "no parser success claimed"
+}

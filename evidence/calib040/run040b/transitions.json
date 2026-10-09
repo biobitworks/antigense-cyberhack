@@ -1,0 +1,88 @@
+{
+ "frames": 4633,
+ "fps": 30,
+ "transitions": [
+  {
+   "first_frame": 392,
+   "video_s": 13.0667,
+   "scene_from": 1,
+   "scene_to": 2,
+   "diff": 4.3,
+   "ocr_before_frame": 390,
+   "ocr_after_frame": 393
+  },
+  {
+   "first_frame": 690,
+   "video_s": 23.0,
+   "scene_from": 2,
+   "scene_to": 3,
+   "diff": 5.87,
+   "ocr_before_frame": 688,
+   "ocr_after_frame": 691
+  },
+  {
+   "first_frame": 1142,
+   "video_s": 38.0667,
+   "scene_from": 3,
+   "scene_to": 4,
+   "diff": 6.95,
+   "ocr_before_frame": 1140,
+   "ocr_after_frame": 1143
+  },
+  {
+   "first_frame": 1454,
+   "video_s": 48.4667,
+   "scene_from": 4,
+   "scene_to": 5,
+   "diff": 6.79,
+   "ocr_before_frame": 1452,
+   "ocr_after_frame": 1455
+  },
+  {
+   "first_frame": 1958,
+   "video_s": 65.2667,
+   "scene_from": 5,
+   "scene_to": 6,
+   "diff": 7.28,
+   "ocr_before_frame": 1956,
+   "ocr_after_frame": 1959
+  },
+  {
+   "first_frame": 2336,
+   "video_s": 77.8667,
+   "scene_from": 6,
+   "scene_to": 7,
+   "diff": 6.33,
+   "ocr_before_frame": 2334,
+   "ocr_after_frame": 2337
+  },
+  {
+   "first_frame": 2896,
+   "video_s": 96.5333,
+   "scene_from": 7,
+   "scene_to": 8,
+   "diff": 6.72,
+   "ocr_before_frame": 2894,
+   "ocr_after_frame": 2897
+  },
+  {
+   "first_frame": 3487,
+   "video_s": 116.2333,
+   "scene_from": 8,
+   "scene_to": 9,
+   "diff": 7.2,
+   "ocr_before_frame": 3485,
+   "ocr_after_frame": 3488
+  },
+  {
+   "first_frame": 3834,
+   "video_s": 127.8,
+   "scene_from": 9,
+   "scene_to": 10,
+   "diff": 5.14,
+   "ocr_before_frame": 3832,
+   "ocr_after_frame": 3835
+  }
+ ],
+ "unresolved": []
+}

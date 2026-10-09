@@ -1,0 +1,17 @@
+# Walkthrough reconciliation prompts — proposed successor 040
+
+## ChatGPT/OpenAI orchestrator
+Recover current PR1 head and AGENTS.md, UI038 receipt, walkthrough034b recording/assembly receipts, and frame039/039R1 reports. Preserve predecessor failures and roots.
+Build a current status matrix per claim, not per sponsor logo. Semgrep scans, ClickHouse readback and Akash inference are observed; do not repeat these operations. Historical failed calls remain failed with an explicit superseding successful occurrence.
+Own the missing live FCG transition acceptance test: sanitized client action -> distinct occurrence -> predecessor and typed edge -> canonical commitment -> persistence -> exact readback -> independent recomputation -> reload recovery. Include duplicate-action and tampered-commitment controls. Public browser credentials must never expose sponsor or database keys. Coordinate a separate worktree with Claude before touching shared files.
+Treat closed-state readback, billing, GPU/TEE attestation and bridge delivery as separate claims; test only available authorized read-only paths. If blocked or unsupported, retain the precise gap rather than turning it green.
+Update current UI and technical page from the resulting matrix. Preserve the historical replay graph. Bind the new recording scene manifest to exact source addresses, timestamps and construction version. Verify frame-scene boundaries and sampled proof progress/results. Keep full-frame integrity separate from full-frame semantic verification and narration alignment.
+The uploaded narration remains unchanged unless a factual statement changes. Do not request another voice recording solely because scripts or commitments change. No paid sponsor reruns. Publish reviewed media only after Byron reviews it.
+
+## Claude independent execution lane
+Read current PR1, docs/FRAME_CUSTODY_039R1.md and media/walkthrough-034b receipts. Use a separate worktree/new output directories. Do not run the obsolete018 plan or rerun paid compute/ingestion.
+Calibrate the frame039 scene timing discrepancy: source video frame at48s visibly shows scene5, while expected manifest predicts scene4. Recover actual first-frame/timeline offset and scene transition times from visible frames; preserve uncalibrated039 observations. Do not merely add a tolerance to make checks pass.
+Record a successor with machine-readable runtime events for scene activation and proof start/leaf progress/result, each tied to the recorder's monotonic clock and raw-video PTS mapping. Capture corresponding frame samples and hashes. Distinguish recorder logs from independent attestation. Make the visible DRM-free overlay point to a committed media/scene manifest; do not claim the newly written039R1 overlay recovers an older watermark implementation.
+Verify the new frame ledger and MMR independently, test tamper detection, and inspect actual narration alignment. Retain timeline_finished:false for034b.
+Prepare scene/order changes matching the orchestrator's current claim matrix. Do not modify shared index.html concurrently. Commit only your reviewed source/scripts/manifests/sanitized receipts to PR1; keep videos outside git with durable artifact pointers and hashes.
+Return exact paths, verifications, failures and gaps to the orchestrator. A written handoff does not prove bridge delivery. Do not publish or replace demo.mp4 without Byron's review.

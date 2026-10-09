@@ -1,0 +1,27 @@
+{
+ "claims": {
+  "full_frame_semantics": "NOT_TESTED",
+  "live_calculation_attestation": "NOT_TESTED (recorder log)",
+  "narration_alignment": "existing narration reviewed for scenes 1-10; scenes 11-12 have no narration",
+  "signature": "NOT_SIGNED"
+ },
+ "event_mmr_root_recomputed": true,
+ "every_event_prefix_recomputed": true,
+ "every_ledger_frame_hash_equals_decoded_frame": true,
+ "fcg_NOT_TESTED_step_not_upgraded": true,
+ "fcg_every_prefix_recomputed": true,
+ "fcg_mmr_root_recomputed": true,
+ "frame_mmr_prefix_roots_deterministic": true,
+ "frame_mmr_prefixes_checked": 124,
+ "frame_mmr_prefixes_consistent_with_incremental": true,
+ "frame_mmr_root_recomputed": true,
+ "framemd5_equals_committed": true,
+ "page_sha256_matches_recording": true,
+ "page_tree_root_recomputed": true,
+ "review_data_sha256_matches": true,
+ "scene_by_observed_transition_consistent_with_calibration": true,
+ "scenes_1_10_markup_identical_to_034": true,
+ "tamper_tests_all_detected": true,
+ "tree_leaf_files_match_working_tree": false,
+ "video_sha256_matches_receipts": true
+}

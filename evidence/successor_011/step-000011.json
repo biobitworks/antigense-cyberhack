@@ -1,0 +1,135 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.http_200": true,
+      "provided.not_truncated": true,
+      "provided.video_hash_matches_release": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.http_200": "YES",
+      "provided.not_truncated": "YES",
+      "provided.video_hash_matches_release": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b\"}",
+        "index": 0,
+        "leaf_sha256": "0b01f0cc27c51807fcfd3d7c594b0d7e3d8043adc9ddfc27c89048c175cdc0ac"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:e2807ed934f4cde1218c35f8bf054db5b2b4bbcdc4bc6e7dc15d5b1ceba5e4ac\"}",
+        "index": 1,
+        "leaf_sha256": "a3c9e4028cb8dcefeb4ec64f390fc2dada6fb13e7693ee8aecabbcc8f43fc5e7"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"abf6aa56ebbe644d9ae7a11c8bab685d413a68bd0038a588777cf6d509c0bc1e\"}",
+        "index": 2,
+        "leaf_sha256": "81b5cf6d294ad008dc26af75714aaaedce7e71611620dd262e627e25895d4dfe"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"http_200\":true,\"not_truncated\":true,\"video_hash_matches_release\":true},\"details\":{\"result\":{\"allowlisted\":true,\"bytes\":22627,\"content_type\":\"application/json; charset=utf-8\",\"elapsed_ms\":72.4,\"method\":\"GET\",\"sha256\":\"ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89\",\"status\":200,\"truncated\":false,\"ts\":\"2026-10-09T18:22:48+00:00\",\"url\":\"https://antigense-cyberhack.vercel.app/data/run.json\"}},\"name\":\"monitor_data_run.json\",\"occurrence\":{\"run_id\":\"run011-f6d106aea6b8\",\"seq\":10,\"ts\":\"2026-10-09T18:22:49+00:00\"},\"source\":{\"blob\":\"evidence/run_011/blobs/ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89\",\"bytes\":22627,\"sha256\":\"ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "c6ef06df98919e4458d8d254ca0e4a2a288d2141429ffa3ec0457c8a1cc7fd58"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.http_200\":true,\"provided.not_truncated\":true,\"provided.video_hash_matches_release\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.http_200\":\"YES\",\"provided.not_truncated\":\"YES\",\"provided.video_hash_matches_release\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "6defc2de0fd1d55d929bcb156305b9c739c54757847f4d0d0260f0de1939463f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":10,\"quarantined\":0,\"rejected\":0,\"steps\":10},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "a03da063d5ff6d7b9f14a225e219f5ff5916231f4d553ac55d678ca083fe214a"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "0b2187367dfc49b6bd0cac3318f57d44da988ffe4c385c7bdebbc4574d5b135a"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 10,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 10
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:0b2187367dfc49b6bd0cac3318f57d44da988ffe4c385c7bdebbc4574d5b135a",
+  "observation": {
+    "checks": {
+      "http_200": true,
+      "not_truncated": true,
+      "video_hash_matches_release": true
+    },
+    "details": {
+      "result": {
+        "allowlisted": true,
+        "bytes": 22627,
+        "content_type": "application/json; charset=utf-8",
+        "elapsed_ms": 72.4,
+        "method": "GET",
+        "sha256": "ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89",
+        "status": 200,
+        "truncated": false,
+        "ts": "2026-10-09T18:22:48+00:00",
+        "url": "https://antigense-cyberhack.vercel.app/data/run.json"
+      }
+    },
+    "name": "monitor_data_run.json",
+    "occurrence": {
+      "run_id": "run011-f6d106aea6b8",
+      "seq": 10,
+      "ts": "2026-10-09T18:22:49+00:00"
+    },
+    "source": {
+      "blob": "evidence/run_011/blobs/ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89",
+      "bytes": 22627,
+      "sha256": "ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:e2807ed934f4cde1218c35f8bf054db5b2b4bbcdc4bc6e7dc15d5b1ceba5e4ac",
+  "previous_mmr_root": "abf6aa56ebbe644d9ae7a11c8bab685d413a68bd0038a588777cf6d509c0bc1e",
+  "project_root": "655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

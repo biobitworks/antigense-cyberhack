@@ -1,0 +1,118 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.not_tested_not_success": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.not_tested_not_success": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b\"}",
+        "index": 0,
+        "leaf_sha256": "0b01f0cc27c51807fcfd3d7c594b0d7e3d8043adc9ddfc27c89048c175cdc0ac"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:82764ac2f92373f4ab684e8b63e7d4ca24c96b55464b6b20e5acecfd8194ccc8\"}",
+        "index": 1,
+        "leaf_sha256": "fc535c9b3e5206b635da4096fa79831a1a8f6754efd7c19161ab8d8aeccbe2dc"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"dbdde5e121e64ad42d72144a74a805e9ff99ef67f9ebc850184a3fc88ff25987\"}",
+        "index": 2,
+        "leaf_sha256": "33d6f34a2f3cdb1b4b1e29ef97a92cc6e603c27660bd2439d97e14bd26b22b09"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"not_tested_not_success\":true},\"details\":{\"result\":{\"credential_present\":false,\"model_set\":false,\"reason\":\"AKASHML_API_KEY/AKASHML_MODEL not set\",\"state\":\"NOT_TESTED\"}},\"name\":\"neg_missing_akash_credentials\",\"occurrence\":{\"run_id\":\"run011-f6d106aea6b8\",\"seq\":6,\"ts\":\"2026-10-09T18:22:48+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "7165e75c80ce12a6e2efdc68db690ea858bec83b7b215452e57913a603ee9c2b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.not_tested_not_success\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.not_tested_not_success\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "5fafd136a608633a2ee1596b42aa0897d2180b03a5b1db3748a6dd49974700ec"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":6,\"quarantined\":0,\"rejected\":0,\"steps\":6},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "654440349e4fece6f3ad77ee0fcad9546d8c07b88d37286f2169525de639bec3"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "78307cf4cfee3cc66631f868e8808ee526511d62683e30b25836e2eb42873d1a"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 6,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 6
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:78307cf4cfee3cc66631f868e8808ee526511d62683e30b25836e2eb42873d1a",
+  "observation": {
+    "checks": {
+      "not_tested_not_success": true
+    },
+    "details": {
+      "result": {
+        "credential_present": false,
+        "model_set": false,
+        "reason": "AKASHML_API_KEY/AKASHML_MODEL not set",
+        "state": "NOT_TESTED"
+      }
+    },
+    "name": "neg_missing_akash_credentials",
+    "occurrence": {
+      "run_id": "run011-f6d106aea6b8",
+      "seq": 6,
+      "ts": "2026-10-09T18:22:48+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:82764ac2f92373f4ab684e8b63e7d4ca24c96b55464b6b20e5acecfd8194ccc8",
+  "previous_mmr_root": "dbdde5e121e64ad42d72144a74a805e9ff99ef67f9ebc850184a3fc88ff25987",
+  "project_root": "655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

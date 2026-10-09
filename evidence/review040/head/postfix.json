@@ -1,0 +1,18 @@
+{
+ "F2_resolved": false,
+ "F2a_resolved": true,
+ "after_fixture_matches_declared_policy": true,
+ "agent011_regress_matches_safe_eval_on_real_fixtures": true,
+ "agent011_regress_on_malicious_fixture": {
+  "result": {
+   "healthy_auth": true,
+   "healthy_unauth": false,
+   "unhealthy_auth": true,
+   "unhealthy_unauth": false
+  },
+  "side_effect_executed": false
+ },
+ "agent011_sha256": "1e1a2ecee9e73210b45e05bef0e9b6a961c12f5593fb2b6389cf35b12d227475",
+ "cascade_auth_exec_still_runs_fixture_code": true,
+ "scope": "FIXTURE_ONLY"
+}

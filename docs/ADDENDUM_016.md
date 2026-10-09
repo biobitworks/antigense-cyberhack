@@ -1,0 +1,3 @@
+# 016 addendum
+Semgrep scan (p/python + p/security-audit, registry rules fetched at scan time, rule bytes NOT retained) of our own AI-written agent code found exec() at agent/agent011.py:89 (regression helper executing repo fixtures). agent/safe_eval016.py is an exec-free AST evaluator; 016 checks it reproduces the exec-based results on both fixtures and rescans the new code. agent011.py is frozen and unchanged; the finding stays on record.
+ch016 also: loads CLICKHOUSE_* from .env (gitignored, never logged), normalizes numeric formatting before hashing so readback and canonical hashes are comparable, and writes table antigense_events_016. Ceilings as in 015 addendum; rule coverage is registry rules, not exhaustive.

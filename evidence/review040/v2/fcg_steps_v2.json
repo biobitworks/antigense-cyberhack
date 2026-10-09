@@ -1,0 +1,670 @@
+{
+ "append_only_prefix_reproduces_prior_root": true,
+ "edges_added": 21,
+ "every_prefix_recomputed_independently": true,
+ "independent_root": "b6aafad91777823661b5e7f32e28dc7fc18ce217000daa47a11c831651d7bf3c",
+ "mmr": {
+  "algorithm": "HYDRALAMP_MMR_V1",
+  "leaf_count": 14,
+  "leaves": [
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+     "event_hash": "8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+     "event_index": 1
+    },
+    "leaf_sha256": "c3760ef89c5b2f846a83f08c03f8009c458e20313a93393221bd44e9338aa5a5"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:e0019de1cc693f3f4be18c004d88427596ebe143f0d26f200eb380ed22acbbe8",
+     "event_hash": "e0019de1cc693f3f4be18c004d88427596ebe143f0d26f200eb380ed22acbbe8",
+     "event_index": 2
+    },
+    "leaf_sha256": "3f4e8fd3f88da80d63ed0d168891af403e88d6dba55418f9b8a39b3906eb8be4"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:2206e44e316557ac798e749e4e699a216a9181d11f98b69a0fb0d4997a237d60",
+     "event_hash": "2206e44e316557ac798e749e4e699a216a9181d11f98b69a0fb0d4997a237d60",
+     "event_index": 3
+    },
+    "leaf_sha256": "3818a5cf9d633f4ac8b2a11496995eda6f8fc64c7a9c989d498452da8ca18f82"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:946cfa6d0ac881b4b29103e30174a7cdcb995b5e379a9f83c256af0b6ff9da3f",
+     "event_hash": "946cfa6d0ac881b4b29103e30174a7cdcb995b5e379a9f83c256af0b6ff9da3f",
+     "event_index": 4
+    },
+    "leaf_sha256": "43edcbd065a806452115568993cfa68d863b2d4140094d02c77e9895a7428cfe"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:99de52fb31de862795bce31b5968ef724a60bebdb7a22e83a0f46d1b0aee9461",
+     "event_hash": "99de52fb31de862795bce31b5968ef724a60bebdb7a22e83a0f46d1b0aee9461",
+     "event_index": 5
+    },
+    "leaf_sha256": "8e9917f6b56e7d7c427e19a5f27e397ec9481271a38857db3dabca4611e32dd4"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:efc65d336b7dbb90372dfeafba39092168c3192e845f1ec6e90f93fe4969a51b",
+     "event_hash": "efc65d336b7dbb90372dfeafba39092168c3192e845f1ec6e90f93fe4969a51b",
+     "event_index": 6
+    },
+    "leaf_sha256": "3305db6a304b83a29a3286248d76768bfa0f1e2e928c91ee1fea3d8786a18e70"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:a5fda089d2ac572cfee2e131581f9feb82d499fcf89b4ec4da9a752b5327e5f0",
+     "event_hash": "a5fda089d2ac572cfee2e131581f9feb82d499fcf89b4ec4da9a752b5327e5f0",
+     "event_index": 7
+    },
+    "leaf_sha256": "667febb8ae0532dc914c100aca19acb859b24424fd4585673c9542847e2a23c5"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:0b5c0e2255b930b56d83b7ae5d80d0508244dbd5daa14a2ca81d4dc87c943d17",
+     "event_hash": "0b5c0e2255b930b56d83b7ae5d80d0508244dbd5daa14a2ca81d4dc87c943d17",
+     "event_index": 8
+    },
+    "leaf_sha256": "60d51febc45cd9b0ea1c2e24547d6e572745ff9eb520da72c2e2b378c5539bb9"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:9dbdb18a90017374818a86ba58f244b39330d2860031af434c5ce44c6c17032a",
+     "event_hash": "9dbdb18a90017374818a86ba58f244b39330d2860031af434c5ce44c6c17032a",
+     "event_index": 9
+    },
+    "leaf_sha256": "cd874728fd9c6bf5b1ab873d1b7a98eb8eaf126834eda66da723795c4857104a"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:c8ea4b2265cbcabe34fd4bcf8307b4eee3d7fef5d9f679dd262c94fdcd130aef",
+     "event_hash": "c8ea4b2265cbcabe34fd4bcf8307b4eee3d7fef5d9f679dd262c94fdcd130aef",
+     "event_index": 10
+    },
+    "leaf_sha256": "feed4c052e4e411a7af7428469d820b3767f54ec584dbdefa07fdeeac79d3910"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:3f5747270e4dc6baf835f4d26a9ae29a00d2c83b08750b2cd9edb388e3be6774",
+     "event_hash": "3f5747270e4dc6baf835f4d26a9ae29a00d2c83b08750b2cd9edb388e3be6774",
+     "event_index": 11
+    },
+    "leaf_sha256": "5f397db7bafc15d32e39718e334f9e36a0650a91861c1606918cfe58921d5ea2"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:e6ee1b72e3b51b381b11342da896b932a61ae8ac0f4f1c591ab4c57fcd00945e",
+     "event_hash": "e6ee1b72e3b51b381b11342da896b932a61ae8ac0f4f1c591ab4c57fcd00945e",
+     "event_index": 12
+    },
+    "leaf_sha256": "a6bac81653ea98a6787e722732b52b0237679bda9bb6a6d21d66a722cad05f79"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:55d48c139ec03e835b3b65fcb35116831f002a88ccdc8ba1761cff494393eeec",
+     "event_hash": "55d48c139ec03e835b3b65fcb35116831f002a88ccdc8ba1761cff494393eeec",
+     "event_index": 13
+    },
+    "leaf_sha256": "81e7ffe4fb7b9559078b0adbf620efbf45e85252f9e45738debb50978f14e5cd"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:3c7b8a7704b25ca300781d657fc388b8b534c821ddb93343052cf93f481f3f6d",
+     "event_hash": "3c7b8a7704b25ca300781d657fc388b8b534c821ddb93343052cf93f481f3f6d",
+     "event_index": 14
+    },
+    "leaf_sha256": "0232f019058ab1355b2bbc432c3f9a8bc531cb3255f73432954c198344d8445c"
+   }
+  ],
+  "peaks": [
+   "413816ab558a4eeb87dcfe9e76b76d4be23db73c83d37198f3b813fe3b4c8b6d",
+   "6c74d489bdf596506a69a5d895da25ec2594edd7fa1e4e04d53d69c9d0cc0b39",
+   "bef44ccdc309297aea5f595960208df5278dd2f99b91a51008eaa6f75e81d28e"
+  ],
+  "root": "b6aafad91777823661b5e7f32e28dc7fc18ce217000daa47a11c831651d7bf3c"
+ },
+ "prior_root": "3f3349e6481798b345181c270d98475d13e9cd2033d26750054947734bdd11f5",
+ "records": [
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "all_inclusion_proofs_verify": true,
+    "file_hashes_recomputed_from_bytes": true,
+    "root_equals_custody_merkle": true
+   },
+   "checks_false": 0,
+   "checks_true": 3,
+   "details": {
+    "commit": "7433431a78225e8e2d171ec4a4177f19f48d342b",
+    "leaf_count": 25,
+    "tree_root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "scope_tree",
+   "parent_fco_id": "genesis",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 1
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "exactly_one_finding": true,
+    "scanner_errors_zero": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "configs": [
+     "p/python",
+     "p/security-audit",
+     "p/secrets"
+    ],
+    "files_scanned": 31,
+    "findings": [
+     {
+      "at": [
+       "exec-detected@89"
+      ],
+      "id": "agent/agent011.py"
+     }
+    ],
+    "rules_retained": false,
+    "scan_json_sha256": "d9245d6e8e206dad82d724dc9642f44ff9f3ede1dd8ddafef5c8fd679dc64e52",
+    "scanned_but_untracked_and_unreviewed": [
+     "agent/akash_doctor023.py",
+     "agent/calibrate040.py",
+     "agent/console_probe027.py",
+     "agent/presentation022.py",
+     "agent/record_walkthrough040.py",
+     "scripts/gum_doctor_akash023.sh"
+    ],
+    "tree_files": 25,
+    "version": "1.180.0"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "semgrep_full_scan",
+   "parent_fco_id": "fco:sha256:8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 2
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "every_leaf_has_depth_label": true,
+    "unreviewed_remainder_declared": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "depth_counts": {
+     "READ_FULL": 23,
+     "READ_PARTIAL": 1,
+     "SKIMMED_PATTERNS": 1
+    },
+    "reviews_sha256": "7832ee655246e526f79f6754e33576d7cfb44c50189197baa9494442ec86fca9"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "review_verdicts",
+   "parent_fco_id": "fco:sha256:e0019de1cc693f3f4be18c004d88427596ebe143f0d26f200eb380ed22acbbe8",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 3
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "most_findings_not_semgrep_detectable": true,
+    "semgrep_ce_found_exactly_the_exec_finding": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "by_severity": {
+     "info": 8,
+     "low": 4,
+     "low-medium": 2,
+     "medium": 2
+    },
+    "findings": 16,
+    "semgrep_detectable": 1
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "findings_registry",
+   "parent_fco_id": "fco:sha256:2206e44e316557ac798e749e4e699a216a9181d11f98b69a0fb0d4997a237d60",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 4
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "F12_check035_blind_to_offset": true,
+    "F1_admission_ignores_checks": true,
+    "F2_cascade_exec_runs_fixture_code": true
+   },
+   "checks_false": 0,
+   "checks_true": 3,
+   "details": {
+    "demos_sha256": "f40bc5895031baf8f0215c7dcd7379b82cdaf4d4b2f1405a016bfc292811e257"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "executed_demonstrations",
+   "parent_fco_id": "fco:sha256:946cfa6d0ac881b4b29103e30174a7cdcb995b5e379a9f83c256af0b6ff9da3f",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 5
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "all_tamper_located_correctly": true,
+    "fewer_comparisons_than_linear": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "trials": [
+     {
+      "correct": true,
+      "hash_comparisons": 6,
+      "linear_scan_comparisons": 25,
+      "located_index": 0,
+      "path": "agent/agent011.py",
+      "root_changed": true,
+      "tampered_index": 0
+     },
+     {
+      "correct": true,
+      "hash_comparisons": 10,
+      "linear_scan_comparisons": 25,
+      "located_index": 23,
+      "path": "src/custody.py",
+      "root_changed": true,
+      "tampered_index": 23
+     },
+     {
+      "correct": true,
+      "hash_comparisons": 8,
+      "linear_scan_comparisons": 25,
+      "located_index": 24,
+      "path": "src/server.py",
+      "root_changed": true,
+      "tampered_index": 24
+     },
+     {
+      "correct": true,
+      "hash_comparisons": 6,
+      "linear_scan_comparisons": 25,
+      "located_index": 0,
+      "path": "agent/agent011.py",
+      "root_changed": true,
+      "tampered_index": 0
+     }
+    ]
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "breakpoint_localization",
+   "parent_fco_id": "fco:sha256:99de52fb31de862795bce31b5968ef724a60bebdb7a22e83a0f46d1b0aee9461",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 6
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "scenario_is_hypothetical_prior_review": true,
+    "set_derived_from_hash_diff": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "baseline_commit": "43c2c65",
+    "baseline_root": "2951248d94c75e8a02b608d1d9823d55800715494702d9505986dd27bd20a1cb",
+    "changed": 8,
+    "head_root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57",
+    "lines_changed_files": 491,
+    "lines_total": 1778,
+    "modified": 0,
+    "new": 8,
+    "of_files": 25,
+    "semgrep_changed_only_s": [
+     [
+      2.19,
+      0,
+      0
+     ],
+     [
+      2.26,
+      0,
+      0
+     ],
+     [
+      2.27,
+      0,
+      0
+     ]
+    ],
+    "semgrep_full_s": [
+     [
+      4.1,
+      1,
+      0
+     ],
+     [
+      4.01,
+      1,
+      0
+     ],
+     [
+      3.37,
+      1,
+      0
+     ]
+    ]
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "incremental_rereview_set",
+   "parent_fco_id": "fco:sha256:efc65d336b7dbb90372dfeafba39092168c3192e845f1ec6e90f93fe4969a51b",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 7
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "time_saving_measured": false
+   },
+   "checks_false": 1,
+   "checks_true": 0,
+   "details": {
+    "reason": "no matched baseline of human or model review time; only set sizes, hash comparisons and Semgrep wall time are measured"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "review_time_saving",
+   "parent_fco_id": "fco:sha256:a5fda089d2ac572cfee2e131581f9feb82d499fcf89b4ec4da9a752b5327e5f0",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "NOT_TESTED",
+   "step": 8
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "prior_tree_recomputed": true,
+    "root_equals_custody_merkle": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "head": "d5d032a7ca958cd303118a990cc2aee8aec551cd",
+    "leaf_count": 27,
+    "prior_tree_root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57",
+    "tree_root": "c7f1de0241bbf5a895f282a3f2ca298a9e259921b76f9f3bb1af1bd801eafb15"
+   },
+   "g_star": "UNVALIDATED",
+   "name": "scope_tree_v2",
+   "parent_fco_id": "fco:sha256:0b5c0e2255b930b56d83b7ae5d80d0508244dbd5daa14a2ca81d4dc87c943d17",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 9
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "scanner_errors_zero": true,
+    "zero_findings_at_head": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "configs": [
+     "p/python",
+     "p/security-audit",
+     "p/secrets"
+    ],
+    "files_scanned": 36,
+    "findings": 0,
+    "scan_json_sha256": "348d203bcb540a45b7a92a41b0255693a398163fce69da017896fcf0d8b0eb27",
+    "version": "1.180.0"
+   },
+   "g_star": "UNVALIDATED",
+   "name": "semgrep_head_scan",
+   "parent_fco_id": "fco:sha256:9dbdb18a90017374818a86ba58f244b39330d2860031af434c5ce44c6c17032a",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 10
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "root_descent_exact": false,
+    "set_derived_from_path_hash_diff": true,
+    "unchanged_leaves_reused_by_hash": 24
+   },
+   "checks_false": -22,
+   "checks_true": 25,
+   "details": {
+    "added": [
+     "agent/live037.html",
+     "agent/live037.py"
+    ],
+    "changed": 3,
+    "lines_changed_files": 490,
+    "lines_total": 2064,
+    "modified": [
+     "agent/agent011.py"
+    ],
+    "of_files": 27,
+    "removed": [],
+    "root_descent": {
+     "false_positive_positions": 12,
+     "flagged_positions": 15,
+     "hash_comparisons": 41,
+     "linear_scan_comparisons": 27,
+     "note": "positional tree: inserting files shifts later leaves, so root-descent flags the shifted suffix; path-aware hash map is exact (F17)",
+     "true_changed_by_path": 3
+    },
+    "semgrep_changed_only_s": [
+     [
+      3.33,
+      0,
+      0
+     ],
+     [
+      3.77,
+      0,
+      0
+     ],
+     [
+      3.23,
+      0,
+      0
+     ]
+    ],
+    "semgrep_full_s": [
+     [
+      6.45,
+      0,
+      0
+     ],
+     [
+      4.94,
+      0,
+      0
+     ],
+     [
+      3.74,
+      0,
+      0
+     ]
+    ]
+   },
+   "g_star": "UNVALIDATED",
+   "name": "incremental_rereview_set",
+   "parent_fco_id": "fco:sha256:c8ea4b2265cbcabe34fd4bcf8307b4eee3d7fef5d9f679dd262c94fdcd130aef",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 11
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "F2_still_open": true,
+    "F2a_resolved_verified": true,
+    "fixtures_behavior_unchanged": true
+   },
+   "checks_false": 0,
+   "checks_true": 3,
+   "details": {
+    "postfix_sha256": "e32542e181e65277ea6c89004141b98140bffaee3f63b271dd275ab67b7c706c"
+   },
+   "g_star": "UNVALIDATED",
+   "name": "postfix_controlled_check",
+   "parent_fco_id": "fco:sha256:3f5747270e4dc6baf835f4d26a9ae29a00d2c83b08750b2cd9edb388e3be6774",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 12
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "statuses_from_executed_checks_only": true
+   },
+   "checks_false": 0,
+   "checks_true": 1,
+   "details": {
+    "findings": 20,
+    "open": 18,
+    "partially_resolved": 1,
+    "resolved_verified": 1
+   },
+   "g_star": "UNVALIDATED",
+   "name": "finding_status_update",
+   "parent_fco_id": "fco:sha256:e6ee1b72e3b51b381b11342da896b932a61ae8ac0f4f1c591ab4c57fcd00945e",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 13
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "time_saving_measured": false
+   },
+   "checks_false": 1,
+   "checks_true": 0,
+   "details": {
+    "reason": "no matched baseline of human or model review time"
+   },
+   "g_star": "UNVALIDATED",
+   "name": "review_time_saving",
+   "parent_fco_id": "fco:sha256:55d48c139ec03e835b3b65fcb35116831f002a88ccdc8ba1761cff494393eeec",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "NOT_TESTED",
+   "step": 14
+  }
+ ],
+ "tamper_detected": {
+  "alter_earlier_step": true,
+  "alter_later_step": true,
+  "delete_step": true,
+  "swap_steps": true,
+  "upgrade_NOT_TESTED": true
+ }
+}

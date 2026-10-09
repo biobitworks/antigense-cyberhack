@@ -1,0 +1,3 @@
+# 019 addendum - actual Akash inference
+agent/akash019.py reuses agent011.py (unchanged) to run Semgrep on the sanitized fixtures and call AkashML (OpenAI-compatible, https://api.akashml.com/v1) with the Semgrep finding and the teaching-fixture source. Own successor freeze (evidence/successor_019) records the current bytes of public/index.html, which another session edited after the 011 freeze; the 011 freeze and its history are untouched.
+Ceiling: managed AkashML inference only. No GPU lease, attestation, confidentiality or private-deployment claim. AI advice is untrusted evidence, never applied, cannot authorize anything. Credentials from env only; never recorded.

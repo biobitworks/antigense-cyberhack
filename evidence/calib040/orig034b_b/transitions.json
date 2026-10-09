@@ -1,0 +1,87 @@
+{
+ "frames": 4265,
+ "fps": 30,
+ "transitions": [
+  {
+   "first_frame": 369,
+   "video_s": 12.3,
+   "scene_from": 1,
+   "scene_to": 2,
+   "diff": 4.3,
+   "ocr_before_frame": 367,
+   "ocr_after_frame": 370
+  },
+  {
+   "first_frame": 666,
+   "video_s": 22.2,
+   "scene_from": 2,
+   "scene_to": 3,
+   "diff": 5.94,
+   "ocr_before_frame": 664,
+   "ocr_after_frame": 667
+  },
+  {
+   "first_frame": 1120,
+   "video_s": 37.3333,
+   "scene_from": 3,
+   "scene_to": 4,
+   "diff": 7.02,
+   "ocr_before_frame": 1118,
+   "ocr_after_frame": 1121
+  },
+  {
+   "first_frame": 1432,
+   "video_s": 47.7333,
+   "scene_from": 4,
+   "scene_to": 5,
+   "diff": 6.9,
+   "ocr_before_frame": 1430,
+   "ocr_after_frame": 1433
+  },
+  {
+   "first_frame": 1938,
+   "video_s": 64.6,
+   "scene_from": 5,
+   "scene_to": 6,
+   "diff": 6.42,
+   "ocr_before_frame": 1936,
+   "ocr_after_frame": 1939
+  },
+  {
+   "first_frame": 2315,
+   "video_s": 77.1667,
+   "scene_from": 6,
+   "scene_to": 7,
+   "note": "INFERRED_BETWEEN_OCR_CONFIRMED_NEIGHBOURS (OCR missed counter)",
+   "diff": 6.46
+  },
+  {
+   "first_frame": 2871,
+   "video_s": 95.7,
+   "scene_from": 7,
+   "scene_to": 8,
+   "diff": 6.77,
+   "ocr_before_frame": 2869,
+   "ocr_after_frame": 2872
+  },
+  {
+   "first_frame": 3455,
+   "video_s": 115.1667,
+   "scene_from": 8,
+   "scene_to": 9,
+   "diff": 8.11,
+   "ocr_before_frame": 3453,
+   "ocr_after_frame": 3456
+  },
+  {
+   "first_frame": 3807,
+   "video_s": 126.9,
+   "scene_from": 9,
+   "scene_to": 10,
+   "diff": 5.38,
+   "ocr_before_frame": 3805,
+   "ocr_after_frame": 3808
+  }
+ ],
+ "unresolved": []
+}

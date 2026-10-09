@@ -1,0 +1,249 @@
+{
+  "gpu": {
+    "close": {
+      "response": {
+        "success": true
+      },
+      "status": 200
+    },
+    "expected_mmr_root": "f67a3e74aa52f606784faec7cece9da6b071ff1984e762d72c662031a881b244",
+    "inference": {
+      "advice_excerpt": "{\n  \"summary\": \"A custom teaching fixture that intentionally unsafe.\",\n  \"root_cause\": \"The code intentionally violates the security rule by returning `True` when a worker is not healthy.\",\n  \"fix\": \"Remove the custom teaching fixture and ensure it does not return `True` when a worker is not healthy.\",\n  \"risk\": \"High risk due to potential unauthorized access.\"\n}",
+      "eval_count": 81,
+      "model": "qwen2.5:0.5b",
+      "ms": 3466.4,
+      "prompt_eval_count": 175,
+      "schema_valid": true,
+      "status": 200
+    },
+    "leaf_count": 11,
+    "ledger": [
+      {
+        "event_hash": "e98c5a02087be897ac7aada6a026a4a950a9156ff37d18d9a363d2b96910d267",
+        "event_index": 1,
+        "fco_id": "fco:sha256:e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a"
+      },
+      {
+        "event_hash": "83643760ee44e2a4f27958015674816cedc9573faaded126b2769a9da5aba4e6",
+        "event_index": 2,
+        "fco_id": "fco:sha256:afe9b4d74a4bc7ae14f9d4b14050326c4cf9b6a61a479e6cfe420e4780a07c98"
+      },
+      {
+        "event_hash": "c4c99c0a82be053c16320c6f4bae5b7e3940eee12aa0207a071c3e783aaf417c",
+        "event_index": 3,
+        "fco_id": "fco:sha256:9027fa112c318ab7b4f5c4a7aef120aa71bdbea242ee9f9528a1fb54651985d3"
+      },
+      {
+        "event_hash": "6ec031535ea2d015ed4a38f5348eea1a3c3a78909e22e874382141bc30cd4283",
+        "event_index": 4,
+        "fco_id": "fco:sha256:3295639c5ef5ec47960e3e69206edd71475b6d314fcf47d73085d49ed309143f"
+      },
+      {
+        "event_hash": "d4e2b0b134a126fab2deb0a9386af5dd1daf0408a649ed66fe2bf39e0fa7bbbd",
+        "event_index": 5,
+        "fco_id": "fco:sha256:78108ab55780a31e9a9f801e8f27d2196842cefba7fe6973df40302076b34fdf"
+      },
+      {
+        "event_hash": "e3cf3f69886e0fc64c3d5046ed27c4ec397724a1d4565ca6f230b3c6baa1dc2d",
+        "event_index": 6,
+        "fco_id": "fco:sha256:092b3147c359f4fe97c187d262662cc6b657fabf577420c196b2ef0159f86164"
+      },
+      {
+        "event_hash": "3e3a320b146e630ebc5560eea333dc1820e3f745c9ab2bc1a73ea3808b17f482",
+        "event_index": 7,
+        "fco_id": "fco:sha256:d501c5936af8b3b57b50dcaae99339d1ab70c1bfa3304446b881f54ceb05606a"
+      },
+      {
+        "event_hash": "4b5899512030d7e54335e197dd64747055fcb6391cbe422acce7bdd69a4f97e0",
+        "event_index": 8,
+        "fco_id": "fco:sha256:20a6c3e84ebc6331858891dd8c73a83190b3a2c9773e570ed0d6ba1f2dd5ed09"
+      },
+      {
+        "event_hash": "60e204cd9d2be5b455f28bae46b6c26698bf8c016af92a59a991c89f2e516b52",
+        "event_index": 9,
+        "fco_id": "fco:sha256:8694223547616ccae90afa814422b7b95173de4f368957a7c77439b5763bc258"
+      },
+      {
+        "event_hash": "8fa17ef9724961725b74710d050ec9491a26df67ef7097cc37a37e741f731c6d",
+        "event_index": 10,
+        "fco_id": "fco:sha256:430a1762ad149fcacf5631a2f7ba790d01ca2cf7a9a6f028bbf73572b9dc0db1"
+      },
+      {
+        "event_hash": "55a00ea5cffc449217959e6bba8f671262f6c6c57073665086b11bcfb2a5e539",
+        "event_index": 11,
+        "fco_id": "fco:sha256:fb4b8caa1318ad8058d9ea68914865a959a3fdb0aa1468bccafce240374d32c2"
+      }
+    ],
+    "not_claimed": [
+      "hardware attestation",
+      "verified final closed state",
+      "measured billing",
+      "cost savings"
+    ],
+    "record": "evidence/successor_024",
+    "separate_from_incident": true,
+    "vram": [
+      {
+        "name": "qwen2.5:0.5b",
+        "size": 1299800320,
+        "size_vram": 1299800320
+      }
+    ]
+  },
+  "id": "walkthrough-034",
+  "incident": {
+    "clickhouse": {
+      "exact_values_match": true,
+      "http": 200,
+      "insert_ms": 300.423,
+      "occurrence_count_preserved": true,
+      "query": "SELECT * FROM antigense_presentation_022 FINAL WHERE run_id='run-20261009T191354Z-a98b5c03' ORDER BY seq",
+      "query_ms": 160.706,
+      "readback_rows": 11,
+      "readback_sha256": "22fab1e10c3a246b21fe443dbd72b2aba6f5b7a9ef7663b7cee6bdf873f3e92a",
+      "replay_ms": 255.126,
+      "replay_rows_sent": 11,
+      "rows_sent": 11
+    },
+    "clickhouse_checks": {
+      "exact_readback": true,
+      "replay_count_preserved": true,
+      "same_incident_ids": true
+    },
+    "expected_mmr_root": "66c3e6e8a64f36f1290a598606d6b9034de1bca62ef559d058e5013d95c12723",
+    "fallback": {
+      "scope": "pure boolean teaching fixture; no real access granted",
+      "unauthorized_request_allowed": true
+    },
+    "fault": {
+      "corrupted_sha256": "c1141ba6e77d0f6230607c8b2aab95a82a98c2b030ed18df6eb77e0b46884130",
+      "fault": "SIMULATED_BYTE_XOR",
+      "hardware_fault_observed": false,
+      "original_sha256": "14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748",
+      "xor_mask": 1
+    },
+    "id": "run-20261009T191354Z-a98b5c03",
+    "leaf_count": 13,
+    "ledger": [
+      {
+        "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+        "event_index": 1,
+        "fco_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+      },
+      {
+        "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+        "event_index": 2,
+        "fco_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7"
+      },
+      {
+        "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+        "event_index": 3,
+        "fco_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922"
+      },
+      {
+        "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+        "event_index": 4,
+        "fco_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee"
+      },
+      {
+        "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+        "event_index": 5,
+        "fco_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e"
+      },
+      {
+        "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+        "event_index": 6,
+        "fco_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a"
+      },
+      {
+        "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+        "event_index": 7,
+        "fco_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423"
+      },
+      {
+        "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+        "event_index": 8,
+        "fco_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a"
+      },
+      {
+        "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+        "event_index": 9,
+        "fco_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815"
+      },
+      {
+        "event_hash": "fed08fca4ccc951672041a863b23dc36238ce1db59180dfb49ca4cca3351122f",
+        "event_index": 10,
+        "fco_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e"
+      },
+      {
+        "event_hash": "21cb93e39d24423a61b53a608003d14e03742b4bf04c116383df2c20ac9bc20e",
+        "event_index": 11,
+        "fco_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d"
+      },
+      {
+        "event_hash": "fcd70f7739ec12cdca841a5472dba745abb6bc75b30acc3e0afa79f47feee385",
+        "event_index": 12,
+        "fco_id": "fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba"
+      },
+      {
+        "event_hash": "43d9dae4cb0cd65e247548226e91b596ac5cd777b9cfea64bcb87133d654d368",
+        "event_index": 13,
+        "fco_id": "fco:sha256:d5f75663b54c33169e3df49b55a5171573bd0b427653657e63ba01fee8f6ce43"
+      }
+    ],
+    "matrix": [
+      {
+        "allowed": false,
+        "authorized": false,
+        "expected": false,
+        "worker_healthy": false
+      },
+      {
+        "allowed": false,
+        "authorized": false,
+        "expected": false,
+        "worker_healthy": true
+      },
+      {
+        "allowed": false,
+        "authorized": true,
+        "expected": false,
+        "worker_healthy": false
+      },
+      {
+        "allowed": true,
+        "authorized": true,
+        "expected": true,
+        "worker_healthy": true
+      }
+    ],
+    "semgrep_after": {
+      "count": 0,
+      "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+      "target": "fixtures/after.py",
+      "target_sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942",
+      "version": "1.180.0"
+    },
+    "semgrep_before": {
+      "count": 1,
+      "findings": [
+        {
+          "line": 3,
+          "message": "A failed hardware health check must not bypass authorization.",
+          "rule": "rules.antigense.fail-open-on-hardware-health"
+        }
+      ],
+      "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+      "target": "fixtures/before.py",
+      "target_sha256": "65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3",
+      "version": "1.180.0"
+    }
+  },
+  "label": "RECORDED REPLAY - walkthrough 034. No sponsor requests are made by this page.",
+  "roles": "ChatGPT/OpenAI orchestrates; Claude executes an independent lane. No Ollarma bridge delivery is claimed.",
+  "sources": {
+    "evidence/successor_024/ledger.jsonl": "f7e98fa5a04dc7d280f914ea493ebdd440b864b15d1f81ad2e77965e217c45a7",
+    "public/data/proof.json": "725b090a135418ca97550705c80a9b9b09a31cfa02af0da66058b19b345d1999",
+    "public/data/run.json": "f10c1ad9d536191e14fb441e3a89d993a3ec4e6f25f19f70520e4566f29e0523"
+  }
+}

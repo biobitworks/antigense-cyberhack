@@ -1,0 +1,138 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.actual_akash_gpu_inference": true,
+      "provided.advice_applied": false,
+      "provided.advice_schema_valid": true,
+      "provided.attestation_verified": false,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.actual_akash_gpu_inference": "YES",
+      "provided.advice_applied": "NO",
+      "provided.advice_schema_valid": "YES",
+      "provided.attestation_verified": "NO",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a\"}",
+        "index": 0,
+        "leaf_sha256": "d494892f4ab4601498c6ba1818165db3883a6744f9c6492146c5a430f8919dbd"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:20a6c3e84ebc6331858891dd8c73a83190b3a2c9773e570ed0d6ba1f2dd5ed09\"}",
+        "index": 1,
+        "leaf_sha256": "bafd7dc1444735b5562a641d7bfbaea93cee27dfdb06614cc4bae405b6f65e90"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"aea708beacaaf69741e822465cfa2883d728cf59a4050c0984be2de094dd75a4\"}",
+        "index": 2,
+        "leaf_sha256": "d38ede6833226879877ac29442aeecbfd8fb173123c9f3bb15a59b2041d710ff"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"actual_akash_gpu_inference\":true,\"advice_applied\":false,\"advice_schema_valid\":true,\"attestation_verified\":false},\"details\":{\"advice_excerpt\":\"{\\n  \\\"summary\\\": \\\"A custom teaching fixture that intentionally unsafe.\\\",\\n  \\\"root_cause\\\": \\\"The code intentionally violates the security rule by returning `True` when a worker is not healthy.\\\",\\n  \\\"fix\\\": \\\"Remove the custom teaching fixture and ensure it does not return `True` when a worker is not healthy.\\\",\\n  \\\"risk\\\": \\\"High risk due to potential unauthorized access.\\\"\\n}\",\"eval_count\":81,\"eval_duration_ns\":720818879,\"model\":\"qwen2.5:0.5b\",\"ms\":3466.4,\"prompt_eval_count\":175,\"request_sha256\":\"918c28a4505a6e23f8b02fd8329874b0dffd77e80e9503d23e4ef24e022291d7\",\"response_sha256\":\"45bb5ac2c53c280b12dadfda70f42e81a8ec42cca139a28e0f5e65d8197cb994\",\"schema_note\":\"ok\",\"schema_valid\":true,\"status\":200,\"total_duration_ns\":3026771639},\"name\":\"gpu_inference\",\"occurrence\":{\"run_id\":\"run011-0c6c92c46a0c\",\"seq\":8,\"ts\":\"2026-10-09T19:33:32+00:00\"},\"source\":{\"blob\":\"evidence/run_011/blobs/45bb5ac2c53c280b12dadfda70f42e81a8ec42cca139a28e0f5e65d8197cb994\",\"bytes\":1870,\"sha256\":\"45bb5ac2c53c280b12dadfda70f42e81a8ec42cca139a28e0f5e65d8197cb994\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "31cff1c3c2f6b16a0c17721bf7d2323f5bf9b3335b3af2b56d08e29fdd7b92e5"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.actual_akash_gpu_inference\":true,\"provided.advice_applied\":false,\"provided.advice_schema_valid\":true,\"provided.attestation_verified\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.actual_akash_gpu_inference\":\"YES\",\"provided.advice_applied\":\"NO\",\"provided.advice_schema_valid\":\"YES\",\"provided.attestation_verified\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "540ca3f6b8f645812a3279b162e48e61e341ff63b5154b021cd11056accb030e"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":8,\"quarantined\":0,\"rejected\":0,\"steps\":8},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "d286799a6fc39229547c4c47a5558b74e0ea6e06c572d2b231226fc29acaed40"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "8694223547616ccae90afa814422b7b95173de4f368957a7c77439b5763bc258"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 8,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 8
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:8694223547616ccae90afa814422b7b95173de4f368957a7c77439b5763bc258",
+  "observation": {
+    "checks": {
+      "actual_akash_gpu_inference": true,
+      "advice_applied": false,
+      "advice_schema_valid": true,
+      "attestation_verified": false
+    },
+    "details": {
+      "advice_excerpt": "{\n  \"summary\": \"A custom teaching fixture that intentionally unsafe.\",\n  \"root_cause\": \"The code intentionally violates the security rule by returning `True` when a worker is not healthy.\",\n  \"fix\": \"Remove the custom teaching fixture and ensure it does not return `True` when a worker is not healthy.\",\n  \"risk\": \"High risk due to potential unauthorized access.\"\n}",
+      "eval_count": 81,
+      "eval_duration_ns": 720818879,
+      "model": "qwen2.5:0.5b",
+      "ms": 3466.4,
+      "prompt_eval_count": 175,
+      "request_sha256": "918c28a4505a6e23f8b02fd8329874b0dffd77e80e9503d23e4ef24e022291d7",
+      "response_sha256": "45bb5ac2c53c280b12dadfda70f42e81a8ec42cca139a28e0f5e65d8197cb994",
+      "schema_note": "ok",
+      "schema_valid": true,
+      "status": 200,
+      "total_duration_ns": 3026771639
+    },
+    "name": "gpu_inference",
+    "occurrence": {
+      "run_id": "run011-0c6c92c46a0c",
+      "seq": 8,
+      "ts": "2026-10-09T19:33:32+00:00"
+    },
+    "source": {
+      "blob": "evidence/run_011/blobs/45bb5ac2c53c280b12dadfda70f42e81a8ec42cca139a28e0f5e65d8197cb994",
+      "bytes": 1870,
+      "sha256": "45bb5ac2c53c280b12dadfda70f42e81a8ec42cca139a28e0f5e65d8197cb994"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:20a6c3e84ebc6331858891dd8c73a83190b3a2c9773e570ed0d6ba1f2dd5ed09",
+  "previous_mmr_root": "aea708beacaaf69741e822465cfa2883d728cf59a4050c0984be2de094dd75a4",
+  "project_root": "e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

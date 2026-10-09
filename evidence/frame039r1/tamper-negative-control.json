@@ -1,0 +1,7 @@
+{
+  "state": "OBSERVED",
+  "test": "one altered frame hash changes recomputed MMR",
+  "PASS": true,
+  "expected_root": "9f2441a208537d7b666c9389e5e1e1b095fd116694a0965a7e3a95cb001292d5",
+  "tampered_root": "d864c4049becbab780bf6bc7bb79e54b73370cf8989fd1f9de31f9a7d6fec0e8"
+}

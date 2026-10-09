@@ -1,0 +1,144 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": false,
+      "provided.actual_akash_call": false,
+      "provided.advice_applied": false,
+      "provided.advice_schema_valid": false,
+      "provided.attestation_verified": false,
+      "provided.gpu_lease_established": false,
+      "provided.http_200": false,
+      "provided.model_identity_returned": false,
+      "provided.usage_returned": false,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "NO",
+      "provided.actual_akash_call": "NO",
+      "provided.advice_applied": "NO",
+      "provided.advice_schema_valid": "NO",
+      "provided.attestation_verified": "NO",
+      "provided.gpu_lease_established": "NO",
+      "provided.http_200": "NO",
+      "provided.model_identity_returned": "NO",
+      "provided.usage_returned": "NO",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "REJECTED",
+    "state": "FAILED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845\"}",
+        "index": 0,
+        "leaf_sha256": "b093467d7e399b43aede3b5e0382072a032021c1712242adcebce07f1e3cf318"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:7cf5d9fee8edff76ac04f89fc585ec28a25af308a79febe41830a3e82365278c\"}",
+        "index": 1,
+        "leaf_sha256": "4d2a00268573044c1b63766e0a09689b4d9b5525a11fb47fca057e87f93dc9aa"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"dcb8746fc19ae1f0d3afb0c38e6706fc9bf5fa435e28fc25f72dd3ac8c4ce588\"}",
+        "index": 2,
+        "leaf_sha256": "52f450fc88caa12d11a2a906d393a9e40c48b6184579ec42da637282d154e3e5"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"actual_akash_call\":false,\"advice_applied\":false,\"advice_schema_valid\":false,\"attestation_verified\":false,\"gpu_lease_established\":false,\"http_200\":false,\"model_identity_returned\":false,\"usage_returned\":false},\"details\":{\"body_excerpt\":\"{\\\"error\\\":\\\"Unauthorized\\\",\\\"message\\\":\\\"Invalid token format. API keys should start with 'akml-'. JWTs should be valid tokens.\\\"}\",\"body_sha256\":\"262c9950bc64813a1e123e4a9fa704995d58401134eec67dd22912c469a51712\",\"content_type\":\"application/json; charset=utf-8\",\"elapsed_ms\":144.6,\"inference_id\":null,\"method\":\"POST\",\"path\":\"/chat/completions\",\"request_sha256\":\"aaf9745e0c66955e9efb4d1dc0e8ecfe101ef79741bda0cfda44718ce457cd11\",\"retry_after\":null,\"status\":401,\"ua\":\"python-urllib default\"},\"name\":\"akash_chat_attempt_1\",\"occurrence\":{\"run_id\":\"run011-669cfacd9528\",\"seq\":3,\"ts\":\"2026-10-09T19:17:14+00:00\"},\"state\":\"FAILED\"}}",
+        "index": 3,
+        "leaf_sha256": "daba4d4047b10d99a112c7fa45dca7fdeebbd578fb7f6822e16b03957b0cf388"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":false,\"provided.actual_akash_call\":false,\"provided.advice_applied\":false,\"provided.advice_schema_valid\":false,\"provided.attestation_verified\":false,\"provided.gpu_lease_established\":false,\"provided.http_200\":false,\"provided.model_identity_returned\":false,\"provided.usage_returned\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"NO\",\"provided.actual_akash_call\":\"NO\",\"provided.advice_applied\":\"NO\",\"provided.advice_schema_valid\":\"NO\",\"provided.attestation_verified\":\"NO\",\"provided.gpu_lease_established\":\"NO\",\"provided.http_200\":\"NO\",\"provided.model_identity_returned\":\"NO\",\"provided.usage_returned\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"REJECTED\",\"state\":\"FAILED\"}}",
+        "index": 4,
+        "leaf_sha256": "adaf8fe9779138920345cfd6ce318bcf67146287e386105f1c28d6aa8d8720ac"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.180965\",\"g_star\":\"0.505965\",\"inputs\":{\"admitted\":1,\"quarantined\":0,\"rejected\":2,\"steps\":3},\"normalized_entropy\":\"0.459148\",\"reference_g_star\":\"0.325000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "5b1c5266bc4708b0a560bd7fe94673a33d844e5ea294312d0a327e3cc78bcb4a"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "065e64a2241d7aa98bf2305f26f3048e85e3f67525eef45d4f24a3cf50b0f9d5"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.180965",
+    "g_star": "0.505965",
+    "inputs": {
+      "admitted": 1,
+      "quarantined": 0,
+      "rejected": 2,
+      "steps": 3
+    },
+    "normalized_entropy": "0.459148",
+    "reference_g_star": "0.325000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:065e64a2241d7aa98bf2305f26f3048e85e3f67525eef45d4f24a3cf50b0f9d5",
+  "observation": {
+    "checks": {
+      "actual_akash_call": false,
+      "advice_applied": false,
+      "advice_schema_valid": false,
+      "attestation_verified": false,
+      "gpu_lease_established": false,
+      "http_200": false,
+      "model_identity_returned": false,
+      "usage_returned": false
+    },
+    "details": {
+      "body_excerpt": "{\"error\":\"Unauthorized\",\"message\":\"Invalid token format. API keys should start with 'akml-'. JWTs should be valid tokens.\"}",
+      "body_sha256": "262c9950bc64813a1e123e4a9fa704995d58401134eec67dd22912c469a51712",
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_ms": 144.6,
+      "inference_id": null,
+      "method": "POST",
+      "path": "/chat/completions",
+      "request_sha256": "aaf9745e0c66955e9efb4d1dc0e8ecfe101ef79741bda0cfda44718ce457cd11",
+      "retry_after": null,
+      "status": 401,
+      "ua": "python-urllib default"
+    },
+    "name": "akash_chat_attempt_1",
+    "occurrence": {
+      "run_id": "run011-669cfacd9528",
+      "seq": 3,
+      "ts": "2026-10-09T19:17:14+00:00"
+    },
+    "state": "FAILED"
+  },
+  "parent_fco_id": "fco:sha256:7cf5d9fee8edff76ac04f89fc585ec28a25af308a79febe41830a3e82365278c",
+  "previous_mmr_root": "dcb8746fc19ae1f0d3afb0c38e6706fc9bf5fa435e28fc25f72dd3ac8c4ce588",
+  "project_root": "07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}
