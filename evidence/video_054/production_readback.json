@@ -1,0 +1,50 @@
+{
+  "archival_052_hash_manifest": {
+    "at_frozen_predecessor_worktree": "12_OF_12_PASS",
+    "expected_successor_changes": [
+      "public/video/index.html",
+      "public/judges/index.html"
+    ],
+    "on_successor_branch": "10_OF_12_UNCHANGED",
+    "reason": "frozen_052_source_byte_checks_are_only_valid_at_predecessor_state; two HTML pages were intentionally superseded by 054; media/proof bytes preserved"
+  },
+  "compiled_media_mmr": "NOT_COMPUTED",
+  "deployment": {
+    "id": "dpl_BbjnTWJZFUbHDghytXpTduwB96K5",
+    "project_id": "prj_zmzQZa474962BGEFXrEMAwtlOM98",
+    "source_branch": "codex/video-release-054",
+    "source_commit": "59c03e120e5d827f5c011045ff00318252961827",
+    "state": "READY",
+    "target": "production"
+  },
+  "full_independent_frame_review": "NOT_TESTED",
+  "historical_cloud_provider_reexecution": "NOT_EXECUTED",
+  "hosted_live_050_backend": "NOT_DEPLOYED",
+  "independent_spoken_word_screen_sync": "NOT_TESTED",
+  "mechanical_verification": "PASS",
+  "nimble_representation": "USER_APPROVED; OLD_SOURCE_CREDENTIAL_SEGMENT_REPLACED_BY_BLURRED_VIDEO",
+  "predecessor_release_commit": "59c03e120e5d827f5c011045ff00318252961827",
+  "project": "biobitworks/antigense-cyberhack",
+  "readback": {
+    "duration_seconds": 180.0,
+    "historical_proof_http": 200,
+    "independent_backup_http": 200,
+    "judges_http": 200,
+    "mechanical_receipt_http": 200,
+    "media_receipt_http": 200,
+    "mp4_hash_recomputed_by_public_download": true,
+    "mp4_sha256": "047ce22506c41add4793e7762f212b6365bd679b67bf6e62e16840cdb0b3b7a0",
+    "old_039r1_mp4_http": 200,
+    "page_http": 200,
+    "page_matches_053_r3": true,
+    "published_mp4_url": "https://antigense-cyberhack.vercel.app/video-053-review/antigense-daisy-053-r3-three-minute-review.mp4",
+    "tokensand_page_still_points_to_submitted_url": true
+  },
+  "regression_test": "11_OF_11_PASS",
+  "schema": "antigense.video_release054.production_readback.v1",
+  "signature": "NOT_SIGNED",
+  "submitted_tokensand_url": "https://tokensand.com/p/antigense-daisy",
+  "tokensand_portal_mutation": "NOT_EXECUTED",
+  "unchanged_submitted_video_url": "https://antigense-cyberhack.vercel.app/video/",
+  "user_publication_approval": "OBSERVED_IN_CONVERSATION"
+}
