@@ -18,7 +18,10 @@ def sha(p):
 
 
 def main():
-    proof_p, run_p = ROOT / "public/data/proof.json", ROOT / "public/data/run.json"
+    # Pinned snapshots (recovered byte-identical from the live site); the working-tree
+    # copies under public/data are edited by another session and are not stable inputs.
+    snap = ROOT / "evidence/walkthrough/sources"
+    proof_p, run_p = snap / "proof.json", snap / "run.json"
     proof, run = json.loads(proof_p.read_text()), json.loads(run_p.read_text())
     steps = {o["observation"]["name"][:2]: o["observation"] for o in proof["objects"]}
     pick = lambda n, keys: {k: steps[n]["value"].get(k) for k in keys}

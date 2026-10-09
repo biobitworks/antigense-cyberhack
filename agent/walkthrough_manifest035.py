@@ -18,8 +18,8 @@ import hashlib, html, importlib.util, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "evidence/walkthrough/manifest-035.json"
-VERSION = "walkthrough-manifest/035.1"
+OUT = ROOT / "evidence/walkthrough/manifest-035b.json"
+VERSION = "walkthrough-manifest/035.2"
 spec = importlib.util.spec_from_file_location("custody", ROOT / "src/custody.py")
 C = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(C)
@@ -39,7 +39,7 @@ RECORDINGS = [
      "inputs": ["B screen-034.mov", "narration"]},
 ]
 SOURCE_RECORDS = ["successor_024"]  # GPU branch shown in scenes 7-8
-SOURCE_FILES = ["public/data/proof.json", "public/data/run.json", "public/data/walkthrough-034.json",
+SOURCE_FILES = ["evidence/walkthrough/sources/proof.json", "evidence/walkthrough/sources/run.json", "public/data/walkthrough-034.json",
                 "evidence/successor_024/ledger.jsonl", "agent/walkthrough034.py"]
 
 
@@ -88,6 +88,7 @@ def build():
         "recordings": media_hashes(),
         "timeline": "page timeline 147.856 s (scene data-t sum 145.0 + 2.856 s added to the last scene by the page script); recordings capture the first 145.0 s; final scene starts at 127.5 s",
         "mp4_reproducibility": "NOT_GUARANTEED (encoder/capture timing); bound by recorded hashes, verified by frame check",
+        "predecessor": "evidence/walkthrough/manifest-035.json (035.1) bound public/data/proof.json and run.json by hash, but those bytes were in no commit; 035.2 binds committed snapshots recovered byte-identical from the live site",
         "signature": "NOT_SIGNED",
     }
     leaves = [{"type": k, "value": body[k]} for k in sorted(body)]

@@ -1,0 +1,3126 @@
+{
+  "genesis": {
+    "ID": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+    "SIGNATURE": "NOT_SIGNED",
+    "commitment": {
+      "algorithm": "fco-ordered-v1",
+      "leaf_count": 52,
+      "leaves": [
+        {
+          "canonical_utf8": "{\"type\":\"initial_classification\",\"value\":{\"anticube\":{\"identity\":\"UNKNOWN\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"artifact_hashes_calculated\":true,\"edge_endpoints_exist\":true}}}",
+          "index": 0,
+          "leaf_sha256": "8388adc6b9462d7e32dd6dd3448c6532c50e344792d76f08d4abdd364ee54ba6"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"g_star_reference\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":0,\"quarantined\":0,\"rejected\":0,\"steps\":0},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+          "index": 1,
+          "leaf_sha256": "a88e52050b21249f9cd731006937fb69d437ac72f4cb03756ca2ea9210e2d186"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"graph_contract\",\"value\":{\"PARENT\":\"007\",\"authorization\":\"Read-only probes + append-only local receipts; no installs, repairs, inference, sponsor calls, funds or publish\",\"classification\":{\"SELF_SAFE\":\"null until tested; not false merely because unknown\",\"admission\":\"OBSERVED named schema-valid row ADMITTED for custody; FAILED/NEGATIVE REJECTED; remaining QUARANTINED\",\"identity\":\"UNKNOWN without proof\",\"meaning\":\"custody admission does not establish claim truth or safety\",\"safety\":\"UNKNOWN without independent oracle\"},\"diagnostic\":{\"G_star\":\"clamp(burden-tau*normalized_entropy,0,1), round6\",\"H\":\"-sum(p_i*log2(p_i)); normalize by log2(4)\",\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"burden\":\"min(1,(rejected+quarantined)/n)\",\"ceiling\":\"Unvalidated adapted information-state diagnostic; not physical free energy, safety or accuracy\",\"counts\":[\"admitted\",\"quarantined\",\"rejected\",\"max(0,n-admitted-quarantined-rejected)\"],\"delta_G_star\":\"current rounded G_star minus previous rounded G_star, round6\",\"n\":\"max(count of prior+current non-genesis step admissions,1)\",\"reference\":\"calculated empty admission-state G_star = 0.000000\",\"source\":\"hydralamp/gateway.py compute_diagnostics\",\"source_commit\":\"884503530da06b2780070b4e38ad939a8c6dbee0\",\"tau\":\"0.35 inherited from source; NOT empirically calibrated here\"},\"external_inclusion_proofs\":\"NOT_IMPLEMENTED\",\"merkle\":{\"algorithm\":\"fco-ordered-v1\",\"canonical\":\"json sort_keys separators compact ensure_ascii false UTF8 allow_nan false\",\"leaf\":\"SHA256(0x00 || SHA256(canonical_leaf_bytes))\",\"node\":\"SHA256(0x01 || raw_left || raw_right)\",\"odd\":\"promote unchanged\",\"order\":\"declared leaf list\"},\"mmr\":{\"algorithm\":\"HYDRALAMP_MMR_V1\",\"bag\":\"left-to-right fold; SHA256(HYDRALAMP_MMR_BAG_V1: || folded raw peak)\",\"cfmo_field_adapter\":\"step FCO identity; no claim of CFMO-store execution\",\"empty\":\"SHA256(HYDRALAMP_MMR_EMPTY)\",\"leaf\":\"SHA256(canonical JSON)\",\"leaf_fields\":[\"event_index\",\"event_hash\",\"cfmo_version_id\"],\"leaf_order\":\"event_index ascending, starts at1\",\"node\":\"SHA256(raw_left || raw_right)\",\"source\":\"hydralamp/mmr.py\",\"source_commit\":\"884503530da06b2780070b4e38ad939a8c6dbee0\",\"source_repo\":\"biobitworks/hydradg\",\"verification\":\"independent power-of-two partition and all-prefix reconstruction\"},\"schema\":\"cyberhack.custody.contract.v008r1\",\"scope\":\"Declared kit graph and report004; not entire repository, portfolio canonical graph, or physical hardware\",\"signatures\":\"NOT_SIGNED\",\"successor\":{\"ID\":\"009\",\"PARENT\":\"008R1\",\"human_identity\":\"UNVERIFIED_UNSIGNED_LOCAL_ACTION\",\"physical_fault\":\"SIMULATED_BYTE_XOR\",\"scope\":\"Antigense controlled fault cascade\",\"sponsor_truth\":\"Only actual observed executions promoted; Akash and Pi pending\"}}}",
+          "index": 2,
+          "leaf_sha256": "1f90ae788f42ccec3ad5515a010bf6389aef41935d06535f9b321d9ef08c4836"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"project:antigense-009\",\"scope\":\"Antigense 009 declared source graph; successor of 008R1; NOT entire hardware or portfolio graph\",\"state\":\"PROPOSED\",\"type\":\"Project\"}}",
+          "index": 3,
+          "leaf_sha256": "ad45837ce3ced89651a95ae3686557b98da6c1083a9f96c06e95e5ac0c88bb10"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"group:governance\",\"type\":\"Group\"}}",
+          "index": 4,
+          "leaf_sha256": "3f2dc517c92ca998ce0a54c567d6b298a877d114fa637ebe87ca12eda2033083"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"group:runtime\",\"type\":\"Group\"}}",
+          "index": 5,
+          "leaf_sha256": "0139cdf39c7713239a357bf7f88f3ef0b19fe66dc277c06c3d8e891649e7e2f1"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":4024,\"id\":\"artifact:README.md\",\"relative_path\":\"README.md\",\"sha256\":\"33e91357a4351bac45d92cbe4a8c3ee3db3147388cd1fb709c3882f1facad724\",\"type\":\"Artifact\"}}",
+          "index": 6,
+          "leaf_sha256": "ccee53452ac07f8fc2986a9d94a48850305e3cda6a479f7e71dc8ea831440fd2"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":15492,\"id\":\"artifact:src/custody.py\",\"relative_path\":\"src/custody.py\",\"sha256\":\"f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391\",\"type\":\"Artifact\"}}",
+          "index": 7,
+          "leaf_sha256": "94c9adb48efa2dc9e8ed7b66537d126eec31264dfaea19c61b2f33b4a66aa401"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":10826,\"id\":\"artifact:src/cascade.py\",\"relative_path\":\"src/cascade.py\",\"sha256\":\"9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27\",\"type\":\"Artifact\"}}",
+          "index": 8,
+          "leaf_sha256": "c711a3aeccb2c03198692acbd84ab345793205c4d2f0758503ac71b339349716"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3141,\"id\":\"artifact:src/server.py\",\"relative_path\":\"src/server.py\",\"sha256\":\"a723d2fc18a047f7ba730d81b588ea4c32baa9eb281d72ba4d50f3eceacb166d\",\"type\":\"Artifact\"}}",
+          "index": 9,
+          "leaf_sha256": "86b951d09c2c07a1df83d5a2072601b2ec2e50fec5d8130b80e1ae811c2005fb"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":16806,\"id\":\"artifact:public/index.html\",\"relative_path\":\"public/index.html\",\"sha256\":\"f1ff0e3d2ccdb8666886d0b077fa6e179d5ec06a1d92f06ecbaf2366b95354eb\",\"type\":\"Artifact\"}}",
+          "index": 10,
+          "leaf_sha256": "18105ae14c5c5568370ef32eb3790d6b34ba6c6624ed3ef33dbac2c69704c431"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3391,\"id\":\"artifact:public/verify.js\",\"relative_path\":\"public/verify.js\",\"sha256\":\"7a23050810e37ec2e88855d18d12f1ecf943145652945b66a3a2b1a5ee61d611\",\"type\":\"Artifact\"}}",
+          "index": 11,
+          "leaf_sha256": "deca54fae9d9d5fe4aa544c2d9af51a4833269d486317c3516f02252ea62b9f2"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1413,\"id\":\"artifact:topology.json\",\"relative_path\":\"topology.json\",\"sha256\":\"38f8b1471693b2c64283d582c6f5a047d24469e15b2296fbf50c3b13b8b13c41\",\"type\":\"Artifact\"}}",
+          "index": 12,
+          "leaf_sha256": "52d42d63504d6a151375aee8a8b6aa8c058ce82732eeeb780102bd2fd5424cc4"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":721,\"id\":\"artifact:policy.json\",\"relative_path\":\"policy.json\",\"sha256\":\"82918b0e70bf0767f0d3ca4de4949d6a386d03671f96c79f28dccde2d39b98f8\",\"type\":\"Artifact\"}}",
+          "index": 13,
+          "leaf_sha256": "bafe0e16ea62ceab8b820948dab4ce4a27a8cf03425008bf483735984a898a67"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":187,\"id\":\"artifact:fixtures/before.py\",\"relative_path\":\"fixtures/before.py\",\"sha256\":\"65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3\",\"type\":\"Artifact\"}}",
+          "index": 14,
+          "leaf_sha256": "37baced076ec3d7721adeff7305a14f62446a05feb3ad81ced76d0cf3b7ab333"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":127,\"id\":\"artifact:fixtures/after.py\",\"relative_path\":\"fixtures/after.py\",\"sha256\":\"1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942\",\"type\":\"Artifact\"}}",
+          "index": 15,
+          "leaf_sha256": "2d81e2616fde6144b77663a76f3df609afdbd44d0dc5e2343fa1f21a399bf411"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":370,\"id\":\"artifact:rules/fallback.yaml\",\"relative_path\":\"rules/fallback.yaml\",\"sha256\":\"d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0\",\"type\":\"Artifact\"}}",
+          "index": 16,
+          "leaf_sha256": "c538f6a1220a2288d363bbddbb3b9a3e37c26c46dc5fd563794c4dc6c963163b"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":315,\"id\":\"artifact:PREDECESSOR_008.json\",\"relative_path\":\"PREDECESSOR_008.json\",\"sha256\":\"cec65487f09897944f17ecae9d216565ded2ffc6eeda9b17ad9f5a7514114ede\",\"type\":\"Artifact\"}}",
+          "index": 17,
+          "leaf_sha256": "920ba04c8114ecc5ccdc02d39601e2613b27c92a5679f6da3d962c48d34bd1f1"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3059,\"id\":\"artifact:CUSTODY_CONTRACT_008.json\",\"relative_path\":\"CUSTODY_CONTRACT_008.json\",\"sha256\":\"5c80807838112d660a69d9845dcac9fab68203fb3804326d4e2c263adadbea19\",\"type\":\"Artifact\"}}",
+          "index": 18,
+          "leaf_sha256": "77b2adb8c7798f8903b12852cebd18062cbcff42812ecd06cc4e510e439c539c"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":160,\"id\":\"artifact:scripts/setup.sh\",\"relative_path\":\"scripts/setup.sh\",\"sha256\":\"4788895b83c13ac105cea11baec6d65c9d3682479b5b545ac8ce826d1cbb3975\",\"type\":\"Artifact\"}}",
+          "index": 19,
+          "leaf_sha256": "388321f0ccc2692c203f42e2fc7b232f181e864c35b798c7eeaab422d5a0814e"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":138,\"id\":\"artifact:scripts/demo.sh\",\"relative_path\":\"scripts/demo.sh\",\"sha256\":\"a1c9b1e0c67de82b2d94bf856be197c82548198dac3bafdf3ad5f73c6621dea8\",\"type\":\"Artifact\"}}",
+          "index": 20,
+          "leaf_sha256": "c1ed0838e2fa015d06dd918eb5cb15396c65f6d0e04e288299680d591323e01c"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":633,\"id\":\"artifact:vercel.json\",\"relative_path\":\"vercel.json\",\"sha256\":\"ca32b06bdd5830cd03465feda4bc31a19ec1ddad62cda07944b06026fe56911c\",\"type\":\"Artifact\"}}",
+          "index": 21,
+          "leaf_sha256": "34411bec151458edffbaf935aae0184574997f3c6dca7f47ca6e2badcd1d2f3f"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1185,\"id\":\"artifact:tests/test_custody.py\",\"relative_path\":\"tests/test_custody.py\",\"sha256\":\"317b58b3517c68789036779cf5e6cd370f73679f888e51f6deec2fbbe199a2c0\",\"type\":\"Artifact\"}}",
+          "index": 22,
+          "leaf_sha256": "de8a69f3af2eaa867da863cac29d0fff13998eb883f3de6677959f8027258cca"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":2508,\"id\":\"artifact:docs/DESIGN_009.md\",\"relative_path\":\"docs/DESIGN_009.md\",\"sha256\":\"eb03e6f459c17a4e5852db41a5045997b457f2cae04a2625dcaf6e477fc6976f\",\"type\":\"Artifact\"}}",
+          "index": 23,
+          "leaf_sha256": "532c6806b03e08f73545f087692990947cb0d35ff0e83bd77c11b2c879d1ef49"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3545,\"id\":\"artifact:docs/SPONSOR_CHECKLIST.md\",\"relative_path\":\"docs/SPONSOR_CHECKLIST.md\",\"sha256\":\"8d78d2c4a2c067782b1362a01eabddbb264346062f2a0fb35774b573e4fa370d\",\"type\":\"Artifact\"}}",
+          "index": 24,
+          "leaf_sha256": "cf1357e072be96bce9b75b420df0731b6c1f644757f728f4a012a9ee2d5db1f3"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":2710,\"id\":\"artifact:docs/DATASET_REVIEW.md\",\"relative_path\":\"docs/DATASET_REVIEW.md\",\"sha256\":\"ff47f72d3bcc5bbafdba1ddcfe4d583a2ee09a68bf74f1774f478adc5301b7cf\",\"type\":\"Artifact\"}}",
+          "index": 25,
+          "leaf_sha256": "1f8872744bcdf2a5ec3a8082fd2e650a494fa59a1f020784b16543bf2bc9190c"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1357,\"id\":\"artifact:docs/PI_INTAKE.md\",\"relative_path\":\"docs/PI_INTAKE.md\",\"sha256\":\"e2b8e23641ab5574bcf437c177b7ab4e3a9aad6ab89efc451651138e73365e21\",\"type\":\"Artifact\"}}",
+          "index": 26,
+          "leaf_sha256": "be1ec08d13d76cbfea0bdc2b01ebf90c242794ae5ffcfce89c0946c73e6487b1"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":6910,\"id\":\"artifact:agent/presentation022.py\",\"relative_path\":\"agent/presentation022.py\",\"sha256\":\"44be0e9f4e6cb67f19f7821cbf48131b8ab4270ec72cf6b26ca816a8276c8aeb\",\"type\":\"Artifact\"}}",
+          "index": 27,
+          "leaf_sha256": "c5e8b472d790f18b860c945ec17ec3420824fd02c87a47a74f975c4534285133"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"project:antigense-009\",\"target\":\"group:governance\"}}",
+          "index": 28,
+          "leaf_sha256": "bb8db5e5d4d7f2ff89c37aa032ddc1c269e8c8b8da9cbc058eda3aed11c7fff1"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"project:antigense-009\",\"target\":\"group:runtime\"}}",
+          "index": 29,
+          "leaf_sha256": "94943a06d25c90994c169d4c95de7259c0abdec054df45d41b9588759ae81518"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:README.md\"}}",
+          "index": 30,
+          "leaf_sha256": "b7873c63500381cba0068e1b22701e98409fd86fc399b9e1f341c99deda8b70c"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:src/custody.py\"}}",
+          "index": 31,
+          "leaf_sha256": "4c98d3c446eda397efd4c906a2730cdf1abc0e79bfd4dae20f7ee563520cfc08"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:src/cascade.py\"}}",
+          "index": 32,
+          "leaf_sha256": "a76f0f94a4ca018ff45d80ce9ac2e0b8e870a8dfe26e6ce832de9410c59fa54b"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:src/server.py\"}}",
+          "index": 33,
+          "leaf_sha256": "2b7cd692959a6731ed34080f1ead2fb54288bb1b99e82db8cabc36ec78ccd256"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:public/index.html\"}}",
+          "index": 34,
+          "leaf_sha256": "012e1dd45b7494f152dc6fdbc1a8aee2b0d1ce5648d820f03ed9ca5875715c8d"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:public/verify.js\"}}",
+          "index": 35,
+          "leaf_sha256": "93a8ff3ea12681ea20c4941ea6c805b2f81a132d57b440dcf3de08f631db1c4f"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:topology.json\"}}",
+          "index": 36,
+          "leaf_sha256": "0027bb889dfbb8a76719b70ac4608594509857bb273acc694abb8d04a8f6ef16"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:policy.json\"}}",
+          "index": 37,
+          "leaf_sha256": "1f3604894c14185799bdbf3c8ac9e92715137f72c2ae90f3c89fef2cc17fe650"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:fixtures/before.py\"}}",
+          "index": 38,
+          "leaf_sha256": "d435e5dda9f8ec0f3ea97531149c30369805a1aac1df569d0c5477a53eefbbe7"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:fixtures/after.py\"}}",
+          "index": 39,
+          "leaf_sha256": "70f3ce67d009da0b8563307dabb0c866e55b815522f927c942a99955f20a2c3b"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:rules/fallback.yaml\"}}",
+          "index": 40,
+          "leaf_sha256": "de4c38698a53e7230c0dea6ad7f5851a646745d770a560aed998fa6ea1383720"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:PREDECESSOR_008.json\"}}",
+          "index": 41,
+          "leaf_sha256": "b35fb24a0c7aa8f64dde2b859de816deb9b34e99ef9254c0922856849c0ad892"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:CUSTODY_CONTRACT_008.json\"}}",
+          "index": 42,
+          "leaf_sha256": "cdda5ae0dd257c4de4a484574103809410c88bd43b3f7e46a62c8d5bd385009f"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:scripts/setup.sh\"}}",
+          "index": 43,
+          "leaf_sha256": "dcc7709a7521bab29ba89b93a411aa5fa6bdfd4e4a41d0b3b0a8fa256fa5de44"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:scripts/demo.sh\"}}",
+          "index": 44,
+          "leaf_sha256": "597fc8f302bf646f1adf3fd34b74f9c394fd0b6c98df0b57285e6e973ea60e83"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:vercel.json\"}}",
+          "index": 45,
+          "leaf_sha256": "b768abda5f1d73b3a15069ea664808dbc10d1b9799aeba048fbc4c3a7b16ca2d"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:tests/test_custody.py\"}}",
+          "index": 46,
+          "leaf_sha256": "16eea46e78fb2c62aeb5a46479444a29c35a1c291cca5613a08bd3db30bf40aa"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/DESIGN_009.md\"}}",
+          "index": 47,
+          "leaf_sha256": "e4056764e4ee7a0211a28f7eee5de184571a5a8b37cc6199994d7d019e159c79"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/SPONSOR_CHECKLIST.md\"}}",
+          "index": 48,
+          "leaf_sha256": "ccc2032c62334abe462c70c202872d48233e08c5f7e0904dff200a9043b2208b"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/DATASET_REVIEW.md\"}}",
+          "index": 49,
+          "leaf_sha256": "d145b31e193bf4a430af70f1226f2f710116ea4a4fde2085fad466e4fabb317f"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/PI_INTAKE.md\"}}",
+          "index": 50,
+          "leaf_sha256": "ad886da17be4e2c04de40be4c10cfdfcf7c59e64aa096e9412027d7b8e2e10a2"
+        },
+        {
+          "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:agent/presentation022.py\"}}",
+          "index": 51,
+          "leaf_sha256": "2eef5e1452df097036e72ae5d55b59c1f2802b51e40fac5c0a9aeeb940591620"
+        }
+      ],
+      "root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    "g_star_reference": {
+      "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+      "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+      "delta_g_star": "0.000000",
+      "g_star": "0.000000",
+      "inputs": {
+        "admitted": 0,
+        "quarantined": 0,
+        "rejected": 0,
+        "steps": 0
+      },
+      "normalized_entropy": "-0.000000",
+      "reference_g_star": "0.000000",
+      "tau": "0.35"
+    },
+    "graph": {
+      "PARENT": "008R1",
+      "contract": {
+        "PARENT": "007",
+        "authorization": "Read-only probes + append-only local receipts; no installs, repairs, inference, sponsor calls, funds or publish",
+        "classification": {
+          "SELF_SAFE": "null until tested; not false merely because unknown",
+          "admission": "OBSERVED named schema-valid row ADMITTED for custody; FAILED/NEGATIVE REJECTED; remaining QUARANTINED",
+          "identity": "UNKNOWN without proof",
+          "meaning": "custody admission does not establish claim truth or safety",
+          "safety": "UNKNOWN without independent oracle"
+        },
+        "diagnostic": {
+          "G_star": "clamp(burden-tau*normalized_entropy,0,1), round6",
+          "H": "-sum(p_i*log2(p_i)); normalize by log2(4)",
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "burden": "min(1,(rejected+quarantined)/n)",
+          "ceiling": "Unvalidated adapted information-state diagnostic; not physical free energy, safety or accuracy",
+          "counts": [
+            "admitted",
+            "quarantined",
+            "rejected",
+            "max(0,n-admitted-quarantined-rejected)"
+          ],
+          "delta_G_star": "current rounded G_star minus previous rounded G_star, round6",
+          "n": "max(count of prior+current non-genesis step admissions,1)",
+          "reference": "calculated empty admission-state G_star = 0.000000",
+          "source": "hydralamp/gateway.py compute_diagnostics",
+          "source_commit": "884503530da06b2780070b4e38ad939a8c6dbee0",
+          "tau": "0.35 inherited from source; NOT empirically calibrated here"
+        },
+        "external_inclusion_proofs": "NOT_IMPLEMENTED",
+        "merkle": {
+          "algorithm": "fco-ordered-v1",
+          "canonical": "json sort_keys separators compact ensure_ascii false UTF8 allow_nan false",
+          "leaf": "SHA256(0x00 || SHA256(canonical_leaf_bytes))",
+          "node": "SHA256(0x01 || raw_left || raw_right)",
+          "odd": "promote unchanged",
+          "order": "declared leaf list"
+        },
+        "mmr": {
+          "algorithm": "HYDRALAMP_MMR_V1",
+          "bag": "left-to-right fold; SHA256(HYDRALAMP_MMR_BAG_V1: || folded raw peak)",
+          "cfmo_field_adapter": "step FCO identity; no claim of CFMO-store execution",
+          "empty": "SHA256(HYDRALAMP_MMR_EMPTY)",
+          "leaf": "SHA256(canonical JSON)",
+          "leaf_fields": [
+            "event_index",
+            "event_hash",
+            "cfmo_version_id"
+          ],
+          "leaf_order": "event_index ascending, starts at1",
+          "node": "SHA256(raw_left || raw_right)",
+          "source": "hydralamp/mmr.py",
+          "source_commit": "884503530da06b2780070b4e38ad939a8c6dbee0",
+          "source_repo": "biobitworks/hydradg",
+          "verification": "independent power-of-two partition and all-prefix reconstruction"
+        },
+        "schema": "cyberhack.custody.contract.v008r1",
+        "scope": "Declared kit graph and report004; not entire repository, portfolio canonical graph, or physical hardware",
+        "signatures": "NOT_SIGNED",
+        "successor": {
+          "ID": "009",
+          "PARENT": "008R1",
+          "human_identity": "UNVERIFIED_UNSIGNED_LOCAL_ACTION",
+          "physical_fault": "SIMULATED_BYTE_XOR",
+          "scope": "Antigense controlled fault cascade",
+          "sponsor_truth": "Only actual observed executions promoted; Akash and Pi pending"
+        }
+      },
+      "edges": [
+        {
+          "predicate": "CONTAINS",
+          "source": "project:antigense-009",
+          "target": "group:governance"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "project:antigense-009",
+          "target": "group:runtime"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:README.md"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:src/custody.py"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:src/cascade.py"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:src/server.py"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:public/index.html"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:public/verify.js"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:topology.json"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:policy.json"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:fixtures/before.py"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:fixtures/after.py"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:rules/fallback.yaml"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:PREDECESSOR_008.json"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:CUSTODY_CONTRACT_008.json"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:scripts/setup.sh"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:scripts/demo.sh"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:vercel.json"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:tests/test_custody.py"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:docs/DESIGN_009.md"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:docs/SPONSOR_CHECKLIST.md"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:docs/DATASET_REVIEW.md"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:governance",
+          "target": "artifact:docs/PI_INTAKE.md"
+        },
+        {
+          "predicate": "CONTAINS",
+          "source": "group:runtime",
+          "target": "artifact:agent/presentation022.py"
+        }
+      ],
+      "g_star_reference": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.000000",
+        "g_star": "0.000000",
+        "inputs": {
+          "admitted": 0,
+          "quarantined": 0,
+          "rejected": 0,
+          "steps": 0
+        },
+        "normalized_entropy": "-0.000000",
+        "reference_g_star": "0.000000",
+        "tau": "0.35"
+      },
+      "initial_classification": {
+        "anticube": {
+          "identity": "UNKNOWN",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "artifact_hashes_calculated": true,
+          "edge_endpoints_exist": true
+        }
+      },
+      "nodes": [
+        {
+          "id": "project:antigense-009",
+          "scope": "Antigense 009 declared source graph; successor of 008R1; NOT entire hardware or portfolio graph",
+          "state": "PROPOSED",
+          "type": "Project"
+        },
+        {
+          "id": "group:governance",
+          "type": "Group"
+        },
+        {
+          "id": "group:runtime",
+          "type": "Group"
+        },
+        {
+          "bytes": 4024,
+          "id": "artifact:README.md",
+          "relative_path": "README.md",
+          "sha256": "33e91357a4351bac45d92cbe4a8c3ee3db3147388cd1fb709c3882f1facad724",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 15492,
+          "id": "artifact:src/custody.py",
+          "relative_path": "src/custody.py",
+          "sha256": "f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 10826,
+          "id": "artifact:src/cascade.py",
+          "relative_path": "src/cascade.py",
+          "sha256": "9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 3141,
+          "id": "artifact:src/server.py",
+          "relative_path": "src/server.py",
+          "sha256": "a723d2fc18a047f7ba730d81b588ea4c32baa9eb281d72ba4d50f3eceacb166d",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 16806,
+          "id": "artifact:public/index.html",
+          "relative_path": "public/index.html",
+          "sha256": "f1ff0e3d2ccdb8666886d0b077fa6e179d5ec06a1d92f06ecbaf2366b95354eb",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 3391,
+          "id": "artifact:public/verify.js",
+          "relative_path": "public/verify.js",
+          "sha256": "7a23050810e37ec2e88855d18d12f1ecf943145652945b66a3a2b1a5ee61d611",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 1413,
+          "id": "artifact:topology.json",
+          "relative_path": "topology.json",
+          "sha256": "38f8b1471693b2c64283d582c6f5a047d24469e15b2296fbf50c3b13b8b13c41",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 721,
+          "id": "artifact:policy.json",
+          "relative_path": "policy.json",
+          "sha256": "82918b0e70bf0767f0d3ca4de4949d6a386d03671f96c79f28dccde2d39b98f8",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 187,
+          "id": "artifact:fixtures/before.py",
+          "relative_path": "fixtures/before.py",
+          "sha256": "65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 127,
+          "id": "artifact:fixtures/after.py",
+          "relative_path": "fixtures/after.py",
+          "sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 370,
+          "id": "artifact:rules/fallback.yaml",
+          "relative_path": "rules/fallback.yaml",
+          "sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 315,
+          "id": "artifact:PREDECESSOR_008.json",
+          "relative_path": "PREDECESSOR_008.json",
+          "sha256": "cec65487f09897944f17ecae9d216565ded2ffc6eeda9b17ad9f5a7514114ede",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 3059,
+          "id": "artifact:CUSTODY_CONTRACT_008.json",
+          "relative_path": "CUSTODY_CONTRACT_008.json",
+          "sha256": "5c80807838112d660a69d9845dcac9fab68203fb3804326d4e2c263adadbea19",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 160,
+          "id": "artifact:scripts/setup.sh",
+          "relative_path": "scripts/setup.sh",
+          "sha256": "4788895b83c13ac105cea11baec6d65c9d3682479b5b545ac8ce826d1cbb3975",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 138,
+          "id": "artifact:scripts/demo.sh",
+          "relative_path": "scripts/demo.sh",
+          "sha256": "a1c9b1e0c67de82b2d94bf856be197c82548198dac3bafdf3ad5f73c6621dea8",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 633,
+          "id": "artifact:vercel.json",
+          "relative_path": "vercel.json",
+          "sha256": "ca32b06bdd5830cd03465feda4bc31a19ec1ddad62cda07944b06026fe56911c",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 1185,
+          "id": "artifact:tests/test_custody.py",
+          "relative_path": "tests/test_custody.py",
+          "sha256": "317b58b3517c68789036779cf5e6cd370f73679f888e51f6deec2fbbe199a2c0",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 2508,
+          "id": "artifact:docs/DESIGN_009.md",
+          "relative_path": "docs/DESIGN_009.md",
+          "sha256": "eb03e6f459c17a4e5852db41a5045997b457f2cae04a2625dcaf6e477fc6976f",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 3545,
+          "id": "artifact:docs/SPONSOR_CHECKLIST.md",
+          "relative_path": "docs/SPONSOR_CHECKLIST.md",
+          "sha256": "8d78d2c4a2c067782b1362a01eabddbb264346062f2a0fb35774b573e4fa370d",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 2710,
+          "id": "artifact:docs/DATASET_REVIEW.md",
+          "relative_path": "docs/DATASET_REVIEW.md",
+          "sha256": "ff47f72d3bcc5bbafdba1ddcfe4d583a2ee09a68bf74f1774f478adc5301b7cf",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 1357,
+          "id": "artifact:docs/PI_INTAKE.md",
+          "relative_path": "docs/PI_INTAKE.md",
+          "sha256": "e2b8e23641ab5574bcf437c177b7ab4e3a9aad6ab89efc451651138e73365e21",
+          "type": "Artifact"
+        },
+        {
+          "bytes": 6910,
+          "id": "artifact:agent/presentation022.py",
+          "relative_path": "agent/presentation022.py",
+          "sha256": "44be0e9f4e6cb67f19f7821cbf48131b8ab4270ec72cf6b26ca816a8276c8aeb",
+          "type": "Artifact"
+        }
+      ],
+      "schema": "cyberhack.frozen-fractal-graph.v008r1"
+    },
+    "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+    "scope": "Antigense 009 declared source graph; successor of 008R1; NOT entire hardware or portfolio graph"
+  },
+  "ledger": [
+    {
+      "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+      "event_index": 1,
+      "fco_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "kind": "PROJECT_FREEZE",
+      "merkle_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+      "event_index": 2,
+      "fco_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+      "kind": "STEP",
+      "merkle_root": "a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+      "object_file": "step-000002.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+      "event_index": 3,
+      "fco_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+      "kind": "STEP",
+      "merkle_root": "aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+      "object_file": "step-000003.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+      "event_index": 4,
+      "fco_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+      "kind": "STEP",
+      "merkle_root": "06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+      "object_file": "step-000004.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+      "event_index": 5,
+      "fco_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+      "kind": "STEP",
+      "merkle_root": "26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+      "object_file": "step-000005.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+      "event_index": 6,
+      "fco_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+      "kind": "STEP",
+      "merkle_root": "b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+      "object_file": "step-000006.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+      "event_index": 7,
+      "fco_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+      "kind": "STEP",
+      "merkle_root": "9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+      "object_file": "step-000007.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+      "event_index": 8,
+      "fco_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+      "kind": "STEP",
+      "merkle_root": "b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+      "object_file": "step-000008.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+      "event_index": 9,
+      "fco_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+      "kind": "STEP",
+      "merkle_root": "ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+      "object_file": "step-000009.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "fed08fca4ccc951672041a863b23dc36238ce1db59180dfb49ca4cca3351122f",
+      "event_index": 10,
+      "fco_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+      "kind": "STEP",
+      "merkle_root": "82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+      "object_file": "step-000010.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "21cb93e39d24423a61b53a608003d14e03742b4bf04c116383df2c20ac9bc20e",
+      "event_index": 11,
+      "fco_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+      "kind": "STEP",
+      "merkle_root": "b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+      "object_file": "step-000011.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "fcd70f7739ec12cdca841a5472dba745abb6bc75b30acc3e0afa79f47feee385",
+      "event_index": 12,
+      "fco_id": "fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba",
+      "kind": "STEP",
+      "merkle_root": "3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba",
+      "object_file": "step-000012.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    },
+    {
+      "event_hash": "43d9dae4cb0cd65e247548226e91b596ac5cd777b9cfea64bcb87133d654d368",
+      "event_index": 13,
+      "fco_id": "fco:sha256:d5f75663b54c33169e3df49b55a5171573bd0b427653657e63ba01fee8f6ce43",
+      "kind": "STEP",
+      "merkle_root": "d5f75663b54c33169e3df49b55a5171573bd0b427653657e63ba01fee8f6ce43",
+      "object_file": "step-000013.json",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e"
+    }
+  ],
+  "objects": [
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.arithmetic_matches": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.arithmetic_matches": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 1,
+            "leaf_sha256": "8c26cf19129711feec428d10012ebd0d029452c6d32d70482412245a513bf22f"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"dcdd5003aa57e386edb5dd8ce339668ddd53fe09b788f54e1c6467c9175d9b21\"}",
+            "index": 2,
+            "leaf_sha256": "09f67aba603b16cd3931b084dcf0842e7d0a4b9bc431a74a5be8a77e54566575"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"arithmetic_matches\":true},\"name\":\"01 Baseline worker\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:54Z\",\"state\":\"OBSERVED\",\"value\":{\"arithmetic\":332833500,\"elapsed_ms\":0.062,\"expected\":332833500,\"fault\":\"NONE\",\"output_sha256\":\"14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748\"}}}",
+            "index": 3,
+            "leaf_sha256": "14f19e58c8ff4645809d055b21f297004cc4f7d272711ca282294478cea938d4"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.arithmetic_matches\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.arithmetic_matches\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "0bd531a507ec4f3b7c5a47c016a4d0bb15176a079a74a98801837a0fe5106099"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":1,\"quarantined\":0,\"rejected\":0,\"steps\":1},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "fddb655d9e18f7cde34dc0d7319da2eb4ab765bb71b04efd7d985ce99b809025"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.000000",
+        "g_star": "0.000000",
+        "inputs": {
+          "admitted": 1,
+          "quarantined": 0,
+          "rejected": 0,
+          "steps": 1
+        },
+        "normalized_entropy": "-0.000000",
+        "reference_g_star": "0.000000",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+      "observation": {
+        "checks": {
+          "arithmetic_matches": true
+        },
+        "name": "01 Baseline worker",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:54Z",
+        "state": "OBSERVED",
+        "value": {
+          "arithmetic": 332833500,
+          "elapsed_ms": 0.062,
+          "expected": 332833500,
+          "fault": "NONE",
+          "output_sha256": "14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748"
+        }
+      },
+      "parent_fco_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "previous_mmr_root": "dcdd5003aa57e386edb5dd8ce339668ddd53fe09b788f54e1c6467c9175d9b21",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.fault_detected": true,
+          "provided.physical_fault_observed": false,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.fault_detected": "YES",
+          "provided.physical_fault_observed": "NO",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7\"}",
+            "index": 1,
+            "leaf_sha256": "fac29f897cbd30d71117515f4cad2c7e34b453481dbbca8b6f84ccab9f61603c"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"6a33eabd3b9e69c7f96117d2346da0996e820aa38ede4d4137ac998306fced66\"}",
+            "index": 2,
+            "leaf_sha256": "1d8cb202d744062652c2dc8b5edb733c4e88204353a18ee02b2797fd407ccf04"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"fault_detected\":true,\"physical_fault_observed\":false},\"name\":\"02 Injected integrity fault\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:54Z\",\"state\":\"OBSERVED\",\"value\":{\"byte_index\":0,\"corrupted_sha256\":\"c1141ba6e77d0f6230607c8b2aab95a82a98c2b030ed18df6eb77e0b46884130\",\"detected\":true,\"fault\":\"SIMULATED_BYTE_XOR\",\"hardware_fault_observed\":false,\"original_sha256\":\"14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748\",\"xor_mask\":1}}}",
+            "index": 3,
+            "leaf_sha256": "bc351ec3d0f2abd242f58466b270ab04c2c2e586dfb27b4108063ff6fa7febac"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.fault_detected\":true,\"provided.physical_fault_observed\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.fault_detected\":\"YES\",\"provided.physical_fault_observed\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "5cf4e6766977cec131c4c7ec8bfdb13afb10db6fbd184fdcae8a533db7f1c554"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":2,\"quarantined\":0,\"rejected\":0,\"steps\":2},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "e5c1a3647445724038f058b29f0aaf2f8fa6b60eb04766aebbc1cfa51fd803de"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.000000",
+        "g_star": "0.000000",
+        "inputs": {
+          "admitted": 2,
+          "quarantined": 0,
+          "rejected": 0,
+          "steps": 2
+        },
+        "normalized_entropy": "-0.000000",
+        "reference_g_star": "0.000000",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+      "observation": {
+        "checks": {
+          "fault_detected": true,
+          "physical_fault_observed": false
+        },
+        "name": "02 Injected integrity fault",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:54Z",
+        "state": "OBSERVED",
+        "value": {
+          "byte_index": 0,
+          "corrupted_sha256": "c1141ba6e77d0f6230607c8b2aab95a82a98c2b030ed18df6eb77e0b46884130",
+          "detected": true,
+          "fault": "SIMULATED_BYTE_XOR",
+          "hardware_fault_observed": false,
+          "original_sha256": "14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748",
+          "xor_mask": 1
+        }
+      },
+      "parent_fco_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+      "previous_mmr_root": "6a33eabd3b9e69c7f96117d2346da0996e820aa38ede4d4137ac998306fced66",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.bypass_reproduced": true,
+          "provided.security_policy_pass": false,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.bypass_reproduced": "YES",
+          "provided.security_policy_pass": "NO",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922\"}",
+            "index": 1,
+            "leaf_sha256": "5937c2a3fa3216d13d3f8a684438b5e7ee5c3202e6363212e95ddfdb4723e7b2"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"8b9a1e3fd9716a14dea45ba221f1a2bf5846bbf0ef887c758f3ad05fa8e9a7d4\"}",
+            "index": 2,
+            "leaf_sha256": "d8c65b558e8190270120731ee3a005acf032470b3eb21d0358ad80997e25f78d"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"bypass_reproduced\":true,\"security_policy_pass\":false},\"name\":\"03 Unsafe fallback reproduced\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:54Z\",\"state\":\"OBSERVED\",\"value\":{\"scope\":\"pure boolean teaching fixture; no real access granted\",\"unauthorized_request_allowed\":true}}}",
+            "index": 3,
+            "leaf_sha256": "c2b5434ecc06d72375445f74f875ccbfa06582418325fea98a90b66e5dbdce5d"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.bypass_reproduced\":true,\"provided.security_policy_pass\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.bypass_reproduced\":\"YES\",\"provided.security_policy_pass\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "d91e6569d1ba0f7e3ffaead7c64117078db542378344caee7c9f2a7dbd16c265"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":3,\"quarantined\":0,\"rejected\":0,\"steps\":3},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "6683fb43c275680a8051319139ffd1ab42f8864f3ee01d30b3bf18b92dbbb64f"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.000000",
+        "g_star": "0.000000",
+        "inputs": {
+          "admitted": 3,
+          "quarantined": 0,
+          "rejected": 0,
+          "steps": 3
+        },
+        "normalized_entropy": "-0.000000",
+        "reference_g_star": "0.000000",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+      "observation": {
+        "checks": {
+          "bypass_reproduced": true,
+          "security_policy_pass": false
+        },
+        "name": "03 Unsafe fallback reproduced",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:54Z",
+        "state": "OBSERVED",
+        "value": {
+          "scope": "pure boolean teaching fixture; no real access granted",
+          "unauthorized_request_allowed": true
+        }
+      },
+      "parent_fco_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+      "previous_mmr_root": "8b9a1e3fd9716a14dea45ba221f1a2bf5846bbf0ef887c758f3ad05fa8e9a7d4",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.finding_present": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.finding_present": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee\"}",
+            "index": 1,
+            "leaf_sha256": "1c0eca6d17423dee4aff53c3d06703e8088a1aaa8aeb7c0d5aec8ef772c26472"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"2c4164cd4720f472b29f1f93654725eaf8a06fbe36b18feea70f44cbf307582d\"}",
+            "index": 2,
+            "leaf_sha256": "8575dc063b3c09ae006e5411a3166868dae09c3d073bf078540d27cd8b9a92ea"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"finding_present\":true},\"name\":\"04 Semgrep before scan\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:56Z\",\"state\":\"OBSERVED\",\"value\":{\"count\":1,\"findings\":[{\"line\":3,\"message\":\"A failed hardware health check must not bypass authorization.\",\"rule\":\"rules.antigense.fail-open-on-hardware-health\"}],\"json_output_sha256\":\"863a58b1c72ff9dbdecce87b2addbf1bc976eed8738a36fa88d8d63137ae7d86\",\"metrics\":\"off\",\"rule_sha256\":\"d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0\",\"state\":\"OBSERVED\",\"target\":\"fixtures/before.py\",\"target_sha256\":\"65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3\",\"version\":\"1.180.0\"}}}",
+            "index": 3,
+            "leaf_sha256": "ec6c322599669aecee25a9466a5023c89b19c1df0d35f489e99b3bd833cb5ecf"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.finding_present\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.finding_present\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "b4f19cb3216131c1851d3b8b88174c8a84b52940acda463d3f0905222ab940f3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":4,\"quarantined\":0,\"rejected\":0,\"steps\":4},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "67933f1875294e9c01bcf8c06578ed6b0af769915eae82e4480cef363279632d"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.000000",
+        "g_star": "0.000000",
+        "inputs": {
+          "admitted": 4,
+          "quarantined": 0,
+          "rejected": 0,
+          "steps": 4
+        },
+        "normalized_entropy": "-0.000000",
+        "reference_g_star": "0.000000",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+      "observation": {
+        "checks": {
+          "finding_present": true
+        },
+        "name": "04 Semgrep before scan",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:56Z",
+        "state": "OBSERVED",
+        "value": {
+          "count": 1,
+          "findings": [
+            {
+              "line": 3,
+              "message": "A failed hardware health check must not bypass authorization.",
+              "rule": "rules.antigense.fail-open-on-hardware-health"
+            }
+          ],
+          "json_output_sha256": "863a58b1c72ff9dbdecce87b2addbf1bc976eed8738a36fa88d8d63137ae7d86",
+          "metrics": "off",
+          "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+          "state": "OBSERVED",
+          "target": "fixtures/before.py",
+          "target_sha256": "65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3",
+          "version": "1.180.0"
+        }
+      },
+      "parent_fco_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+      "previous_mmr_root": "2c4164cd4720f472b29f1f93654725eaf8a06fbe36b18feea70f44cbf307582d",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": false,
+          "provided.advice_schema_valid": false,
+          "provided.ai_authorized_to_patch": false,
+          "provided.akash_attestation_verified": false,
+          "provided.response_observed": false,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "NO",
+          "provided.advice_schema_valid": "NO",
+          "provided.ai_authorized_to_patch": "NO",
+          "provided.akash_attestation_verified": "NO",
+          "provided.response_observed": "NO",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "REJECTED",
+        "state": "FAILED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e\"}",
+            "index": 1,
+            "leaf_sha256": "e37daa956faa37322a2df989342a9550f3e2a3c843cfa9d99a5bf15674fbf680"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"213e8cbe8ab896a2cb26bcb2bd7ddc57f4402135213470469b4fa4a23c163341\"}",
+            "index": 2,
+            "leaf_sha256": "9ca0488c40df6842f5b3a50e84ef82435d302c03a445df69d16674c5bb1f844b"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"advice_schema_valid\":false,\"ai_authorized_to_patch\":false,\"akash_attestation_verified\":false,\"response_observed\":false},\"name\":\"05 AI incident analysis\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:56Z\",\"state\":\"FAILED\",\"value\":{\"error_class\":\"HTTPError\",\"http\":401,\"inference_observed\":false,\"reason\":\"authentication/preflight or inference failed; server body not retained\",\"route\":\"AkashML\",\"state\":\"FAILED\"}}}",
+            "index": 3,
+            "leaf_sha256": "905af21641ab08c0f9e50678b49ba088d32647c07259d5cac5873fa0cd8d417f"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":false,\"provided.advice_schema_valid\":false,\"provided.ai_authorized_to_patch\":false,\"provided.akash_attestation_verified\":false,\"provided.response_observed\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"NO\",\"provided.advice_schema_valid\":\"NO\",\"provided.ai_authorized_to_patch\":\"NO\",\"provided.akash_attestation_verified\":\"NO\",\"provided.response_observed\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"REJECTED\",\"state\":\"FAILED\"}}",
+            "index": 4,
+            "leaf_sha256": "52a17446799b63f4350713d6610ac2f66e9f01792269a63fa7c2be51a384ff62"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.073663\",\"g_star\":\"0.073663\",\"inputs\":{\"admitted\":4,\"quarantined\":0,\"rejected\":1,\"steps\":5},\"normalized_entropy\":\"0.360964\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "1b5f850b655cbb8467f3dace72412b8cead8b46f959201ec368c9368cca19ba9"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.073663",
+        "g_star": "0.073663",
+        "inputs": {
+          "admitted": 4,
+          "quarantined": 0,
+          "rejected": 1,
+          "steps": 5
+        },
+        "normalized_entropy": "0.360964",
+        "reference_g_star": "0.000000",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+      "observation": {
+        "checks": {
+          "advice_schema_valid": false,
+          "ai_authorized_to_patch": false,
+          "akash_attestation_verified": false,
+          "response_observed": false
+        },
+        "name": "05 AI incident analysis",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:56Z",
+        "state": "FAILED",
+        "value": {
+          "error_class": "HTTPError",
+          "http": 401,
+          "inference_observed": false,
+          "reason": "authentication/preflight or inference failed; server body not retained",
+          "route": "AkashML",
+          "state": "FAILED"
+        }
+      },
+      "parent_fco_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+      "previous_mmr_root": "213e8cbe8ab896a2cb26bcb2bd7ddc57f4402135213470469b4fa4a23c163341",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": false,
+          "provided.intake_prepared": true,
+          "provided.pi_execution_observed": false,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "NO",
+          "provided.intake_prepared": "YES",
+          "provided.pi_execution_observed": "NO",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "QUARANTINED",
+        "state": "NOT_TESTED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a\"}",
+            "index": 1,
+            "leaf_sha256": "5df1d21b4214b32bcc5a525e48110bc51db50f8b4fc7a66d6ae0283df7ca12b7"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"19c207f1ae4c671c0de563fbdc4f5a86109f607f5c3c524f2ea3f5190de017c0\"}",
+            "index": 2,
+            "leaf_sha256": "1f2ea69cc9fe1e0da71441f2250ed81146e10e039720259f4a702ff01d824011"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"intake_prepared\":true,\"pi_execution_observed\":false},\"name\":\"06 Pi review handoff\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:57Z\",\"state\":\"NOT_TESTED\",\"value\":{\"api\":\"UNKNOWN\",\"local_deployment\":\"UNKNOWN\",\"not_a_pi_response\":true,\"packet\":\"docs/PI_INTAKE.md\",\"request\":\"reproduce, review attack path and patch, verify no variants\",\"state\":\"NOT_TESTED\"}}}",
+            "index": 3,
+            "leaf_sha256": "dac64ff20a6f97a7b42a31829074f63faaaefaee7c003f16d6ffb383f5aed51a"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":false,\"provided.intake_prepared\":true,\"provided.pi_execution_observed\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"NO\",\"provided.intake_prepared\":\"YES\",\"provided.pi_execution_observed\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"QUARANTINED\",\"state\":\"NOT_TESTED\"}}",
+            "index": 4,
+            "leaf_sha256": "1ea45c9864af7215a4fff4ca662ab8df7b00bed0e5524f26642d6b0a92e1feb5"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.040635\",\"g_star\":\"0.114298\",\"inputs\":{\"admitted\":4,\"quarantined\":1,\"rejected\":1,\"steps\":6},\"normalized_entropy\":\"0.625815\",\"reference_g_star\":\"0.073663\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "3dcb272dd15fd07dea5c7958033f5422efa2bdefaf77683bf5774fb82feb61d1"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "0.040635",
+        "g_star": "0.114298",
+        "inputs": {
+          "admitted": 4,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 6
+        },
+        "normalized_entropy": "0.625815",
+        "reference_g_star": "0.073663",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+      "observation": {
+        "checks": {
+          "intake_prepared": true,
+          "pi_execution_observed": false
+        },
+        "name": "06 Pi review handoff",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:57Z",
+        "state": "NOT_TESTED",
+        "value": {
+          "api": "UNKNOWN",
+          "local_deployment": "UNKNOWN",
+          "not_a_pi_response": true,
+          "packet": "docs/PI_INTAKE.md",
+          "request": "reproduce, review attack path and patch, verify no variants",
+          "state": "NOT_TESTED"
+        }
+      },
+      "parent_fco_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+      "previous_mmr_root": "19c207f1ae4c671c0de563fbdc4f5a86109f607f5c3c524f2ea3f5190de017c0",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.gate_enforced": true,
+          "provided.patch_applied": false,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.gate_enforced": "YES",
+          "provided.patch_applied": "NO",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423\"}",
+            "index": 1,
+            "leaf_sha256": "76681cb67e6ff6816a0ff2bd376279310d14b74ed0edb1c4723198778d6c5479"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"b49f910cccc5b25143d4e40a052966d7d9586e30ad9ac3ec47a6633d069c90ad\"}",
+            "index": 2,
+            "leaf_sha256": "7b1577557e9e9e1edda252f17d3b5e9836e82c71373c7316229574764dac1b66"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"gate_enforced\":true,\"patch_applied\":false},\"name\":\"07 Review gate\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:57Z\",\"state\":\"OBSERVED\",\"value\":{\"action\":\"requires current MMR-bound local action; signature NOT_SIGNED\",\"pending\":true,\"pinned_patch_sha256\":\"1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942\"}}}",
+            "index": 3,
+            "leaf_sha256": "044318b20c86412036d4f6e50372674bbcec174f633e05fa19fd342246ad665e"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.gate_enforced\":true,\"provided.patch_applied\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.gate_enforced\":\"YES\",\"provided.patch_applied\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "84e6dd8b5a899ac58718ab08b4cef2308de5af910ebc8fac9270d8028b229534"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.029630\",\"g_star\":\"0.084668\",\"inputs\":{\"admitted\":5,\"quarantined\":1,\"rejected\":1,\"steps\":7},\"normalized_entropy\":\"0.574417\",\"reference_g_star\":\"0.114298\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "cd94ac66b4d3d9eacd06057b52815d42ea7842f9ea43bc2c1a6985b27fcfbb9c"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "-0.029630",
+        "g_star": "0.084668",
+        "inputs": {
+          "admitted": 5,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 7
+        },
+        "normalized_entropy": "0.574417",
+        "reference_g_star": "0.114298",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+      "observation": {
+        "checks": {
+          "gate_enforced": true,
+          "patch_applied": false
+        },
+        "name": "07 Review gate",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:57Z",
+        "state": "OBSERVED",
+        "value": {
+          "action": "requires current MMR-bound local action; signature NOT_SIGNED",
+          "pending": true,
+          "pinned_patch_sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942"
+        }
+      },
+      "parent_fco_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+      "previous_mmr_root": "b49f910cccc5b25143d4e40a052966d7d9586e30ad9ac3ec47a6633d069c90ad",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.cryptographic_identity_verified": false,
+          "provided.mmr_bound": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.cryptographic_identity_verified": "NO",
+          "provided.mmr_bound": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a\"}",
+            "index": 1,
+            "leaf_sha256": "b21454d7ef558b94a896a557251567770d6d5ab46d824a1e9758f6eee6c8a7ed"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"e74fb16f698baee9d2ab1496cee444cbace2ef2df9d05f9775eef8890ffd54e2\"}",
+            "index": 2,
+            "leaf_sha256": "d34ca39f09c4db08c08dc72bfefb5321f881e0a963bb9400f2ba7bf57203869a"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"cryptographic_identity_verified\":false,\"mmr_bound\":true},\"name\":\"08 Local review action\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:57Z\",\"state\":\"OBSERVED\",\"value\":{\"actor\":\"bounded-presentation\",\"approved_mmr\":\"e74fb16f698baee9d2ab1496cee444cbace2ef2df9d05f9775eef8890ffd54e2\",\"identity\":\"UNVERIFIED\",\"provenance\":\"USER_REQUEST_022_CONTROLLED_FIXTURE_REVIEW\",\"signature\":\"NOT_SIGNED\"}}}",
+            "index": 3,
+            "leaf_sha256": "cf251972e5f3ad78fb25a88d5660fc090d6c4a1426310c215fc35dd3beb06153"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.cryptographic_identity_verified\":false,\"provided.mmr_bound\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.cryptographic_identity_verified\":\"NO\",\"provided.mmr_bound\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "098ec35dc2d6eb690af94f52a7cb9ecb8500ccd069ef0b64e2ee7ccec302c1f4"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.020392\",\"g_star\":\"0.064276\",\"inputs\":{\"admitted\":6,\"quarantined\":1,\"rejected\":1,\"steps\":8},\"normalized_entropy\":\"0.530639\",\"reference_g_star\":\"0.084668\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "4b23e0c7e00f6c95784f5042a0c215f6ad6e7cab4a8b023213e218d34adf2d82"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "-0.020392",
+        "g_star": "0.064276",
+        "inputs": {
+          "admitted": 6,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 8
+        },
+        "normalized_entropy": "0.530639",
+        "reference_g_star": "0.084668",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+      "observation": {
+        "checks": {
+          "cryptographic_identity_verified": false,
+          "mmr_bound": true
+        },
+        "name": "08 Local review action",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:57Z",
+        "state": "OBSERVED",
+        "value": {
+          "actor": "bounded-presentation",
+          "approved_mmr": "e74fb16f698baee9d2ab1496cee444cbace2ef2df9d05f9775eef8890ffd54e2",
+          "identity": "UNVERIFIED",
+          "provenance": "USER_REQUEST_022_CONTROLLED_FIXTURE_REVIEW",
+          "signature": "NOT_SIGNED"
+        }
+      },
+      "parent_fco_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+      "previous_mmr_root": "e74fb16f698baee9d2ab1496cee444cbace2ef2df9d05f9775eef8890ffd54e2",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.pinned_fix_selected": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.pinned_fix_selected": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815\"}",
+            "index": 1,
+            "leaf_sha256": "97a519103bd2b190445c0de845185c285028f8916e00420cf4a35b17108bc882"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"6a74fb11c3033a67d97ddcfee4611eeafc559839aac13c3cf66c8957bf1cd819\"}",
+            "index": 2,
+            "leaf_sha256": "eafecc35e9d3fdf60b77d8568d066f9c8d6a744eafbfd6983c1f29f1b5412060"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"pinned_fix_selected\":true},\"name\":\"09 Pinned fail-closed fix\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:57Z\",\"state\":\"OBSERVED\",\"value\":{\"scope\":\"teaching fixture selected; no host patch\",\"sha256\":\"1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942\"}}}",
+            "index": 3,
+            "leaf_sha256": "78e1df3590b5a6a0e492e70f9c4fbd46de1dad5368511f5230930c86da2d288a"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.pinned_fix_selected\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.pinned_fix_selected\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "1cb09b071c6a4da059481e63f66d1440ffaa12e69f6994b2be0680a0d271948f"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.014678\",\"g_star\":\"0.049598\",\"inputs\":{\"admitted\":7,\"quarantined\":1,\"rejected\":1,\"steps\":9},\"normalized_entropy\":\"0.493213\",\"reference_g_star\":\"0.064276\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "dbe97bad75e6d3a03e12f2eaa532d7c1a3ff5e7a0348db7e9b9d45746b4c8555"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "-0.014678",
+        "g_star": "0.049598",
+        "inputs": {
+          "admitted": 7,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 9
+        },
+        "normalized_entropy": "0.493213",
+        "reference_g_star": "0.064276",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+      "observation": {
+        "checks": {
+          "pinned_fix_selected": true
+        },
+        "name": "09 Pinned fail-closed fix",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:57Z",
+        "state": "OBSERVED",
+        "value": {
+          "scope": "teaching fixture selected; no host patch",
+          "sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942"
+        }
+      },
+      "parent_fco_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+      "previous_mmr_root": "6a74fb11c3033a67d97ddcfee4611eeafc559839aac13c3cf66c8957bf1cd819",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.healthy_authorized_continues": true,
+          "provided.matrix_pass": true,
+          "provided.unauthorized_on_failure_denied": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.healthy_authorized_continues": "YES",
+          "provided.matrix_pass": "YES",
+          "provided.unauthorized_on_failure_denied": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e\"}",
+            "index": 1,
+            "leaf_sha256": "8fd848e7bfc4a60ac9f2256947557a204a0d4542b7f3bf02a766126fc0094b74"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"2008e433b0811cfa7881a72607ba2d6cc3d41ebcabe1f084b91c8a11d5297f90\"}",
+            "index": 2,
+            "leaf_sha256": "ce48d555834d77959a3a34c89096fc499e2fb1ef84d33dca79a3ce148476965d"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"healthy_authorized_continues\":true,\"matrix_pass\":true,\"unauthorized_on_failure_denied\":true},\"name\":\"10 Recovery and negative checks\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:57Z\",\"state\":\"OBSERVED\",\"value\":{\"cases\":[{\"allowed\":false,\"authorized\":false,\"expected\":false,\"worker_healthy\":false},{\"allowed\":false,\"authorized\":false,\"expected\":false,\"worker_healthy\":true},{\"allowed\":false,\"authorized\":true,\"expected\":false,\"worker_healthy\":false},{\"allowed\":true,\"authorized\":true,\"expected\":true,\"worker_healthy\":true}],\"expected\":332833500,\"known_workload\":332833500}}}",
+            "index": 3,
+            "leaf_sha256": "bd30a1c32f3ab748dccdd831187d10148aef9ed6bd2cfc07b52878f499255baf"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.healthy_authorized_continues\":true,\"provided.matrix_pass\":true,\"provided.unauthorized_on_failure_denied\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.healthy_authorized_continues\":\"YES\",\"provided.matrix_pass\":\"YES\",\"provided.unauthorized_on_failure_denied\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "68cff1f7b55134f324319aec06a76759a046ab2b528e14b77780e429ace460f0"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.010935\",\"g_star\":\"0.038663\",\"inputs\":{\"admitted\":8,\"quarantined\":1,\"rejected\":1,\"steps\":10},\"normalized_entropy\":\"0.460964\",\"reference_g_star\":\"0.049598\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "2f10a5e04b9a08052dfad997e322f3b2cb8fdee7fa0b05c3cfadcc7d8dea06ae"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "-0.010935",
+        "g_star": "0.038663",
+        "inputs": {
+          "admitted": 8,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 10
+        },
+        "normalized_entropy": "0.460964",
+        "reference_g_star": "0.049598",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+      "observation": {
+        "checks": {
+          "healthy_authorized_continues": true,
+          "matrix_pass": true,
+          "unauthorized_on_failure_denied": true
+        },
+        "name": "10 Recovery and negative checks",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:57Z",
+        "state": "OBSERVED",
+        "value": {
+          "cases": [
+            {
+              "allowed": false,
+              "authorized": false,
+              "expected": false,
+              "worker_healthy": false
+            },
+            {
+              "allowed": false,
+              "authorized": false,
+              "expected": false,
+              "worker_healthy": true
+            },
+            {
+              "allowed": false,
+              "authorized": true,
+              "expected": false,
+              "worker_healthy": false
+            },
+            {
+              "allowed": true,
+              "authorized": true,
+              "expected": true,
+              "worker_healthy": true
+            }
+          ],
+          "expected": 332833500,
+          "known_workload": 332833500
+        }
+      },
+      "parent_fco_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+      "previous_mmr_root": "2008e433b0811cfa7881a72607ba2d6cc3d41ebcabe1f084b91c8a11d5297f90",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.custom_rule_clear": true,
+          "provided.scanner_executed": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.custom_rule_clear": "YES",
+          "provided.scanner_executed": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d\"}",
+            "index": 1,
+            "leaf_sha256": "f07086ba67a1a1d0ebbba5051ad41e1697ebd3b0c57d39f0de0ca32fe3b1c6fc"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"afe6c3288211323096f3b239a32e4eb9bb35f1620ea33f6bc993f3dcffaf26bb\"}",
+            "index": 2,
+            "leaf_sha256": "164bc19131afc6f06d61dfd6e19f9f959607aa361a82bda51040106bd7c24f2e"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"custom_rule_clear\":true,\"scanner_executed\":true},\"name\":\"11 Semgrep after scan\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:58Z\",\"state\":\"OBSERVED\",\"value\":{\"count\":0,\"findings\":[],\"json_output_sha256\":\"e5325ca446d9a8bab814a054338b612dbd7ccf33ef9ff17470bbfabbdeacc8e7\",\"metrics\":\"off\",\"rule_sha256\":\"d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0\",\"state\":\"OBSERVED\",\"target\":\"fixtures/after.py\",\"target_sha256\":\"1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942\",\"version\":\"1.180.0\"}}}",
+            "index": 3,
+            "leaf_sha256": "c90271642aa94b2254d5ae822933e95fafcd28f1a755466cc65963d32f4057f8"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.custom_rule_clear\":true,\"provided.scanner_executed\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.custom_rule_clear\":\"YES\",\"provided.scanner_executed\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "d7e4cba3c61d5427dc46b6bb3a020a71fbc6c7c47af51c62fe25af33963479ac"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.008370\",\"g_star\":\"0.030293\",\"inputs\":{\"admitted\":9,\"quarantined\":1,\"rejected\":1,\"steps\":11},\"normalized_entropy\":\"0.432928\",\"reference_g_star\":\"0.038663\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "8cf5e11d2b52a6c9f31a3785b99f296ef006a4b03704a385094f89123fac316f"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "-0.008370",
+        "g_star": "0.030293",
+        "inputs": {
+          "admitted": 9,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 11
+        },
+        "normalized_entropy": "0.432928",
+        "reference_g_star": "0.038663",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba",
+      "observation": {
+        "checks": {
+          "custom_rule_clear": true,
+          "scanner_executed": true
+        },
+        "name": "11 Semgrep after scan",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:58Z",
+        "state": "OBSERVED",
+        "value": {
+          "count": 0,
+          "findings": [],
+          "json_output_sha256": "e5325ca446d9a8bab814a054338b612dbd7ccf33ef9ff17470bbfabbdeacc8e7",
+          "metrics": "off",
+          "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+          "state": "OBSERVED",
+          "target": "fixtures/after.py",
+          "target_sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942",
+          "version": "1.180.0"
+        }
+      },
+      "parent_fco_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+      "previous_mmr_root": "afe6c3288211323096f3b239a32e4eb9bb35f1620ea33f6bc993f3dcffaf26bb",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    },
+    {
+      "SIGNATURE": "NOT_SIGNED",
+      "classification": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "checks": {
+          "name_declared": true,
+          "observation_available": true,
+          "provided.exact_readback": true,
+          "provided.replay_count_preserved": true,
+          "provided.same_incident_ids": true,
+          "runtime_operation_validated": false,
+          "state_declared": true
+        },
+        "checks_yes_no": {
+          "name_declared": "YES",
+          "observation_available": "YES",
+          "provided.exact_readback": "YES",
+          "provided.replay_count_preserved": "YES",
+          "provided.same_incident_ids": "YES",
+          "runtime_operation_validated": "NO",
+          "state_declared": "YES"
+        },
+        "custody_admission": "ADMITTED",
+        "state": "OBSERVED"
+      },
+      "commitment": {
+        "algorithm": "fco-ordered-v1",
+        "leaf_count": 8,
+        "leaves": [
+          {
+            "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e\"}",
+            "index": 0,
+            "leaf_sha256": "422faf991af75684bf91dee46a8c4b6349bd321eccfd72980c10b5dc40ff63c3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba\"}",
+            "index": 1,
+            "leaf_sha256": "64c6b685bd2129a8f88a2c060880ec6d7fdad4697bac042273a7eb165868348f"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"2b03a7c00ae940162f426ce608445d4a077e698d8df46e6b6e8aa09f26a0d8a4\"}",
+            "index": 2,
+            "leaf_sha256": "63bb4b0a33508f02a6b48e8d1d65c1923323312dd0df736d3720b3735dff6ece"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"exact_readback\":true,\"replay_count_preserved\":true,\"same_incident_ids\":true},\"name\":\"12 ClickHouse incident ingest and reconciliation\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T19:13:59Z\",\"state\":\"OBSERVED\",\"value\":{\"akash_fco\":\"fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a\",\"causality\":\"input/output lineage; no physical hardware causality proof\",\"exact_values_match\":true,\"fault_fco\":\"fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922\",\"fault_prefix\":\"8b9a1e3fd9716a14dea45ba221f1a2bf5846bbf0ef887c758f3ad05fa8e9a7d4\",\"http\":200,\"input_sha256\":\"6f9a47fc06f760bb99115e9dfab74dbf93aa52e58cce2260b4ffd4c9af874652\",\"insert_ms\":300.423,\"occurrence_count_preserved\":true,\"query\":\"SELECT * FROM antigense_presentation_022 FINAL WHERE run_id='run-20261009T191354Z-a98b5c03' ORDER BY seq\",\"query_ms\":160.706,\"readback_rows\":11,\"readback_sha256\":\"22fab1e10c3a246b21fe443dbd72b2aba6f5b7a9ef7663b7cee6bdf873f3e92a\",\"replay_ms\":255.126,\"replay_rows_sent\":11,\"rows_sent\":11,\"run_id\":\"run-20261009T191354Z-a98b5c03\",\"semgrep_fco\":\"fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e\",\"table\":\"antigense_presentation_022\"}}}",
+            "index": 3,
+            "leaf_sha256": "a6eaf48f8b61d784553cd4a1ce9de5685164e983095abf9e3621d3419b6fa5e3"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.exact_readback\":true,\"provided.replay_count_preserved\":true,\"provided.same_incident_ids\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.exact_readback\":\"YES\",\"provided.replay_count_preserved\":\"YES\",\"provided.same_incident_ids\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+            "index": 4,
+            "leaf_sha256": "1c43cbe09701a5c56e68fb996fa3ee9978ffd0d052d8310be3e673c5f083624d"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"-0.006547\",\"g_star\":\"0.023746\",\"inputs\":{\"admitted\":10,\"quarantined\":1,\"rejected\":1,\"steps\":12},\"normalized_entropy\":\"0.408345\",\"reference_g_star\":\"0.030293\",\"tau\":\"0.35\"}}",
+            "index": 5,
+            "leaf_sha256": "cf8208c54fc62d82bdfbe19a34c554f07fef80fe146c9a83992e0572ac18465d"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+            "index": 6,
+            "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+          },
+          {
+            "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+            "index": 7,
+            "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+          }
+        ],
+        "root": "d5f75663b54c33169e3df49b55a5171573bd0b427653657e63ba01fee8f6ce43"
+      },
+      "diagnostic": {
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+        "delta_g_star": "-0.006547",
+        "g_star": "0.023746",
+        "inputs": {
+          "admitted": 10,
+          "quarantined": 1,
+          "rejected": 1,
+          "steps": 12
+        },
+        "normalized_entropy": "0.408345",
+        "reference_g_star": "0.030293",
+        "tau": "0.35"
+      },
+      "fco_id": "fco:sha256:d5f75663b54c33169e3df49b55a5171573bd0b427653657e63ba01fee8f6ce43",
+      "observation": {
+        "checks": {
+          "exact_readback": true,
+          "replay_count_preserved": true,
+          "same_incident_ids": true
+        },
+        "name": "12 ClickHouse incident ingest and reconciliation",
+        "origin": "local-execution",
+        "recorded_utc": "2026-10-09T19:13:59Z",
+        "state": "OBSERVED",
+        "value": {
+          "akash_fco": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+          "causality": "input/output lineage; no physical hardware causality proof",
+          "exact_values_match": true,
+          "fault_fco": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+          "fault_prefix": "8b9a1e3fd9716a14dea45ba221f1a2bf5846bbf0ef887c758f3ad05fa8e9a7d4",
+          "http": 200,
+          "input_sha256": "6f9a47fc06f760bb99115e9dfab74dbf93aa52e58cce2260b4ffd4c9af874652",
+          "insert_ms": 300.423,
+          "occurrence_count_preserved": true,
+          "query": "SELECT * FROM antigense_presentation_022 FINAL WHERE run_id='run-20261009T191354Z-a98b5c03' ORDER BY seq",
+          "query_ms": 160.706,
+          "readback_rows": 11,
+          "readback_sha256": "22fab1e10c3a246b21fe443dbd72b2aba6f5b7a9ef7663b7cee6bdf873f3e92a",
+          "replay_ms": 255.126,
+          "replay_rows_sent": 11,
+          "rows_sent": 11,
+          "run_id": "run-20261009T191354Z-a98b5c03",
+          "semgrep_fco": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+          "table": "antigense_presentation_022"
+        }
+      },
+      "parent_fco_id": "fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba",
+      "previous_mmr_root": "2b03a7c00ae940162f426ce608445d4a077e698d8df46e6b6e8aa09f26a0d8a4",
+      "project_root": "315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+      "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+      "schema": "cyberhack.StepFCO.v008r1"
+    }
+  ],
+  "prefixes": [
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 1,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        }
+      ],
+      "peaks": [
+        "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+      ],
+      "root": "dcdd5003aa57e386edb5dd8ce339668ddd53fe09b788f54e1c6467c9175d9b21"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 2,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        }
+      ],
+      "peaks": [
+        "8031f2e05ec9ce2dd5aec222b1e68949c0dba0e670986f44a96cb68b6a6e44fc"
+      ],
+      "root": "6a33eabd3b9e69c7f96117d2346da0996e820aa38ede4d4137ac998306fced66"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 3,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        }
+      ],
+      "peaks": [
+        "8031f2e05ec9ce2dd5aec222b1e68949c0dba0e670986f44a96cb68b6a6e44fc",
+        "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+      ],
+      "root": "8b9a1e3fd9716a14dea45ba221f1a2bf5846bbf0ef887c758f3ad05fa8e9a7d4"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 4,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        }
+      ],
+      "peaks": [
+        "052614589417c2008aaa5ea72eb8c2fe28801159b036264787f508c012778499"
+      ],
+      "root": "2c4164cd4720f472b29f1f93654725eaf8a06fbe36b18feea70f44cbf307582d"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 5,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        }
+      ],
+      "peaks": [
+        "052614589417c2008aaa5ea72eb8c2fe28801159b036264787f508c012778499",
+        "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+      ],
+      "root": "213e8cbe8ab896a2cb26bcb2bd7ddc57f4402135213470469b4fa4a23c163341"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 6,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        }
+      ],
+      "peaks": [
+        "052614589417c2008aaa5ea72eb8c2fe28801159b036264787f508c012778499",
+        "a71e9c7e36356de48523ebf46a9877398f4864c519b7350c0fcb0cdaf4d3308c"
+      ],
+      "root": "19c207f1ae4c671c0de563fbdc4f5a86109f607f5c3c524f2ea3f5190de017c0"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 7,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        }
+      ],
+      "peaks": [
+        "052614589417c2008aaa5ea72eb8c2fe28801159b036264787f508c012778499",
+        "a71e9c7e36356de48523ebf46a9877398f4864c519b7350c0fcb0cdaf4d3308c",
+        "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+      ],
+      "root": "b49f910cccc5b25143d4e40a052966d7d9586e30ad9ac3ec47a6633d069c90ad"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 8,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+            "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+            "event_index": 8
+          },
+          "leaf_sha256": "eca387a874d5a96e6d82587d1812ae4bb6fac8a42e469ec21f804c363585924a"
+        }
+      ],
+      "peaks": [
+        "83d0f5296ef8777e1849c4a84f674be436b6a955fdbfbf2320d03cefbd7c92f5"
+      ],
+      "root": "e74fb16f698baee9d2ab1496cee444cbace2ef2df9d05f9775eef8890ffd54e2"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 9,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+            "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+            "event_index": 8
+          },
+          "leaf_sha256": "eca387a874d5a96e6d82587d1812ae4bb6fac8a42e469ec21f804c363585924a"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+            "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+            "event_index": 9
+          },
+          "leaf_sha256": "2095dfa3552a682305cf992c2b8c4c93634e699eec6155b3fe47a32be1a849e5"
+        }
+      ],
+      "peaks": [
+        "83d0f5296ef8777e1849c4a84f674be436b6a955fdbfbf2320d03cefbd7c92f5",
+        "2095dfa3552a682305cf992c2b8c4c93634e699eec6155b3fe47a32be1a849e5"
+      ],
+      "root": "6a74fb11c3033a67d97ddcfee4611eeafc559839aac13c3cf66c8957bf1cd819"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 10,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+            "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+            "event_index": 8
+          },
+          "leaf_sha256": "eca387a874d5a96e6d82587d1812ae4bb6fac8a42e469ec21f804c363585924a"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+            "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+            "event_index": 9
+          },
+          "leaf_sha256": "2095dfa3552a682305cf992c2b8c4c93634e699eec6155b3fe47a32be1a849e5"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+            "event_hash": "fed08fca4ccc951672041a863b23dc36238ce1db59180dfb49ca4cca3351122f",
+            "event_index": 10
+          },
+          "leaf_sha256": "57e394f6b878ed164757b637431626185ee2a5429ffb87f206c39a36b330dfa8"
+        }
+      ],
+      "peaks": [
+        "83d0f5296ef8777e1849c4a84f674be436b6a955fdbfbf2320d03cefbd7c92f5",
+        "e7df1583ad9a0f4305437410a3729e637d1a3e1e1f0b3a02e3ae02073ae43284"
+      ],
+      "root": "2008e433b0811cfa7881a72607ba2d6cc3d41ebcabe1f084b91c8a11d5297f90"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 11,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+            "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+            "event_index": 8
+          },
+          "leaf_sha256": "eca387a874d5a96e6d82587d1812ae4bb6fac8a42e469ec21f804c363585924a"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+            "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+            "event_index": 9
+          },
+          "leaf_sha256": "2095dfa3552a682305cf992c2b8c4c93634e699eec6155b3fe47a32be1a849e5"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+            "event_hash": "fed08fca4ccc951672041a863b23dc36238ce1db59180dfb49ca4cca3351122f",
+            "event_index": 10
+          },
+          "leaf_sha256": "57e394f6b878ed164757b637431626185ee2a5429ffb87f206c39a36b330dfa8"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+            "event_hash": "21cb93e39d24423a61b53a608003d14e03742b4bf04c116383df2c20ac9bc20e",
+            "event_index": 11
+          },
+          "leaf_sha256": "63162e11f250f964be2e1b0e8dadb358ce1d607861ef88d0f6354ae7fda54732"
+        }
+      ],
+      "peaks": [
+        "83d0f5296ef8777e1849c4a84f674be436b6a955fdbfbf2320d03cefbd7c92f5",
+        "e7df1583ad9a0f4305437410a3729e637d1a3e1e1f0b3a02e3ae02073ae43284",
+        "63162e11f250f964be2e1b0e8dadb358ce1d607861ef88d0f6354ae7fda54732"
+      ],
+      "root": "afe6c3288211323096f3b239a32e4eb9bb35f1620ea33f6bc993f3dcffaf26bb"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 12,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+            "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+            "event_index": 8
+          },
+          "leaf_sha256": "eca387a874d5a96e6d82587d1812ae4bb6fac8a42e469ec21f804c363585924a"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+            "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+            "event_index": 9
+          },
+          "leaf_sha256": "2095dfa3552a682305cf992c2b8c4c93634e699eec6155b3fe47a32be1a849e5"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+            "event_hash": "fed08fca4ccc951672041a863b23dc36238ce1db59180dfb49ca4cca3351122f",
+            "event_index": 10
+          },
+          "leaf_sha256": "57e394f6b878ed164757b637431626185ee2a5429ffb87f206c39a36b330dfa8"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+            "event_hash": "21cb93e39d24423a61b53a608003d14e03742b4bf04c116383df2c20ac9bc20e",
+            "event_index": 11
+          },
+          "leaf_sha256": "63162e11f250f964be2e1b0e8dadb358ce1d607861ef88d0f6354ae7fda54732"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba",
+            "event_hash": "fcd70f7739ec12cdca841a5472dba745abb6bc75b30acc3e0afa79f47feee385",
+            "event_index": 12
+          },
+          "leaf_sha256": "6e0bdc7529d5ce58eeb7019a93f1a473dee0fa9902ec8fe792596e60495ef141"
+        }
+      ],
+      "peaks": [
+        "83d0f5296ef8777e1849c4a84f674be436b6a955fdbfbf2320d03cefbd7c92f5",
+        "1a73ea6bf785f97596995f3eae8b3926b628b53706e2bcda341076e5daafa3c9"
+      ],
+      "root": "2b03a7c00ae940162f426ce608445d4a077e698d8df46e6b6e8aa09f26a0d8a4"
+    },
+    {
+      "algorithm": "HYDRALAMP_MMR_V1",
+      "leaf_count": 13,
+      "leaves": [
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:315fc42ec9bb22ed6fa117393334ed85d593546f446d3f2c1e0acd5e645e0c0e",
+            "event_hash": "ab34f6489dd86c8c16ba23a6ec0600ec2d6c4f97f48c42542ad2d79d8b308b0e",
+            "event_index": 1
+          },
+          "leaf_sha256": "a2bc841d9ce0eb3d465ea7456947a6090daa94706508196a353593cd6f2a6c6d"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:a2af9ecf2d19fac8ded46f7dc7dced48e6b544da179d37fe66c3a11eee8143b7",
+            "event_hash": "90d3a70eabc6e31dc89a5700c9378a3322c4b4a05bbfe4a839997ca26724976e",
+            "event_index": 2
+          },
+          "leaf_sha256": "8929c7dab2329d4e3621218178a5e975c0bc0e84d7de2e2af6f430a46ff01131"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:aa08f58972e39eb0465d9cb5e17712fdc57ae4cf5149aeb45be545ac3d352922",
+            "event_hash": "6988dbd3c8b192bad07679e821f36f195d5c33d6d002a80f51695e7e66c5938b",
+            "event_index": 3
+          },
+          "leaf_sha256": "68f67f8f135f66462131d262910cc541c99c6bb52b754ebb92cd67a51984473f"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:06f74514bbbdb3f844613f74207f14c2c763ecd4db3ea5eef14c0de10c8038ee",
+            "event_hash": "cba9ed4132dd3c0137821add824836571ebf21c8ac131b755df9a205d42f86de",
+            "event_index": 4
+          },
+          "leaf_sha256": "f8f9fc053be086b3bc85c58072886fc93fc774023b7c34c18807350850889ef0"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:26819b3477155deece79adae3a9f7910e405adff98c55d6da5f68efc70fa195e",
+            "event_hash": "6007dde64e92f6c9185576de79a7087b75a441ab113df7e8919297e35ae716d4",
+            "event_index": 5
+          },
+          "leaf_sha256": "e3baef8c3739e26451f71889c57ae9524140c1939405e45f362fda99a0ab2750"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b62446a87af85da0b08dc1a3770cdf38f247212cf04b2af2e9dc2ca9b418084a",
+            "event_hash": "2c695d5490d8bff80938a1e724eba0e4d6d24d1f76326afe4de67ec1088cbefa",
+            "event_index": 6
+          },
+          "leaf_sha256": "c37bdd274ebb01e96ee1abf7e251606a3c4061ed5e348759a11dc2d0f1269d89"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:9d26aab28c6b0611266abd4f9099ad6e23c4d2f582547422b525e66c7c5e0423",
+            "event_hash": "dff32a6c306e63e725af67235289d4e0d9742794e50ce8688499dc23e045c1d7",
+            "event_index": 7
+          },
+          "leaf_sha256": "b3187643ca70eab59ee36346eac23884fd5fd48477ff4f927717d2d93e84f7be"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b04fdb27efb9e1ca7e575c15cbbe89294592890509eade1ead5d3ab2bb88159a",
+            "event_hash": "26f927e7548e3653d2137cb9222d3ac810a5aced7449383d3248ba32ed4bbaf9",
+            "event_index": 8
+          },
+          "leaf_sha256": "eca387a874d5a96e6d82587d1812ae4bb6fac8a42e469ec21f804c363585924a"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:ddce8d1b187c32d4e37c1ec36a446695f61a76c7dc9b1e5f2c789b763cae4815",
+            "event_hash": "09e64fe165dc4290eec4f9aedbeaef97bcb2ff77984e7ab6974c80d8f25ff9e9",
+            "event_index": 9
+          },
+          "leaf_sha256": "2095dfa3552a682305cf992c2b8c4c93634e699eec6155b3fe47a32be1a849e5"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:82d3bba0c61c5e0b1d463f8f8e776527b8406b0fb4a9b83b5b22a12a8c396b2e",
+            "event_hash": "fed08fca4ccc951672041a863b23dc36238ce1db59180dfb49ca4cca3351122f",
+            "event_index": 10
+          },
+          "leaf_sha256": "57e394f6b878ed164757b637431626185ee2a5429ffb87f206c39a36b330dfa8"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:b321ba0747981ee7bd8a75850dc22343e5c20b96ae36d3176fb2db584df1006d",
+            "event_hash": "21cb93e39d24423a61b53a608003d14e03742b4bf04c116383df2c20ac9bc20e",
+            "event_index": 11
+          },
+          "leaf_sha256": "63162e11f250f964be2e1b0e8dadb358ce1d607861ef88d0f6354ae7fda54732"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:3f195b17ea05644270cd9bf90b98e8ba61ea402c992753e23e0f0edea1f478ba",
+            "event_hash": "fcd70f7739ec12cdca841a5472dba745abb6bc75b30acc3e0afa79f47feee385",
+            "event_index": 12
+          },
+          "leaf_sha256": "6e0bdc7529d5ce58eeb7019a93f1a473dee0fa9902ec8fe792596e60495ef141"
+        },
+        {
+          "body": {
+            "cfmo_version_id": "fco:sha256:d5f75663b54c33169e3df49b55a5171573bd0b427653657e63ba01fee8f6ce43",
+            "event_hash": "43d9dae4cb0cd65e247548226e91b596ac5cd777b9cfea64bcb87133d654d368",
+            "event_index": 13
+          },
+          "leaf_sha256": "fc98639c4603895dbcd564f5cb84e923187b6b5fc508bd81fc25af674c4d3d9f"
+        }
+      ],
+      "peaks": [
+        "83d0f5296ef8777e1849c4a84f674be436b6a955fdbfbf2320d03cefbd7c92f5",
+        "1a73ea6bf785f97596995f3eae8b3926b628b53706e2bcda341076e5daafa3c9",
+        "fc98639c4603895dbcd564f5cb84e923187b6b5fc508bd81fc25af674c4d3d9f"
+      ],
+      "root": "66c3e6e8a64f36f1290a598606d6b9034de1bca62ef559d058e5013d95c12723"
+    }
+  ]
+}
