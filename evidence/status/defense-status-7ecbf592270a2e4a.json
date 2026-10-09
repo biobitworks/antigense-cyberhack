@@ -1,25 +1,11 @@
 {
   "akash": {
-    "ceiling": "FAILED: HTTPError (HTTP 401)",
+    "ceiling": "NOT_TESTED: no credentials supplied",
     "inference_id": null,
     "model": null,
     "state": "FAILED"
   },
   "claim_ceiling": "Hash integrity is not truth, safety or causality. Zero findings means only this scan found none. G*/delta-G* unvalidated.",
-  "correction": {
-    "corrected_fields": {
-      "akash.ceiling": {
-        "now": "FAILED: HTTPError (HTTP 401)",
-        "was": "NOT_TESTED: no credentials supplied"
-      }
-    },
-    "later_akash_result": "a separate Console API GPU run succeeded later (evidence/successor_024); this file describes run run011-ad35173536c3 only",
-    "publication_note": "the original was a candidate never authorized for publication (step-000074: NOT_TESTED); it reached the site through a later deploy. This correction is published deliberately.",
-    "reason": "the original reported every Akash failure as missing credentials; the receipt records a credentialed HTTP 401 (bug fixed in agent011.py, PR #1 d5d032a)",
-    "source_receipt": "evidence/successor_011/step-000070.json",
-    "superseded_copy": "evidence/status/defense-status-7ecbf592270a2e4a.json",
-    "supersedes_sha256": "7ecbf592270a2e4a907bab78fbd537ce24da91bddbe2fd2beab8db904ed36ec7"
-  },
   "custody": {
     "leaf_count_before_publication": 72,
     "mmr_root_before_publication": "62cce1cc3de74ae9a61c83108a51bc5c5dce75710647d604f51559ab3b5347d5",
