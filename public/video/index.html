@@ -28,10 +28,10 @@ footer{font-size:13px;color:var(--sub);border-top:1px solid var(--line)}
 <video id="demo" controls preload="metadata" playsinline poster="./poster.jpg">
 <source src="./antigense-039r1-audio-clean.mp4" type="video/mp4">
 <track label="English — editorial draft" kind="subtitles" srclang="en" src="./captions.vtt">
-Your browser cannot play the video. <a href="./antigense-039r1-audio-clean.mp4">Open the video file</a>.
+Your browser cannot play the video. <a href="https://youtu.be/hpLH88V6PF0">Open it on YouTube</a>.
 </video>
-<p class="notice"><strong>Audio and captions:</strong> Narration has been noise-filtered and level-normalized without changing the picture or the spoken content. Captions and transcript are a timed machine transcription with editorial normalization, <strong>not yet proofread word for word by a listener</strong>. The original soundtrack and video remain preserved.</p>
-<div><a class="navbtn" href="./antigense-039r1-audio-clean.mp4">Direct MP4 ↗</a><a class="navbtn" href="./captions-editorial.srt">SRT captions ↗</a><a class="navbtn" href="../walkthrough-035.html">Interactive recorded walkthrough ↗</a><a class="navbtn" href="../judges/">Judge's how-to ↗</a></div>
+<p class="notice"><strong>Audio and captions:</strong> This page plays a locally served, noise-filtered 039R1 copy with captions. The verified unlisted YouTube upload (142 seconds) is linked below. The picture and spoken content were not edited. Captions and transcript are a timed machine transcription with editorial normalization, <strong>not yet proofread word for word by a listener</strong>. The original soundtrack and video remain preserved.</p>
+<div><a class="navbtn" href="https://youtu.be/hpLH88V6PF0" target="_blank" rel="noopener">Open submitted YouTube video ↗</a><a class="navbtn" href="./antigense-039r1-audio-clean.mp4">Alternate MP4 ↗</a><a class="navbtn" href="./captions-editorial.srt">SRT captions ↗</a><a class="navbtn" href="../walkthrough-035.html">Interactive recorded walkthrough ↗</a><a class="navbtn" href="../judges/">Judge's how-to ↗</a></div>
 </section>
 <section>
 <h2>Go straight to the evidence</h2>
@@ -77,7 +77,10 @@ Your browser cannot play the video. <a href="./antigense-039r1-audio-clean.mp4">
 <footer>Antigense · Biobitworks · Controlled teaching fixture. SHA-256 commitments identify bytes, not truth. Original media and superseded states are preserved. <a href="https://www.linkedin.com/in/biobitworks/">Creator profile</a>.</footer>
 <script>
 const el=document.getElementById('demo');
-document.querySelectorAll('[data-seek]').forEach(button=>button.addEventListener('click',()=>{el.currentTime=Number(button.dataset.seek);el.scrollIntoView({behavior:'smooth',block:'center'});}));
+document.querySelectorAll('[data-seek]').forEach(button=>button.addEventListener('click',()=>{
+  el.currentTime=Number(button.dataset.seek);
+  el.scrollIntoView({behavior:'smooth',block:'center'});
+}));
 fetch('./transcript.json').then(r=>{if(!r.ok)throw Error('Transcript unavailable');return r.json();}).then(t=>{
 const target=document.getElementById('transcript');target.textContent='';
 for(const s of t.segments){const p=document.createElement('p');const a=document.createElement('span');a.className='timestamp';a.textContent=s.start.substring(3,8);p.append(a);p.append(document.createTextNode(s.text));target.append(p);}

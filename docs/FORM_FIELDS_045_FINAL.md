@@ -1,3 +1,23 @@
+# Official Cyberdefense Hackathon final field values — successor 045
+
+**Site production deployment:** dpl_Hcb4VeTBGp8oN13n3xd3GXxrzdcu, READY. All 24 production files were independently read back with exact bytes, 0 mismatches. **Portal submission:** NOT_VERIFIED / requires authenticated user.
+
+**Paste YouTube Demo video URL:** https://youtu.be/hpLH88V6PF0 (UNLISTED, 142 seconds, verified).
+
+**Working project URL:** https://antigense-cyberhack.vercel.app/
+
+**Judge guide:** https://antigense-cyberhack.vercel.app/judges/
+
+**Video page with transcript:** https://antigense-cyberhack.vercel.app/video/
+
+**Recomputable local FCG proof:** https://antigense-cyberhack.vercel.app/judges-043.html
+
+**GitHub repo (currently private; reviewers require access):** https://github.com/biobitworks/antigense-cyberhack
+
+---
+
+The remainder is the source form-field draft from v044, now with the YouTube URL filled in. Watch the live official form for any changed limits; it previously required title, summary <=300 chars, description <=1500 chars, team size, tools, demo-video URL and repo URL. Do not claim the site or GitHub PR is the authenticated submission itself.
+
 # YouTube upload package and exact form fields — successor 044
 
 **STATE:** PREPARED_NOT_SUBMITTED, **039R1 narrated video**; not the silent 040 successor.

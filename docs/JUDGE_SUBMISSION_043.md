@@ -70,3 +70,6 @@ Pre-event ancestry includes Agent Foundry recorder and 008R1 custody toolkit; ha
 ## Next action
 
 Review the public proof snapshot for policy/privacy, independently reverify the capture and browser verifier, then deploy only new `judges-043.html` and `data/live-local-043-*.json` via an isolated clean staging build without replacing public run/proof or demos. GET/read back all three files byte-for-byte, record publication receipt, and only then add judge proof URL to the submission form. No deployment from Claude's dirty working tree.
+
+## Actual YouTube submission video (045 verified)
+https://youtu.be/hpLH88V6PF0 (UNLISTED, 142 sec, Byron Lee). Judges: video is historical recorded replay. New 040 code-review scenes are not included and v2 verifier is NOT_VERIFIED. Public landing pages /video/ and /judges/ prepared; require production publication/readback before advertised as live.
