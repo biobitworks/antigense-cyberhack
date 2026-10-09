@@ -1,0 +1,11 @@
+rules:
+  - id: antigense-untrusted-fixture-module-execution
+    languages: [python]
+    severity: ERROR
+    message: "Do not execute a loaded teaching fixture as a Python module; use the restricted AST evaluator."
+    patterns:
+      - pattern: $LOADER.exec_module($MODULE)
+    metadata:
+      domain: antigense-daisy
+      finding: F2
+      cwe: "CWE-94"

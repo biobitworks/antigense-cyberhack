@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-import argparse,hashlib,importlib.util,json,os,shutil,struct,subprocess,sys,time,uuid,urllib.request,urllib.parse
+import argparse,hashlib,json,os,shutil,struct,subprocess,sys,time,uuid,urllib.request,urllib.parse
 from pathlib import Path
 import custody
+from fixture_eval042 import authorize_file
 ROOT=Path(__file__).resolve().parents[1]
 RUNTIME=ROOT/'.runtime'
 LATEST=RUNTIME/'latest.json'
@@ -10,7 +11,8 @@ def atomic(p,o):
  p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix('.tmp');tmp.write_text(json.dumps(o,sort_keys=True,indent=2));tmp.replace(p)
 def load(p):return json.loads(p.read_text())
 def auth(name,a,h):
- spec=importlib.util.spec_from_file_location('policy_'+name,ROOT/'fixtures'/f'{name}.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m.authorize(a,h)
+ if name not in ('before','after'):raise ValueError('only declared teaching fixtures are allowed')
+ return authorize_file(ROOT/'fixtures'/f'{name}.py',a,h)
 def export(run):
  base=Path(run['custody']);g=load(base/'genesis.json');rows=custody.rows(base)
  proof={'genesis':g,'ledger':rows,'objects':[load(base/x['object_file']) for x in rows[1:]],'prefixes':[load(base/f'prefix-{i:06d}.json') for i in range(1,len(rows)+1)]}

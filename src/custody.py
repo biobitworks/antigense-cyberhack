@@ -80,7 +80,19 @@ def derive(observation,prior):
         supplied=observation["checks"]
         if not isinstance(supplied,dict) or any(type(v)!=bool for v in supplied.values()):raise ValueError("supplied checks must be actual booleans")
         checks.update({"provided."+k:v for k,v in supplied.items()})
-    admission="REJECTED" if state in ["FAILED","NEGATIVE"] else ("ADMITTED" if checks["state_declared"] and checks["name_declared"] and checks["observation_available"] else "QUARANTINED")
+    policy=observation.get("admission_policy", "LEGACY_V1")
+    if policy not in ("LEGACY_V1", "STRICT_V2"):
+        raise ValueError("unknown admission policy")
+    eligible=checks["state_declared"] and checks["name_declared"] and checks["observation_available"]
+    if policy=="STRICT_V2":
+        required=observation.get("required_checks")
+        if (not isinstance(required,list) or not required
+                or len(required)!=len(set(required))
+                or any(not isinstance(k,str) or not k for k in required)):
+            eligible=False
+        else:
+            eligible=eligible and all(checks.get("provided."+k) is True for k in required)
+    admission="REJECTED" if state in ["FAILED","NEGATIVE"] else ("ADMITTED" if eligible else "QUARANTINED")
     classifications={"state":state,"custody_admission":admission,
         "anticube":{"identity":"UNKNOWN","safety":"UNKNOWN","self_safe":None,
                     "proof_of_possession":"NOT_TESTED","authorization_validation":"NOT_TESTED",
@@ -119,6 +131,11 @@ def freeze(base,kit):
     with (base/"ledger.jsonl").open("x") as f:f.write(json.dumps(row,sort_keys=True)+"\n");f.flush();os.fsync(f.fileno())
     return g
 def append_step(base,observation):
+    # New occurrences use STRICT_V2; historical receipts lacking this field are
+    # verified through LEGACY_V1 without mutation or false retroactive promotion.
+    if observation.get("admission_policy") not in (None,"STRICT_V2"):
+        raise ValueError("new observations cannot select legacy admission")
+    observation={**observation,"admission_policy":"STRICT_V2"}
     base=Path(base);lock=base/".append-lock"
     lock.mkdir() # Fail closed on concurrent writer or interrupted lock; never overwrite.
     try:
