@@ -1,0 +1,26 @@
+{
+  "algorithm": "HYDRALAMP_MMR_V1",
+  "leaf_count": 2,
+  "leaves": [
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b",
+        "event_hash": "f1d976ba397f9c29330938a9bf26893e0bfd5b17f85cfb08a7a05d5dbf5a22b7",
+        "event_index": 1
+      },
+      "leaf_sha256": "21687303e24737141faa5d9c3e646a24ffffe90058b099377ea85a735597a2e1"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:fc34d75a716d97b6fa07d7a7a0015537cb8e9ea63a86b02d669d9c199e8c3e25",
+        "event_hash": "baeac3746f938c8b05ef92f2e6dcd632294736ee5a22be13313eeede999c6309",
+        "event_index": 2
+      },
+      "leaf_sha256": "1a638161323a939d0db2310e28bd04bfaf1333c05a8f64ca57b532a09215e9dc"
+    }
+  ],
+  "peaks": [
+    "c4f11ca95846cf52d6661be6400a41331080abec64fcfbbf58592456e7e255af"
+  ],
+  "root": "510b44f38862b7bf7be5144128341befd5285ae25fabacade3dc18d23960e117"
+}
