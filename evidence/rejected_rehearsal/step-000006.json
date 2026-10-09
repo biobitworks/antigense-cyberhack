@@ -1,0 +1,125 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.ai_authorized_to_patch": false,
+      "provided.akash_attestation_verified": false,
+      "provided.response_observed": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.ai_authorized_to_patch": "NO",
+      "provided.akash_attestation_verified": "NO",
+      "provided.response_observed": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"dca2fd932f10c44847948a649e1b5ee02ec55e23bf336650746f25c85023c34d\"}",
+        "index": 0,
+        "leaf_sha256": "fd2cf31cd865172c1fb9b5da5c16ed7f29104832537dc37b222645cf5ae56929"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:fd6c8e2bc753ce63b9d32a6c688deec9cef3002fbfc66b0be7cb3c0755088c88\"}",
+        "index": 1,
+        "leaf_sha256": "62b88cbf97deac7bdac5a5ba0a24cc622b0a63ca1cd76a688d4dfe2304c4ad4d"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"db78c380a16d780c7ad8492cf7c377d1dd556b6ba7314f694d8b5b332f03aa90\"}",
+        "index": 2,
+        "leaf_sha256": "21090a92e4fc0c305f5f91058e0e7727a3e0128a9242f83849afa25c737a072e"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"ai_authorized_to_patch\":false,\"akash_attestation_verified\":false,\"response_observed\":true},\"name\":\"05 AI incident analysis\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T17:38:43Z\",\"state\":\"OBSERVED\",\"value\":{\"attestation\":\"NOT_TESTED\",\"claim\":\"observed model advice; no execution authority; endpoint ownership unverified for Akash\",\"elapsed_ms\":4451.867,\"gpu_execution\":\"NOT_TESTED\",\"model\":\"qwen2.5:0.5b\",\"request_sha256\":\"7e755c8e04dad87a79f76225183b2aec0269ea82d231f3db69f4e0ad9cfe4d70\",\"response\":\"**Root Cause Hypothesis:**\\nThe software in question is vulnerable to a type of software-injected byte corruption (SIBC), which can lead to a denial of service (DoS) attack during hardware failure. This vulnerability arises from the way the software is designed to handle certain types of data, and it can be exploited by an attacker to inject malicious code into the system.\\n\\n**Recommendation:**\\nTo mitigate this risk, the software should be designed to handle certain types of data in a way that is less susceptible to SIBC. This could involve using more secure data storage mechanisms, implementing additional security measures, or using a more robust error handling mechanism. Additionally, it is recommended to implement a hardware failure detection and recovery strategy that can detect and mitigate the impact of hardware failures on\",\"response_sha256\":\"81970e960c05b81a1e46cd70b82b940ffdb07538e921b24cdef733b65c4325a9\",\"route\":\"local\",\"state\":\"OBSERVED\"}}}",
+        "index": 3,
+        "leaf_sha256": "5e20d5abd28cf3aa20422c859d57173b83e21aacc28b7f2d41d9017d877714c7"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.ai_authorized_to_patch\":false,\"provided.akash_attestation_verified\":false,\"provided.response_observed\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.ai_authorized_to_patch\":\"NO\",\"provided.akash_attestation_verified\":\"NO\",\"provided.response_observed\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "c7ffcb85115ebed81b96a61c6c4413feafe3bb44222ce65365e97253fd521ec2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":5,\"quarantined\":0,\"rejected\":0,\"steps\":5},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "09a3f84adad6886b2d439d350982dc73117cb9577af8ab15e815666bc663d26e"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "c62cbc9490c97db42371135b991045c10247314d5cd71d6f590f663e2191da17"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 5,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 5
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:c62cbc9490c97db42371135b991045c10247314d5cd71d6f590f663e2191da17",
+  "observation": {
+    "checks": {
+      "ai_authorized_to_patch": false,
+      "akash_attestation_verified": false,
+      "response_observed": true
+    },
+    "name": "05 AI incident analysis",
+    "origin": "local-execution",
+    "recorded_utc": "2026-10-09T17:38:43Z",
+    "state": "OBSERVED",
+    "value": {
+      "attestation": "NOT_TESTED",
+      "claim": "observed model advice; no execution authority; endpoint ownership unverified for Akash",
+      "elapsed_ms": 4451.867,
+      "gpu_execution": "NOT_TESTED",
+      "model": "qwen2.5:0.5b",
+      "request_sha256": "7e755c8e04dad87a79f76225183b2aec0269ea82d231f3db69f4e0ad9cfe4d70",
+      "response": "**Root Cause Hypothesis:**\nThe software in question is vulnerable to a type of software-injected byte corruption (SIBC), which can lead to a denial of service (DoS) attack during hardware failure. This vulnerability arises from the way the software is designed to handle certain types of data, and it can be exploited by an attacker to inject malicious code into the system.\n\n**Recommendation:**\nTo mitigate this risk, the software should be designed to handle certain types of data in a way that is less susceptible to SIBC. This could involve using more secure data storage mechanisms, implementing additional security measures, or using a more robust error handling mechanism. Additionally, it is recommended to implement a hardware failure detection and recovery strategy that can detect and mitigate the impact of hardware failures on",
+      "response_sha256": "81970e960c05b81a1e46cd70b82b940ffdb07538e921b24cdef733b65c4325a9",
+      "route": "local",
+      "state": "OBSERVED"
+    }
+  },
+  "parent_fco_id": "fco:sha256:fd6c8e2bc753ce63b9d32a6c688deec9cef3002fbfc66b0be7cb3c0755088c88",
+  "previous_mmr_root": "db78c380a16d780c7ad8492cf7c377d1dd556b6ba7314f694d8b5b332f03aa90",
+  "project_root": "dca2fd932f10c44847948a649e1b5ee02ec55e23bf336650746f25c85023c34d",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

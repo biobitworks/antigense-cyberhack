@@ -1,0 +1,656 @@
+{
+  "ID": "fco:sha256:fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+  "SIGNATURE": "NOT_SIGNED",
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 50,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"initial_classification\",\"value\":{\"anticube\":{\"identity\":\"UNKNOWN\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"artifact_hashes_calculated\":true,\"edge_endpoints_exist\":true}}}",
+        "index": 0,
+        "leaf_sha256": "8388adc6b9462d7e32dd6dd3448c6532c50e344792d76f08d4abdd364ee54ba6"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"g_star_reference\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":0,\"quarantined\":0,\"rejected\":0,\"steps\":0},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 1,
+        "leaf_sha256": "a88e52050b21249f9cd731006937fb69d437ac72f4cb03756ca2ea9210e2d186"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"graph_contract\",\"value\":{\"PARENT\":\"007\",\"authorization\":\"Read-only probes + append-only local receipts; no installs, repairs, inference, sponsor calls, funds or publish\",\"classification\":{\"SELF_SAFE\":\"null until tested; not false merely because unknown\",\"admission\":\"OBSERVED named schema-valid row ADMITTED for custody; FAILED/NEGATIVE REJECTED; remaining QUARANTINED\",\"identity\":\"UNKNOWN without proof\",\"meaning\":\"custody admission does not establish claim truth or safety\",\"safety\":\"UNKNOWN without independent oracle\"},\"diagnostic\":{\"G_star\":\"clamp(burden-tau*normalized_entropy,0,1), round6\",\"H\":\"-sum(p_i*log2(p_i)); normalize by log2(4)\",\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"burden\":\"min(1,(rejected+quarantined)/n)\",\"ceiling\":\"Unvalidated adapted information-state diagnostic; not physical free energy, safety or accuracy\",\"counts\":[\"admitted\",\"quarantined\",\"rejected\",\"max(0,n-admitted-quarantined-rejected)\"],\"delta_G_star\":\"current rounded G_star minus previous rounded G_star, round6\",\"n\":\"max(count of prior+current non-genesis step admissions,1)\",\"reference\":\"calculated empty admission-state G_star = 0.000000\",\"source\":\"hydralamp/gateway.py compute_diagnostics\",\"source_commit\":\"884503530da06b2780070b4e38ad939a8c6dbee0\",\"tau\":\"0.35 inherited from source; NOT empirically calibrated here\"},\"external_inclusion_proofs\":\"NOT_IMPLEMENTED\",\"merkle\":{\"algorithm\":\"fco-ordered-v1\",\"canonical\":\"json sort_keys separators compact ensure_ascii false UTF8 allow_nan false\",\"leaf\":\"SHA256(0x00 || SHA256(canonical_leaf_bytes))\",\"node\":\"SHA256(0x01 || raw_left || raw_right)\",\"odd\":\"promote unchanged\",\"order\":\"declared leaf list\"},\"mmr\":{\"algorithm\":\"HYDRALAMP_MMR_V1\",\"bag\":\"left-to-right fold; SHA256(HYDRALAMP_MMR_BAG_V1: || folded raw peak)\",\"cfmo_field_adapter\":\"step FCO identity; no claim of CFMO-store execution\",\"empty\":\"SHA256(HYDRALAMP_MMR_EMPTY)\",\"leaf\":\"SHA256(canonical JSON)\",\"leaf_fields\":[\"event_index\",\"event_hash\",\"cfmo_version_id\"],\"leaf_order\":\"event_index ascending, starts at1\",\"node\":\"SHA256(raw_left || raw_right)\",\"source\":\"hydralamp/mmr.py\",\"source_commit\":\"884503530da06b2780070b4e38ad939a8c6dbee0\",\"source_repo\":\"biobitworks/hydradg\",\"verification\":\"independent power-of-two partition and all-prefix reconstruction\"},\"schema\":\"cyberhack.custody.contract.v008r1\",\"scope\":\"Declared kit graph and report004; not entire repository, portfolio canonical graph, or physical hardware\",\"signatures\":\"NOT_SIGNED\",\"successor\":{\"ID\":\"009\",\"PARENT\":\"008R1\",\"human_identity\":\"UNVERIFIED_UNSIGNED_LOCAL_ACTION\",\"physical_fault\":\"SIMULATED_BYTE_XOR\",\"scope\":\"Antigense controlled fault cascade\",\"sponsor_truth\":\"Only actual observed executions promoted; Akash and Pi pending\"}}}",
+        "index": 2,
+        "leaf_sha256": "1f90ae788f42ccec3ad5515a010bf6389aef41935d06535f9b321d9ef08c4836"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"project:antigense-009\",\"scope\":\"Antigense 009 declared source graph; successor of 008R1; NOT entire hardware or portfolio graph\",\"state\":\"PROPOSED\",\"type\":\"Project\"}}",
+        "index": 3,
+        "leaf_sha256": "ad45837ce3ced89651a95ae3686557b98da6c1083a9f96c06e95e5ac0c88bb10"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"group:governance\",\"type\":\"Group\"}}",
+        "index": 4,
+        "leaf_sha256": "3f2dc517c92ca998ce0a54c567d6b298a877d114fa637ebe87ca12eda2033083"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"group:runtime\",\"type\":\"Group\"}}",
+        "index": 5,
+        "leaf_sha256": "0139cdf39c7713239a357bf7f88f3ef0b19fe66dc277c06c3d8e891649e7e2f1"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":4024,\"id\":\"artifact:README.md\",\"relative_path\":\"README.md\",\"sha256\":\"33e91357a4351bac45d92cbe4a8c3ee3db3147388cd1fb709c3882f1facad724\",\"type\":\"Artifact\"}}",
+        "index": 6,
+        "leaf_sha256": "ccee53452ac07f8fc2986a9d94a48850305e3cda6a479f7e71dc8ea831440fd2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":15492,\"id\":\"artifact:src/custody.py\",\"relative_path\":\"src/custody.py\",\"sha256\":\"f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391\",\"type\":\"Artifact\"}}",
+        "index": 7,
+        "leaf_sha256": "94c9adb48efa2dc9e8ed7b66537d126eec31264dfaea19c61b2f33b4a66aa401"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":10826,\"id\":\"artifact:src/cascade.py\",\"relative_path\":\"src/cascade.py\",\"sha256\":\"9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27\",\"type\":\"Artifact\"}}",
+        "index": 8,
+        "leaf_sha256": "c711a3aeccb2c03198692acbd84ab345793205c4d2f0758503ac71b339349716"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3141,\"id\":\"artifact:src/server.py\",\"relative_path\":\"src/server.py\",\"sha256\":\"a723d2fc18a047f7ba730d81b588ea4c32baa9eb281d72ba4d50f3eceacb166d\",\"type\":\"Artifact\"}}",
+        "index": 9,
+        "leaf_sha256": "86b951d09c2c07a1df83d5a2072601b2ec2e50fec5d8130b80e1ae811c2005fb"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":12695,\"id\":\"artifact:public/index.html\",\"relative_path\":\"public/index.html\",\"sha256\":\"80dc78b4e2cd8b23bd9094a725f567de473db27cb9b80629f3f8da7b3424a888\",\"type\":\"Artifact\"}}",
+        "index": 10,
+        "leaf_sha256": "5af9eac1e2cfc4a431f2f98396c4b8f7e9e9e2dba205b1e3c31b81b4ba1a2293"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3391,\"id\":\"artifact:public/verify.js\",\"relative_path\":\"public/verify.js\",\"sha256\":\"7a23050810e37ec2e88855d18d12f1ecf943145652945b66a3a2b1a5ee61d611\",\"type\":\"Artifact\"}}",
+        "index": 11,
+        "leaf_sha256": "deca54fae9d9d5fe4aa544c2d9af51a4833269d486317c3516f02252ea62b9f2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1413,\"id\":\"artifact:topology.json\",\"relative_path\":\"topology.json\",\"sha256\":\"38f8b1471693b2c64283d582c6f5a047d24469e15b2296fbf50c3b13b8b13c41\",\"type\":\"Artifact\"}}",
+        "index": 12,
+        "leaf_sha256": "52d42d63504d6a151375aee8a8b6aa8c058ce82732eeeb780102bd2fd5424cc4"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":721,\"id\":\"artifact:policy.json\",\"relative_path\":\"policy.json\",\"sha256\":\"82918b0e70bf0767f0d3ca4de4949d6a386d03671f96c79f28dccde2d39b98f8\",\"type\":\"Artifact\"}}",
+        "index": 13,
+        "leaf_sha256": "bafe0e16ea62ceab8b820948dab4ce4a27a8cf03425008bf483735984a898a67"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":187,\"id\":\"artifact:fixtures/before.py\",\"relative_path\":\"fixtures/before.py\",\"sha256\":\"65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3\",\"type\":\"Artifact\"}}",
+        "index": 14,
+        "leaf_sha256": "37baced076ec3d7721adeff7305a14f62446a05feb3ad81ced76d0cf3b7ab333"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":127,\"id\":\"artifact:fixtures/after.py\",\"relative_path\":\"fixtures/after.py\",\"sha256\":\"1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942\",\"type\":\"Artifact\"}}",
+        "index": 15,
+        "leaf_sha256": "2d81e2616fde6144b77663a76f3df609afdbd44d0dc5e2343fa1f21a399bf411"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":370,\"id\":\"artifact:rules/fallback.yaml\",\"relative_path\":\"rules/fallback.yaml\",\"sha256\":\"d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0\",\"type\":\"Artifact\"}}",
+        "index": 16,
+        "leaf_sha256": "c538f6a1220a2288d363bbddbb3b9a3e37c26c46dc5fd563794c4dc6c963163b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":315,\"id\":\"artifact:PREDECESSOR_008.json\",\"relative_path\":\"PREDECESSOR_008.json\",\"sha256\":\"cec65487f09897944f17ecae9d216565ded2ffc6eeda9b17ad9f5a7514114ede\",\"type\":\"Artifact\"}}",
+        "index": 17,
+        "leaf_sha256": "920ba04c8114ecc5ccdc02d39601e2613b27c92a5679f6da3d962c48d34bd1f1"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3059,\"id\":\"artifact:CUSTODY_CONTRACT_008.json\",\"relative_path\":\"CUSTODY_CONTRACT_008.json\",\"sha256\":\"5c80807838112d660a69d9845dcac9fab68203fb3804326d4e2c263adadbea19\",\"type\":\"Artifact\"}}",
+        "index": 18,
+        "leaf_sha256": "77b2adb8c7798f8903b12852cebd18062cbcff42812ecd06cc4e510e439c539c"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":160,\"id\":\"artifact:scripts/setup.sh\",\"relative_path\":\"scripts/setup.sh\",\"sha256\":\"4788895b83c13ac105cea11baec6d65c9d3682479b5b545ac8ce826d1cbb3975\",\"type\":\"Artifact\"}}",
+        "index": 19,
+        "leaf_sha256": "388321f0ccc2692c203f42e2fc7b232f181e864c35b798c7eeaab422d5a0814e"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":138,\"id\":\"artifact:scripts/demo.sh\",\"relative_path\":\"scripts/demo.sh\",\"sha256\":\"a1c9b1e0c67de82b2d94bf856be197c82548198dac3bafdf3ad5f73c6621dea8\",\"type\":\"Artifact\"}}",
+        "index": 20,
+        "leaf_sha256": "c1ed0838e2fa015d06dd918eb5cb15396c65f6d0e04e288299680d591323e01c"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":633,\"id\":\"artifact:vercel.json\",\"relative_path\":\"vercel.json\",\"sha256\":\"ca32b06bdd5830cd03465feda4bc31a19ec1ddad62cda07944b06026fe56911c\",\"type\":\"Artifact\"}}",
+        "index": 21,
+        "leaf_sha256": "34411bec151458edffbaf935aae0184574997f3c6dca7f47ca6e2badcd1d2f3f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1185,\"id\":\"artifact:tests/test_custody.py\",\"relative_path\":\"tests/test_custody.py\",\"sha256\":\"317b58b3517c68789036779cf5e6cd370f73679f888e51f6deec2fbbe199a2c0\",\"type\":\"Artifact\"}}",
+        "index": 22,
+        "leaf_sha256": "de8a69f3af2eaa867da863cac29d0fff13998eb883f3de6677959f8027258cca"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":2508,\"id\":\"artifact:docs/DESIGN_009.md\",\"relative_path\":\"docs/DESIGN_009.md\",\"sha256\":\"eb03e6f459c17a4e5852db41a5045997b457f2cae04a2625dcaf6e477fc6976f\",\"type\":\"Artifact\"}}",
+        "index": 23,
+        "leaf_sha256": "532c6806b03e08f73545f087692990947cb0d35ff0e83bd77c11b2c879d1ef49"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3545,\"id\":\"artifact:docs/SPONSOR_CHECKLIST.md\",\"relative_path\":\"docs/SPONSOR_CHECKLIST.md\",\"sha256\":\"8d78d2c4a2c067782b1362a01eabddbb264346062f2a0fb35774b573e4fa370d\",\"type\":\"Artifact\"}}",
+        "index": 24,
+        "leaf_sha256": "cf1357e072be96bce9b75b420df0731b6c1f644757f728f4a012a9ee2d5db1f3"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":2710,\"id\":\"artifact:docs/DATASET_REVIEW.md\",\"relative_path\":\"docs/DATASET_REVIEW.md\",\"sha256\":\"ff47f72d3bcc5bbafdba1ddcfe4d583a2ee09a68bf74f1774f478adc5301b7cf\",\"type\":\"Artifact\"}}",
+        "index": 25,
+        "leaf_sha256": "1f8872744bcdf2a5ec3a8082fd2e650a494fa59a1f020784b16543bf2bc9190c"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1357,\"id\":\"artifact:docs/PI_INTAKE.md\",\"relative_path\":\"docs/PI_INTAKE.md\",\"sha256\":\"e2b8e23641ab5574bcf437c177b7ab4e3a9aad6ab89efc451651138e73365e21\",\"type\":\"Artifact\"}}",
+        "index": 26,
+        "leaf_sha256": "be1ec08d13d76cbfea0bdc2b01ebf90c242794ae5ffcfce89c0946c73e6487b1"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"project:antigense-009\",\"target\":\"group:governance\"}}",
+        "index": 27,
+        "leaf_sha256": "bb8db5e5d4d7f2ff89c37aa032ddc1c269e8c8b8da9cbc058eda3aed11c7fff1"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"project:antigense-009\",\"target\":\"group:runtime\"}}",
+        "index": 28,
+        "leaf_sha256": "94943a06d25c90994c169d4c95de7259c0abdec054df45d41b9588759ae81518"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:README.md\"}}",
+        "index": 29,
+        "leaf_sha256": "b7873c63500381cba0068e1b22701e98409fd86fc399b9e1f341c99deda8b70c"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:src/custody.py\"}}",
+        "index": 30,
+        "leaf_sha256": "4c98d3c446eda397efd4c906a2730cdf1abc0e79bfd4dae20f7ee563520cfc08"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:src/cascade.py\"}}",
+        "index": 31,
+        "leaf_sha256": "a76f0f94a4ca018ff45d80ce9ac2e0b8e870a8dfe26e6ce832de9410c59fa54b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:src/server.py\"}}",
+        "index": 32,
+        "leaf_sha256": "2b7cd692959a6731ed34080f1ead2fb54288bb1b99e82db8cabc36ec78ccd256"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:public/index.html\"}}",
+        "index": 33,
+        "leaf_sha256": "012e1dd45b7494f152dc6fdbc1a8aee2b0d1ce5648d820f03ed9ca5875715c8d"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:public/verify.js\"}}",
+        "index": 34,
+        "leaf_sha256": "93a8ff3ea12681ea20c4941ea6c805b2f81a132d57b440dcf3de08f631db1c4f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:topology.json\"}}",
+        "index": 35,
+        "leaf_sha256": "0027bb889dfbb8a76719b70ac4608594509857bb273acc694abb8d04a8f6ef16"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:policy.json\"}}",
+        "index": 36,
+        "leaf_sha256": "1f3604894c14185799bdbf3c8ac9e92715137f72c2ae90f3c89fef2cc17fe650"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:fixtures/before.py\"}}",
+        "index": 37,
+        "leaf_sha256": "d435e5dda9f8ec0f3ea97531149c30369805a1aac1df569d0c5477a53eefbbe7"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:fixtures/after.py\"}}",
+        "index": 38,
+        "leaf_sha256": "70f3ce67d009da0b8563307dabb0c866e55b815522f927c942a99955f20a2c3b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:rules/fallback.yaml\"}}",
+        "index": 39,
+        "leaf_sha256": "de4c38698a53e7230c0dea6ad7f5851a646745d770a560aed998fa6ea1383720"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:PREDECESSOR_008.json\"}}",
+        "index": 40,
+        "leaf_sha256": "b35fb24a0c7aa8f64dde2b859de816deb9b34e99ef9254c0922856849c0ad892"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:CUSTODY_CONTRACT_008.json\"}}",
+        "index": 41,
+        "leaf_sha256": "cdda5ae0dd257c4de4a484574103809410c88bd43b3f7e46a62c8d5bd385009f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:scripts/setup.sh\"}}",
+        "index": 42,
+        "leaf_sha256": "dcc7709a7521bab29ba89b93a411aa5fa6bdfd4e4a41d0b3b0a8fa256fa5de44"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:scripts/demo.sh\"}}",
+        "index": 43,
+        "leaf_sha256": "597fc8f302bf646f1adf3fd34b74f9c394fd0b6c98df0b57285e6e973ea60e83"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:vercel.json\"}}",
+        "index": 44,
+        "leaf_sha256": "b768abda5f1d73b3a15069ea664808dbc10d1b9799aeba048fbc4c3a7b16ca2d"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:runtime\",\"target\":\"artifact:tests/test_custody.py\"}}",
+        "index": 45,
+        "leaf_sha256": "16eea46e78fb2c62aeb5a46479444a29c35a1c291cca5613a08bd3db30bf40aa"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/DESIGN_009.md\"}}",
+        "index": 46,
+        "leaf_sha256": "e4056764e4ee7a0211a28f7eee5de184571a5a8b37cc6199994d7d019e159c79"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/SPONSOR_CHECKLIST.md\"}}",
+        "index": 47,
+        "leaf_sha256": "ccc2032c62334abe462c70c202872d48233e08c5f7e0904dff200a9043b2208b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/DATASET_REVIEW.md\"}}",
+        "index": 48,
+        "leaf_sha256": "d145b31e193bf4a430af70f1226f2f710116ea4a4fde2085fad466e4fabb317f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governance\",\"target\":\"artifact:docs/PI_INTAKE.md\"}}",
+        "index": 49,
+        "leaf_sha256": "ad886da17be4e2c04de40be4c10cfdfcf7c59e64aa096e9412027d7b8e2e10a2"
+      }
+    ],
+    "root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6"
+  },
+  "g_star_reference": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 0,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 0
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "graph": {
+    "PARENT": "008R1",
+    "contract": {
+      "PARENT": "007",
+      "authorization": "Read-only probes + append-only local receipts; no installs, repairs, inference, sponsor calls, funds or publish",
+      "classification": {
+        "SELF_SAFE": "null until tested; not false merely because unknown",
+        "admission": "OBSERVED named schema-valid row ADMITTED for custody; FAILED/NEGATIVE REJECTED; remaining QUARANTINED",
+        "identity": "UNKNOWN without proof",
+        "meaning": "custody admission does not establish claim truth or safety",
+        "safety": "UNKNOWN without independent oracle"
+      },
+      "diagnostic": {
+        "G_star": "clamp(burden-tau*normalized_entropy,0,1), round6",
+        "H": "-sum(p_i*log2(p_i)); normalize by log2(4)",
+        "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+        "burden": "min(1,(rejected+quarantined)/n)",
+        "ceiling": "Unvalidated adapted information-state diagnostic; not physical free energy, safety or accuracy",
+        "counts": [
+          "admitted",
+          "quarantined",
+          "rejected",
+          "max(0,n-admitted-quarantined-rejected)"
+        ],
+        "delta_G_star": "current rounded G_star minus previous rounded G_star, round6",
+        "n": "max(count of prior+current non-genesis step admissions,1)",
+        "reference": "calculated empty admission-state G_star = 0.000000",
+        "source": "hydralamp/gateway.py compute_diagnostics",
+        "source_commit": "884503530da06b2780070b4e38ad939a8c6dbee0",
+        "tau": "0.35 inherited from source; NOT empirically calibrated here"
+      },
+      "external_inclusion_proofs": "NOT_IMPLEMENTED",
+      "merkle": {
+        "algorithm": "fco-ordered-v1",
+        "canonical": "json sort_keys separators compact ensure_ascii false UTF8 allow_nan false",
+        "leaf": "SHA256(0x00 || SHA256(canonical_leaf_bytes))",
+        "node": "SHA256(0x01 || raw_left || raw_right)",
+        "odd": "promote unchanged",
+        "order": "declared leaf list"
+      },
+      "mmr": {
+        "algorithm": "HYDRALAMP_MMR_V1",
+        "bag": "left-to-right fold; SHA256(HYDRALAMP_MMR_BAG_V1: || folded raw peak)",
+        "cfmo_field_adapter": "step FCO identity; no claim of CFMO-store execution",
+        "empty": "SHA256(HYDRALAMP_MMR_EMPTY)",
+        "leaf": "SHA256(canonical JSON)",
+        "leaf_fields": [
+          "event_index",
+          "event_hash",
+          "cfmo_version_id"
+        ],
+        "leaf_order": "event_index ascending, starts at1",
+        "node": "SHA256(raw_left || raw_right)",
+        "source": "hydralamp/mmr.py",
+        "source_commit": "884503530da06b2780070b4e38ad939a8c6dbee0",
+        "source_repo": "biobitworks/hydradg",
+        "verification": "independent power-of-two partition and all-prefix reconstruction"
+      },
+      "schema": "cyberhack.custody.contract.v008r1",
+      "scope": "Declared kit graph and report004; not entire repository, portfolio canonical graph, or physical hardware",
+      "signatures": "NOT_SIGNED",
+      "successor": {
+        "ID": "009",
+        "PARENT": "008R1",
+        "human_identity": "UNVERIFIED_UNSIGNED_LOCAL_ACTION",
+        "physical_fault": "SIMULATED_BYTE_XOR",
+        "scope": "Antigense controlled fault cascade",
+        "sponsor_truth": "Only actual observed executions promoted; Akash and Pi pending"
+      }
+    },
+    "edges": [
+      {
+        "predicate": "CONTAINS",
+        "source": "project:antigense-009",
+        "target": "group:governance"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "project:antigense-009",
+        "target": "group:runtime"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:README.md"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:src/custody.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:src/cascade.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:src/server.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:public/index.html"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:public/verify.js"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:topology.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:policy.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:fixtures/before.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:fixtures/after.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:rules/fallback.yaml"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:PREDECESSOR_008.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:CUSTODY_CONTRACT_008.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:scripts/setup.sh"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:scripts/demo.sh"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:vercel.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:runtime",
+        "target": "artifact:tests/test_custody.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:docs/DESIGN_009.md"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:docs/SPONSOR_CHECKLIST.md"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:docs/DATASET_REVIEW.md"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governance",
+        "target": "artifact:docs/PI_INTAKE.md"
+      }
+    ],
+    "g_star_reference": {
+      "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+      "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+      "delta_g_star": "0.000000",
+      "g_star": "0.000000",
+      "inputs": {
+        "admitted": 0,
+        "quarantined": 0,
+        "rejected": 0,
+        "steps": 0
+      },
+      "normalized_entropy": "-0.000000",
+      "reference_g_star": "0.000000",
+      "tau": "0.35"
+    },
+    "initial_classification": {
+      "anticube": {
+        "identity": "UNKNOWN",
+        "safety": "UNKNOWN",
+        "self_safe": null
+      },
+      "checks": {
+        "artifact_hashes_calculated": true,
+        "edge_endpoints_exist": true
+      }
+    },
+    "nodes": [
+      {
+        "id": "project:antigense-009",
+        "scope": "Antigense 009 declared source graph; successor of 008R1; NOT entire hardware or portfolio graph",
+        "state": "PROPOSED",
+        "type": "Project"
+      },
+      {
+        "id": "group:governance",
+        "type": "Group"
+      },
+      {
+        "id": "group:runtime",
+        "type": "Group"
+      },
+      {
+        "bytes": 4024,
+        "id": "artifact:README.md",
+        "relative_path": "README.md",
+        "sha256": "33e91357a4351bac45d92cbe4a8c3ee3db3147388cd1fb709c3882f1facad724",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 15492,
+        "id": "artifact:src/custody.py",
+        "relative_path": "src/custody.py",
+        "sha256": "f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 10826,
+        "id": "artifact:src/cascade.py",
+        "relative_path": "src/cascade.py",
+        "sha256": "9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 3141,
+        "id": "artifact:src/server.py",
+        "relative_path": "src/server.py",
+        "sha256": "a723d2fc18a047f7ba730d81b588ea4c32baa9eb281d72ba4d50f3eceacb166d",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 12695,
+        "id": "artifact:public/index.html",
+        "relative_path": "public/index.html",
+        "sha256": "80dc78b4e2cd8b23bd9094a725f567de473db27cb9b80629f3f8da7b3424a888",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 3391,
+        "id": "artifact:public/verify.js",
+        "relative_path": "public/verify.js",
+        "sha256": "7a23050810e37ec2e88855d18d12f1ecf943145652945b66a3a2b1a5ee61d611",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 1413,
+        "id": "artifact:topology.json",
+        "relative_path": "topology.json",
+        "sha256": "38f8b1471693b2c64283d582c6f5a047d24469e15b2296fbf50c3b13b8b13c41",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 721,
+        "id": "artifact:policy.json",
+        "relative_path": "policy.json",
+        "sha256": "82918b0e70bf0767f0d3ca4de4949d6a386d03671f96c79f28dccde2d39b98f8",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 187,
+        "id": "artifact:fixtures/before.py",
+        "relative_path": "fixtures/before.py",
+        "sha256": "65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 127,
+        "id": "artifact:fixtures/after.py",
+        "relative_path": "fixtures/after.py",
+        "sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 370,
+        "id": "artifact:rules/fallback.yaml",
+        "relative_path": "rules/fallback.yaml",
+        "sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 315,
+        "id": "artifact:PREDECESSOR_008.json",
+        "relative_path": "PREDECESSOR_008.json",
+        "sha256": "cec65487f09897944f17ecae9d216565ded2ffc6eeda9b17ad9f5a7514114ede",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 3059,
+        "id": "artifact:CUSTODY_CONTRACT_008.json",
+        "relative_path": "CUSTODY_CONTRACT_008.json",
+        "sha256": "5c80807838112d660a69d9845dcac9fab68203fb3804326d4e2c263adadbea19",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 160,
+        "id": "artifact:scripts/setup.sh",
+        "relative_path": "scripts/setup.sh",
+        "sha256": "4788895b83c13ac105cea11baec6d65c9d3682479b5b545ac8ce826d1cbb3975",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 138,
+        "id": "artifact:scripts/demo.sh",
+        "relative_path": "scripts/demo.sh",
+        "sha256": "a1c9b1e0c67de82b2d94bf856be197c82548198dac3bafdf3ad5f73c6621dea8",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 633,
+        "id": "artifact:vercel.json",
+        "relative_path": "vercel.json",
+        "sha256": "ca32b06bdd5830cd03465feda4bc31a19ec1ddad62cda07944b06026fe56911c",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 1185,
+        "id": "artifact:tests/test_custody.py",
+        "relative_path": "tests/test_custody.py",
+        "sha256": "317b58b3517c68789036779cf5e6cd370f73679f888e51f6deec2fbbe199a2c0",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 2508,
+        "id": "artifact:docs/DESIGN_009.md",
+        "relative_path": "docs/DESIGN_009.md",
+        "sha256": "eb03e6f459c17a4e5852db41a5045997b457f2cae04a2625dcaf6e477fc6976f",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 3545,
+        "id": "artifact:docs/SPONSOR_CHECKLIST.md",
+        "relative_path": "docs/SPONSOR_CHECKLIST.md",
+        "sha256": "8d78d2c4a2c067782b1362a01eabddbb264346062f2a0fb35774b573e4fa370d",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 2710,
+        "id": "artifact:docs/DATASET_REVIEW.md",
+        "relative_path": "docs/DATASET_REVIEW.md",
+        "sha256": "ff47f72d3bcc5bbafdba1ddcfe4d583a2ee09a68bf74f1774f478adc5301b7cf",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 1357,
+        "id": "artifact:docs/PI_INTAKE.md",
+        "relative_path": "docs/PI_INTAKE.md",
+        "sha256": "e2b8e23641ab5574bcf437c177b7ab4e3a9aad6ab89efc451651138e73365e21",
+        "type": "Artifact"
+      }
+    ],
+    "schema": "cyberhack.frozen-fractal-graph.v008r1"
+  },
+  "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+  "scope": "Antigense 009 declared source graph; successor of 008R1; NOT entire hardware or portfolio graph"
+}

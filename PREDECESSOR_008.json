@@ -1,0 +1,7 @@
+{
+  "ID": "008R1",
+  "project_root": "6544ff337e939807c9badf76b9e796bd3d7e4853a0193ccbd333ed24603ab66e",
+  "primary_mmr_root": "8f0fcc77cca410767a4d9981309fd1d8c8284c85dc898236e38ac6c8b965cf0e",
+  "leaf_count": 59,
+  "relationship": "SUCCESSOR_DESIGN_REFERENCE; separate new MMR; predecessor root not overwritten"
+}

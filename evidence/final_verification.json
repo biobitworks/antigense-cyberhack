@@ -1,0 +1,19 @@
+{
+  "PASS": true,
+  "YES_NO": "YES",
+  "checks": {
+    "genesis_bytes_and_root": true,
+    "initial_classification_calculated": true,
+    "expected_root_matches": true,
+    "nonempty_ledger": true,
+    "all_steps_recomputed": true,
+    "all_mmr_prefixes_recomputed": true
+  },
+  "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+  "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+  "leaf_count": 12,
+  "trusted_expected_root_supplied": true,
+  "SIGNATURE": "NOT_SIGNED",
+  "claim_ceiling": "Declared-byte integrity and calculated classification only; no authenticity/safety/causality proof",
+  "source_files_match": true
+}

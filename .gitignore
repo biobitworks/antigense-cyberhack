@@ -1,0 +1,10 @@
+.venv/
+.vercel/
+__pycache__/
+*.pyc
+.runtime/
+.env*
+!.env.example
+media/*.webm
+media/*.mp4
+.vercel

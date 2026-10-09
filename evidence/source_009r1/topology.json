@@ -1,0 +1,85 @@
+{
+  "schema": "antigense.schematic.v1",
+  "geometry": "illustrative cuboids; NOT CAD, die layout, discovered wiring or sensor coordinates",
+  "nodes": [
+    {
+      "id": "cpu",
+      "label": "CPU",
+      "source": "OS_REPORTED"
+    },
+    {
+      "id": "memory",
+      "label": "Memory",
+      "source": "OS_REPORTED"
+    },
+    {
+      "id": "gpu",
+      "label": "GPU / inference",
+      "source": "UNKNOWN on local Mac; Akash lease NOT_TESTED"
+    },
+    {
+      "id": "bus",
+      "label": "Integrity boundary",
+      "source": "SIMULATED bit fault"
+    },
+    {
+      "id": "worker",
+      "label": "Worker result",
+      "source": "EXECUTED checksum"
+    },
+    {
+      "id": "semgrep",
+      "label": "Semgrep",
+      "source": "LOCAL_SCAN"
+    },
+    {
+      "id": "akash",
+      "label": "Akash",
+      "source": "REMOTE_INFERENCE_NOT_TESTED"
+    },
+    {
+      "id": "pi",
+      "label": "Pi Security",
+      "source": "REVIEW_NOT_TESTED"
+    },
+    {
+      "id": "human",
+      "label": "Review gate",
+      "source": "UNSIGNED_LOCAL_ACTION"
+    }
+  ],
+  "edges": [
+    [
+      "cpu",
+      "memory"
+    ],
+    [
+      "memory",
+      "bus"
+    ],
+    [
+      "bus",
+      "worker"
+    ],
+    [
+      "worker",
+      "semgrep"
+    ],
+    [
+      "worker",
+      "akash"
+    ],
+    [
+      "semgrep",
+      "pi"
+    ],
+    [
+      "akash",
+      "pi"
+    ],
+    [
+      "pi",
+      "human"
+    ]
+  ]
+}

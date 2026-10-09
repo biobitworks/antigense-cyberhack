@@ -1,0 +1,12 @@
+rules:
+  - id: antigense.fail-open-on-hardware-health
+    languages: [python]
+    severity: ERROR
+    message: A failed hardware health check must not bypass authorization.
+    pattern: |
+      if not $HEALTH:
+          return True
+    metadata:
+      category: security
+      confidence: HIGH
+      scope: custom teaching fixture; not universal authorization detection

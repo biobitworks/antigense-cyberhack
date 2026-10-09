@@ -1,0 +1,6 @@
+{"ID": "009-source-0", "url": "https://akash.network/docs/learn/core-concepts/confidential-compute/", "state": "OBSERVED", "scope": "provider capability docs; runtime NOT_TESTED", "retrieved_date": "2026-10-09"}
+{"ID": "009-source-1", "url": "https://docs.semgrep.dev/cli-reference", "state": "OBSERVED", "scope": "local scan privacy flags", "retrieved_date": "2026-10-09"}
+{"ID": "009-source-2", "url": "https://www.pi.security/about", "state": "OBSERVED", "scope": "user-confirmed sponsor identity", "retrieved_date": "2026-10-09"}
+{"ID": "009-source-3", "url": "https://www.pi.security/terms-and-conditions", "state": "OBSERVED", "scope": "SaaS product definition; local API UNKNOWN", "retrieved_date": "2026-10-09"}
+{"ID": "009-source-4", "url": "https://doi.ccs.ornl.gov/dataset/293bf697-819e-5e8c-a7cd-ec8a7c2f0d1a", "state": "OBSERVED", "scope": "dataset metadata only; bytes NOT_DOWNLOADED", "retrieved_date": "2026-10-09"}
+{"ID": "009-source-5", "url": "https://ieee-dataport.org/open-access/simulated-boiler-data-fault-detection-and-classification", "state": "FAILED", "scope": "restricted URL; license UNKNOWN", "retrieved_date": "2026-10-09"}

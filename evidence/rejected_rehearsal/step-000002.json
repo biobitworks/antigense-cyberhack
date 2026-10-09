@@ -1,0 +1,114 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.arithmetic_matches": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.arithmetic_matches": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"dca2fd932f10c44847948a649e1b5ee02ec55e23bf336650746f25c85023c34d\"}",
+        "index": 0,
+        "leaf_sha256": "fd2cf31cd865172c1fb9b5da5c16ed7f29104832537dc37b222645cf5ae56929"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:dca2fd932f10c44847948a649e1b5ee02ec55e23bf336650746f25c85023c34d\"}",
+        "index": 1,
+        "leaf_sha256": "2c705b18eafb056a8178802465397ec57a2df4c2ce3b34f91a2fbdb048be399f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"bf8ca4fda83d11d25f64680d2bd7f6e7021bdba9e422e9f78c750a743672859c\"}",
+        "index": 2,
+        "leaf_sha256": "3ec6a750b5fbfbda0b8905ccddb1fac9ca5ccec2192b2ade4439f3f8046bd7e8"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"arithmetic_matches\":true},\"name\":\"01 Baseline worker\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T17:38:25Z\",\"state\":\"OBSERVED\",\"value\":{\"arithmetic\":332833500,\"elapsed_ms\":0.054,\"expected\":332833500,\"fault\":\"NONE\",\"output_sha256\":\"14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748\"}}}",
+        "index": 3,
+        "leaf_sha256": "19eea29cd8735834cdc7e4c5a5fcd464c7f0e732113264121c1a6ce234dcaa59"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.arithmetic_matches\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.arithmetic_matches\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "0bd531a507ec4f3b7c5a47c016a4d0bb15176a079a74a98801837a0fe5106099"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":1,\"quarantined\":0,\"rejected\":0,\"steps\":1},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "fddb655d9e18f7cde34dc0d7319da2eb4ab765bb71b04efd7d985ce99b809025"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "0f91e1c4677910d4713e57e58531d89e4e408a81af513a3bed40f32ebc98d4bd"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 1,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 1
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:0f91e1c4677910d4713e57e58531d89e4e408a81af513a3bed40f32ebc98d4bd",
+  "observation": {
+    "checks": {
+      "arithmetic_matches": true
+    },
+    "name": "01 Baseline worker",
+    "origin": "local-execution",
+    "recorded_utc": "2026-10-09T17:38:25Z",
+    "state": "OBSERVED",
+    "value": {
+      "arithmetic": 332833500,
+      "elapsed_ms": 0.054,
+      "expected": 332833500,
+      "fault": "NONE",
+      "output_sha256": "14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748"
+    }
+  },
+  "parent_fco_id": "fco:sha256:dca2fd932f10c44847948a649e1b5ee02ec55e23bf336650746f25c85023c34d",
+  "previous_mmr_root": "bf8ca4fda83d11d25f64680d2bd7f6e7021bdba9e422e9f78c750a743672859c",
+  "project_root": "dca2fd932f10c44847948a649e1b5ee02ec55e23bf336650746f25c85023c34d",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

@@ -1,0 +1,15 @@
+{
+  "scenario": "hardware-health corruption -> availability fault -> authorization bypass in unsafe fallback",
+  "fault_kind": "SIMULATED_BYTE_XOR",
+  "byte_index": 0,
+  "xor_mask": 1,
+  "expected_arithmetic": 332833500,
+  "guard": "hardware failure must never grant authorization",
+  "execution_target": "disposable pure-Python boolean policy only",
+  "mutates_host_security": false,
+  "patch": "select pinned after.py implementation after review; no generated code execution",
+  "local_bind": "127.0.0.1",
+  "remote_inference": "only sanitized scenario facts; HTTPS; no secret/code/raw host telemetry",
+  "akash_attestation": "NOT_TESTED; endpoint alone cannot prove GPU/TEE",
+  "pi": "no undocumented API fabricated"
+}

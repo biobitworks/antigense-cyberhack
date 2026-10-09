@@ -1,0 +1,7 @@
+{
+  "stale_approval_rejected": true,
+  "stale_no_ledger_change": true,
+  "foreign_host_rejected": true,
+  "foreign_origin_rejected": true,
+  "missing_token_rejected": true
+}

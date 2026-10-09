@@ -1,0 +1,130 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.advice_schema_valid": true,
+      "provided.ai_authorized_to_patch": false,
+      "provided.akash_attestation_verified": false,
+      "provided.response_observed": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.advice_schema_valid": "YES",
+      "provided.ai_authorized_to_patch": "NO",
+      "provided.akash_attestation_verified": "NO",
+      "provided.response_observed": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6\"}",
+        "index": 0,
+        "leaf_sha256": "334fdd63cdf374721d6aa0403f3f75fed40e212a26689487af0fca43357a0f23"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:6bec10865ef4107b02b75f39cf5a4f872e479bf15185aabcba6a4bc85131395a\"}",
+        "index": 1,
+        "leaf_sha256": "35d9a101fe909a671a24428893fdf45c8d19f74a7dd7644b5cf17942b1570ae2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"e9adc5306606eaec9b289bea00b9be16f76e8186702937874ba7c47f8a6c1228\"}",
+        "index": 2,
+        "leaf_sha256": "abb9d385ed7ca9a971fc9647db5e9a7765a31e9d31e8ef4aac0a58d98dac7463"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"advice_schema_valid\":true,\"ai_authorized_to_patch\":false,\"akash_attestation_verified\":false,\"response_observed\":true},\"name\":\"05 AI incident analysis\",\"origin\":\"local-execution\",\"recorded_utc\":\"2026-10-09T17:40:56Z\",\"state\":\"OBSERVED\",\"value\":{\"advice_quality\":\"REQUIRES_REVIEW\",\"attestation\":\"NOT_TESTED\",\"claim\":\"observed model advice; no execution authority; endpoint ownership unverified for Akash\",\"elapsed_ms\":27026.076,\"gpu_execution\":\"NOT_TESTED\",\"model\":\"qwen2.5-coder:7b\",\"request_sha256\":\"174e5a3ffb3c8821dce44950f3c54cdefcf26c3565ef69436844bc6b56648b5a\",\"response\":\"{\\n  \\\"hypothesis\\\": \\\"The software-injected byte corruption and integrity mismatch indicate a potential security vulnerability in the system's authorization mechanism. The fail-open fallback, where the system returns True for health checks without proper authorization, exacerbates this issue by allowing unauthorized access when the system is compromised.\\\",\\n  \\\"recommendation\\\": \\\"To mitigate this risk, the system should be configured to deny access when health checks fail. This ensures that the system remains secure even in the event of a software fault. Additionally, implementing robust integrity checks and secure authorization mechanisms can help prevent such vulnerabilities from occurring in the first place.\\\",\\n  \\\"evidence_limit\\\": \\\"The evidence provided includes a simulated software-injected byte corruption and an integrity mismatch, which suggest that the system's security measures may be compromised. The fail-open fallback further supports this hypothesis by allowing unauthorized access when the system is not functioning properly.\\\"\\n}\",\"response_sha256\":\"a86baefbe2b14abddff934f9487140750035651dc6d27259f76a1f9b299272ea\",\"route\":\"local\",\"schema_valid\":true,\"state\":\"OBSERVED\"}}}",
+        "index": 3,
+        "leaf_sha256": "3ea964200a2c5a7ea7d497a09e28956d1b50782d162d44abc8add1a57eea44aa"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.advice_schema_valid\":true,\"provided.ai_authorized_to_patch\":false,\"provided.akash_attestation_verified\":false,\"provided.response_observed\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.advice_schema_valid\":\"YES\",\"provided.ai_authorized_to_patch\":\"NO\",\"provided.akash_attestation_verified\":\"NO\",\"provided.response_observed\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "cd400c3d5a6d3ec5d4769498aeca263ea523266cfd5ff52a712d71c8987d98db"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":5,\"quarantined\":0,\"rejected\":0,\"steps\":5},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "09a3f84adad6886b2d439d350982dc73117cb9577af8ab15e815666bc663d26e"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "5116e4353fc0fea0b93ba0e00d522e1965b9b2f267e5091ec61a68b8d5da4f63"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 5,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 5
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:5116e4353fc0fea0b93ba0e00d522e1965b9b2f267e5091ec61a68b8d5da4f63",
+  "observation": {
+    "checks": {
+      "advice_schema_valid": true,
+      "ai_authorized_to_patch": false,
+      "akash_attestation_verified": false,
+      "response_observed": true
+    },
+    "name": "05 AI incident analysis",
+    "origin": "local-execution",
+    "recorded_utc": "2026-10-09T17:40:56Z",
+    "state": "OBSERVED",
+    "value": {
+      "advice_quality": "REQUIRES_REVIEW",
+      "attestation": "NOT_TESTED",
+      "claim": "observed model advice; no execution authority; endpoint ownership unverified for Akash",
+      "elapsed_ms": 27026.076,
+      "gpu_execution": "NOT_TESTED",
+      "model": "qwen2.5-coder:7b",
+      "request_sha256": "174e5a3ffb3c8821dce44950f3c54cdefcf26c3565ef69436844bc6b56648b5a",
+      "response": "{\n  \"hypothesis\": \"The software-injected byte corruption and integrity mismatch indicate a potential security vulnerability in the system's authorization mechanism. The fail-open fallback, where the system returns True for health checks without proper authorization, exacerbates this issue by allowing unauthorized access when the system is compromised.\",\n  \"recommendation\": \"To mitigate this risk, the system should be configured to deny access when health checks fail. This ensures that the system remains secure even in the event of a software fault. Additionally, implementing robust integrity checks and secure authorization mechanisms can help prevent such vulnerabilities from occurring in the first place.\",\n  \"evidence_limit\": \"The evidence provided includes a simulated software-injected byte corruption and an integrity mismatch, which suggest that the system's security measures may be compromised. The fail-open fallback further supports this hypothesis by allowing unauthorized access when the system is not functioning properly.\"\n}",
+      "response_sha256": "a86baefbe2b14abddff934f9487140750035651dc6d27259f76a1f9b299272ea",
+      "route": "local",
+      "schema_valid": true,
+      "state": "OBSERVED"
+    }
+  },
+  "parent_fco_id": "fco:sha256:6bec10865ef4107b02b75f39cf5a4f872e479bf15185aabcba6a4bc85131395a",
+  "previous_mmr_root": "e9adc5306606eaec9b289bea00b9be16f76e8186702937874ba7c47f8a6c1228",
+  "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

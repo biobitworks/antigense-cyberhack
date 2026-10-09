@@ -1,0 +1,21 @@
+{
+  "ID": "009R2",
+  "PARENT": "008R1",
+  "repository": "https://github.com/biobitworks/antigense-cyberhack",
+  "repository_visibility": "PRIVATE",
+  "mvp": "https://antigense-cyberhack.vercel.app",
+  "deployment_permalink": "https://antigense-cyberhack-2pk3iea79-biobitworks.vercel.app",
+  "silent_video": "https://antigense-cyberhack.vercel.app/demo.mp4",
+  "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+  "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+  "leaves": 12,
+  "video_sha256": "c2f18156deecc4c8b51591b28667f5e62dbd492d27aa70dd38040bdfe3deb02c",
+  "Akash": "NOT_TESTED",
+  "Pi": "NOT_TESTED",
+  "Semgrep": "OBSERVED before=1 after=0",
+  "voice": "NOT_RECORDED",
+  "human_identity": "UNVERIFIED",
+  "approval": "CODEX_DELEGATED_REHEARSAL_USER_REQUEST_009",
+  "prior_rejected_advice": "evidence/rejected_rehearsal",
+  "commit": "PENDING"
+}

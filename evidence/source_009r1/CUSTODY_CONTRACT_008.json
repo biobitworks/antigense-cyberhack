@@ -1,0 +1,68 @@
+{
+  "schema": "cyberhack.custody.contract.v008r1",
+  "PARENT": "007",
+  "scope": "Declared kit graph and report004; not entire repository, portfolio canonical graph, or physical hardware",
+  "merkle": {
+    "algorithm": "fco-ordered-v1",
+    "canonical": "json sort_keys separators compact ensure_ascii false UTF8 allow_nan false",
+    "leaf": "SHA256(0x00 || SHA256(canonical_leaf_bytes))",
+    "node": "SHA256(0x01 || raw_left || raw_right)",
+    "odd": "promote unchanged",
+    "order": "declared leaf list"
+  },
+  "mmr": {
+    "algorithm": "HYDRALAMP_MMR_V1",
+    "source_repo": "biobitworks/hydradg",
+    "source_commit": "884503530da06b2780070b4e38ad939a8c6dbee0",
+    "source": "hydralamp/mmr.py",
+    "leaf_fields": [
+      "event_index",
+      "event_hash",
+      "cfmo_version_id"
+    ],
+    "leaf_order": "event_index ascending, starts at1",
+    "cfmo_field_adapter": "step FCO identity; no claim of CFMO-store execution",
+    "leaf": "SHA256(canonical JSON)",
+    "node": "SHA256(raw_left || raw_right)",
+    "bag": "left-to-right fold; SHA256(HYDRALAMP_MMR_BAG_V1: || folded raw peak)",
+    "empty": "SHA256(HYDRALAMP_MMR_EMPTY)",
+    "verification": "independent power-of-two partition and all-prefix reconstruction"
+  },
+  "classification": {
+    "identity": "UNKNOWN without proof",
+    "safety": "UNKNOWN without independent oracle",
+    "SELF_SAFE": "null until tested; not false merely because unknown",
+    "admission": "OBSERVED named schema-valid row ADMITTED for custody; FAILED/NEGATIVE REJECTED; remaining QUARANTINED",
+    "meaning": "custody admission does not establish claim truth or safety"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "source": "hydralamp/gateway.py compute_diagnostics",
+    "source_commit": "884503530da06b2780070b4e38ad939a8c6dbee0",
+    "n": "max(count of prior+current non-genesis step admissions,1)",
+    "burden": "min(1,(rejected+quarantined)/n)",
+    "counts": [
+      "admitted",
+      "quarantined",
+      "rejected",
+      "max(0,n-admitted-quarantined-rejected)"
+    ],
+    "H": "-sum(p_i*log2(p_i)); normalize by log2(4)",
+    "tau": "0.35 inherited from source; NOT empirically calibrated here",
+    "G_star": "clamp(burden-tau*normalized_entropy,0,1), round6",
+    "delta_G_star": "current rounded G_star minus previous rounded G_star, round6",
+    "reference": "calculated empty admission-state G_star = 0.000000",
+    "ceiling": "Unvalidated adapted information-state diagnostic; not physical free energy, safety or accuracy"
+  },
+  "signatures": "NOT_SIGNED",
+  "external_inclusion_proofs": "NOT_IMPLEMENTED",
+  "authorization": "Read-only probes + append-only local receipts; no installs, repairs, inference, sponsor calls, funds or publish",
+  "successor": {
+    "ID": "009",
+    "PARENT": "008R1",
+    "scope": "Antigense controlled fault cascade",
+    "physical_fault": "SIMULATED_BYTE_XOR",
+    "sponsor_truth": "Only actual observed executions promoted; Akash and Pi pending",
+    "human_identity": "UNVERIFIED_UNSIGNED_LOCAL_ACTION"
+  }
+}

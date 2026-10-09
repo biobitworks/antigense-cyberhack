@@ -1,0 +1,9 @@
+{
+  "approval_http": 202,
+  "approval_provenance": "CODEX_DELEGATED_REHEARSAL_USER_REQUEST_009; not a claimed authenticated human action",
+  "browser_tamper_rejected": true,
+  "js_errors": [],
+  "mobile_width": 390,
+  "mobile_viewport": 390,
+  "video": "/Users/byron/projects/hackathon/antigense-cyberhack/media/silent-demo.webm"
+}
