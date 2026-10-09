@@ -2,7 +2,7 @@
 
 **Hardware faults must not become security failures.** Antigense Daisy is the single published [tokens& Cyberdefense Hackathon 2026 entry](https://tokensand.com/p/antigense-daisy). It demonstrates a **software-simulated** worker-byte fault, an unsafe fail-open authorization fallback, detection, a gated repair, regression verification, and addressable evidence.
 
-> **Judge-facing status (October 9, 2026):** The official submission and narrated **039R1** video are publicly reachable. **The newer three-minute 051/053 end-to-end video is NOT YET PUBLISHED.** Local Live Judge 050 source is now published on its own branch, but it is not a remotely available judge service. Do not confuse recorded historical sponsor executions with new live cloud calls.
+> **Judge-facing status (October 9, 2026):** The official submission and narrated **039R1** video are publicly reachable. **The new 180-second 053R3 end-to-end REVIEW CANDIDATE is [publicly playable on the independent backup Vercel host](https://antigense-daisy-evidence-backup.vercel.app/video-053-review/), but the submitted primary video remains 039R1 until human narration/privacy signoff.** Local Live Judge 050 source is now published on its own branch, but it is not a remotely available judge service. Do not confuse recorded historical sponsor executions with new live cloud calls.
 
 ## Start here — public entry and evidence
 
@@ -12,6 +12,7 @@
 | Working project website | [Vercel production](https://antigense-cyberhack.vercel.app/) | Sanitized static recorded replay |
 | **Submitted video URL** | [Watch the narrated demonstration](https://antigense-cyberhack.vercel.app/video/) | **Currently 039R1** (earlier narrated video), not the upcoming 051/053 cut |
 | Independent redundant media archive | [Public Vercel backup](https://antigense-daisy-evidence-backup.vercel.app/backup/) | Publicly verified archival copy of 039R1, with captions/transcript |
+| **New 3:00 review candidate** | [Watch 053R3](https://antigense-daisy-evidence-backup.vercel.app/video-053-review/) · [direct MP4](https://antigense-daisy-evidence-backup.vercel.app/video-053-review/antigense-daisy-053-r3-three-minute-review.mp4) | 180.000 sec; public SHA-256 readback PASS; **human audio-sync/full-frame security QA pending** |
 | Judge instructions | [Public judge walkthrough](https://antigense-cyberhack.vercel.app/judges/) | Scope and reproduction guidance |
 | Independently recomputable historical proof | [Judge proof 043](https://antigense-cyberhack.vercel.app/judges-043.html) | Historical 12-leaf browser proof, not live Judge 050 |
 | Incident walkthrough | [35](https://antigense-cyberhack.vercel.app/walkthrough-035.html) | Recorded sequence |
@@ -40,7 +41,7 @@ Evidence state has limitations. An exact content hash is not a semantic embeddin
 | Guarded intervention 042 | [Source branch](https://github.com/biobitworks/antigense-cyberhack/tree/codex/guarded-intervention-042) | Exec-free evaluator, regression tests, a 6-leaf independently recomputable MMR |
 | **Live Judge 050** | [Public source branch](https://github.com/biobitworks/antigense-cyberhack/tree/codex/live-judge-050) | Loopback HTTP/SSE public updates; capability-guarded local review; DENY/ALLOW append, private local notes. **Not a hosted judge service** |
 | Static public media archive 052 | [Archive branch](https://github.com/biobitworks/antigense-cyberhack/tree/codex/public-backup-052) · [PR #3](https://github.com/biobitworks/antigense-cyberhack/pull/3) | SHA-256-verified earlier 039R1 video, captions/transcript, historic proof; separate public Vercel host |
-| Exactly-three-minute video edit specification | [Draft PR #4](https://github.com/biobitworks/antigense-cyberhack/pull/4) | Editorial plan and claim matrix only; **not an executed or rendered final video** |
+| Three-minute video successor | [Draft PR #4](https://github.com/biobitworks/antigense-cyberhack/pull/4) | **Rendered and publicly backed up as a 3:00 REVIEW candidate**; mechanical QA PASS, full human editorial/privacy QA outstanding |
 
 The 050 branch was pushed after rerunning **17 local tests (PASS)** and Gitleaks scans (no detected leaks). A separately verified *manual* local 050 session recorded synthetic DENY then ALLOW, with 4 ordered leaves and root `47a220fd28956dc77d7baf4299cf6e348c8ebe8736955fbc38c3e43de17deafb`. The **separate automated** 050 run root `a077e88ac206d5c02e18f47cdde5558af3d4f159573df021615968170d3edd55` must not be conflated with the manually recorded run, the 042 root or historical browser proof 043. The local reviewer credential/private notes are not part of the public website.
 
@@ -75,6 +76,6 @@ Cryptographically signed reviewer identity, GPU/TEE attestation, real payments, 
 
 ## Video publication policy
 
-The Tokens& entry links to `https://antigense-cyberhack.vercel.app/video/`, which currently serves the 039R1 source. The new ~3:00 video must retain the genuine Nimble interface/action (never disclose the API key), show the actual local 050 judge interaction, and clearly label sponsor results as historical. Before replacing the video, validate exact duration, audio clarity/screen synchronization, frame privacy, the final media SHA-256 and public browser playback; archive the old MP4 independently. **No 053 video upload or Tokens& portal edit is claimed here.**
+The Tokens& entry links to `https://antigense-cyberhack.vercel.app/video/`, which currently serves the 039R1 source. The public 053R3 [review candidate](https://antigense-daisy-evidence-backup.vercel.app/video-053-review/) retains anonymized Nimble source motion behind full-frame blur, shows the later real local 050 judge interaction, and explicitly labels sponsor results as historical. Its SHA-256 is `047ce22506c41add4793e7762f212b6365bd679b67bf6e62e16840cdb0b3b7a0`. Human final review remains pending. Before replacing the video, validate exact duration, audio clarity/screen synchronization, frame privacy, the final media SHA-256 and public browser playback; archive the old MP4 independently. **053 was published only to the secondary backup Vercel project; the original submitted Vercel video and Tokens& portal remain untouched.**
 
 Original explanatory content © 2026 Biobitworks, CC BY-NC-ND 4.0. Software licensing beyond this statement remains unestablished; third-party rights retained.
