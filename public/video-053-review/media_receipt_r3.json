@@ -1,0 +1,41 @@
+{
+  "credential_scope": "FIRST_8_SECONDS_RETENTION_AS_WHOLE_FRAME_IRREVERSIBLY_BLURRED_MOVING_SOURCE; NIMBLE_OVERLAY_LABEL; LATER_FRAMES_MANUAL_REVIEW_REQUIRED",
+  "generated_utc": "2026-10-09T23:24:04.361024+00:00",
+  "mmr": "NOT_COMPUTED",
+  "output_duration_seconds": 180.0,
+  "output_file": "antigense-daisy-053-r3-three-minute-review.mp4",
+  "output_sha256": "047ce22506c41add4793e7762f212b6365bd679b67bf6e62e16840cdb0b3b7a0",
+  "schema": "antigense.media053.review_render.v1",
+  "segments": [
+    {
+      "duration": 142.166667,
+      "kind": "039R1_RETAINED_HISTORICAL_VIDEO",
+      "start": 0
+    },
+    {
+      "duration": 8.0,
+      "kind": "NIMBLE_REAL_SOURCE_FULL_FRAME_PIXEL_BLUR_WITH_OPAQUE_LABEL",
+      "start": 142.166667
+    },
+    {
+      "duration": 22.666667,
+      "kind": "LIVE_050_UNRETOUCHED_REAL_SCREEN_T8_TO_T23_THEN_HELD_RESULT_TO_AVOID_OS_UI",
+      "start": 150.166667
+    },
+    {
+      "duration": 7.166666,
+      "kind": "EVIDENCE_LIMITS_OUTRO",
+      "start": 172.83333399999998
+    }
+  ],
+  "signature": "NOT_SIGNED",
+  "source_interpretation": "EARLIER_SPONSOR_EXECUTIONS_SEPARATE_FROM_NEW_LOCAL_050",
+  "source_sha256": {
+    "039r1_existing_published_video": "ed042018770c3d001f0ea3f63efcfd0c2f747c3db28d34add0b532e2275eb115",
+    "050_narration": "d36011cea3d15053cf81da5903f4a5b42970f6b5527627801d587f51d94a9570",
+    "050_original_screen_recording": "2d10743074f28bf287b0f6ed8fb05096d70255b6db4e40b3419fa71eec03fbf3"
+  },
+  "speech_sync": "MANUAL_LISTEN_NOT_TESTED",
+  "status": "R3_REVIEW_CANDIDATE_NOT_FINAL_PRIVACY_OR_AUDIO_VERIFIED",
+  "target_seconds": 180
+}
