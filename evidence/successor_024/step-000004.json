@@ -1,0 +1,172 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.bids_received": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.bids_received": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a\"}",
+        "index": 0,
+        "leaf_sha256": "d494892f4ab4601498c6ba1818165db3883a6744f9c6492146c5a430f8919dbd"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:9027fa112c318ab7b4f5c4a7aef120aa71bdbea242ee9f9528a1fb54651985d3\"}",
+        "index": 1,
+        "leaf_sha256": "93c00a761161fef8afeeca22e0d2346deb11ffeae077343ac3595ed6e9edf021"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"b696163d2188381540786d1ae9e89d958f6acc09daab73e7cd475004405e24ac\"}",
+        "index": 2,
+        "leaf_sha256": "136bd82eb03544de62b296a163e5bda2eb1d6e771fbd57e21e32a8b2becc7bf4"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"bids_received\":true},\"details\":{\"bid_count\":7,\"bids\":[{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/rtx4090\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"1058.596122000000000000\",\"provider\":\"akash15ksejj7g4su7ljufsg0a8eglvkje94z8qsh68a\"},{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/v100\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"395.981475000000000000\",\"provider\":\"akash16yr3wxt97ae045a06kr3ycde9srcgpg8syjxxm\"},{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/a100\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"3202.654515000000000000\",\"provider\":\"akash172k755dd82elslzcgkgtk3ux5ytdqvx5wq2a98\"},{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/h100\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"5291.468660000000000000\",\"provider\":\"akash17erkmem6xcugfnew2c0ujfqtet32j29ztk03jt\"},{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/v100\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"443.000000000000000000\",\"provider\":\"akash1hgulk6aekakqzc0v6wukrd3dy9n90f5gkl4ezk\"},{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/h100\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"4288.930913000000000000\",\"provider\":\"akash1svfr9xarfkcxwdnx32nvl8cs9rfruu4nd56c4f\"},{\"denom\":\"uact\",\"gpu\":[\"[{\\\"key\\\": \\\"vendor/nvidia/model/pro6000se\\\", \\\"value\\\": \\\"true\\\"}]\"],\"price_uact\":\"3423.631513000000000000\",\"provider\":\"akash1uezxmc39c9uky9plqdvmnzp7yfwpyamjtq9g2w\"}],\"waited_s\":25},\"name\":\"gpu_bids\",\"occurrence\":{\"run_id\":\"run011-0c6c92c46a0c\",\"seq\":3,\"ts\":\"2026-10-09T19:31:44+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "50360b7c98eedc4ca59b506ebe3b15e7d51b5a583d9d78a1709f2a682f23c7a3"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.bids_received\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.bids_received\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "4b3837f28cda8bd1825c1898e8ebff484609ceedf03eac2544e4f37174bc9568"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":3,\"quarantined\":0,\"rejected\":0,\"steps\":3},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "6683fb43c275680a8051319139ffd1ab42f8864f3ee01d30b3bf18b92dbbb64f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "3295639c5ef5ec47960e3e69206edd71475b6d314fcf47d73085d49ed309143f"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 3,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 3
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:3295639c5ef5ec47960e3e69206edd71475b6d314fcf47d73085d49ed309143f",
+  "observation": {
+    "checks": {
+      "bids_received": true
+    },
+    "details": {
+      "bid_count": 7,
+      "bids": [
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/rtx4090\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "1058.596122000000000000",
+          "provider": "akash15ksejj7g4su7ljufsg0a8eglvkje94z8qsh68a"
+        },
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/v100\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "395.981475000000000000",
+          "provider": "akash16yr3wxt97ae045a06kr3ycde9srcgpg8syjxxm"
+        },
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/a100\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "3202.654515000000000000",
+          "provider": "akash172k755dd82elslzcgkgtk3ux5ytdqvx5wq2a98"
+        },
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/h100\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "5291.468660000000000000",
+          "provider": "akash17erkmem6xcugfnew2c0ujfqtet32j29ztk03jt"
+        },
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/v100\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "443.000000000000000000",
+          "provider": "akash1hgulk6aekakqzc0v6wukrd3dy9n90f5gkl4ezk"
+        },
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/h100\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "4288.930913000000000000",
+          "provider": "akash1svfr9xarfkcxwdnx32nvl8cs9rfruu4nd56c4f"
+        },
+        {
+          "denom": "uact",
+          "gpu": [
+            "[{\"key\": \"vendor/nvidia/model/pro6000se\", \"value\": \"true\"}]"
+          ],
+          "price_uact": "3423.631513000000000000",
+          "provider": "akash1uezxmc39c9uky9plqdvmnzp7yfwpyamjtq9g2w"
+        }
+      ],
+      "waited_s": 25
+    },
+    "name": "gpu_bids",
+    "occurrence": {
+      "run_id": "run011-0c6c92c46a0c",
+      "seq": 3,
+      "ts": "2026-10-09T19:31:44+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:9027fa112c318ab7b4f5c4a7aef120aa71bdbea242ee9f9528a1fb54651985d3",
+  "previous_mmr_root": "b696163d2188381540786d1ae9e89d958f6acc09daab73e7cd475004405e24ac",
+  "project_root": "e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

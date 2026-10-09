@@ -1,0 +1,42 @@
+{
+  "algorithm": "HYDRALAMP_MMR_V1",
+  "leaf_count": 4,
+  "leaves": [
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+        "event_hash": "e98c5a02087be897ac7aada6a026a4a950a9156ff37d18d9a363d2b96910d267",
+        "event_index": 1
+      },
+      "leaf_sha256": "66ce6c048ff102b48065837a92d057e67c69481d86330a8117767d21933c64b2"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:afe9b4d74a4bc7ae14f9d4b14050326c4cf9b6a61a479e6cfe420e4780a07c98",
+        "event_hash": "83643760ee44e2a4f27958015674816cedc9573faaded126b2769a9da5aba4e6",
+        "event_index": 2
+      },
+      "leaf_sha256": "ce8e7950d9ff5ba3b533467d85cf8bf7c8897f00487f1597e888572b42beae71"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:9027fa112c318ab7b4f5c4a7aef120aa71bdbea242ee9f9528a1fb54651985d3",
+        "event_hash": "c4c99c0a82be053c16320c6f4bae5b7e3940eee12aa0207a071c3e783aaf417c",
+        "event_index": 3
+      },
+      "leaf_sha256": "119b5f13aa2cd852b9a7afaf4b4d6e2e1a85394786b69b00d93de84b9ff0e658"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:3295639c5ef5ec47960e3e69206edd71475b6d314fcf47d73085d49ed309143f",
+        "event_hash": "6ec031535ea2d015ed4a38f5348eea1a3c3a78909e22e874382141bc30cd4283",
+        "event_index": 4
+      },
+      "leaf_sha256": "827020c0ef83b789ce09a375f354df638f8ead78ce50a1ddccd32ea0353b1e4b"
+    }
+  ],
+  "peaks": [
+    "e2c909cf37e102547f3c8227063be4e788ea4d97a7b163d30fe0ce0b73a7766b"
+  ],
+  "root": "457df0fa7342a55910deba88556f6d7752eb7513e0031a6b3309c4ed026f0d6a"
+}
