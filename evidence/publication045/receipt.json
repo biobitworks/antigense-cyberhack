@@ -1,0 +1,214 @@
+{
+  "additional_urls": {
+    "fcg_proof": "https://antigense-cyberhack.vercel.app/judges-043.html",
+    "judges": "https://antigense-cyberhack.vercel.app/judges/",
+    "video": "https://antigense-cyberhack.vercel.app/video/",
+    "youtube": "https://youtu.be/hpLH88V6PF0"
+  },
+  "archive_unmodified_origins": 13,
+  "current_deployment": {
+    "alias": "https://antigense-cyberhack.vercel.app/",
+    "created_at_epoch_ms_reported_by_provider": 1791581392049,
+    "id": "dpl_Hcb4VeTBGp8oN13n3xd3GXxrzdcu",
+    "method": "vercel deploy --prod --yes from isolated staging directory",
+    "state": "READY",
+    "target": "production"
+  },
+  "mmr_committed": "NOT_CLAIMED",
+  "next_action": "USER_AUTHENTICATED_FORM_SUBMISSION_OR_EDIT; JUDGE_GITHUB_ACCESS; OPTIONAL_AUDIO_CAPTION_PROOFREAD",
+  "ordered_manifest": {
+    "algorithm": "fco-ordered-v1",
+    "construction": "fco-ordered-v1",
+    "construction_receipt": "custody.merkle(sorted path/hash/length tuples)",
+    "leaves": 24,
+    "root": "f91fd87c2a47a36e5caa1495a3b94c9e746191cf7225a26d59587973d2876e7f"
+  },
+  "parent": {
+    "local_mmr_root": "02d102de2d19334b582a5a9ebde4e55de184533a607d81cc2b317c000423ddc3",
+    "parent_deployment_id": "dpl_77qXsY6q6oPDRL7oqLH6uhMRquKY",
+    "successor_044_commit": "a05d86c1dac831dbf81c719698b7b7eec3f820ba"
+  },
+  "production_http_get_readback": {
+    "checked_paths": 24,
+    "exact_matches": 24,
+    "mismatches": 0,
+    "source": "independent bytes GET from canonical Vercel alias",
+    "status": "PASS"
+  },
+  "provider_signature": "NOT_SIGNED",
+  "root_navigation": "judges links only, intentional successor change",
+  "schema": "antigense.publication_receipt.v045",
+  "served_file_sha256": [
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 4998,
+      "path": "client-017.html",
+      "sha256": "b501f7d4f79fb9970e3be7415a2d9ccd3534825337ee5f63774a8c67a043e4dd",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 3513,
+      "path": "data/akash-gpu038.json",
+      "sha256": "502b070feb0fedc07c774fb7942d7ab5990f9fd6255567927bdbcef5cd0f69aa",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 3046,
+      "path": "data/defense-status.json",
+      "sha256": "cdf25179079dac3d3040617337a12edfcaada334457ccd415e16541caa3e0feb",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 2466,
+      "path": "data/live-local-043-index.json",
+      "sha256": "09536184c393f4f5dfebd8ef35c5fa168740ae44790e084b704ced561d40bb42",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 149567,
+      "path": "data/live-local-043-proof.json",
+      "sha256": "6b6a40d51022b867489fb6d998b502f380d7c02dcb4260510113fead03c907e9",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 162232,
+      "path": "data/proof.json",
+      "sha256": "725b090a135418ca97550705c80a9b9b09a31cfa02af0da66058b19b345d1999",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 23925,
+      "path": "data/run.json",
+      "sha256": "f10c1ad9d536191e14fb441e3a89d993a3ec4e6f25f19f70520e4566f29e0523",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 9883,
+      "path": "data/walkthrough-034.json",
+      "sha256": "a6eb4a92c6289203ea670ccb3cbb4b261c929432366ba948e9f69cc76edc7933",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 6193866,
+      "path": "demo-034.mp4",
+      "sha256": "ab69925bd19105f0876e06c79de48009bc5dd525a368081f683ce60217d0231c",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 502356,
+      "path": "demo.mp4",
+      "sha256": "c2f18156deecc4c8b51591b28667f5e62dbd492d27aa70dd38040bdfe3deb02c",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_WITH_JUDGE_NAV",
+      "length_bytes": 26035,
+      "path": "index.html",
+      "sha256": "a8f9253a18a2698fb7fc76ac5930177af6cc9390ef114f6f94b4128da05aff46",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 11051,
+      "path": "judges-043.html",
+      "sha256": "5ab8c73e916c4766fb39c314586b04953d8803c7e42c02dd15eda55da00218b7",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 9117,
+      "path": "judges/index.html",
+      "sha256": "8677095c649986c359334db19cd5fd0df118eb0574514d951b03388d89874ff0",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 6367,
+      "path": "technical-017.html",
+      "sha256": "510af23001d93d19007e06516478e6a4cb925e1d2c09eb1f65a8a1b4dbbe00f2",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 5175,
+      "path": "technical-029.html",
+      "sha256": "9a22815710f6e308cbc43fe2211777ca23377432cb0fe6adc8646756ad8e60ff",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 3391,
+      "path": "verify.js",
+      "sha256": "7a23050810e37ec2e88855d18d12f1ecf943145652945b66a3a2b1a5ee61d611",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 6329684,
+      "path": "video/antigense-039r1-audio-clean.mp4",
+      "sha256": "ed042018770c3d001f0ea3f63efcfd0c2f747c3db28d34add0b532e2275eb115",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 3994,
+      "path": "video/captions-editorial.srt",
+      "sha256": "01b14f1c80cb9d7217cb6db57c01d7fdb243c318bf04767c79a3cf838c722322",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 3851,
+      "path": "video/captions.vtt",
+      "sha256": "6aabd3dc2ca68a0c6084b243f4f8e5a91f98c3d045c719c0747365efd3d3e828",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 8832,
+      "path": "video/index.html",
+      "sha256": "ba977c01e7c67bf870860d06d41cb8922c45decf289c80050d6b9efaed68bcd2",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 59372,
+      "path": "video/poster.jpg",
+      "sha256": "72095b7c655344cbf5566dbe20673fe6e243dadea573e7de36b975e7c07a44b6",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "NEW_PUBLICATION",
+      "length_bytes": 12956,
+      "path": "video/transcript.json",
+      "sha256": "a7bcc5277101e8f4b7cd584201d81b72371413d57894acaaab30d3980ab59b95",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 13511,
+      "path": "walkthrough-034.html",
+      "sha256": "176d4e5a7cd64dc9c72e6d06c5978142425ba219fbd00daae344ae365fa37fb0",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    },
+    {
+      "ancestor": "LIVE_UNMODIFIED",
+      "length_bytes": 13522,
+      "path": "walkthrough-035.html",
+      "sha256": "0dff97c3acac7835538d609854115d4fb7826ea96b1ae2fdeb9898a79bdfca04",
+      "status": "PRODUCTION_HTTP_READBACK_EXACT_MATCH"
+    }
+  ],
+  "verified_wall_clock_utc_unattested": "2026-10-09T21:31:21.596076+00:00",
+  "what_is_not_supported": "Human transcription unreviewed; YouTube own bytes differ by transcoding; production publication does not cause 040 reviewer-tree v2 to pass; live provider sponsor reruns not executed.",
+  "what_is_supported": "Hosted assets are byte-identical to staged originals at readback; archived 12-leaf local proof independently recomputed; video URL has public YouTube metadata for 142 sec unlisted."
+}

@@ -2,6 +2,8 @@
 import http.server,json,os,secrets,threading,time,urllib.parse
 from pathlib import Path
 import cascade
+from host_telemetry041 import Sampler
+TELEMETRY = Sampler(interval_s=3)
 TOKEN=secrets.token_hex(32);HOST='127.0.0.1:8790';busy=threading.Lock()
 def snapshot():
  try:
@@ -12,7 +14,7 @@ def snapshot():
   import subprocess
   x=subprocess.run(['sysctl','-n','hw.memsize'],capture_output=True,text=True,timeout=1);mem=int(x.stdout)
  except Exception:pass
- return {'source':'LIVE_OS_POLL','observed_epoch_ms':int(time.time()*1000),'cpu_count':os.cpu_count(),'memory_bytes':mem,'load_average':list(os.getloadavg()),'gpu_temperature':'UNKNOWN','gpu_ecc':'UNKNOWN','run':run}
+ return {'source':'LIVE_OS_POLL','observed_epoch_ms':int(time.time()*1000),'cpu_count':os.cpu_count(),'memory_bytes':mem,'load_average':list(os.getloadavg()),'usage':TELEMETRY.latest(),'gpu_temperature':'UNKNOWN','gpu_ecc':'UNKNOWN','run':run}
 class Handler(http.server.SimpleHTTPRequestHandler):
  def __init__(self,*a,**k):super().__init__(*a,directory=str(cascade.ROOT/'public'),**k)
  def valid(self):return self.headers.get('Host')==HOST
@@ -47,4 +49,5 @@ class Handler(http.server.SimpleHTTPRequestHandler):
   except Exception:return self.reply({'error':'invalid request'},400)
  def log_message(self,*a):pass
 if __name__=='__main__':
+ TELEMETRY.start()
  print('Antigense local cockpit http://'+HOST,flush=True);http.server.ThreadingHTTPServer(('127.0.0.1',8790),Handler).serve_forever()

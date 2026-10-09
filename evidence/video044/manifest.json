@@ -1,0 +1,76 @@
+{
+  "audio_processing": "highpass 95Hz; afftdn; compression; loudnorm -17 LUFS target -2 dBTP",
+  "captions": "Whisper base.en original + editorial normalizations; not human proofread; original ASR retained",
+  "claim_ceiling": "Narrated historical replay. Separate later local MMR recomputation, sponsor live runner and 040 v2 are not shown. No new sponsor calls or physical fault shown.",
+  "human_identity_signature": "NOT_SIGNED",
+  "merkle": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 10,
+    "root": "29bc06599580831319ecdc35d9302cacbaea295c5f16bafa21c3929ad79aa4e3"
+  },
+  "mmr_committed": "NOT_CLAIMED",
+  "narrated_duration_seconds": 142.166667,
+  "next_action": "Operator listen/review; upload Unlisted YouTube; update site video embed and portal; independent public readback",
+  "ordered_assets": [
+    {
+      "bytes": 3235,
+      "path": "agent/build_video044.py",
+      "sha256": "44355d3848360a32676c14e3fe3e27c845d24a330ee42b707cb1f034f87f4468"
+    },
+    {
+      "bytes": 3965,
+      "path": "evidence/video044/voice_asr_raw.srt",
+      "sha256": "ab56e8dbc0e298fd7c076ae99bb07edd3d40690163ec5f6b0ddaf53ab3f34b29"
+    },
+    {
+      "bytes": 6329684,
+      "path": "public/video/antigense-039r1-audio-clean.mp4",
+      "sha256": "ed042018770c3d001f0ea3f63efcfd0c2f747c3db28d34add0b532e2275eb115"
+    },
+    {
+      "bytes": 3851,
+      "path": "public/video/captions.vtt",
+      "sha256": "6aabd3dc2ca68a0c6084b243f4f8e5a91f98c3d045c719c0747365efd3d3e828"
+    },
+    {
+      "bytes": 3994,
+      "path": "public/video/captions-editorial.srt",
+      "sha256": "01b14f1c80cb9d7217cb6db57c01d7fdb243c318bf04767c79a3cf838c722322"
+    },
+    {
+      "bytes": 12956,
+      "path": "public/video/transcript.json",
+      "sha256": "a7bcc5277101e8f4b7cd584201d81b72371413d57894acaaab30d3980ab59b95"
+    },
+    {
+      "bytes": 59372,
+      "path": "public/video/poster.jpg",
+      "sha256": "72095b7c655344cbf5566dbe20673fe6e243dadea573e7de36b975e7c07a44b6"
+    },
+    {
+      "bytes": 8623,
+      "path": "public/video/index.html",
+      "sha256": "98eec94be6d384c708bc8c98e805f71ef89368c3d183e4bd7b5a0095b99eb81f"
+    },
+    {
+      "bytes": 9104,
+      "path": "public/judges/index.html",
+      "sha256": "02cea1f70e214db244c15a056f1267d5bb1f5791bb4333ead32aecad88d6ca5f"
+    },
+    {
+      "bytes": 9011,
+      "path": "docs/YOUTUBE_SUBMISSION_044.md",
+      "sha256": "5ef34ee6ad696843d8a80fdf1a0b5809f83d5843f84b7cb1fb20280a2fbbddb7"
+    }
+  ],
+  "parent": {
+    "code_head": "a20fd9a09820addb9d1fd5fd1ee2df47515ec9e3",
+    "published_demo_034_sha256": "ab69925bd19105f0876e06c79de48009bc5dd525a368081f683ce60217d0231c",
+    "video_039r1_sha256": "6269679b3f00971e87ad735582efebcf51e9a10abcf572b01015946dc99e78de"
+  },
+  "publication": "NOT_EXECUTED",
+  "schema": "antigense.video_publication_candidate.044",
+  "screen040_candidate_status": "SILENT_AND_V2_NOT_BOUND_NOT_JUDGE_PRIMARY",
+  "status": "PREPARED_REVIEW_REQUIRED_NOT_DEPLOYED_NOT_YOUTUBE_SUBMITTED",
+  "youtube_url": null
+}

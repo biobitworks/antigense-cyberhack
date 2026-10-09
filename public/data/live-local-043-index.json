@@ -1,0 +1,47 @@
+{
+  "captured_utc_unattested": "2026-10-09T21:07:45.772978+00:00",
+  "claim_ceiling": "A frozen snapshot of local execution; exact bytes and chains can be recomputed. No claim of remote realtime access, GPU hardware attestation, signed approval, physical hardware fault, or sponsor re-execution.",
+  "derived_ordered_commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 4,
+    "ordered_leaf_sha256": [
+      "e06e142f4aebe01c1bd77878d5d2881955ac7aa8d2e7d93c49dcb1f8e0346516",
+      "af8308439938d085da4cb5232074d7995c512cb71227024c52a5767981d01ccc",
+      "5949b06cabac4067c088b09af3a7d470b36eb59060d35459523d70e7b7238034",
+      "3075c44d6f3e2fba4c23b4fdb610a582b97b0a85e5bc8a287e4321a409376e00"
+    ],
+    "root": "89aebc618de2daf1a5f1f035b4ad54b4b9869ebae545bedbdb5172495ad96fda"
+  },
+  "independent_recomputation": "PASS_AT_CAPTURE",
+  "leaf_count": 12,
+  "local_reload_recovery": "NOT_TESTED",
+  "mmr_algorithm": "HYDRALAMP_MMR_V1",
+  "mmr_root": "02d102de2d19334b582a5a9ebde4e55de184533a607d81cc2b317c000423ddc3",
+  "new_external_sponsor_calls": "NOT_EXECUTED_BY_THIS_CAPTURE",
+  "non_sponsor_historical": "Historical Akash inference and ClickHouse Cloud readback are separately evidenced in PR1; this proof does not newly execute those services.",
+  "phase": "verified",
+  "project_root": "9053be5ed053068d50f22e96acec01d52e466a2ddcb6fa66cf1e406274dd599c",
+  "proof_file": "data/live-local-043-proof.json",
+  "proof_sha256": "6b6a40d51022b867489fb6d998b502f380d7c02dcb4260510113fead03c907e9",
+  "review_action": {
+    "fco_id": "fco:sha256:4fdbf63fc5d009730e60d08fbabf218d6e273cb92864c2a5ff52ec7ff86000d4",
+    "human_signature": "NOT_SIGNED",
+    "ledger_event_index": 9,
+    "operator_identity": "UNVERIFIED",
+    "parent_fco_id": "fco:sha256:c51f27db92c3b68c500f82225d6874d4ca80e1bef35b69d59287240489bb52e3",
+    "recorded_utc_unattested": "2026-10-09T20:48:30Z",
+    "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+    "result": "local MMR-bound approval selected pinned fixture; no host patch"
+  },
+  "run_id": "run-20261009T204741Z-5cb3db65",
+  "schema": "antigense.judge_local_proof.v043",
+  "signature": "NOT_SIGNED",
+  "source": "127.0.0.1:8790 local read-only snapshot, sanitized for public review",
+  "sponsors_in_run": {
+    "Akash": "NOT_TESTED",
+    "ClickHouse": "NOT_IN_LOCAL_RUN",
+    "Pi": "NOT_TESTED",
+    "Semgrep": "OBSERVED"
+  },
+  "status": "OBSERVED_PREEXISTING_LOCAL_EXECUTION_AND_READONLY_INDEPENDENT_RECOMPUTATION"
+}

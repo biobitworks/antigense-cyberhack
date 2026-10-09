@@ -1,0 +1,2 @@
+evidence/video044/*.srt whitespace=-blank-at-eof
+public/video/*.srt whitespace=-blank-at-eof

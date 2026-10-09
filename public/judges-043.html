@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Antigense · Judge evidence and live-local FCG</title>
+<style>
+:root{color-scheme:dark;--bg:#101510;--panel:#1c241e;--line:#3b4c40;--lime:#c5f283;--text:#f1f5ec;--muted:#b7c7b8;--orange:#ffb77a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,sans-serif}
+header,main,footer{max-width:1190px;margin:auto;padding:28px 30px}header{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);align-items:center}
+.brand{font-size:24px;font-weight:800;letter-spacing:-.8px}.eyebrow,.label{font:12px/1.5 ui-monospace,SFMono-Regular,monospace;letter-spacing:1px;color:var(--lime);text-transform:uppercase}
+h1{font-size:clamp(36px,5vw,60px);line-height:1.1;letter-spacing:-1.4px;max-width:930px;margin:12px 0}h2{font-size:28px;margin:0 0 14px}
+p{color:var(--muted)}.lede{font-size:20px;max-width:880px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0}.actions a,button{border:1px solid var(--lime);background:var(--lime);color:#152015;padding:12px 16px;border-radius:10px;font-weight:750;text-decoration:none;cursor:pointer;font-size:15px}
+.actions a.alt{color:var(--text);background:transparent;border-color:var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.card{padding:20px;border:1px solid var(--line);border-radius:15px;background:var(--panel);min-width:0}
+.card h3{font-size:21px;margin:5px 0}.large{font:bold 32px ui-monospace,monospace;color:var(--lime)}
+.status{font:12px/1.6 ui-monospace,monospace;color:var(--orange);font-weight:bold;letter-spacing:.3px}
+code,pre{font:12px/1.7 ui-monospace,monospace;overflow-wrap:anywhere;word-break:break-word}
+pre{border:1px solid var(--line);background:#0d130f;padding:14px;border-radius:9px;white-space:pre-wrap}
+section{margin-top:38px}a{color:var(--lime)}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.step{border-left:3px solid var(--lime);padding:6px 13px 10px}
+.gap{background:#201f18;border-left:4px solid var(--orange);padding:16px 20px;border-radius:7px;margin:20px 0}
+.caption{font-size:13px;color:var(--muted)}.pass{color:var(--lime)}.fail{color:#ff9a97}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);margin-top:45px}
+@media(max-width:800px){header,main,footer{padding:20px 16px}.cards,.timeline{grid-template-columns:1fr}}
+</style>
+</head><body>
+<header><div class="brand">antigense<span style="color:var(--lime)">.</span></div><div class="eyebrow">JUDGE EVIDENCE · SUCCESSOR 043</div></header>
+<main>
+<div class="eyebrow">A bounded agentic security system with evidence you can inspect</div>
+<h1>The fix is not the proof. The full sequence is.</h1>
+<p class="lede">Antigense reproduces a software-injected integrity fault, finds an unsafe fail-open authorization fallback, gates AI advice behind human review, and preserves each step as an addressable custody occurrence with recomputable Merkle/MMR checkpoints.</p>
+<div class="actions">
+<a href="demo-034.mp4">Watch primary narrated demo ↗</a>
+<a href="walkthrough-035.html" class="alt">Explore recorded walkthrough ↗</a>
+<a href="technical-029.html" class="alt">Technical detail ↗</a>
+<a href="index.html" class="alt">Open application ↗</a>
+</div>
+<section>
+<div class="eyebrow">Two distinct, inspectable evidence routes</div>
+<div class="cards">
+<div class="card"><div class="label">Historical multi-sponsor custody</div><h3>Recorded execution receipts</h3><p>Semgrep local before/after findings, ClickHouse Cloud ingestion/readback and separately authorized Akash GPU inference/close. Their execution happened earlier, not when this webpage loads.</p><div class="status">HISTORICAL OBSERVED · NOT A NEW SPONSOR RUN</div></div>
+<div class="card"><div class="label">Actual local human-review path</div><div class="large">12 leaves</div><h3>New local persisted FCG</h3><p>Local browser-bound approval became a distinct FCO occurrence, linked to its predecessor, recorded on disk and independently recomputed.</p><div class="status">LOCAL EXECUTION OBSERVED · NOT REMOTE LIVE ACCESS</div></div>
+<div class="card"><div class="label">Independent review</div><h3>Recompute rather than trust a slide</h3><p>This page loads a frozen public proof snapshot and validates its leaf commitments, typed predecessor sequence and every MMR prefix in your browser.</p><div class="status">AUTHENTICITY / TIMING NOT ATTESTED</div></div>
+</div>
+</section>
+<section>
+<div class="eyebrow">Verifiable local snapshot · Run 20261009T204741Z</div>
+<h2>Browser verification of the new FCG occurrence</h2>
+<p>This is a previously executed local run, exported as exact JSON bytes. It is not a connection to the operator's machine. Start a fresh browser-side recomputation:</p>
+<div class="actions"><button id="verify" type="button">Recompute local FCG proof</button><a class="alt" href="data/live-local-043-proof.json">Proof JSON ↗</a><a class="alt" href="data/live-local-043-index.json">Provenance index ↗</a></div>
+<div class="card">
+<div class="label">Result</div>
+<h3 id="status" aria-live="polite">NOT_TESTED · verification not started</h3>
+<p id="result">Verification reads the frozen proof; it does not call sponsor APIs or change custody state.</p>
+<div class="label">Observed local run MMR root</div>
+<code id="root">02d102de2d19334b582a5a9ebde4e55de184533a607d81cc2b317c000423ddc3</code>
+<div class="label" style="margin-top:15px">Selected local review action</div>
+<pre id="occurrence">Event #9: 08 Local review action
+Typed relation: DEPENDS_ON_RECORDED_PREDECESSOR
+Actor: local-browser-action · UNSIGNED
+No physical host patch; pinned fixture only.</pre>
+</div>
+<div class="timeline" style="margin-top:18px">
+<div class="step"><div class="label">01 · Local user action</div><strong>New occurrence</strong><p>The current MMR-bound review is logged as event 9. Operator identity remains unverified.</p></div>
+<div class="step"><div class="label">02 · Persistence</div><strong>Canonical append</strong><p>JSON FCO, typed predecessor, ordered ledger and prefix commitment; source verified from the recorded local run.</p></div>
+<div class="step"><div class="label">03 · Verification</div><strong>Independent recomputation</strong><p>The browser recalculates object/ledger/prefix hashes. Full reload recovery and remote witness are distinct tests.</p></div>
+</div>
+</section>
+<section>
+<h2>Sponsor evidence by claim, not by logo</h2>
+<div class="cards">
+<div class="card"><div class="label">01 · Semgrep</div><h3>Find the fail-open path</h3><p>Custom-rule local scan reports one finding before the pinned fixture correction and zero afterward. Independent regression matrix guards authorized work; this is not an all-vulnerabilities guarantee.</p><div class="status">RECORDED SCAN · OBSERVED</div></div>
+<div class="card"><div class="label">02 · Akash</div><h3>Bounded cloud inference</h3><p>A separate prior Console deployment returned provider-reported GPU lease, qwen2.5:0.5b inference HTTP 200, and close API success. Advice was not applied.</p><div class="status">HISTORICAL OBSERVED · GPU/TEE NOT_ATTESTED</div></div>
+<div class="card"><div class="label">03 · ClickHouse</div><h3>Retrieve incident evidence</h3><p>Existing cloud branch ingested and exactly read back its bounded fixture rows; 11-checkpoint incident reconciled. Fresh reads must be identified separately from the original write.</p><div class="status">HISTORICAL OBSERVED · NOT NEW INGESTION</div></div>
+</div>
+<div class="gap"><strong>Explicit boundaries:</strong> Pi Security sponsor API execution NOT_TESTED; Akash final closed-state readback NOT_TESTED; actual billing NOT_COMPUTED; GPU/TEE attestation NOT_TESTED; signatures NOT_SIGNED; physical hardware damage NOT_OBSERVED. Merkle equality establishes integrity of declared bytes, not truth, security, or causality.</div>
+<p class="caption">GitHub source and receipts: <a href="https://github.com/biobitworks/antigense-cyberhack/pull/1">PR #1 recorded sponsor history</a> and <a href="https://github.com/biobitworks/antigense-cyberhack/pull/2">PR #2 local verification successor</a>. Repository remains PRIVATE; judges need access. This static page is not evidence of an authenticated identity or trusted capture timestamp.</p>
+</section>
+</main><footer>© 2026 Byron P. Lee / Biobitworks. Controlled fixture; no physical damage and no unauthorized production access. Public evidence is a sanitized derivative; original failure states retained in the repository. Reproducible custody is a diagnostic, not a guarantee of security.</footer>
+<script src="verify.js"></script>
+<script>
+const button=document.getElementById('verify');
+button.addEventListener('click',async()=>{
+ const status=document.getElementById('status'), result=document.getElementById('result');
+ status.textContent='RUNNING · hashing exact source and recomputing every prefix';
+ button.disabled=true;
+ try{
+  const [idxRes,proofRes]=await Promise.all([fetch('data/live-local-043-index.json',{cache:'no-store'}),fetch('data/live-local-043-proof.json',{cache:'no-store'})]);
+  if(!idxRes.ok||!proofRes.ok)throw Error('Evidence resource unavailable');
+  const idx=await idxRes.json(), raw=await proofRes.arrayBuffer(), p=JSON.parse(new TextDecoder().decode(raw));
+  const sha=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',raw))).map(x=>x.toString(16).padStart(2,'0')).join('');
+  if(sha!==idx.proof_sha256)throw Error('Proof source hash mismatch');
+  if(p.ledger.length!==idx.leaf_count||p.ledger[p.ledger.length-1].project_root!==idx.project_root)throw Error('Run identity mismatch');
+  const o=p.objects[idx.review_action.ledger_event_index-2];
+  if(o.fco_id!==idx.review_action.fco_id||o.parent_fco_id!==idx.review_action.parent_fco_id||o.relation!==idx.review_action.relation)throw Error('Review occurrence/edge mismatch');
+  if(o.observation.value.signature!=='NOT_SIGNED')throw Error('Unexpected signature declaration');
+  if(p.prefixes[p.prefixes.length-1].root!==idx.mmr_root)throw Error('Root mismatch');
+  if(!await verifyProof(p))throw Error('Leaf/object/MMR prefix integrity check failed');
+  document.getElementById('root').textContent=idx.mmr_root;
+  document.getElementById('occurrence').textContent='Event #'+idx.review_action.ledger_event_index+' · '+o.observation.name+'\nFCO: '+o.fco_id+'\nPARENT: '+o.parent_fco_id+'\nEDGE: '+o.relation+'\nSIGNATURE: NOT_SIGNED · IDENTITY: UNVERIFIED';
+  status.textContent='PASS · frozen proof independently recomputed in this browser';
+  status.className='pass';
+  result.textContent='Verified '+idx.leaf_count+' ledger entries and their recorded prefixes against exact source bytes. This is an archived local occurrence, not a live remote sponsor call.';
+ }catch(e){status.textContent='FAIL / NOT_VERIFIED';status.className='fail';result.textContent=String(e.message||e)}
+ finally{button.disabled=false;}
+});
+</script>
+</body></html>
