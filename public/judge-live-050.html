@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self'; style-src 'unsafe-inline'; form-action 'none'; base-uri 'none'">
+<title>Antigense 050 — Live Local FCG Judge</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui, sans-serif;background:#10181a;color:#ebf0ed}
+body{margin:24px auto;max-width:950px;padding:0 18px}header{display:flex;justify-content:space-between;gap:12px;align-items:center}
+h1{font-size:1.65rem}small,.dim{color:#b5c8bf}.panel{background:#192629;border:1px solid #435b51;border-radius:12px;padding:18px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+label{display:block;font-size:.83rem;color:#b4caba;margin:12px 0 5px}
+input,select,button{font:inherit;border:1px solid #719582;border-radius:7px;background:#11201c;color:#f5faf6;padding:10px}
+input{width:calc(100% - 22px)}button{cursor:pointer;margin:5px 4px 0 0}
+button:hover{border-color:#e2f2e4}.hash{word-break:break-all;font-family:ui-monospace,monospace;font-size:.85rem}
+.pass{color:#99edba}.bad{color:#ffab99}.event{border-top:1px solid #3e564b;padding-top:12px;margin-top:12px}
+.note{color:#d0dcd5;font-size:.92rem}
+</style></head><body>
+<header><h1>Antigense · Judge 050</h1><small id="stream">Connecting SSE…</small></header>
+<p>LOCAL-ONLY live security review · immutable FCO/FCG record · public/private evidence split · no provider spend or deployed patch.</p>
+<div class="grid">
+ <section class="panel"><h2>Public projection</h2>
+  <p>Verifier: <strong id="valid" class="dim">UNKNOWN</strong></p>
+  <p>Ordered MMR leaves: <strong id="leaves">—</strong></p>
+  <label>Current MMR root</label><div id="root" class="hash">—</div>
+  <p class="note">Read-only public event stream updates immediately when the local judge records a new decision.</p>
+ </section>
+ <section class="panel"><h2>Private local judge</h2>
+  <label for="token">Local session capability (not part of the FCG/public stream)</label>
+  <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="Paste the capability printed by local process">
+  <label for="decision">Synthetic review decision</label>
+  <select id="decision"><option value="DENY">DENY — stop untrusted action</option><option value="ALLOW">ALLOW — accept recorded test result</option></select>
+  <label for="note">Private demonstration note</label>
+  <input id="note" type="text" maxlength="220" value="DEMO: review based on frozen four-case authorization oracle">
+  <button type="button" id="review">Record judge action</button>
+  <button type="button" id="private">Read private projection</button>
+  <p class="note" id="response">No actions taken.</p>
+ </section>
+</div>
+<section class="panel"><h2>Live public custody trail</h2><div id="events"></div></section>
+<section class="panel"><h2>Private readback</h2><pre id="notes" class="hash">Requires local capability.</pre></section>
+<p class="dim">Bounded synthetic security fixture. The browser review capability proves only possession of a local token, not verified human identity. Receipts are NOT_SIGNED. This demonstration is not the hosted Tokens& project or live cloud sponsor execution.</p>
+<script src="/judge-live-050.js"></script>
+</body></html>

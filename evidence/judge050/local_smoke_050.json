@@ -1,0 +1,31 @@
+{
+  "ROI": "NOT_COMPUTED",
+  "checks": {
+    "allow_recorded": 4,
+    "cross_origin_write": 403,
+    "denial_recorded": 3,
+    "private_journal_exact_readback": true,
+    "public_redaction": true,
+    "public_stream_updated": true,
+    "stale_replay": 409,
+    "unauthorized_private_read": 403,
+    "unauthorized_write": 403
+  },
+  "final_root": "a077e88ac206d5c02e18f47cdde5558af3d4f159573df021615968170d3edd55",
+  "frozen_source_valid": true,
+  "identity": "UNVERIFIED_LOCAL_TEST_CAPABILITY",
+  "independent_recomputation": true,
+  "initial_root": "bbf6659e35be13d2c616600f764fd83f2f74d3b17f6a06a8b87e494d5d41a24f",
+  "leaves": 4,
+  "parent_commit": "265699cde9812977108455707e1ddfeb15093112",
+  "peaks": [
+    "6f1d22c14abbe5d341179a2b07342a02ecff8b106cd1d908184201e9b0f99621"
+  ],
+  "private_content_in_receipt": false,
+  "proof_algorithm": "HYDRALAMP_MMR_V1",
+  "runtime_code_bound": true,
+  "schema": "antigense.judge050.smoke_receipt.v1",
+  "signature": "NOT_SIGNED",
+  "source": "AUTOMATED_LOCAL_HTTP; synthetic bearer capability; NOT HUMAN",
+  "sponsor_calls_this_run": "NOT_TESTED"
+}
