@@ -6,3 +6,5 @@ Default (no new spend): live Semgrep before/after + behavior matrix; live ClickH
 With --akash-deploy (operator-authorized, one run): new 1-GPU deployment, inference on this run's own Semgrep finding, close in a finally block, then closed-state readback. Bid cap 10000 uact/block.
 
 Ceilings: GPU provider-reported, not attested; receipts unsigned; wall-clock times from the local clock; hashes prove byte integrity, not truth or causality. Credentials from env only. Not interaction-generated persistent FCG state.
+
+037b: agent/agent011.py was fixed after PR review (unauthorized status kept out of public/, real Akash failure reasons, Semgrep-unavailable path, exec-free regression). successor_037 (genesis only, never run) is kept; live runs use successor_037b.

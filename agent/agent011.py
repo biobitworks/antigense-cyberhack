@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parent.parent
 spec=importlib.util.spec_from_file_location("custody",ROOT/"src/custody.py");C=importlib.util.module_from_spec(spec);spec.loader.exec_module(C)
 BASE=ROOT/"evidence/successor_011";BLOBS=ROOT/"evidence/run_011/blobs"
 SITE="antigense-cyberhack.vercel.app";ALLOW={SITE};MAX_REQ=8;TIMEOUT=10;MAX_BYTES=3_000_000
-STATUS_PATH=ROOT/"public/data/defense-status.json";STATUS_URL="https://"+SITE+"/data/defense-status.json"
+STATUS_PATH=ROOT/"public/data/defense-status.json";CANDIDATE_PATH=ROOT/"evidence/run_011/candidate-defense-status.json";STATUS_URL="https://"+SITE+"/data/defense-status.json"
 KIT=["agent/agent011.py","CUSTODY_CONTRACT_011.json","CUSTODY_CONTRACT_008.json","RELEASE_009.json","src/custody.py","src/cascade.py","fixtures/before.py","fixtures/after.py","rules/fallback.yaml","public/index.html","public/verify.js","docs/ONBOARDING_REQUESTS_011.md","vercel.json"]
 sha=lambda b:hashlib.sha256(b).hexdigest()
 now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
@@ -86,8 +86,9 @@ def semgrep(target,rules=ROOT/"rules/fallback.yaml"):
             "findings":[{"check_id":x["check_id"],"line":x["start"]["line"]} for x in j.get("results",[])],"errors":len(j.get("errors",[])),
             "rule_sha256":sha(Path(rules).read_bytes()),"target_sha256":sha(Path(target).read_bytes()),"raw":p.stdout}
 def regress(path):
-    ns={};exec(compile(Path(path).read_text(),str(path),"exec"),ns);f=ns["authorize"]
-    return {"healthy_auth":f(True,True),"healthy_unauth":f(False,True),"unhealthy_auth":f(True,False),"unhealthy_unauth":f(False,False)}
+    # Exec-free: evaluate the fixture with the AST evaluator (replaces the exec() Semgrep flagged here).
+    sp=importlib.util.spec_from_file_location("safe_eval016",ROOT/"agent/safe_eval016.py");m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m)
+    return m.regress(path)
 ADVICE_KEYS={"summary","root_cause","fix","risk"}
 def validate_advice(text):
     try:j=json.loads(text)
@@ -169,11 +170,11 @@ def do_run(publish):
         raw=s.pop("raw",b"")
         run.step("semgrep_"+name,s["state"],{**s,"regression":rg},{"scanner_executed":s["state"]=="OBSERVED","no_scanner_errors":s.get("errors")==0,"exit_recorded":s.get("exit") is not None,"finding_present":len(s.get("findings",[]))>0},raw)
     b,a=sc["before"],sc["after"]
-    run.step("semgrep_regression_matrix","OBSERVED",{"before":b[1],"after":a[1]},{"before_fails_open":b[1]["unhealthy_unauth"] is True,"after_denies_unauthorized":a[1]["unhealthy_unauth"] is False and a[1]["healthy_unauth"] is False,"after_preserves_healthy_authorized":a[1]["healthy_auth"] is True,"before_findings_1":len(b[0]["findings"])==1,"after_findings_0":len(a[0]["findings"])==0})
-    facts["semgrep"]={"version":b[0]["version"],"before_findings":len(b[0]["findings"]),"after_findings":len(a[0]["findings"]),"rule_sha256":b[0]["rule_sha256"],"note":"custom teaching rule; zero findings = this scan only"}
-    ak=akash({"finding":b[0]["findings"],"fixture_before_sha256":b[0]["target_sha256"],"fixture_after_sha256":a[0]["target_sha256"]});raw=ak.pop("raw",None)
+    run.step("semgrep_regression_matrix","OBSERVED",{"before":b[1],"after":a[1]},{"before_fails_open":b[1]["unhealthy_unauth"] is True,"after_denies_unauthorized":a[1]["unhealthy_unauth"] is False and a[1]["healthy_unauth"] is False,"after_preserves_healthy_authorized":a[1]["healthy_auth"] is True,"before_findings_1":len(b[0].get("findings") or [])==1,"after_findings_0":b[0]["state"]=="OBSERVED" and a[0]["state"]=="OBSERVED" and len(a[0].get("findings") or [])==0})
+    facts["semgrep"]={"state":b[0]["state"],"version":b[0].get("version"),"before_findings":len(b[0]["findings"]) if "findings" in b[0] else None,"after_findings":len(a[0]["findings"]) if "findings" in a[0] else None,"rule_sha256":b[0].get("rule_sha256"),"note":"custom teaching rule; zero findings = this scan only"}
+    ak=akash({"finding":b[0].get("findings") or [],"fixture_before_sha256":sha((ROOT/"fixtures/before.py").read_bytes()),"fixture_after_sha256":sha((ROOT/"fixtures/after.py").read_bytes())});raw=ak.pop("raw",None)
     run.step("akash_inference",ak["state"],ak,{"actual_akash_call":ak["state"]=="OBSERVED","gpu_lease_established":False,"attestation_verified":False,"advice_schema_valid":bool(ak.get("schema_valid"))},raw)
-    facts["akash"]={"state":ak["state"],"model":ak.get("model_returned"),"inference_id":ak.get("inference_id"),"ceiling":"managed inference only" if ak["state"]=="OBSERVED" else "NOT_TESTED: no credentials supplied"}
+    facts["akash"]={"state":ak["state"],"model":ak.get("model_returned"),"inference_id":ak.get("inference_id"),"ceiling":"managed inference only" if ak["state"]=="OBSERVED" else "%s: %s%s"%(ak["state"],ak.get("reason","unknown"),(" (HTTP %s)"%ak["http"]) if ak.get("http") else "")}
     pr=pi();run.step("pi_security_review",pr["state"],pr,{"actual_pi_job":False,"substitute_used":False})
     facts["pi"]={"state":pr["state"],"reason":"no sponsor interface/credentials"}
     tamper_tests(run)
@@ -183,7 +184,7 @@ def do_run(publish):
     def authorized(token):return token is not None and token==g["project_root"]
     run.step("neg_publication_authorization","OBSERVED",{"artifact_sha256":h,"binding":"successor project_root"},{"missing_authorization_refused":not authorized(None),"stale_binding_refused":not authorized("0"*64),"exact_binding_accepted":authorized(g["project_root"])})
     if not publish:
-        run.step("publication","NOT_TESTED",{"reason":"no --publish authorization supplied","artifact_sha256":h},{"published":False});print("ARTIFACT_SHA256",h);STATUS_PATH.write_bytes(art);return
+        run.step("publication","NOT_TESTED",{"reason":"no --publish authorization supplied","artifact_sha256":h},{"published":False,"candidate_path":str(CANDIDATE_PATH.relative_to(ROOT))});print("ARTIFACT_SHA256",h);CANDIDATE_PATH.parent.mkdir(parents=True,exist_ok=True);CANDIDATE_PATH.write_bytes(art);return  # never write unauthorized bytes into the deployable public/ tree
     if not authorized(publish):
         run.step("publication","FAILED",{"reason":"stale/mismatched review binding","expected_binding":"successor project_root","supplied_matches":False},{"published":False,"binding_matches":False});sys.exit("stale binding")
     STATUS_PATH.write_bytes(art);code,log=deploy()

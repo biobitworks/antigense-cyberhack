@@ -34,7 +34,7 @@ H = load("ch016")                 # ClickHouse client, row projection (frozen in
 A = G.A                           # custody runner (agent011)
 import safe_eval016 as S
 
-BASE = Path(os.environ.get("LIVE037_BASE", ROOT / "evidence/successor_037"))  # override only for dry runs
+BASE = Path(os.environ.get("LIVE037_BASE", ROOT / "evidence/successor_037b"))  # 037b: agent011.py fixed after PR review; 037 kept (genesis only)
 A.KIT = [k for k in A.KIT if not k.startswith("public/")] + [
     "agent/live037.py", "agent/live037.html", "agent/akash_gpu024.py", "agent/ch016.py",
     "agent/safe_eval016.py", "docs/ADDENDUM_037.md"]
