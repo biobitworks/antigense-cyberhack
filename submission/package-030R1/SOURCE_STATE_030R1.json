@@ -1,0 +1,48 @@
+{
+  "id": "030R1",
+  "parent": "030",
+  "parent_previous_committed_turn": "027",
+  "orchestrator": "ChatGPT/OpenAI",
+  "execution_lane": "Claude",
+  "event_partner_source": "https://luma.com/cyberhack",
+  "incident022": {
+    "id": "run-20261009T191354Z-a98b5c03",
+    "semgrep_before": 1,
+    "semgrep_after": 0,
+    "clickhouse_rows": 11,
+    "readback_exact": true,
+    "query_ms": 160.706,
+    "mmr_root": "66c3e6e8a64f36f1290a598606d6b9034de1bca62ef559d058e5013d95c12723"
+  },
+  "claude_console023": {
+    "state": "OBSERVED_RECEIPT_VERIFIED",
+    "http": 200,
+    "elapsed_ms": 327.5,
+    "deployments": 0,
+    "project_root": "512b0cfb41576858e8fbddbcd2b3e7e3850e44401df718ff10f24e57e5da6eb0",
+    "mmr_root": "270bc4a72c2a28a8b25f6dc149425a6d35928b1a8f8714948a782a39b4e57b03",
+    "leaves": 2,
+    "artifact_bytes_match": true,
+    "signature": "NOT_SIGNED"
+  },
+  "akash_gpu_inference": "OBSERVED_RECEIPT_VERIFIED",
+  "paid_deployment": "EXECUTED; actual billing not measured",
+  "bridge_readback": "NOT_TESTED",
+  "user_audio": "NOT_RECORDED",
+  "third_sponsor_quality_eligibility": "UNKNOWN",
+  "license": "Original explanatory content CC BY-NC-ND4.0; third-party rights separate; software license not established",
+  "successor": "030R1",
+  "parent_package": "030",
+  "akash_gpu024": {
+    "mmr_root": "f67a3e74aa52f606784faec7cece9da6b071ff1984e762d72c662031a881b244",
+    "project_root": "e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+    "leaf_count": 11,
+    "verification": "PASS declared-byte integrity; unsigned",
+    "model": "qwen2.5:0.5b",
+    "inference_ms": 3466.4,
+    "close_http": 200,
+    "close_response_success": true,
+    "final_closed_state_readback": "NOT_TESTED",
+    "gpu_attestation": "NOT_TESTED"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "030R1",
+  "parent": "030",
+  "files": [
+    {
+      "path": "ASSEMBLER_VALIDATION_030R1.json",
+      "bytes": 171,
+      "sha256": "edbc7284c7f8f988c8438dcc5e650e7fce76bd93705a11c897a8f84f7a6c64b0"
+    },
+    {
+      "path": "CLAUDE_HANDOFF_030R1.md",
+      "bytes": 1219,
+      "sha256": "cb83e8db70f46fb0f0c9d866c708a147a60625a5398b4dcbef43428bd1d5fffb"
+    },
+    {
+      "path": "ENTRY_COPY_PASTE.md",
+      "bytes": 2725,
+      "sha256": "ba4846ac04988c813a5116e4c4c3ddf35bea42697202b3edcea09dde4cb32515"
+    },
+    {
+      "path": "README_FIRST.md",
+      "bytes": 572,
+      "sha256": "ed5843b8df1a4de094089ba7c915f2bef4e603caf4b77f02bb016a42dca8b174"
+    },
+    {
+      "path": "SOURCE_STATE_030R1.json",
+      "bytes": 1761,
+      "sha256": "2d18ea706dccdd5cb0aaca2bb98c6d1fe45372bfe3678f63e35d00a4a6abdeb5"
+    },
+    {
+      "path": "SPONSOR_VERIFICATION.md",
+      "bytes": 1517,
+      "sha256": "0bc8ee9c7e06323d39df7ac6ff1f553cb7ed71fd63d5d598cba471157416e832"
+    },
+    {
+      "path": "TECHNICAL_DETAILS_030R1.md",
+      "bytes": 5295,
+      "sha256": "bbdce770328e57087fb3f1934f4c4407c2ef61d0b404b62141267246f59aa9a0"
+    },
+    {
+      "path": "VOICE_SCRIPT_030R1.txt",
+      "bytes": 2194,
+      "sha256": "48c542ed21816d7b3a671109d8c88bdfa2e3657e2afc82255cae2e048366b2c8"
+    },
+    {
+      "path": "WALKTHROUGH_030R1.md",
+      "bytes": 3704,
+      "sha256": "0d3d2881714bdef17bcea1e0459e077651627ef7a0eb94c9dc439cfe348f6d17"
+    },
+    {
+      "path": "assemble_audio_030R1.py",
+      "bytes": 2746,
+      "sha256": "68e114b2c9fe11993834ff6c2fee2f7b79db59c655c421b161631e140c9dfe80"
+    },
+    {
+      "path": "assemble_audio_030R1.sh",
+      "bytes": 126,
+      "sha256": "667546022024d58fa11256798fd6aa19ef4facb4535ea5ee5edb60acc898fa57"
+    },
+    {
+      "path": "hardware-020.jpg",
+      "bytes": 108282,
+      "sha256": "4475d13bacfee3eae60c9439c344ceeeca53b4c36df612edeed2a7a983195442"
+    },
+    {
+      "path": "sponsor-custody-029.jpg",
+      "bytes": 116048,
+      "sha256": "992759980f60c152fd6c2cc6ddb63b83e91630bc70c78d1169fcedd47fc3d4c1"
+    },
+    {
+      "path": "sponsor-results-022.jpg",
+      "bytes": 110906,
+      "sha256": "43c48c5ab1dbb32b512fd706394c56c649ed356b8792be9166dafb07270d1137"
+    },
+    {
+      "path": "verify_package_030R1.py",
+      "bytes": 945,
+      "sha256": "ac2cb5598e33feae040b68148e9c02b34ba599343bdcd132295a9cf3f9dbc6e7"
+    }
+  ],
+  "package_merkle_root": "e019375d0f4f6c0992a2b453e31385cd58f1dc9e71e4c2e5f28d0b4e7f0127a2",
+  "scope": "Declared package bytes; manifest and verification excluded"
+}

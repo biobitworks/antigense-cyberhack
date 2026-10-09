@@ -1,0 +1,19 @@
+Imagine a worker in your AI workflow returns a corrupted result. The important question is what happens next: which decision changed, which boundary was crossed, and can useful work recover?
+
+Antigense Daisy starts with the device and keeps that incident inspectable. ChatGPT is our orchestrator, with Claude working in an independent execution lane.
+
+This demonstration injects a software fault. It is not an observed physical hardware failure. The integrity check detects changed bytes, but a teaching fixture reveals an unsafe fallback: failed worker health allows an unauthorized request.
+
+Semgrep identifies that fallback. Our pinned repair rejects unauthorized requests while preserving healthy authorized work. AI advice has no authority to apply a patch.
+
+Each step has a custody address. As the replay advances, you can inspect the recorded output, checks and Merkle commitment. The browser independently recomputes the proof. Integrity preserves the record; it does not prove that every claim is true.
+
+ClickHouse stores eleven checkpoints from this same incident. We replayed the insertion and read back exactly the same records. The measured readback query took about one hundred sixty-one milliseconds.
+
+Akash now runs the analysis workload. Our agent created a GPU deployment, selected a lease and loaded Qwen. It returned structured advice about the unsafe fallback in about three and a half seconds. The model's advice remains untrusted and cannot authorize a patch.
+
+This is a separate custody branch. All eleven leaves verify, including the close request, which returned success. The server reported GPU memory use, but we do not claim hardware attestation, a verified final closed state, or measured cost savings. Earlier failures remain in the record.
+
+On magicPRO, OS polling is live. On the public website, this is a recorded replay. Lower troubleshooting and inference costs are goals we still need to measure.
+
+Credentials and proprietary internals stay private. Original explanatory content carries our attribution, noncommercial and no-derivatives notice. Antigense makes the path from error to recovery easier to inspect, including where the system still needs work.

@@ -1,0 +1,4 @@
+{
+  "PASS": true,
+  "stdout": "PASS package declared-byte integrity\nPackage Merkle root: e019375d0f4f6c0992a2b453e31385cd58f1dc9e71e4c2e5f28d0b4e7f0127a2\nNo signature, truth, safety or causality proof.\n"
+}
