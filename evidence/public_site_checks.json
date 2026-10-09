@@ -1,0 +1,11 @@
+{
+  "http": 200,
+  "verification": "Browser integrity PASS / YES",
+  "run_hidden": true,
+  "approve_hidden": true,
+  "mode": "RECORDED REPLAY",
+  "errors": [],
+  "mmr": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+  "leaf_count": "12 MMR leaves \u00b7 phase verified",
+  "previous_probe_failure": "Playwright string predicate blocked by CSP; fixed harness; CSP unchanged"
+}

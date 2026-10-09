@@ -1,0 +1,13 @@
+{
+  "ID": "009R2-release-verify",
+  "PARENT": "009R2",
+  "source_commit": "44d53b89150a3d690584e596d705795d07af7ce6",
+  "github_push": "OBSERVED",
+  "mvp_http": 200,
+  "browser_integrity": "PASS",
+  "private_runtime": "127.0.0.1:8790",
+  "video_duration_s": 62.56,
+  "voice": "NOT_RECORDED",
+  "Akash": "NOT_TESTED",
+  "Pi": "NOT_TESTED"
+}
