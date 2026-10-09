@@ -1,0 +1,165 @@
+{
+  "project": "Antigense Daisy",
+  "gallery": "https://tokensand.com/p/antigense-daisy",
+  "site": "https://antigense-cyberhack.vercel.app",
+  "verify": ".venv/bin/python agent/verify_all.py --json",
+  "sponsors": {
+    "Semgrep": {
+      "status": "EXECUTED",
+      "records": [
+        "successor_011",
+        "successor_016"
+      ],
+      "claims": [
+        "fixture 1 finding before, 0 after",
+        "own AI-written code: exec-detected at agent/agent011.py:89, fixed, rescan 0"
+      ]
+    },
+    "Akash": {
+      "status": "EXECUTED",
+      "records": [
+        "successor_024",
+        "successor_023"
+      ],
+      "failures_kept": [
+        "successor_019",
+        "successor_021",
+        "successor_022"
+      ],
+      "claims": [
+        "Console API GPU deployment, provider-reported V100",
+        "qwen2.5:0.5b inference HTTP 200 in 3466 ms",
+        "deployment closed success:true"
+      ],
+      "not_claimed": [
+        "GPU attestation",
+        "TEE/confidentiality",
+        "measured spend",
+        "closed-state readback"
+      ]
+    },
+    "ClickHouse": {
+      "status": "EXECUTED",
+      "records": [
+        "successor_016"
+      ],
+      "failures_kept": [
+        "successor_015"
+      ],
+      "claims": [
+        "55 records, replay preserved 55 unique",
+        "exact readback hash match"
+      ]
+    },
+    "Pi": {
+      "status": "NOT_USED",
+      "reason": "no product access at the event"
+    }
+  },
+  "records": [
+    {
+      "record": "final_custody",
+      "shows": "Original incident, 12 leaves (historical)",
+      "status": "PASS",
+      "leaves": 12,
+      "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+      "bytes_checked_against": "6171b7b",
+      "note": null
+    },
+    {
+      "record": "successor_011",
+      "shows": "Monitor, Semgrep 1->0, publication + readback",
+      "status": "PASS",
+      "leaves": 74,
+      "mmr_root": "dcce7dd54270beadd6f9716531def093c1387a49296d6fbd80b006b1b7264ee7",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    },
+    {
+      "record": "successor_012",
+      "shows": "ClickHouse local telemetry",
+      "status": "PASS",
+      "leaves": 2,
+      "mmr_root": "e77d0f2ef0b899a88c9d0a10b54375cf25eabdb3aac1ef009c830dc533b34989",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    },
+    {
+      "record": "successor_015",
+      "shows": "ClickHouse Cloud, first try (hash-format mismatch kept)",
+      "status": "PASS",
+      "leaves": 12,
+      "mmr_root": "54dce23e0b1f9b373ccf0774708192393fbfab1a8f714054b7840d689079edfb",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    },
+    {
+      "record": "successor_016",
+      "shows": "ClickHouse Cloud exact readback + own-code Semgrep",
+      "status": "PASS",
+      "leaves": 15,
+      "mmr_root": "4661c8f879d337476c8bd159d3bbf2be5048f3791f6a42910f8551b8c9524012",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    },
+    {
+      "record": "successor_019",
+      "shows": "AkashML attempt (401, kept)",
+      "status": "CHAIN_ONLY",
+      "leaves": 3,
+      "mmr_root": "734f9e6d0d03e520840dddad7726b9833179f7bb4ed5f8c727e892cd2dfaef4f",
+      "bytes_checked_against": "06bbb10",
+      "note": "froze public/index.html while another session had uncommitted edits; those bytes are in no commit"
+    },
+    {
+      "record": "successor_020",
+      "shows": "AkashML attempt, blocked by a concurrent site edit (kept)",
+      "status": "CHAIN_ONLY",
+      "leaves": 2,
+      "mmr_root": "4a5959cbf9061ffaf588a0063bb67feff79bf47d5ffc2a95ee537597888ef75c",
+      "bytes_checked_against": "06bbb10",
+      "note": "same index.html issue; also docs/ADDENDUM_020.md was appended to after this freeze (custody mistake, kept visible)"
+    },
+    {
+      "record": "successor_021",
+      "shows": "AkashML diagnosis: Console key used (401, kept)",
+      "status": "PASS",
+      "leaves": 5,
+      "mmr_root": "fdb58dc63733a6e20e7a589648c9109f65150d4e2881b382f977c6d85c4ff118",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    },
+    {
+      "record": "successor_022",
+      "shows": "Akash Console call: Cloudflare 1010 (kept)",
+      "status": "CHAIN_ONLY",
+      "leaves": 2,
+      "mmr_root": "52e5581652b284bf50e239903de41929844f2dbaf70a189dd2867f12678b4367",
+      "bytes_checked_against": "06bbb10",
+      "note": "docs/ADDENDUM_022.md was appended to after this freeze (custody mistake, kept visible)"
+    },
+    {
+      "record": "successor_023",
+      "shows": "Akash Console read-only call (200)",
+      "status": "PASS",
+      "leaves": 2,
+      "mmr_root": "270bc4a72c2a28a8b25f6dc149425a6d35928b1a8f8714948a782a39b4e57b03",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    },
+    {
+      "record": "successor_024",
+      "shows": "Akash GPU deployment + inference + close",
+      "status": "PASS",
+      "leaves": 11,
+      "mmr_root": "f67a3e74aa52f606784faec7cece9da6b071ff1984e762d72c662031a881b244",
+      "bytes_checked_against": "06bbb10",
+      "note": null
+    }
+  ],
+  "limits": [
+    "software-simulated fault on a teaching fixture",
+    "hashes prove byte integrity, not truth/safety/causality",
+    "receipts unsigned"
+  ]
+}
