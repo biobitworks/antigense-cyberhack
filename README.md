@@ -1,35 +1,80 @@
-# Antigense — Hardware faults must not become security failures
+# Antigense Daisy — evidence-driven cyberdefense
 
-A reproducible, local-first Cyberhack demo centered on **Akash, Semgrep and Pi Security** (P1 interpreted as Pi; confirm onsite). A software-injected corrupt worker result trips an integrity check; a deliberately unsafe fallback demonstrates an authorization bypass. Semgrep scans the exact code. AI proposes a response, a local review action authorizes the pinned fix, and deterministic checks verify recovery. Every stage computes a Merkle commitment and appends to a verified HydraLamp-compatible MMR.
+**Hardware faults must not become security failures.** Antigense Daisy is the single published [tokens& Cyberdefense Hackathon 2026 entry](https://tokensand.com/p/antigense-daisy). It demonstrates a **software-simulated** worker-byte fault, an unsafe fail-open authorization fallback, detection, a gated repair, regression verification, and addressable evidence.
 
-## Run privately
+> **Judge-facing status (October 9, 2026):** The official submission and narrated **039R1** video are publicly reachable. **The newer three-minute 051/053 end-to-end video is NOT YET PUBLISHED.** Local Live Judge 050 source is now published on its own branch, but it is not a remotely available judge service. Do not confuse recorded historical sponsor executions with new live cloud calls.
 
-Python 3.10+; Semgrep in an isolated virtual environment. No cloud credentials needed for the local lane.
+## Start here — public entry and evidence
+
+| Resource | Link | Boundary |
+|---|---|---|
+| Official Tokens& entry | [Antigense Daisy](https://tokensand.com/p/antigense-daisy) | Single organizer project; platform's actual submission state is authoritative |
+| Working project website | [Vercel production](https://antigense-cyberhack.vercel.app/) | Sanitized static recorded replay |
+| **Submitted video URL** | [Watch the narrated demonstration](https://antigense-cyberhack.vercel.app/video/) | **Currently 039R1** (earlier narrated video), not the upcoming 051/053 cut |
+| Independent redundant media archive | [Public Vercel backup](https://antigense-daisy-evidence-backup.vercel.app/backup/) | Publicly verified archival copy of 039R1, with captions/transcript |
+| Judge instructions | [Public judge walkthrough](https://antigense-cyberhack.vercel.app/judges/) | Scope and reproduction guidance |
+| Independently recomputable historical proof | [Judge proof 043](https://antigense-cyberhack.vercel.app/judges-043.html) | Historical 12-leaf browser proof, not live Judge 050 |
+| Incident walkthrough | [35](https://antigense-cyberhack.vercel.app/walkthrough-035.html) | Recorded sequence |
+| Technical explanation | [29](https://antigense-cyberhack.vercel.app/technical-029.html) | Architecture and limitations |
+
+**For the executed code**, GitHub's `main` branch preserves an older standalone local demonstration. The newer work has separately maintained, reviewable source branches. Start with the links below rather than assuming `main` contains every hackathon successor.
+
+## End-to-end flow: what was demonstrated
+
+1. **Inject:** a controlled XOR corruption changes one simulated worker result. No hardware was deliberately damaged.
+2. **Reproduce:** a deliberately unsafe teaching fixture fails **open** when an integrity/health check fails.
+3. **Detect:** Semgrep Community Edition identified the pinned unsafe fallback; the specific before/after scan went from **1 finding to 0**. Separate self-auditing found a hazardous Python module-execution path, replaced with bounded AST evaluation.
+4. **Advise:** a **historical, separately recorded** Akash deployment ran `qwen2.5:0.5b` advisory inference, HTTP 200, 3,466.4 ms; the provider reported a V100 GPU. The response did **not** authorize patch application, and GPU/TEE attestation was **NOT_TESTED**.
+5. **Intervene:** a deterministic review oracle applies a pinned fail-closed repair only with exact expected state checks. A local regression matrix tests healthy/unhealthy and authorized/unauthorized combinations.
+6. **Reconcile:** **historical** ClickHouse Cloud ingestion/replay recovered 55 records with matching hashes. This does **not** mean the newer local Judge 050 session was ingested into ClickHouse.
+7. **Preserve:** addressable FCOs capture content and occurrence identity; typed FCG edges declare provenance/predecessor relationships. Ordered Merkle/MMR leaves, peaks, roots and verification receipts allow deterministic custody checks.
+
+Evidence state has limitations. An exact content hash is not a semantic embedding or proof of truth. A graph relationship is not evidence of causation. A Merkle/MMR root attests to the ordered bytes under its recorded construction, **not** independently to correct attribution or a named reviewer's identity.
+
+## Which source / evidence should judges inspect?
+
+| Source lane | GitHub | What to expect |
+|---|---|---|
+| Sponsor executions and receipts | [PR #1](https://github.com/biobitworks/antigense-cyberhack/pull/1) | Semgrep CE, historical Akash run, ClickHouse ingestion and readback; historical failures retained |
+| Later live observation | [PR #2](https://github.com/biobitworks/antigense-cyberhack/pull/2) | Additional host-local observation context |
+| Guarded intervention 042 | [Source branch](https://github.com/biobitworks/antigense-cyberhack/tree/codex/guarded-intervention-042) | Exec-free evaluator, regression tests, a 6-leaf independently recomputable MMR |
+| **Live Judge 050** | [Public source branch](https://github.com/biobitworks/antigense-cyberhack/tree/codex/live-judge-050) | Loopback HTTP/SSE public updates; capability-guarded local review; DENY/ALLOW append, private local notes. **Not a hosted judge service** |
+| Static public media archive 052 | [Archive branch](https://github.com/biobitworks/antigense-cyberhack/tree/codex/public-backup-052) · [PR #3](https://github.com/biobitworks/antigense-cyberhack/pull/3) | SHA-256-verified earlier 039R1 video, captions/transcript, historic proof; separate public Vercel host |
+| Exactly-three-minute video edit specification | [Draft PR #4](https://github.com/biobitworks/antigense-cyberhack/pull/4) | Editorial plan and claim matrix only; **not an executed or rendered final video** |
+
+The 050 branch was pushed after rerunning **17 local tests (PASS)** and Gitleaks scans (no detected leaks). A separately verified *manual* local 050 session recorded synthetic DENY then ALLOW, with 4 ordered leaves and root `47a220fd28956dc77d7baf4299cf6e348c8ebe8736955fbc38c3e43de17deafb`. The **separate automated** 050 run root `a077e88ac206d5c02e18f47cdde5558af3d4f159573df021615968170d3edd55` must not be conflated with the manually recorded run, the 042 root or historical browser proof 043. The local reviewer credential/private notes are not part of the public website.
+
+## Reproduce a bounded local lane
 
 ```sh
+# Main branch: older local demonstration, no sponsor credentials required
 sh scripts/setup.sh
-sh scripts/demo.sh
+sh scripts/demo.sh                   # local cockpit http://127.0.0.1:8790
+
+# Inspect the later 050 implementation separately
+git fetch origin codex/live-judge-050
+git switch --detach origin/codex/live-judge-050
+python3 -m unittest discover -s tests -v
+# Local-only server; do not expose its capability file
+python3 agent/judge_live050.py --port 8850 --output .runtime/new-publication-test-unique
 ```
 
-Open http://127.0.0.1:8790 . Click Run bounded scenario, inspect the receipts, then Approve pinned fix. Only the teaching fixture changes active selection. No host security settings, processes or files outside this project are patched. Session token plus strict Host/Origin checks protect browser mutations. This is a local demo boundary, not a multi-user security product.
+For 042, use `python3 agent/intervention042.py verify` on the 042 branch; its verified 6-leaf root is `43522a82b0c2a4428cda56366f65689757d70085031e26997e90b583b846e5a0` (NOT_SIGNED). The older root-level chain verifier can report preserved `CHAIN_ONLY` failure records; this is a known historical gap rather than evidence to silently discard.
 
-CLI: `.venv/bin/python src/cascade.py run --ai local`; approve with the returned exact current MMR root: `.venv/bin/python src/cascade.py approve --expected-mmr ROOT --actor operator --provenance local-console`. Verify: `.venv/bin/python src/cascade.py verify`.
+## Sponsor and claim boundaries
 
-Local AI uses an already installed Ollama model `qwen2.5-coder:7b`; no model downloads. If unavailable, the receipt says NOT_TESTED/FAILED. Akash is an optional sanitized inference route: set ANTIGENSE_AKASH_URL to your authenticated HTTPS Ollama-compatible `/api/generate` endpoint and ANTIGENSE_AKASH_TOKEN privately, select `--ai akash`. Never call an arbitrary shared public endpoint confidential. Verify lease identity, GPU identity, fresh nonce, CPU+GPU report certificate chains, measurements and TLS binding separately. We do not implement that attestation verifier yet. Pi's public API/local mode is unconfirmed; use docs/PI_INTAKE.md with sponsor onboarding. Neither local AI nor our review gate is a Pi integration.
+| Sponsor | Status |
+|---|---|
+| **Semgrep CE** | EXECUTED, pinned rule/scope. Zero findings after repair does not prove general security |
+| **Akash** | EXECUTED in a separately recorded historical inference/close branch; provider-reported GPU, not independently attested |
+| **ClickHouse Cloud** | EXECUTED in earlier historical ingestion/replay; exact row-hash readback for 55 records |
+| **Pi Security** | **NOT_USED / NOT_TESTED**; no event-time product access |
+| **Tokens& Build Packet** | **EXECUTION NOT_ESTABLISHED** by the published sponsor receipts; should not be treated as a fourth verified sponsor |
 
-## Evidence and claims
+Cryptographically signed reviewer identity, GPU/TEE attestation, real payments, live wallet settlement, financial return, safety certification and new sponsor calls in the 050 session remain **NOT_TESTED or NOT_COMPUTED**. All relevant FCO/MMR local receipts are **NOT_SIGNED**. Historical failures stay addressable, and corrections require successors, not edits of predecessor checkpoints.
 
-- Fault: SIMULATED_BYTE_XOR in software; not a physical GPU failure or malicious attack.
-- Arithmetic, checksum, boolean exploit and regression matrix: executed, not narrated.
-- Semgrep: actual local CE scan when installed; fixed local rule, metrics/version check disabled, token removed. A clean custom-rule scan does not prove general security.
-- 3D: virtual schematic, not CAD or discovered internal geometry. Local CPU count, memory, load and service time are OS observations; GPU temperature/power/ECC and attestation UNKNOWN.
-- AI: model text is non-deterministic untrusted advice; hash commits the observed bytes. Deterministic policy and verifier do not trust that advice.
-- Human: unsigned local approval records an action; browser/console actor labels do not establish human identity or proof of possession.
-- Public Vercel MVP: sanitized recorded replay, no private telemetry endpoint or credentials. Local mode polls actual host observations separately from replay.
-- IEEE datasets reviewed, not downloaded/trained on; see docs/DATASET_REVIEW.md.
+## Video publication policy
 
-Project freeze covers the fixed source list in src/custody.py. Each FCO contains classification, true/false checks, yes/no renderings, anticube UNKNOWN/SELF_SAFE null and calculated delta-G*. G* is an unvalidated information-state diagnostic, not a physical quantity or safety score. Hash integrity is not truth or causality. MMR is separate successor of 008R1; PREDECESSOR_008.json retains old roots. Full prefix recomputation is implemented; compact externally signed proofs are not.
+The Tokens& entry links to `https://antigense-cyberhack.vercel.app/video/`, which currently serves the 039R1 source. The new ~3:00 video must retain the genuine Nimble interface/action (never disclose the API key), show the actual local 050 judge interaction, and clearly label sponsor results as historical. Before replacing the video, validate exact duration, audio clarity/screen synchronization, frame privacy, the final media SHA-256 and public browser playback; archive the old MP4 independently. **No 053 video upload or Tokens& portal edit is claimed here.**
 
-## Submission
-
-See docs/SUBMISSION.md, docs/VOICE_SCRIPT.md, docs/SPONSOR_CHECKLIST.md and docs/DATASET_REVIEW.md. Private repository and sanitized public MVP are separate from local execution. Prebuilt-work eligibility and sponsor track rules remain UNKNOWN until organizers confirm. Provisional name; trademark availability not checked.
+Original explanatory content © 2026 Biobitworks, CC BY-NC-ND 4.0. Software licensing beyond this statement remains unestablished; third-party rights retained.
