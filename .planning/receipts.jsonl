@@ -4,3 +4,4 @@
 {"task":"018","lane":"akash","state":"FAILED","artifact":"evidence/lane018/akash/akash_receipt.json","note":"HTTP 401, 1 attempt, inference NOT_TESTED"}
 {"task":"018","lane":"context","state":"UNKNOWN","artifact":"evidence/lane018/context/contract_map.json"}
 {"task":"018","lane":"client","state":"PARTIAL","note":"labels updated locally, not deployed; media not produced"}
+{"task":"040","lane":"handoff","state":"WRITTEN","artifact":"docs/HANDOFF_040.md + docs/HANDOFF_040.json","signature":"NOT_SIGNED","note":"integrity manifest only; PR 1 open; repo public"}
