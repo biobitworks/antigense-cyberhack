@@ -1,0 +1,22 @@
+{
+  "audit_payload_sha256": "b859e58a8a459b53f511cff41b962c8d21ba80fdc76f8cedf2521ca424b147ac",
+  "featured_sponsor_titles": [
+    "Semgrep",
+    "Akash",
+    "ClickHouse"
+  ],
+  "mmr": "NOT_COMPUTED",
+  "public_readback_sha256": "NOT_TESTED",
+  "required_executed_sponsors": [
+    "Akash",
+    "ClickHouse",
+    "Semgrep"
+  ],
+  "schema": "antigense.sponsor_publication_gate.v1",
+  "scope": "Sponsor homepage discoverability, static states, and index-bound public projection; does NOT verify provider execution",
+  "signature": "NOT_SIGNED",
+  "source_homepage_sha256": "35ede69fac5706994beb95374e0f6573559f9686ca7dc250d663b8b7d5f3e947",
+  "sponsor_ledger_sha256": "788fe09575a3ecb9de2694391d11dfee8e0170c44d361210afcafaf06956b26f",
+  "verdict": "PASS",
+  "violations": []
+}

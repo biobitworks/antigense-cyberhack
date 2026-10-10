@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "mkdir -p dist && cp -R public/. dist/",
+  "buildCommand": "python3 scripts/audit_sponsor_publication_055.py && mkdir -p dist && cp -R public/. dist/",
   "outputDirectory": "dist",
   "framework": null,
   "headers": [

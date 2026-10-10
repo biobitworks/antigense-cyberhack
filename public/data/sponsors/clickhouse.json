@@ -1,0 +1,17 @@
+{
+  "description": "Historical 55 records ingested/replayed, 55/55 exact readback; separate 11-checkpoint incident with recorded 160.706 ms query; not a live 050 cloud call.",
+  "evidence_index_sha256": "788fe09575a3ecb9de2694391d11dfee8e0170c44d361210afcafaf06956b26f",
+  "fresh_execution": "NOT_EXECUTED",
+  "historical_evidence_url": "https://github.com/biobitworks/antigense-cyberhack/blob/codex/sponsor-audit-gate-055/docs/EVIDENCE.md",
+  "record_ids": [
+    "successor_016"
+  ],
+  "retained_failure_record_ids": [
+    "successor_015"
+  ],
+  "schema": "antigense.sponsor_evidence_projection.056.v1",
+  "signature": "NOT_SIGNED",
+  "source_ledger_url": "https://github.com/biobitworks/antigense-cyberhack/blob/codex/sponsor-audit-gate-055/evidence/INDEX.json",
+  "sponsor": "ClickHouse",
+  "status": "EXECUTED"
+}

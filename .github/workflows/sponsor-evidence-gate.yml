@@ -22,6 +22,10 @@ jobs:
           python-version: '3.11'
       - name: Verify admission gate unit tests
         run: python3 -m unittest tests.test_sponsor_publication_055 -v
+      - name: Install public signature verification dependency
+        run: python3 -m pip install cryptography
+      - name: Verify signed accountability Merkle/MMR breakpoint
+        run: python3 scripts/produce_accountability_056.py --verify
       - name: Reconcile source sponsor ledger to homepage and public receipts
         run: |
           python3 scripts/audit_sponsor_publication_055.py --receipt sponsor-gate-result.json

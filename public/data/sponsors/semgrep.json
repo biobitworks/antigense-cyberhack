@@ -1,0 +1,16 @@
+{
+  "description": "Executed local security scans: 1 pinned finding before, 0 after; separate source audit; no general completeness claim.",
+  "evidence_index_sha256": "788fe09575a3ecb9de2694391d11dfee8e0170c44d361210afcafaf06956b26f",
+  "fresh_execution": "NOT_EXECUTED",
+  "historical_evidence_url": "https://github.com/biobitworks/antigense-cyberhack/blob/codex/sponsor-audit-gate-055/docs/EVIDENCE.md",
+  "record_ids": [
+    "successor_011",
+    "successor_016"
+  ],
+  "retained_failure_record_ids": [],
+  "schema": "antigense.sponsor_evidence_projection.056.v1",
+  "signature": "NOT_SIGNED",
+  "source_ledger_url": "https://github.com/biobitworks/antigense-cyberhack/blob/codex/sponsor-audit-gate-055/evidence/INDEX.json",
+  "sponsor": "Semgrep",
+  "status": "EXECUTED"
+}

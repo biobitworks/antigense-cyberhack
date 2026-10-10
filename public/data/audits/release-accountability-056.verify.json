@@ -1,0 +1,13 @@
+{
+  "external_timestamp": "NOT_TESTED",
+  "historical_cloud_provider_reexecution": "NOT_EXECUTED",
+  "key_provenance": "LOCAL_SOFTWARE_KEY_GENERATED_ON_MAGICPROBOX_NO_PERSON_OR_MODEL_IDENTITY_ATTESTATION",
+  "owner_identity": "UNVERIFIED",
+  "public_key_b64": "yHz+Kdad4tHVtGJgMNMoYU/9u5P3ADbBtoFvGTwIkzA=",
+  "public_key_sha256_fingerprint": "99c793dc9c99290204c763314718ef61c40783b6fee4cf8b394c96874ee850be",
+  "schema": "antigense.accountability_signature_056.v1",
+  "signature_algorithm": "Ed25519",
+  "signature_b64": "uj63VmKVXB4ZwKmwwSbwGZ+5CaywnidcEP/Dt9d0u6wkbJc7trBRQly8CrqITHA5F7yR154kwSFs551FB44HAA==",
+  "signature_verification": "PASS",
+  "signed_object_sha256": "898d31defb111999c6bdc7a97938331dc620c1a0cfc4c40e80b242bb8b218b05"
+}
