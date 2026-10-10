@@ -16,7 +16,7 @@ spec.loader.exec_module(audit)
 class SponsorPublicationTests(unittest.TestCase):
     def setUp(self):
         self.ledger = (ROOT / "evidence/INDEX.json").read_bytes()
-        self.original = (ROOT / "public/index.html").read_bytes()
+        self.original = (ROOT / "public/archive/submission-054/index.html").read_bytes()
 
     def test_frozen_submitted_homepage_must_block(self):
         r = audit.evaluate(self.original, self.ledger, ROOT / "public")

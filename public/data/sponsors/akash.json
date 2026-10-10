@@ -1,0 +1,20 @@
+{
+  "description": "Historical provider deployment and Qwen2.5:0.5b advisory HTTP 200 in 3466.4 ms; successful close request; hardware attestation NOT_TESTED.",
+  "evidence_index_sha256": "788fe09575a3ecb9de2694391d11dfee8e0170c44d361210afcafaf06956b26f",
+  "fresh_execution": "NOT_EXECUTED",
+  "historical_evidence_url": "https://github.com/biobitworks/antigense-cyberhack/blob/codex/sponsor-audit-gate-055/docs/EVIDENCE.md",
+  "record_ids": [
+    "successor_024",
+    "successor_023"
+  ],
+  "retained_failure_record_ids": [
+    "successor_019",
+    "successor_021",
+    "successor_022"
+  ],
+  "schema": "antigense.sponsor_evidence_projection.056.v1",
+  "signature": "NOT_SIGNED",
+  "source_ledger_url": "https://github.com/biobitworks/antigense-cyberhack/blob/codex/sponsor-audit-gate-055/evidence/INDEX.json",
+  "sponsor": "Akash",
+  "status": "EXECUTED"
+}

@@ -2,3 +2,7 @@
 !public
 !public/**
 !vercel.json
+!scripts
+!scripts/audit_sponsor_publication_055.py
+!evidence
+!evidence/INDEX.json

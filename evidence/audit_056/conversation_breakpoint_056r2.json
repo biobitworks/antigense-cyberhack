@@ -1,0 +1,74 @@
+{
+  "content_identity": {
+    "corrected_page_sha256": "35ede69fac5706994beb95374e0f6573559f9686ca7dc250d663b8b7d5f3e947",
+    "signature_file_sha256": "3beb05534d98b0c6c8eff7b7a4a95301ac727e286ea849a2df28c452fe0913a",
+    "signed_nine_leaf_mmr_root": "2c49d2ffd87a6439f28281ae86d377937d3ec04c72f89ce9889c62b772af6833"
+  },
+  "context_identity": {
+    "deployment_id": "dpl_8vnYYMA6spz7LtoDxVC21ZLWN55V",
+    "git_branch": "codex/corrected-sponsor-homepage-056",
+    "source_commit": "b43dc83c9a456c95cfc4d69fe1e400d078b822d2"
+  },
+  "decisions": {
+    "Pi": "NOT_USED",
+    "executed_sponsors": [
+      "Semgrep",
+      "Akash",
+      "ClickHouse"
+    ],
+    "judge_history_rewritten": false,
+    "original_homepage": "PRESERVED_BYTE_IDENTICAL",
+    "post_submission_notice": "VISIBLE",
+    "production": "DEPLOYED_056",
+    "release_policy": "FAIL_CLOSED_SOURCE_GATE"
+  },
+  "executed_work": {
+    "github_PR_8_check": "sponsor-evidence-gate_PASS",
+    "negative_vercel_preview": {
+      "deployment_id": "dpl_9tui7jtHWNFVHU9HCi2Sw84Whfvf",
+      "specific_finding": "E_EXECUTED_SPONSOR_MISSING:ClickHouse",
+      "verdict": "BLOCK"
+    },
+    "positive_preview": {
+      "deployment_id": "dpl_ogB7NM1nt83oyf5uAYe3yBC7pcmy",
+      "state": "READY"
+    },
+    "production_deployment": {
+      "deployment_id": "dpl_8vnYYMA6spz7LtoDxVC21ZLWN55V",
+      "state": "READY"
+    },
+    "readback": {
+      "13_routes": "HTTP_200",
+      "ed25519_verification": "PASS",
+      "original_archived_html_matches_predecessor_hash": true,
+      "source_html_matches_live_bytes": true,
+      "sponsor_projection_readback": "PASS"
+    },
+    "unit_tests": "18_PASS"
+  },
+  "failures_retained": {
+    "initial_preview_builds": "ERROR_BECAUSE_VERCELIGNORE_EXCLUDED_GATE_SCRIPT",
+    "negative_policy_preview": "BLOCK_EXPECTED",
+    "preview_promote_request": "HTTP_422_UNPROCESSABLE_ENTITY"
+  },
+  "merkle_commitment": "THIS_CONVERSATION_FCO_NOT_YET_COMMITTED_TO_MMR; REFERENCES_SIGNED_9_LEAF_CORE",
+  "next_action": "Review and merge the corrective lineage into protected default branch with the required status, and harden deploy credentials against direct-API override.",
+  "not_tested": [
+    "independent judge-score causality",
+    "provider cloud reexecution",
+    "verified named-agent model identity",
+    "external timestamp/TEE attestation",
+    "prevention of all manual deploy API bypasses",
+    "main branch full integration merge"
+  ],
+  "parent_state": {
+    "governed_failure_commit": "5db6ac9e3cc5db5418d84e594107870ed74062e9",
+    "predecessor_preserved": true,
+    "release_054_homepage_sha256": "80dc78b4e2cd8b23bd9094a725f567de473db27cb9b80629f3f8da7b3424a888"
+  },
+  "project": "antigense-daisy",
+  "repository": "biobitworks/antigense-cyberhack",
+  "schema": "fco.conversation_breakpoint.antigense.056r2.v1",
+  "signature": "NOT_SIGNED_THIS_CONVERSATION_FCO",
+  "transition": "RETROSPECTIVE_FAILURE_BLOCK_TO_SIGNED_CORRECTIVE_SPONSOR_SURFACE_AND_PRODUCTION_READBACK"
+}
