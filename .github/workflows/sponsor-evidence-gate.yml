@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Verify admission gate unit tests
-        run: python3 -m unittest tests.test_sponsor_publication_055 -v
+        run: python3 -m unittest discover -s tests -v
       - name: Install public signature verification dependency
         run: python3 -m pip install cryptography
       - name: Verify signed accountability Merkle/MMR breakpoint
