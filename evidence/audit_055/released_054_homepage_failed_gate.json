@@ -1,0 +1,53 @@
+{
+  "audit_payload_sha256": "f58b0e6e00012390bcaaedf64e8c85d45c18ff732fc5fb34168cb8991cf38294",
+  "featured_sponsor_titles": [
+    "Semgrep",
+    "Akash",
+    "Pi Security"
+  ],
+  "mmr": "NOT_COMPUTED",
+  "public_readback_sha256": "80dc78b4e2cd8b23bd9094a725f567de473db27cb9b80629f3f8da7b3424a888",
+  "required_executed_sponsors": [
+    "Akash",
+    "ClickHouse",
+    "Semgrep"
+  ],
+  "schema": "antigense.sponsor_publication_gate.v1",
+  "scope": "Sponsor homepage discoverability, static states, and index-bound public projection; does NOT verify provider execution",
+  "signature": "NOT_SIGNED",
+  "source_homepage_sha256": "80dc78b4e2cd8b23bd9094a725f567de473db27cb9b80629f3f8da7b3424a888",
+  "sponsor_ledger_sha256": "788fe09575a3ecb9de2694391d11dfee8e0170c44d361210afcafaf06956b26f",
+  "verdict": "BLOCK",
+  "violations": [
+    {
+      "code": "E_EXECUTED_SPONSOR_STATUS_AMBIGUOUS",
+      "detail": "Static sponsor card is not clearly labeled executed/historical observed",
+      "sponsor": "Akash"
+    },
+    {
+      "code": "E_EXECUTED_SPONSOR_NO_DIRECT_EVIDENCE_LINK",
+      "detail": "Expected an in-card direct link to data/sponsors/akash.json",
+      "sponsor": "Akash"
+    },
+    {
+      "code": "E_EXECUTED_SPONSOR_MISSING",
+      "detail": "Executed sponsor absent from featured homepage cards",
+      "sponsor": "ClickHouse"
+    },
+    {
+      "code": "E_UNEXECUTED_SPONSOR_FEATURED",
+      "detail": "Homepage features sponsor whose ledger state is NOT_USED",
+      "sponsor": "Pi"
+    },
+    {
+      "code": "E_EXECUTED_SPONSOR_STATUS_AMBIGUOUS",
+      "detail": "Static sponsor card is not clearly labeled executed/historical observed",
+      "sponsor": "Semgrep"
+    },
+    {
+      "code": "E_EXECUTED_SPONSOR_NO_DIRECT_EVIDENCE_LINK",
+      "detail": "Expected an in-card direct link to data/sponsors/semgrep.json",
+      "sponsor": "Semgrep"
+    }
+  ]
+}

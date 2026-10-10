@@ -1,0 +1,34 @@
+name: Sponsor Evidence Admission Gate
+on:
+  pull_request:
+    paths:
+      - "public/**"
+      - "evidence/INDEX.json"
+      - "scripts/audit_sponsor_publication_055.py"
+      - "tests/test_sponsor_publication_055.py"
+      - ".github/workflows/sponsor-evidence-gate.yml"
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  sponsor-evidence-gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify admission gate unit tests
+        run: python3 -m unittest tests.test_sponsor_publication_055 -v
+      - name: Reconcile source sponsor ledger to homepage and public receipts
+        run: |
+          python3 scripts/audit_sponsor_publication_055.py --receipt sponsor-gate-result.json
+      - name: Preserve gate report, even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sponsor-evidence-audit
+          path: sponsor-gate-result.json
+          if-no-files-found: warn
