@@ -1,0 +1,126 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": false,
+      "provided.configured_model_listed": false,
+      "provided.http_200": false,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "NO",
+      "provided.configured_model_listed": "NO",
+      "provided.http_200": "NO",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "REJECTED",
+    "state": "FAILED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845\"}",
+        "index": 0,
+        "leaf_sha256": "b093467d7e399b43aede3b5e0382072a032021c1712242adcebce07f1e3cf318"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:615564b03bd86298f2afd6f38badf0bde85ce471456ae7f61264616c2e12c92d\"}",
+        "index": 1,
+        "leaf_sha256": "fe12ced80b0dbd1b45805e8eac721df44ec97c20b9494e327dc964e15dd5846f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"7c6eaf5efcd8d0e7c757061cab46077000cc69fe9f53da816b6fb339eacff47c\"}",
+        "index": 2,
+        "leaf_sha256": "f0bd735e68dfcbb27a8832820fa0379cf21a1127283c9c27ab29f770901ddba3"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"configured_model_listed\":false,\"http_200\":false},\"details\":{\"body_excerpt\":\"{\\\"error\\\":\\\"Unauthorized\\\",\\\"message\\\":\\\"Invalid token format. API keys should start with 'akml-'. JWTs should be valid tokens.\\\"}\",\"body_sha256\":\"262c9950bc64813a1e123e4a9fa704995d58401134eec67dd22912c469a51712\",\"content_type\":\"application/json; charset=utf-8\",\"elapsed_ms\":148.8,\"inference_id\":null,\"method\":\"GET\",\"model_ids\":[],\"path\":\"/models\",\"retry_after\":null,\"status\":401,\"ua\":\"python-urllib default\"},\"name\":\"akash_models_list\",\"occurrence\":{\"run_id\":\"run011-669cfacd9528\",\"seq\":2,\"ts\":\"2026-10-09T19:17:13+00:00\"},\"state\":\"FAILED\"}}",
+        "index": 3,
+        "leaf_sha256": "bcdbb130fa860f4a75e18a6c0a101646edefccb4a38028fe49cf247f05f982cf"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":false,\"provided.configured_model_listed\":false,\"provided.http_200\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"NO\",\"provided.configured_model_listed\":\"NO\",\"provided.http_200\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"REJECTED\",\"state\":\"FAILED\"}}",
+        "index": 4,
+        "leaf_sha256": "0fcbe8f3ba0f2058bb565ef972b7bfa0748d751bcf34084fbd8596eb25d1f82d"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.325000\",\"g_star\":\"0.325000\",\"inputs\":{\"admitted\":1,\"quarantined\":0,\"rejected\":1,\"steps\":2},\"normalized_entropy\":\"0.500000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "d660166cb66a9f85c52d219576de2527422b072c017a1a237322a6d844cba706"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "7cf5d9fee8edff76ac04f89fc585ec28a25af308a79febe41830a3e82365278c"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.325000",
+    "g_star": "0.325000",
+    "inputs": {
+      "admitted": 1,
+      "quarantined": 0,
+      "rejected": 1,
+      "steps": 2
+    },
+    "normalized_entropy": "0.500000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:7cf5d9fee8edff76ac04f89fc585ec28a25af308a79febe41830a3e82365278c",
+  "observation": {
+    "checks": {
+      "configured_model_listed": false,
+      "http_200": false
+    },
+    "details": {
+      "body_excerpt": "{\"error\":\"Unauthorized\",\"message\":\"Invalid token format. API keys should start with 'akml-'. JWTs should be valid tokens.\"}",
+      "body_sha256": "262c9950bc64813a1e123e4a9fa704995d58401134eec67dd22912c469a51712",
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_ms": 148.8,
+      "inference_id": null,
+      "method": "GET",
+      "model_ids": [],
+      "path": "/models",
+      "retry_after": null,
+      "status": 401,
+      "ua": "python-urllib default"
+    },
+    "name": "akash_models_list",
+    "occurrence": {
+      "run_id": "run011-669cfacd9528",
+      "seq": 2,
+      "ts": "2026-10-09T19:17:13+00:00"
+    },
+    "state": "FAILED"
+  },
+  "parent_fco_id": "fco:sha256:615564b03bd86298f2afd6f38badf0bde85ce471456ae7f61264616c2e12c92d",
+  "previous_mmr_root": "7c6eaf5efcd8d0e7c757061cab46077000cc69fe9f53da816b6fb339eacff47c",
+  "project_root": "07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

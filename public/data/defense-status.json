@@ -1,0 +1,69 @@
+{
+  "akash": {
+    "ceiling": "FAILED: HTTPError (HTTP 401)",
+    "inference_id": null,
+    "model": null,
+    "state": "FAILED"
+  },
+  "claim_ceiling": "Hash integrity is not truth, safety or causality. Zero findings means only this scan found none. G*/delta-G* unvalidated.",
+  "correction": {
+    "corrected_fields": {
+      "akash.ceiling": {
+        "now": "FAILED: HTTPError (HTTP 401)",
+        "was": "NOT_TESTED: no credentials supplied"
+      }
+    },
+    "later_akash_result": "a separate Console API GPU run succeeded later (evidence/successor_024); this file describes run run011-ad35173536c3 only",
+    "publication_note": "the original was a candidate never authorized for publication (step-000074: NOT_TESTED); it reached the site through a later deploy. This correction is published deliberately.",
+    "reason": "the original reported every Akash failure as missing credentials; the receipt records a credentialed HTTP 401 (bug fixed in agent011.py, PR #1 d5d032a)",
+    "source_receipt": "evidence/successor_011/step-000070.json",
+    "superseded_copy": "evidence/status/defense-status-7ecbf592270a2e4a.json",
+    "supersedes_sha256": "7ecbf592270a2e4a907bab78fbd537ce24da91bddbe2fd2beab8db904ed36ec7"
+  },
+  "custody": {
+    "leaf_count_before_publication": 72,
+    "mmr_root_before_publication": "62cce1cc3de74ae9a61c83108a51bc5c5dce75710647d604f51559ab3b5347d5",
+    "predecessor_mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+    "signature": "NOT_SIGNED",
+    "successor_project_root": "655bbad9659afe8657b18144e392bbec0ac52379ab7df82f6736eba282e2aa8b"
+  },
+  "generated_utc": "2026-10-09T19:00:06+00:00",
+  "human_review": "Codex-delegated rehearsal approval in 009; identity UNVERIFIED",
+  "monitor": [
+    {
+      "bytes": 12695,
+      "sha256": "80dc78b4e2cd8b23bd9094a725f567de473db27cb9b80629f3f8da7b3424a888",
+      "status": 200,
+      "ts": "2026-10-09T18:59:56+00:00",
+      "url": "https://antigense-cyberhack.vercel.app/"
+    },
+    {
+      "bytes": 502356,
+      "sha256": "c2f18156deecc4c8b51591b28667f5e62dbd492d27aa70dd38040bdfe3deb02c",
+      "status": 200,
+      "ts": "2026-10-09T18:59:57+00:00",
+      "url": "https://antigense-cyberhack.vercel.app/demo.mp4"
+    },
+    {
+      "bytes": 22627,
+      "sha256": "ad9e0684ae577b36405d51a12f437dfcce74237f1d724531c75d16bcc9195d89",
+      "status": 200,
+      "ts": "2026-10-09T18:59:57+00:00",
+      "url": "https://antigense-cyberhack.vercel.app/data/run.json"
+    }
+  ],
+  "pi": {
+    "reason": "no sponsor interface/credentials",
+    "state": "NOT_TESTED"
+  },
+  "run_id": "run011-ad35173536c3",
+  "schema": "antigense.defense-status.v011",
+  "scope": "Software-injected byte fault in a disposable demo worker; sanitized teaching fixture; no physical hardware fault.",
+  "semgrep": {
+    "after_findings": 0,
+    "before_findings": 1,
+    "note": "custom teaching rule; zero findings = this scan only",
+    "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+    "version": "1.180.0"
+  }
+}

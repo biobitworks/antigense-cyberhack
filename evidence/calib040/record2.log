@@ -1,0 +1,45 @@
+START record040
+127.0.0.1 - - [09/Oct/2026 14:00:25] "GET /walkthrough-040.html?autoplay=1 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Oct/2026 14:00:25] "GET /data/walkthrough-034.json HTTP/1.1" 200 -
+RUNNING page_s=5 title_done=False
+RUNNING page_s=10 title_done=False
+RUNNING page_s=15 title_done=False
+RUNNING page_s=20 title_done=False
+RUNNING page_s=25 title_done=False
+RUNNING page_s=30 title_done=False
+RUNNING page_s=35 title_done=False
+RUNNING page_s=40 title_done=False
+RUNNING page_s=45 title_done=False
+RUNNING page_s=50 title_done=False
+RUNNING page_s=55 title_done=False
+RUNNING page_s=60 title_done=False
+RUNNING page_s=65 title_done=False
+RUNNING page_s=70 title_done=False
+RUNNING page_s=75 title_done=False
+RUNNING page_s=80 title_done=False
+RUNNING page_s=85 title_done=False
+RUNNING page_s=90 title_done=False
+RUNNING page_s=95 title_done=False
+RUNNING page_s=100 title_done=False
+RUNNING page_s=106 title_done=False
+RUNNING page_s=111 title_done=False
+RUNNING page_s=116 title_done=False
+RUNNING page_s=121 title_done=False
+RUNNING page_s=126 title_done=False
+RUNNING page_s=131 title_done=False
+RUNNING page_s=136 title_done=False
+RUNNING page_s=141 title_done=False
+127.0.0.1 - - [09/Oct/2026 14:02:50] "GET /data/review040.json HTTP/1.1" 200 -
+RUNNING page_s=146 title_done=False
+RUNNING page_s=151 title_done=False
+RUNNING page_s=156 title_done=False
+RUNNING page_s=161 title_done=False
+RUNNING page_s=166 title_done=False
+RUNNING page_s=171 title_done=False
+RUNNING page_s=176 title_done=False
+RUNNING page_s=181 title_done=False
+RUNNING page_s=186 title_done=False
+RUNNING page_s=191 title_done=False
+RUNNING page_s=196 title_done=False
+RUNNING page_s=201 title_done=True
+PASS {"mp4_seconds": 204.4, "timeline_finished": true, "in_browser_recompute": {"#inc-res": "PASS \u00b7 roots match", "#gpu-res": "PASS \u00b7 roots match"}, "event_count": 85, "page_errors": []}

@@ -1,0 +1,61 @@
+{
+ "artifacts_sha256": {
+  "agent/build_page040.py": "5ec937ab17077313a728f5101c1d0668906429cf8f2fb0e94ba14c27c5b22567",
+  "agent/calibrate040.py": "a611db5ffedcd0a7632f2f065241b42bb63a759326f9987caba9b6490fc0de92",
+  "agent/postfix040.py": "a2310a4dd53ed06480d705fdf28470f66de22a0195bdd2bb1332031d35d9db18",
+  "agent/record_walkthrough040.py": "32b8de3a690634a990c85dd386d08ad65de25c5512c187b985ebce8dbf6dc90a",
+  "agent/review040.py": "6280360268248c943485a9fcf469477f3cf7faa02888456de3bfd199c7acf6dc",
+  "agent/review040b.py": "fa3f42da0a126eebd4a2177358ae866143ce117ba629304562a7b45080d20af1",
+  "agent/verify040.py": "dc56bd6246092a8413f0763aa8dfe464787c677a4f57740cbcfa76eeeee4c563",
+  "docs/SUBMISSION_TEXT_040.md": "3f982d3c05fb40c4938b959b54f78e266929db4b592bc6917676fb5874e50bdc",
+  "docs/VOICE_SCRIPT_040_ADDENDUM.md": "de424ed2c7f018157ab120698e17e4f5c6dea261e7f2a4e49f83e61adafa7806",
+  "evidence/align040/alignment.json": "675484b23305a5aa25caf1503adb04ba85d53b4153875684bad6af1361c6a023",
+  "evidence/calib040/orig034b_b/calibration.json": "ad7837369c259c6077fecdfd4b0afa966403693be0009bd3115fa965e7c06349",
+  "evidence/calib040/run040d/calibration.json": "c3fc566f790668fb7341409f66db52cbfb39476a2aca94a3dc9240cff3e57c7e",
+  "evidence/calib040/run040d/verification.json": "7a4f74384fab209700cb1184efe0ff9ea548340ae5f213e027f2de745d6248dc",
+  "evidence/publicscan040/gitleaks_history.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "evidence/publicscan040/semgrep_repo.json": "c47c3bcc101a31236061703844fe6d74dfc28a153ca235ea2f516834e3c6fc18",
+  "evidence/review040/head/postfix.json": "d8eb5a614572f576ed2cd1acbf013bfae83f2417b9349d272c551c3dec9d8358",
+  "evidence/review040/reviews_v2.json": "099c10f21ffe1bf2395a1d2f892c6ee1e7bcd20c838e24f5c90aa3c3a6c297a8",
+  "evidence/review040/v2/fcg_steps_v2.json": "2e0e8ce618c62198b01f23794f6b6b857ade2a8c820505c3963682aaae9b5842",
+  "evidence/review040/v2/tree.json": "b9c2f9132831a503f0abec2bbca516853e720f3bc9a1450c7f0b3ecf0bb90750"
+ },
+ "branch": "agent-011-sponsor-evidence",
+ "date": "2026-10-09",
+ "from": "Claude Sonnet 5.5 (Claude Code session)",
+ "git_head_at_signing": "5a31b728deee8bb503e53275822a15d68a650944",
+ "media_outside_git": {
+  "narration_original": {
+   "in_git": false,
+   "path": "~/Library/Mobile Documents/com~apple~CloudDocs/Hackathon/AWS Builder Loft.m4a",
+   "sha256": "12be0853fee931726ae48ff98e02a94e33e2f0a71c3d1f3e09da0cf0085389ba"
+  },
+  "rec1_video": {
+   "in_git": false,
+   "path": "media/walkthrough-040/rec1/screen-040.mp4",
+   "sha256": "86375ed1bb588cca1fe70486e9c7a6248a1850e8eae3d5141dd55c4b5e8b3151"
+  },
+  "rec2_video": {
+   "in_git": false,
+   "path": "media/walkthrough-040/rec2/screen-040.mp4",
+   "sha256": "16c7ead607f3bee3185e4e4758658a4018244f6fcc502e35cd5beeea10c55a32"
+  }
+ },
+ "pr": "https://github.com/biobitworks/antigense-cyberhack/pull/1",
+ "repo_visibility": "PUBLIC (made public at Byron's instruction; gitleaks history 0 leaks)",
+ "roots": {
+  "append_only_prefix_reproduces_prior": true,
+  "fcg_review_mmr_v1_8_leaves": "3f3349e6481798b345181c270d98475d13e9cd2033d26750054947734bdd11f5",
+  "fcg_review_mmr_v2_14_leaves": "b6aafad91777823661b5e7f32e28dc7fc18ce217000daa47a11c831651d7bf3c",
+  "frame_mmr_rec2": "9ca1d8c020dec65e93572b2a1604cc70984f49d67e65bba7868bef070b801e2a",
+  "review_tree_head_v2": "c7f1de0241bbf5a895f282a3f2ca298a9e259921b76f9f3bb1af1bd801eafb15",
+  "review_tree_reviewed": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57"
+ },
+ "schema": "antigense.handoff.040",
+ "signature": {
+  "attribution": "authored by Claude Sonnet 5.5; Byron may sign with `git tag -s` or `ssh-keygen -Y sign`",
+  "cryptographic": "NOT_SIGNED",
+  "integrity": "SHA-256 manifest below; commit hash binds it once committed"
+ },
+ "to": "ChatGPT/OpenAI orchestrator"
+}

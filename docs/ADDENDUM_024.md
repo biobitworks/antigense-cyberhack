@@ -1,0 +1,5 @@
+# 024 addendum - Akash GPU inference via Console API (operator-authorized spend)
+agent/akash_gpu024.py: creates a 1-GPU deployment (ollama/ollama pinned tag) with runtimeLimitHours=1, polls bids, leases the cheapest bid, waits for the provider URI, pulls qwen2.5:0.5b, runs one inference on the sanitized fixture, records /api/ps (provider-reported VRAM), then CLOSES the deployment in a finally block. Max bid 10000 uact/block.
+Client identifies honestly as antigense-agent/024 (+repo URL); 022 hit Cloudflare 1010 with Python's default UA, 023 succeeded with a named UA. Another session (027) recommended stopping UA changes pending sponsor guidance; operator explicitly authorized this deployment.
+Exposure: Ollama endpoint is publicly reachable without auth for the lease lifetime; minimized by closing immediately after inference.
+Ceiling: GPU identity is provider-reported (bid resources / ollama ps), not attested. No confidentiality, TEE or private-deployment claim. AI advice untrusted, not applied.

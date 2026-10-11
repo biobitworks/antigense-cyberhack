@@ -1,0 +1,385 @@
+{
+ "date": "2026-10-09",
+ "files": {
+  "agent/agent011.py": {
+   "finding_ids": [
+    "F3",
+    "F10",
+    "F2a"
+   ],
+   "note": "re-reviewed diff 7433431..d5d032a; unchanged lines keep earlier READ_FULL",
+   "read_depth": "RE_READ_DIFF_ONLY",
+   "verdict": "FINDINGS"
+  },
+  "agent/akash019.py": {
+   "finding_ids": [],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/akash020.py": {
+   "finding_ids": [
+    "F7"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/akash021.py": {
+   "finding_ids": [
+    "F7",
+    "F11"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/akash_console022.py": {
+   "finding_ids": [
+    "F6"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/akash_console023.py": {
+   "finding_ids": [
+    "F7"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "agent/akash_gpu024.py": {
+   "finding_ids": [
+    "F5",
+    "F6"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "agent/ch015.py": {
+   "finding_ids": [
+    "F9"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/ch016.py": {
+   "finding_ids": [
+    "F9"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/frame_audit039.py": {
+   "finding_ids": [
+    "F12"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "agent/frame_check035.py": {
+   "finding_ids": [
+    "F12"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "agent/frame_ocr039.swift": {
+   "finding_ids": [],
+   "read_depth": "READ_FULL",
+   "verdict": "OK"
+  },
+  "agent/frame_successor039r1.py": {
+   "finding_ids": [
+    "F12"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/live037.html": {
+   "finding_ids": [
+    "F16"
+   ],
+   "read_depth": "READ_PATTERNS_ONLY",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/live037.py": {
+   "finding_ids": [
+    "F15",
+    "F16"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "agent/record_walkthrough034.py": {
+   "finding_ids": [
+    "F12"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "agent/safe_eval016.py": {
+   "finding_ids": [
+    "F2b"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/telemetry012.py": {
+   "finding_ids": [
+    "F13"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/verify_all.py": {
+   "finding_ids": [],
+   "read_depth": "READ_PARTIAL",
+   "verdict": "UNREVIEWED_REMAINDER"
+  },
+  "agent/walkthrough034.py": {
+   "finding_ids": [],
+   "read_depth": "SKIMMED_PATTERNS",
+   "verdict": "UNREVIEWED_REMAINDER"
+  },
+  "agent/walkthrough_manifest035.py": {
+   "finding_ids": [],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "agent/watermark039r1.swift": {
+   "finding_ids": [],
+   "read_depth": "READ_FULL",
+   "verdict": "OK"
+  },
+  "scripts/demo.sh": {
+   "finding_ids": [],
+   "read_depth": "READ_FULL",
+   "verdict": "OK"
+  },
+  "scripts/setup.sh": {
+   "finding_ids": [
+    "F8"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  },
+  "src/cascade.py": {
+   "finding_ids": [
+    "F2",
+    "F4"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "src/custody.py": {
+   "finding_ids": [
+    "F1"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "FINDINGS"
+  },
+  "src/server.py": {
+   "finding_ids": [
+    "F14"
+   ],
+   "read_depth": "READ_FULL",
+   "verdict": "OK_WITH_NOTES"
+  }
+ },
+ "findings": [
+  {
+   "demonstrated": "derive({state:OBSERVED,checks:{reconciliation_exact:false,count_matches:false}}) -> ADMITTED",
+   "file": "src/custody.py",
+   "id": "F1",
+   "impact": "'ADMITTED' in ledgers/ClickHouse is not a pass/fail signal; verify() recomputes the same rule so tampering is still detected, but a false check cannot fail a step.",
+   "semgrep_detectable": false,
+   "severity": "medium",
+   "status_at_head": "OPEN",
+   "summary": "Custody admission is a function of the caller's state label only; supplied boolean checks are recorded but never enforced.",
+   "where": "derive()"
+  },
+  {
+   "demonstrated": "see evidence/review040/demos.json cascade_auth_exec",
+   "file": "src/cascade.py",
+   "id": "F2",
+   "impact": "Requires a tampered fixture file in the repo; verify_artifacts hashes fixtures after the fact, but run() calls auth('before') before any artifact check.",
+   "semgrep_detectable": false,
+   "semgrep_note": "Semgrep CE p/python + p/security-audit + p/secrets did not flag exec_module; only exec() at agent011.py:89",
+   "severity": "low-medium",
+   "status_at_head": "OPEN (cascade.auth still executes fixture code; Semgrep reports 0 findings so a clean scan hides it)",
+   "summary": "Policy fixtures are loaded with importlib exec_module (arbitrary code from fixtures/<name>.py). The 016 remediation replaced exec() only in agent011.regress; the product path remains.",
+   "where": "auth()"
+  },
+  {
+   "demonstrated": "evidence/lane018/semgrep/controlled_comparison.json: attacker fixture side effect executed True; safe_eval016 path False",
+   "file": "agent/agent011.py",
+   "id": "F2a",
+   "semgrep_detectable": true,
+   "severity": "low-medium",
+   "status_at_head": "RESOLVED_VERIFIED (postfix040: attacker fixture side effect False; Semgrep HEAD scan 0 findings)",
+   "summary": "exec() on repository fixture source (the Semgrep finding).",
+   "where": "regress():89"
+  },
+  {
+   "file": "agent/safe_eval016.py",
+   "id": "F2b",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "AST evaluator does not execute module-level code (verified) but supports only a tiny grammar and raises on anything else; behavior equals exec path on both teaching fixtures.",
+   "where": "authorize()"
+  },
+  {
+   "file": "agent/agent011.py",
+   "id": "F3",
+   "semgrep_detectable": false,
+   "severity": "low",
+   "status_at_head": "PARTIALLY_RESOLVED (unapproved status now written to evidence/run_011/candidate path; publication token still the public project_root; --publish still runs vercel deploy --prod)",
+   "summary": "Publication 'authorization' compares a token to the successor project_root, which is public in the repo; --publish runs `vercel deploy --prod --yes`. do_run also writes public/data/defense-status.json even without --publish.",
+   "where": "do_run()/authorized()"
+  },
+  {
+   "file": "src/cascade.py",
+   "id": "F4",
+   "semgrep_detectable": false,
+   "severity": "low",
+   "status_at_head": "OPEN",
+   "summary": "Every cascade run rewrites tracked public/data/proof.json and run.json; concurrent sessions/website edits can collide (observed as modified files in git status).",
+   "where": "export()"
+  },
+  {
+   "file": "agent/akash_gpu024.py",
+   "id": "F5",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "Ollama exposed global:true without authentication and called over plain HTTP during a lease; bounded by runtimeLimitHours=1, price cap and a finally-block close. Billing/final closed state not independently verified.",
+   "where": "SDL / run()"
+  },
+  {
+   "file": "agent/akash_gpu024.py",
+   "id": "F6",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "AKASHML_API_KEY holds a Console-shaped key (ac.sk.); code selects it by prefix for Console calls. Sending it to api.akashml.com yields 401 (my lane018 call). Shape check only; value never printed.",
+   "where": "key selection"
+  },
+  {
+   "file": "agent/akash_console023.py",
+   "id": "F7",
+   "needs": "owner review of whether 023's UA change is acceptable",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "User-Agent changed after a Cloudflare 1010 client-signature block; docs/AKASH_ENDPOINT_CORRECTION_027.md later records a stop-on-block rule. akash020/021 also retry with a second User-Agent after a 401.",
+   "where": "headers"
+  },
+  {
+   "file": "scripts/setup.sh",
+   "id": "F8",
+   "semgrep_detectable": false,
+   "severity": "low",
+   "status_at_head": "OPEN",
+   "summary": "semgrep==1.180.0 pinned, transitive dependencies and hashes are not.",
+   "where": "pip install"
+  },
+  {
+   "file": "agent/ch015.py",
+   "id": "F9",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "CLICKHOUSE_HOST is interpolated into https://%s:8443 without validation (env/prompt controlled); TLS verified, redirects refused. 015 vs 016 differ by numeric normalization before hashing (kept).",
+   "where": "CH.q()"
+  },
+  {
+   "file": "agent/agent011.py",
+   "id": "F10",
+   "semgrep_detectable": false,
+   "severity": "low",
+   "status_at_head": "OPEN (Run.id unchanged)",
+   "summary": "run_id = sha256(now() at 1 s resolution)[:12]; two runs started in the same second share run_id and occurrence_id (run_id:seq), which a ReplacingMergeTree keyed on occurrence_id would merge. Found by reading; collision NOT executed.",
+   "where": "Run.__init__"
+  },
+  {
+   "file": "agent/akash021.py",
+   "id": "F11",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "Near-duplicate of akash020.py (copy-and-freeze pattern); reviews must be repeated per copy unless leaf hashes show identity.",
+   "where": "whole file"
+  },
+  {
+   "demonstrated": "evidence/review040/demos.json frame_check035_blind_spot",
+   "file": "agent/frame_check035.py",
+   "id": "F12",
+   "semgrep_detectable": false,
+   "severity": "medium",
+   "status_at_head": "OPEN",
+   "summary": "Samples one frame 0.8 s before each scene's expected end and compares it with a reference render; any timing offset below ~0.8 s still passes. The measured 0.60-0.70 s offset in 034b passed this check (sample landed 0.10-0.17 s before every real cut). Also recorder trimmed_lead (0.749 s) measures goto latency, not the page timeline start.",
+   "where": "sampling (t = start+seconds-0.8)"
+  },
+  {
+   "file": "agent/telemetry012.py",
+   "id": "F13",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "findings=-1 sentinel for unknown mixes with numeric counts in SQL aggregates (max_findings).",
+   "where": "rows()"
+  },
+  {
+   "file": "src/server.py",
+   "id": "F14",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "Host-header allowlist, Origin and per-process token on POST, size cap, path allowlist; token is served by unauthenticated GET /api/session on the same host. Adequate for a loopback cockpit; approve provenance text is unauthenticated (labelled UNVERIFIED).",
+   "where": "Handler"
+  },
+  {
+   "file": "agent/live037.py",
+   "id": "F15",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "Paid GPU deployment is enabled by a command-line flag plus key presence; bounded by bid cap (10000 uact/block), runtimeLimitHours=1 and a finally-block close with closed-state readback, but there is no interactive confirmation. Not executed by this review.",
+   "where": "run() / --akash-deploy"
+  },
+  {
+   "file": "agent/live037.html",
+   "id": "F16",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "Step rows are built with innerHTML from local status strings; loopback-only, unauthenticated status page exposes step names and hashes, no credentials.",
+   "where": "tick()"
+  },
+  {
+   "file": "agent/review040.py",
+   "id": "F17",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "Positional Merkle tree: inserting files shifts later leaves, so root-descent localization flags the whole suffix; a path-keyed (sparse) tree or per-directory subtrees would localize exactly. Measured in evidence/review040/v2.",
+   "where": "tree()"
+  },
+  {
+   "file": "src/cascade.py",
+   "id": "F18",
+   "semgrep_detectable": false,
+   "severity": "info",
+   "status_at_head": "OPEN",
+   "summary": "After the exec() fix Semgrep CE reports 0 findings at HEAD although another fixture-executing path (F2) remains; a clean scan is rule coverage, not absence of the risk class.",
+   "where": "scan result interpretation"
+  }
+ ],
+ "limits": [
+  "Review is by reading; only F1, F2/F2a, F12 and the tamper/offset results were executed",
+  "Not reviewed: files outside agent/src/scripts, evidence/ data, public/ pages",
+  "UNREVIEWED_REMAINDER files carry no verdict"
+ ],
+ "reviewer": "Claude (Sonnet 5.5) in this session, incremental re-review",
+ "scope": "git-tracked agent/ src/ scripts/ at the reviewed commit",
+ "supersedes": "evidence/review040/reviews.json (sha256 recorded in FCG step 3 of run2)"
+}

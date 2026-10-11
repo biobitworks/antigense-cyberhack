@@ -1,0 +1,59 @@
+{
+  "algorithm": "HYDRALAMP_MMR_V1",
+  "leaf_count": 6,
+  "leaves": [
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:fb28cd54e26db772ae232f8579b53d139c311c7406b8c8606d9790f28849a416",
+        "event_hash": "c386f2b2bcb9af2943e887274609353e0847873a40281734b71709abf72c08ca",
+        "event_index": 1
+      },
+      "leaf_sha256": "13c54aba926ec22e44fc80e577ef470a84a74535815b8c40429103e907505bc1"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:3dd3cb502b87e8b05058c92382a7aabdf0d782cf74296dbd49ce545d3d65ece6",
+        "event_hash": "489845edf211f140c9352553231907ac442e4dadcc73b9b2d81ca390fd899391",
+        "event_index": 2
+      },
+      "leaf_sha256": "67b8a23ec7249e1493e2caae398b1d05340c170e615cd17cb95e9a119cbba228"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:307492a3508c0aee24cf63c15a6e8e8e5b642c8a5ec157c8bc7d4ebdb728dfda",
+        "event_hash": "220520c17605bc0c1b56c413db95eebc9c75a901f16af25c8e8506e6abd16ffe",
+        "event_index": 3
+      },
+      "leaf_sha256": "979956f057379484aa28e97e34e758eb05d18408c66e4b7f496922284aad9a65"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:b9a49c7d733f226f000caf13866ad2aadf1e47fd33b3582e458f8171ec51a22f",
+        "event_hash": "399f2e6b192960e0b5bb9050d252ebea6289c628d468d4275703283fbdf440f8",
+        "event_index": 4
+      },
+      "leaf_sha256": "c94d50c25327f714cecfb73d30d4016c4c04295aeb2c6300555bd00ef2cb3911"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:0072026dc91d3dde34aa0595f1bad57c8ab215a9cada42b0988502dc6601df21",
+        "event_hash": "7015163ca76f91aa313eaa00abe5ae88bbce1690fa34909c81e3913962670fb7",
+        "event_index": 5
+      },
+      "leaf_sha256": "67b5cb42bdbe4aee3d62ca9c4fa29a6dbec7085b0140e05e3530752cd3546f63"
+    },
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:ded68f7eb99f0cf8f4bdcee10297f1e7ebe09b8b3856c717427743ed360b14cd",
+        "event_hash": "d6151c412b9cc23ec0b96edbde15b244072fa707e1b3623a748358095b218094",
+        "event_index": 6
+      },
+      "leaf_sha256": "89317a86abafe23d61b1c0f4a9c7da4428b2f6a02248791cfe73ece03940e50a"
+    }
+  ],
+  "peaks": [
+    "db580399a04aa3981449e8aecc850a2d922fdba22f8210f0c38adc98dc8e94f7",
+    "92cd90107b97770d67b935d3546928a86d51bb548f3f30811db5d0df931bf4a7"
+  ],
+  "root": "c5a6dd190ba55c5b78ab066a9415a9d52e736ba123a2cba0706502f076a49f37"
+}

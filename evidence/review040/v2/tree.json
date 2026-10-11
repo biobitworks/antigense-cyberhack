@@ -1,0 +1,406 @@
+{
+ "baseline_commit": "7433431",
+ "head": "d5d032a7ca958cd303118a990cc2aee8aec551cd",
+ "leaf_count": 27,
+ "leaves": [
+  {
+   "index": 0,
+   "leaf": {
+    "findings": [
+     "F3",
+     "F10",
+     "F2a"
+    ],
+    "lines": 205,
+    "path": "agent/agent011.py",
+    "read_depth": "RE_READ_DIFF_ONLY",
+    "semgrep": [],
+    "sha256": "1e1a2ecee9e73210b45e05bef0e9b6a961c12f5593fb2b6389cf35b12d227475",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "b7a75323bf1bf2b7aa773874665cfe2b10d3ccbeebe20b5c0ee2ecc7d5666e42"
+  },
+  {
+   "index": 1,
+   "leaf": {
+    "findings": [],
+    "lines": 25,
+    "path": "agent/akash019.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "72e6c769b9f2236ecb0d9f17ba72d3883119cbf0137bfef3e9bf03d07db2124b",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "5a54b19ca8a58873f9a8ab327549456ca8c4d8975b5c25a7fdb117f178b6276e"
+  },
+  {
+   "index": 2,
+   "leaf": {
+    "findings": [
+     "F7"
+    ],
+    "lines": 48,
+    "path": "agent/akash020.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "3c836d6f9e40dc67fc190c3aacea483e9c1b2f9071fc92036c7c5423c457a5c3",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "0f552901fbf7498e61d83a3d95f283550f92a3f2bfbda4c68b25fa42c8701002"
+  },
+  {
+   "index": 3,
+   "leaf": {
+    "findings": [
+     "F7",
+     "F11"
+    ],
+    "lines": 48,
+    "path": "agent/akash021.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "30150fe6a9f61ce7bb0502cb405f2c2587c118b0d9a93329e4bdb85c204ca067",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "3c74d1ea3c0ee53dea072af94deec9b101de8dd6a5e26ab5748fddfaa2c52311"
+  },
+  {
+   "index": 4,
+   "leaf": {
+    "findings": [
+     "F6"
+    ],
+    "lines": 31,
+    "path": "agent/akash_console022.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "c381671b77f59700571074c3bdeef5e9190b2d7c5728d2574b8be5da67fab495",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "f1049ef912a894b3e6562ede456a58c18c4238242c99384959f6de917b990a12"
+  },
+  {
+   "index": 5,
+   "leaf": {
+    "findings": [
+     "F7"
+    ],
+    "lines": 31,
+    "path": "agent/akash_console023.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "d3663ba0511f6bf9e5f10cd649079e6d85af7058ab597026ca6766b58471dffc",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "72f1820c52f690228b3d8718d431f79ffddf528a23c72a1c915dd61610d20fa3"
+  },
+  {
+   "index": 6,
+   "leaf": {
+    "findings": [
+     "F5",
+     "F6"
+    ],
+    "lines": 130,
+    "path": "agent/akash_gpu024.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "b4f990acd9785c9be23d6a68b7a9f3d081e2a5871c25dc1bb4a61717733ca902",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "09026fdd36b493678494fdd534524f8fc24e77a95d8b1c6db0ec1b5bb1ee36b8"
+  },
+  {
+   "index": 7,
+   "leaf": {
+    "findings": [
+     "F9"
+    ],
+    "lines": 94,
+    "path": "agent/ch015.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "62e827271a72dae5a62978ca23ad0374a61155241416e350dcc2ff3c90c0c931",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "2907ba619e4f757c62b264a3e8722a7dd381eb4532ac82e67f2270f6d42f79a2"
+  },
+  {
+   "index": 8,
+   "leaf": {
+    "findings": [
+     "F9"
+    ],
+    "lines": 122,
+    "path": "agent/ch016.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "af89f2f33202aa5041c4f190de5a23a81b8e0ec653284330ec0b66e814315cfd",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "22e398f27ec27bf476a990080470c019090cf95b58b719199745d1c9ad64f08c"
+  },
+  {
+   "index": 9,
+   "leaf": {
+    "findings": [
+     "F12"
+    ],
+    "lines": 85,
+    "path": "agent/frame_audit039.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "26ddd771d4814bb52c873537ea941778bb8ac722e893c1a72302439bc5f2c7d3",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "0b5074eb402bfc2a251f925b9f89d4473c1e40a99837864536d3903f28358613"
+  },
+  {
+   "index": 10,
+   "leaf": {
+    "findings": [
+     "F12"
+    ],
+    "lines": 99,
+    "path": "agent/frame_check035.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "9bd1a0fb70aecfb2ed6fe1258c6c41124983a4cffe41841ba6797b624593de83",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "077a5e5f5476dea2be684ebf0ada97981670de47ec73d7b8fdfc54e8fecff388"
+  },
+  {
+   "index": 11,
+   "leaf": {
+    "findings": [],
+    "lines": 17,
+    "path": "agent/frame_ocr039.swift",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "cf062ca871ea5a72b9f69f6a00ea556bba8d4d49f3cc8b14e42698e79c940efc",
+    "verdict": "OK"
+   },
+   "leaf_sha256": "16563c5f368058a5cc36d573b2b7f08b2bfd7e99062cd0518f106e6e3c533199"
+  },
+  {
+   "index": 12,
+   "leaf": {
+    "findings": [
+     "F12"
+    ],
+    "lines": 31,
+    "path": "agent/frame_successor039r1.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "959809535aaecd682d88e8673f0b3dc67c89be92246f40025b2e2c34b3904d41",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "faba147e4393b6a8ded8f6dd61a7a1e41111ce09f0683c3d762ad1817f37a1ac"
+  },
+  {
+   "index": 13,
+   "leaf": {
+    "findings": [
+     "F16"
+    ],
+    "lines": 48,
+    "path": "agent/live037.html",
+    "read_depth": "READ_PATTERNS_ONLY",
+    "semgrep": [],
+    "sha256": "b9258b6f4df3c9a6cd85c4cd14250fca7e9d83e3db44f6818c5008cabeeac29c",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "d6c8d3a43fe3d40d6d0578d15d270d1083af1af0918e4827a20faefa8c4bd549"
+  },
+  {
+   "index": 14,
+   "leaf": {
+    "findings": [
+     "F15",
+     "F16"
+    ],
+    "lines": 237,
+    "path": "agent/live037.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "9d9e88e10ca516880c4f775ab4213cef4ab9290818c78b0affe10e684bb3b0c2",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "188ba1308a24ceae8eba2a2825c5d7ea9df29b2cecb0982fd61671873eca0dfe"
+  },
+  {
+   "index": 15,
+   "leaf": {
+    "findings": [
+     "F12"
+    ],
+    "lines": 57,
+    "path": "agent/record_walkthrough034.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "0da7c762dd6b13728b8268e0b87534f1d0407f08448f40a468d8b6b73bad80c0",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "33d1868915ebb065254d014f6a9fe209ac72d2f6d2a307fd89b2221631bc298a"
+  },
+  {
+   "index": 16,
+   "leaf": {
+    "findings": [
+     "F2b"
+    ],
+    "lines": 30,
+    "path": "agent/safe_eval016.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "683e15dee14df5be3e2f4679ba731401907f9a2208ffa352e2c3e28d5f4b53cf",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "ec74087d12c4825256e80543a67e37bea55df84cf4f0e8bde40ed02914554c2a"
+  },
+  {
+   "index": 17,
+   "leaf": {
+    "findings": [
+     "F13"
+    ],
+    "lines": 47,
+    "path": "agent/telemetry012.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "55f79478f247caff4d749787e05b8ba05f83f62aa474761499db8dc767bb8939",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "7c9bd923b965de413a2570224d90368cadd6c8f94ba3fcdc4163ccbeb0512f82"
+  },
+  {
+   "index": 18,
+   "leaf": {
+    "findings": [],
+    "lines": 105,
+    "path": "agent/verify_all.py",
+    "read_depth": "READ_PARTIAL",
+    "semgrep": [],
+    "sha256": "52c8939c1856e19390d58764d5a9e5f852cbac9a506808154053bdbc655a3c90",
+    "verdict": "UNREVIEWED_REMAINDER"
+   },
+   "leaf_sha256": "470ee8e3039be7dfa00a072ca77d5f4cf3c021b68ded63d955634af4095076a8"
+  },
+  {
+   "index": 19,
+   "leaf": {
+    "findings": [],
+    "lines": 76,
+    "path": "agent/walkthrough034.py",
+    "read_depth": "SKIMMED_PATTERNS",
+    "semgrep": [],
+    "sha256": "2ebb6cc952880f25ff85ab3721a570ceaef86a01b9a13a81b89eaf3691055e52",
+    "verdict": "UNREVIEWED_REMAINDER"
+   },
+   "leaf_sha256": "7d6ed6dac9f447703d1ed119a2a09a9d5c4c0917920ab82bd85e37e749e2d577"
+  },
+  {
+   "index": 20,
+   "leaf": {
+    "findings": [],
+    "lines": 114,
+    "path": "agent/walkthrough_manifest035.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "ccfce4e476b614ecaa04bc6cef62b8ae1b2f409dac7637b1faef57e2cdcb3b77",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "10f1407a01d9b1fa6da5ae10e77738355f8f36eb5d143728605df76d39ca7750"
+  },
+  {
+   "index": 21,
+   "leaf": {
+    "findings": [],
+    "lines": 12,
+    "path": "agent/watermark039r1.swift",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "832d9bf180414fbed992846b3e615166a194041e13b703d8c82b44e4c129c4fd",
+    "verdict": "OK"
+   },
+   "leaf_sha256": "8cd2c97fd858ce37b9ab7ebfdbf48774513ea3a859e156da09271f15d8045d80"
+  },
+  {
+   "index": 22,
+   "leaf": {
+    "findings": [],
+    "lines": 5,
+    "path": "scripts/demo.sh",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "a1c9b1e0c67de82b2d94bf856be197c82548198dac3bafdf3ad5f73c6621dea8",
+    "verdict": "OK"
+   },
+   "leaf_sha256": "2338d4586d1ba5d8d2c818f061681388cf0a10b0f02081af202e3f21611e963c"
+  },
+  {
+   "index": 23,
+   "leaf": {
+    "findings": [
+     "F8"
+    ],
+    "lines": 6,
+    "path": "scripts/setup.sh",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "4788895b83c13ac105cea11baec6d65c9d3682479b5b545ac8ce826d1cbb3975",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "8a7e8d30f384884b220dbc34716eba76407cf74bef1558dd0b948dfceea86bb0"
+  },
+  {
+   "index": 24,
+   "leaf": {
+    "findings": [
+     "F2",
+     "F4"
+    ],
+    "lines": 100,
+    "path": "src/cascade.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "57aa14b840129a3ac46dad29bd86214b1e3c94fd7d54f429b79f4452daf41cb9"
+  },
+  {
+   "index": 25,
+   "leaf": {
+    "findings": [
+     "F1"
+    ],
+    "lines": 211,
+    "path": "src/custody.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391",
+    "verdict": "FINDINGS"
+   },
+   "leaf_sha256": "8e8d58625efacf33d596fe2872b92e65d11e1f012409bf034885f7ca53f2ad30"
+  },
+  {
+   "index": 26,
+   "leaf": {
+    "findings": [
+     "F14"
+    ],
+    "lines": 50,
+    "path": "src/server.py",
+    "read_depth": "READ_FULL",
+    "semgrep": [],
+    "sha256": "a723d2fc18a047f7ba730d81b588ea4c32baa9eb281d72ba4d50f3eceacb166d",
+    "verdict": "OK_WITH_NOTES"
+   },
+   "leaf_sha256": "b60f057ecb366e5f4b5e31d2030aa9ea04e58da7cec97347b3b8b90c0d333585"
+  }
+ ],
+ "prior_root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57",
+ "root": "c7f1de0241bbf5a895f282a3f2ca298a9e259921b76f9f3bb1af1bd801eafb15"
+}

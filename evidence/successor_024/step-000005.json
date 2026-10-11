@@ -1,0 +1,117 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.lease_created": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.lease_created": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a\"}",
+        "index": 0,
+        "leaf_sha256": "d494892f4ab4601498c6ba1818165db3883a6744f9c6492146c5a430f8919dbd"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:3295639c5ef5ec47960e3e69206edd71475b6d314fcf47d73085d49ed309143f\"}",
+        "index": 1,
+        "leaf_sha256": "adf08cccae7ab2f8686be4723df0542c0c57b2fe26476ce797f9e989b9412342"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"457df0fa7342a55910deba88556f6d7752eb7513e0031a6b3309c4ed026f0d6a\"}",
+        "index": 2,
+        "leaf_sha256": "e980d20254c9e0a55dba8fa73ef7fc8b367b9a79fa1d202697155c3c319adc40"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"lease_created\":true},\"details\":{\"gseq\":1,\"ms\":6549.1,\"oseq\":1,\"provider\":\"akash16yr3wxt97ae045a06kr3ycde9srcgpg8syjxxm\",\"status\":200},\"name\":\"gpu_lease\",\"occurrence\":{\"run_id\":\"run011-0c6c92c46a0c\",\"seq\":4,\"ts\":\"2026-10-09T19:31:51+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "4398c5cfd5029fa8049748ed95b2847f892957f36d79a5185c3f3fcee241645a"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.lease_created\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.lease_created\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "c59181a4abe25080b12211d55a56086d5a608639b133dbc428701fcc93d3ebc7"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":4,\"quarantined\":0,\"rejected\":0,\"steps\":4},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "67933f1875294e9c01bcf8c06578ed6b0af769915eae82e4480cef363279632d"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "78108ab55780a31e9a9f801e8f27d2196842cefba7fe6973df40302076b34fdf"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 4,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 4
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:78108ab55780a31e9a9f801e8f27d2196842cefba7fe6973df40302076b34fdf",
+  "observation": {
+    "checks": {
+      "lease_created": true
+    },
+    "details": {
+      "gseq": 1,
+      "ms": 6549.1,
+      "oseq": 1,
+      "provider": "akash16yr3wxt97ae045a06kr3ycde9srcgpg8syjxxm",
+      "status": 200
+    },
+    "name": "gpu_lease",
+    "occurrence": {
+      "run_id": "run011-0c6c92c46a0c",
+      "seq": 4,
+      "ts": "2026-10-09T19:31:51+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:3295639c5ef5ec47960e3e69206edd71475b6d314fcf47d73085d49ed309143f",
+  "previous_mmr_root": "457df0fa7342a55910deba88556f6d7752eb7513e0031a6b3309c4ed026f0d6a",
+  "project_root": "e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

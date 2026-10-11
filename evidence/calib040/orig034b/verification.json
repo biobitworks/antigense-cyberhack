@@ -1,0 +1,36 @@
+{
+ "claims": {
+  "full_frame_semantics": "NOT_TESTED",
+  "live_calculation_attestation": "NOT_TESTED (recorder log only)",
+  "narration_alignment": "SEE align040",
+  "signature": "NOT_SIGNED"
+ },
+ "event_count": 0,
+ "event_mmr_root": null,
+ "event_prefix_mismatches": [],
+ "frame_count": 4265,
+ "frame_framemd5_equals_ledger": true,
+ "frame_mmr_peaks": [
+  "646091fecd9419506562fde9dcea0f550c6d4a4f586ec5abc174ed866c3d6527",
+  "57d0402b450bdfbcfd42d5288d5647a352a7f9c2626793e7cf87fed92340f063",
+  "40c683814dd0cb770b3908e2731c27431af411341d35acfc6b66f894ce053be3",
+  "42df551468dd56d79645337a12a728ac5de2082b0f07c7c95bf405e2ab78323a",
+  "c2465ed542a12941d5aa2a04131c915a6f6e76869aa64e570db59687de71d452"
+ ],
+ "frame_mmr_root": "db5d4846081afab4ec27f05a1e9dc8fb7c094c5a951c4549531466285bbd784e",
+ "frame_prefix_mismatches": [],
+ "frame_prefixes_checked": 53,
+ "label": "orig034b",
+ "sample_frames": [],
+ "scene_manifest_observed_sha256": "29915ed90d4f139f4f5d4b15dc11cd2c9135e9421282dc4eec8b62258b094e03",
+ "tamper_detection": {
+  "append_record": true,
+  "delete_record": true,
+  "flip_one_frame_hash": true,
+  "flip_one_video_byte_detected_by_file_hash": true,
+  "flip_one_video_byte_detected_by_frame_hashes": false,
+  "relabel_scene": true,
+  "swap_two_records": true
+ },
+ "video_sha256": "ab69925bd19105f0876e06c79de48009bc5dd525a368081f683ce60217d0231c"
+}

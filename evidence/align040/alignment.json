@@ -1,0 +1,1086 @@
+{
+ "034b": {
+  "narration_seconds": 101.22,
+  "seconds_on_non_intended_scene": 8.7,
+  "fraction": 0.086,
+  "segments_with_gt1s_off": [
+   {
+    "start": 22.72,
+    "end": 24.26,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 1.55,
+    "text": "in an independent execution lane."
+   },
+   {
+    "start": 47.96,
+    "end": 49.74,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 1.8,
+    "text": "while preserving healthy authorized work."
+   },
+   {
+    "start": 77.12,
+    "end": 80.22,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 3.1,
+    "text": "The measured re-back query took about 161 milliseconds."
+   }
+  ],
+  "all": [
+   {
+    "start": 3.18,
+    "end": 5.24,
+    "intended_scenes": [
+     1
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Imagine a worker in your AI workflow"
+   },
+   {
+    "start": 5.24,
+    "end": 6.76,
+    "intended_scenes": [
+     1
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "returns a corrupted result."
+   },
+   {
+    "start": 8.16,
+    "end": 10.6,
+    "intended_scenes": [
+     1
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The important question is, what happens next?"
+   },
+   {
+    "start": 11.82,
+    "end": 13.24,
+    "intended_scenes": [
+     1,
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Which decision change, which boundary"
+   },
+   {
+    "start": 13.24,
+    "end": 15.2,
+    "intended_scenes": [
+     1,
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "was crossed and can useful work recover?"
+   },
+   {
+    "start": 16.12,
+    "end": 17.96,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Edigence Daisy starts with a device"
+   },
+   {
+    "start": 17.96,
+    "end": 19.4,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "and keeps that incident inspected."
+   },
+   {
+    "start": 20.46,
+    "end": 22.72,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 0.55,
+    "text": "Chat GBT is our worker trader with cloud working"
+   },
+   {
+    "start": 22.72,
+    "end": 24.26,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 1.55,
+    "text": "in an independent execution lane."
+   },
+   {
+    "start": 25.16,
+    "end": 26.68,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "This demonstration injects the software"
+   },
+   {
+    "start": 26.68,
+    "end": 29.44,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "fault and is not absurd because it will hardware failure."
+   },
+   {
+    "start": 30.38,
+    "end": 32.62,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The integrity check detects changed bytes,"
+   },
+   {
+    "start": 33.36,
+    "end": 36.66,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "with a teaching, a picture reveals an unsafe fallback."
+   },
+   {
+    "start": 37.92,
+    "end": 40.74,
+    "intended_scenes": [
+     3,
+     4
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The old worker health allows an unauthorized request."
+   },
+   {
+    "start": 42.4,
+    "end": 44.82,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Some grep identifies that fallback."
+   },
+   {
+    "start": 45.34,
+    "end": 47.34,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Our pen to repair rejects unauthorized requests"
+   },
+   {
+    "start": 47.96,
+    "end": 49.74,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 1.8,
+    "text": "while preserving healthy authorized work."
+   },
+   {
+    "start": 50.58,
+    "end": 52.92,
+    "intended_scenes": [
+     4,
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "AI advice has no authority to apply a patch."
+   },
+   {
+    "start": 53.76,
+    "end": 55.62,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Each step has a custody address."
+   },
+   {
+    "start": 56.02,
+    "end": 56.9,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "As the replay advances,"
+   },
+   {
+    "start": 57.72,
+    "end": 59.02,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "you can inspect the recorded output,"
+   },
+   {
+    "start": 59.32,
+    "end": 60.4,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "checks, and markable commitment."
+   },
+   {
+    "start": 61.36,
+    "end": 63.62,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The browser independently recubes the proof."
+   },
+   {
+    "start": 64.34,
+    "end": 65.5,
+    "intended_scenes": [
+     5,
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Integrity preserves the record."
+   },
+   {
+    "start": 65.7,
+    "end": 67.16,
+    "intended_scenes": [
+     5,
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "It does not prove that everything is true."
+   },
+   {
+    "start": 68.24,
+    "end": 70.84,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Click how stores driven 11 checkpoints"
+   },
+   {
+    "start": 71.48,
+    "end": 72.58,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "from the same incident."
+   },
+   {
+    "start": 73.1,
+    "end": 74.98,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "We replayed the insertion and read back"
+   },
+   {
+    "start": 74.98,
+    "end": 76.36,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "exactly the same records."
+   },
+   {
+    "start": 77.12,
+    "end": 80.22,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 3.1,
+    "text": "The measured re-back query took about 161 milliseconds."
+   },
+   {
+    "start": 80.94,
+    "end": 83.14,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "At cost, now runs the analysis workload."
+   },
+   {
+    "start": 84.16,
+    "end": 85.98,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Our agent created a GPU deployment,"
+   },
+   {
+    "start": 86.52,
+    "end": 88.0,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "selected a lease and loaded Quinn."
+   },
+   {
+    "start": 88.72,
+    "end": 91.06,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "It returns structured advice about the unsafe fallback"
+   },
+   {
+    "start": 91.06,
+    "end": 92.62,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "in about three and a half seconds."
+   },
+   {
+    "start": 93.88,
+    "end": 95.52,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The model's advice remains untrested"
+   },
+   {
+    "start": 95.52,
+    "end": 96.62,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.95,
+    "text": "and cannot authorize a patch."
+   },
+   {
+    "start": 97.62,
+    "end": 99.22,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "This is a separate custody branch."
+   },
+   {
+    "start": 99.64,
+    "end": 100.5,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "All 11 leaves verify,"
+   },
+   {
+    "start": 100.92,
+    "end": 101.96,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "including the closed request,"
+   },
+   {
+    "start": 102.58,
+    "end": 103.44,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "which returns success."
+   },
+   {
+    "start": 103.94,
+    "end": 105.78,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The server reported GPU memory use,"
+   },
+   {
+    "start": 106.2,
+    "end": 107.74,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "but we do not claim hardware legislation."
+   },
+   {
+    "start": 108.62,
+    "end": 111.46,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "A verified final closed state or measured cost savings."
+   },
+   {
+    "start": 112.2,
+    "end": 113.6,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Earlier failures remain in the record."
+   },
+   {
+    "start": 114.46,
+    "end": 116.58,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.75,
+    "text": "On Magic Pro, OS polling is live."
+   },
+   {
+    "start": 117.24,
+    "end": 119.16,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "On the public website, this is a recorded replay."
+   },
+   {
+    "start": 120.08,
+    "end": 121.8,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Lower troubleshooting and inference costs."
+   },
+   {
+    "start": 122.36,
+    "end": 123.62,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Our goals, we still need to measure."
+   },
+   {
+    "start": 124.48,
+    "end": 126.68,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Credentials and proprietary internal estate private."
+   },
+   {
+    "start": 127.18,
+    "end": 129.78,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Original explanatory content carries our attribution,"
+   },
+   {
+    "start": 130.58,
+    "end": 132.84,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "non-commercial, and now no derivatives notice."
+   },
+   {
+    "start": 133.7,
+    "end": 135.24,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Antigis makes the path from error"
+   },
+   {
+    "start": 135.24,
+    "end": 136.52,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "to recovery easier to inspect,"
+   },
+   {
+    "start": 136.52,
+    "end": 139.0,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "including where the system still needs work."
+   }
+  ]
+ },
+ "040": {
+  "narration_seconds": 101.22,
+  "seconds_on_non_intended_scene": 7.45,
+  "fraction": 0.0736,
+  "segments_with_gt1s_off": [
+   {
+    "start": 22.72,
+    "end": 24.26,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 1.25,
+    "text": "in an independent execution lane."
+   },
+   {
+    "start": 47.96,
+    "end": 49.74,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 1.25,
+    "text": "while preserving healthy authorized work."
+   },
+   {
+    "start": 77.12,
+    "end": 80.22,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 2.4,
+    "text": "The measured re-back query took about 161 milliseconds."
+   },
+   {
+    "start": 114.46,
+    "end": 116.58,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 1.8,
+    "text": "On Magic Pro, OS polling is live."
+   }
+  ],
+  "all": [
+   {
+    "start": 3.18,
+    "end": 5.24,
+    "intended_scenes": [
+     1
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Imagine a worker in your AI workflow"
+   },
+   {
+    "start": 5.24,
+    "end": 6.76,
+    "intended_scenes": [
+     1
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "returns a corrupted result."
+   },
+   {
+    "start": 8.16,
+    "end": 10.6,
+    "intended_scenes": [
+     1
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The important question is, what happens next?"
+   },
+   {
+    "start": 11.82,
+    "end": 13.24,
+    "intended_scenes": [
+     1,
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Which decision change, which boundary"
+   },
+   {
+    "start": 13.24,
+    "end": 15.2,
+    "intended_scenes": [
+     1,
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "was crossed and can useful work recover?"
+   },
+   {
+    "start": 16.12,
+    "end": 17.96,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Edigence Daisy starts with a device"
+   },
+   {
+    "start": 17.96,
+    "end": 19.4,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "and keeps that incident inspected."
+   },
+   {
+    "start": 20.46,
+    "end": 22.72,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Chat GBT is our worker trader with cloud working"
+   },
+   {
+    "start": 22.72,
+    "end": 24.26,
+    "intended_scenes": [
+     2
+    ],
+    "seconds_off_intended_scene": 1.25,
+    "text": "in an independent execution lane."
+   },
+   {
+    "start": 25.16,
+    "end": 26.68,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "This demonstration injects the software"
+   },
+   {
+    "start": 26.68,
+    "end": 29.44,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "fault and is not absurd because it will hardware failure."
+   },
+   {
+    "start": 30.38,
+    "end": 32.62,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The integrity check detects changed bytes,"
+   },
+   {
+    "start": 33.36,
+    "end": 36.66,
+    "intended_scenes": [
+     3
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "with a teaching, a picture reveals an unsafe fallback."
+   },
+   {
+    "start": 37.92,
+    "end": 40.74,
+    "intended_scenes": [
+     3,
+     4
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The old worker health allows an unauthorized request."
+   },
+   {
+    "start": 42.4,
+    "end": 44.82,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Some grep identifies that fallback."
+   },
+   {
+    "start": 45.34,
+    "end": 47.34,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Our pen to repair rejects unauthorized requests"
+   },
+   {
+    "start": 47.96,
+    "end": 49.74,
+    "intended_scenes": [
+     4
+    ],
+    "seconds_off_intended_scene": 1.25,
+    "text": "while preserving healthy authorized work."
+   },
+   {
+    "start": 50.58,
+    "end": 52.92,
+    "intended_scenes": [
+     4,
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "AI advice has no authority to apply a patch."
+   },
+   {
+    "start": 53.76,
+    "end": 55.62,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Each step has a custody address."
+   },
+   {
+    "start": 56.02,
+    "end": 56.9,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "As the replay advances,"
+   },
+   {
+    "start": 57.72,
+    "end": 59.02,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "you can inspect the recorded output,"
+   },
+   {
+    "start": 59.32,
+    "end": 60.4,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "checks, and markable commitment."
+   },
+   {
+    "start": 61.36,
+    "end": 63.62,
+    "intended_scenes": [
+     5
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The browser independently recubes the proof."
+   },
+   {
+    "start": 64.34,
+    "end": 65.5,
+    "intended_scenes": [
+     5,
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Integrity preserves the record."
+   },
+   {
+    "start": 65.7,
+    "end": 67.16,
+    "intended_scenes": [
+     5,
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "It does not prove that everything is true."
+   },
+   {
+    "start": 68.24,
+    "end": 70.84,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Click how stores driven 11 checkpoints"
+   },
+   {
+    "start": 71.48,
+    "end": 72.58,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "from the same incident."
+   },
+   {
+    "start": 73.1,
+    "end": 74.98,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "We replayed the insertion and read back"
+   },
+   {
+    "start": 74.98,
+    "end": 76.36,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "exactly the same records."
+   },
+   {
+    "start": 77.12,
+    "end": 80.22,
+    "intended_scenes": [
+     6
+    ],
+    "seconds_off_intended_scene": 2.4,
+    "text": "The measured re-back query took about 161 milliseconds."
+   },
+   {
+    "start": 80.94,
+    "end": 83.14,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "At cost, now runs the analysis workload."
+   },
+   {
+    "start": 84.16,
+    "end": 85.98,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Our agent created a GPU deployment,"
+   },
+   {
+    "start": 86.52,
+    "end": 88.0,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "selected a lease and loaded Quinn."
+   },
+   {
+    "start": 88.72,
+    "end": 91.06,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "It returns structured advice about the unsafe fallback"
+   },
+   {
+    "start": 91.06,
+    "end": 92.62,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "in about three and a half seconds."
+   },
+   {
+    "start": 93.88,
+    "end": 95.52,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The model's advice remains untrested"
+   },
+   {
+    "start": 95.52,
+    "end": 96.62,
+    "intended_scenes": [
+     7
+    ],
+    "seconds_off_intended_scene": 0.1,
+    "text": "and cannot authorize a patch."
+   },
+   {
+    "start": 97.62,
+    "end": 99.22,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "This is a separate custody branch."
+   },
+   {
+    "start": 99.64,
+    "end": 100.5,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "All 11 leaves verify,"
+   },
+   {
+    "start": 100.92,
+    "end": 101.96,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "including the closed request,"
+   },
+   {
+    "start": 102.58,
+    "end": 103.44,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "which returns success."
+   },
+   {
+    "start": 103.94,
+    "end": 105.78,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "The server reported GPU memory use,"
+   },
+   {
+    "start": 106.2,
+    "end": 107.74,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "but we do not claim hardware legislation."
+   },
+   {
+    "start": 108.62,
+    "end": 111.46,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "A verified final closed state or measured cost savings."
+   },
+   {
+    "start": 112.2,
+    "end": 113.6,
+    "intended_scenes": [
+     8
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Earlier failures remain in the record."
+   },
+   {
+    "start": 114.46,
+    "end": 116.58,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 1.8,
+    "text": "On Magic Pro, OS polling is live."
+   },
+   {
+    "start": 117.24,
+    "end": 119.16,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "On the public website, this is a recorded replay."
+   },
+   {
+    "start": 120.08,
+    "end": 121.8,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Lower troubleshooting and inference costs."
+   },
+   {
+    "start": 122.36,
+    "end": 123.62,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Our goals, we still need to measure."
+   },
+   {
+    "start": 124.48,
+    "end": 126.68,
+    "intended_scenes": [
+     9
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Credentials and proprietary internal estate private."
+   },
+   {
+    "start": 127.18,
+    "end": 129.78,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.65,
+    "text": "Original explanatory content carries our attribution,"
+   },
+   {
+    "start": 130.58,
+    "end": 132.84,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "non-commercial, and now no derivatives notice."
+   },
+   {
+    "start": 133.7,
+    "end": 135.24,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "Antigis makes the path from error"
+   },
+   {
+    "start": 135.24,
+    "end": 136.52,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "to recovery easier to inspect,"
+   },
+   {
+    "start": 136.52,
+    "end": 139.0,
+    "intended_scenes": [
+     10
+    ],
+    "seconds_off_intended_scene": 0.0,
+    "text": "including where the system still needs work."
+   }
+  ]
+ },
+ "method": "Segment timing from whisper base.en on the ORIGINAL narration (hash-matched); intended scene per segment is a DECLARED manual mapping (ASR text is noisy); on-screen scene from OCR-confirmed visual cuts. Not a semantic verification."
+}

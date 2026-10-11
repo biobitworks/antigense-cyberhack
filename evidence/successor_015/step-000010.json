@@ -1,0 +1,138 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.returned_rows": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.returned_rows": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"fb28cd54e26db772ae232f8579b53d139c311c7406b8c8606d9790f28849a416\"}",
+        "index": 0,
+        "leaf_sha256": "af309a57946a45af81db0c477e4b209188ecad14a80af83337203feda986a104"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:9228e7ec91eea348e4175cdc10339a8dddb84f8d1bffae9435144293b4d2cf51\"}",
+        "index": 1,
+        "leaf_sha256": "7e3e58a1d82d8fdbfe028061dea62eb175e2cfc292d1cab407f49c602069b3aa"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"cd4d434be1284db696a31def0479847d6af35ef36a96730252550484218ed6d8\"}",
+        "index": 2,
+        "leaf_sha256": "e479f744ca6f31171dec8cbb59647bb03bf235935a2aebb522b3f812dde577ea"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"returned_rows\":true},\"details\":{\"http\":200,\"ms\":132.4,\"query_id\":\"ag015-1441adb654484022\",\"result\":[{\"max_ms\":161.9,\"min_ms\":94.9,\"n\":3,\"name\":\"monitor_\"},{\"max_ms\":178.5,\"min_ms\":66.4,\"n\":3,\"name\":\"monitor_data_run.json\"},{\"max_ms\":138.7,\"min_ms\":109.3,\"n\":3,\"name\":\"monitor_demo.mp4\"}],\"result_sha256\":\"397575715e90a8105cdcea27941f15e09fd75bbaecda68322d75b17cc954f383\",\"rows\":3,\"sql\":\"SELECT name,count() AS n,min(elapsed_ms) AS min_ms,max(elapsed_ms) AS max_ms FROM antigense_events_015 FINAL WHERE name LIKE 'monitor_%' AND elapsed_ms IS NOT NULL GROUP BY name ORDER BY name\"},\"name\":\"ch015_query_monitor_latency\",\"occurrence\":{\"run_id\":\"run011-277f193a80b6\",\"seq\":9,\"ts\":\"2026-10-09T18:47:49+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "186396b194517b161d3272548cba642f4a9e3d5bd8d3c69a67872cd5850d3daf"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.returned_rows\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.returned_rows\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "d464c532b2ca2f55c1e067ffe329ef424ab20d721dcdc3920eecee664e1cfed2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":9,\"quarantined\":0,\"rejected\":0,\"steps\":9},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "288e98c6ca6e595f5429de930211e074897ebb7d6765abbaaa4d7c93bbd1a069"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "4f070815b484115046556ed035a3799faa82b1deeb845b4e432016e0d041ff8a"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 9,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 9
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:4f070815b484115046556ed035a3799faa82b1deeb845b4e432016e0d041ff8a",
+  "observation": {
+    "checks": {
+      "returned_rows": true
+    },
+    "details": {
+      "http": 200,
+      "ms": 132.4,
+      "query_id": "ag015-1441adb654484022",
+      "result": [
+        {
+          "max_ms": 161.9,
+          "min_ms": 94.9,
+          "n": 3,
+          "name": "monitor_"
+        },
+        {
+          "max_ms": 178.5,
+          "min_ms": 66.4,
+          "n": 3,
+          "name": "monitor_data_run.json"
+        },
+        {
+          "max_ms": 138.7,
+          "min_ms": 109.3,
+          "n": 3,
+          "name": "monitor_demo.mp4"
+        }
+      ],
+      "result_sha256": "397575715e90a8105cdcea27941f15e09fd75bbaecda68322d75b17cc954f383",
+      "rows": 3,
+      "sql": "SELECT name,count() AS n,min(elapsed_ms) AS min_ms,max(elapsed_ms) AS max_ms FROM antigense_events_015 FINAL WHERE name LIKE 'monitor_%' AND elapsed_ms IS NOT NULL GROUP BY name ORDER BY name"
+    },
+    "name": "ch015_query_monitor_latency",
+    "occurrence": {
+      "run_id": "run011-277f193a80b6",
+      "seq": 9,
+      "ts": "2026-10-09T18:47:49+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:9228e7ec91eea348e4175cdc10339a8dddb84f8d1bffae9435144293b4d2cf51",
+  "previous_mmr_root": "cd4d434be1284db696a31def0479847d6af35ef36a96730252550484218ed6d8",
+  "project_root": "fb28cd54e26db772ae232f8579b53d139c311c7406b8c8606d9790f28849a416",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

@@ -1,0 +1,415 @@
+{
+  "ID": "fco:sha256:07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845",
+  "SIGNATURE": "NOT_SIGNED",
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 32,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"initial_classification\",\"value\":{\"anticube\":{\"identity\":\"UNKNOWN\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"artifact_hashes_calculated\":true,\"edge_endpoints_exist\":true}}}",
+        "index": 0,
+        "leaf_sha256": "8388adc6b9462d7e32dd6dd3448c6532c50e344792d76f08d4abdd364ee54ba6"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"g_star_reference\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":0,\"quarantined\":0,\"rejected\":0,\"steps\":0},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 1,
+        "leaf_sha256": "a88e52050b21249f9cd731006937fb69d437ac72f4cb03756ca2ea9210e2d186"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"graph_contract\",\"value\":{\"G_star\":\"unvalidated adapted diagnostic; delta-G* likewise\",\"PARENT\":\"009R2\",\"human_identity\":\"UNVERIFIED\",\"inherits_unchanged\":\"CUSTODY_CONTRACT_008.json merkle, mmr, classification and diagnostic definitions; src/custody.py functions reused without modification\",\"predecessor\":{\"leaf_count\":12,\"mmr_root\":\"26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1\",\"project_root\":\"fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6\",\"relationship\":\"SUCCESSOR; historical roots and evidence/final_custody not modified; 010/011 receipt chains are separate and NOT admitted to this MMR\"},\"schema\":\"cyberhack.custody.contract.v011\",\"scope\":\"Bounded manual agent run 011: public-MVP monitor, local Semgrep, sponsor probes, sanitized status publication + readback. Not hardware, not whole repository, not truth/safety.\",\"signatures\":\"NOT_SIGNED\",\"source_vs_occurrence\":\"observation.source = bytes identity (sha256, blob path); observation.occurrence = run id, sequence, UTC timestamp, URL/context\",\"sponsor_ceilings\":{\"Akash\":\"Managed AkashML inference only if actually called; no GPU lease, attestation, confidentiality or private deployment claim\",\"Pi\":\"Only an actual Pi Security job/report counts; packets, human gate and local models do not\",\"Semgrep\":\"Local CE scan of a teaching fixture with one custom rule; zero findings means this scan found none\"},\"step_vocabulary\":\"observation.state in custody.derive list; blocked sponsor operations use NOT_TESTED (QUARANTINED); negative tests that behaved as expected use OBSERVED with true/false checks\"}}",
+        "index": 2,
+        "leaf_sha256": "e084dc122e2ba76c48b8fe92b274028575abe534cc6efac477eaa54b54330118"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"project:antigense-011\",\"scope\":\"Antigense 011 agent run; successor of 009R2; NOT hardware or portfolio\",\"state\":\"PROPOSED\",\"type\":\"Project\"}}",
+        "index": 3,
+        "leaf_sha256": "e042c84f4c36d498a013cf2fc8bd08a8c7420f4ade214f3b9931d47226a471bb"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"id\":\"group:governed\",\"type\":\"Group\"}}",
+        "index": 4,
+        "leaf_sha256": "1dfadb30fe6c861d5dc5044aafa0925ddeb71a2de2701ee6c7c289ec79021e83"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":20334,\"id\":\"artifact:agent/agent011.py\",\"relative_path\":\"agent/agent011.py\",\"sha256\":\"ca75ffd1057473d6916b65b530306cbe8b7a19f3e11412f60ff79a9561e90127\",\"type\":\"Artifact\"}}",
+        "index": 5,
+        "leaf_sha256": "4791e6edcb506c855ad7d615606600588ff1946e70b609d69146d825e787a812"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":1667,\"id\":\"artifact:CUSTODY_CONTRACT_011.json\",\"relative_path\":\"CUSTODY_CONTRACT_011.json\",\"sha256\":\"4016ed5e8641616b7a7919f35f8028836da8d509bc2334178fb3ca84540e45a7\",\"type\":\"Artifact\"}}",
+        "index": 6,
+        "leaf_sha256": "2dea44e53e34498745769d93fe45cebfcf7b3e916a155c698be43c52f4edb14a"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":3059,\"id\":\"artifact:CUSTODY_CONTRACT_008.json\",\"relative_path\":\"CUSTODY_CONTRACT_008.json\",\"sha256\":\"5c80807838112d660a69d9845dcac9fab68203fb3804326d4e2c263adadbea19\",\"type\":\"Artifact\"}}",
+        "index": 7,
+        "leaf_sha256": "77b2adb8c7798f8903b12852cebd18062cbcff42812ecd06cc4e510e439c539c"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":919,\"id\":\"artifact:RELEASE_009.json\",\"relative_path\":\"RELEASE_009.json\",\"sha256\":\"225af7929a41937606efec53dbdc6a7f323e488e6ca123cc4b5a8b24426dd00e\",\"type\":\"Artifact\"}}",
+        "index": 8,
+        "leaf_sha256": "c1b5376ad943b3c6495848552b43f8294b3a58b8fd8835b714ea98244fbf29d7"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":15492,\"id\":\"artifact:src/custody.py\",\"relative_path\":\"src/custody.py\",\"sha256\":\"f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391\",\"type\":\"Artifact\"}}",
+        "index": 9,
+        "leaf_sha256": "94c9adb48efa2dc9e8ed7b66537d126eec31264dfaea19c61b2f33b4a66aa401"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":10826,\"id\":\"artifact:src/cascade.py\",\"relative_path\":\"src/cascade.py\",\"sha256\":\"9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27\",\"type\":\"Artifact\"}}",
+        "index": 10,
+        "leaf_sha256": "c711a3aeccb2c03198692acbd84ab345793205c4d2f0758503ac71b339349716"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":187,\"id\":\"artifact:fixtures/before.py\",\"relative_path\":\"fixtures/before.py\",\"sha256\":\"65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3\",\"type\":\"Artifact\"}}",
+        "index": 11,
+        "leaf_sha256": "37baced076ec3d7721adeff7305a14f62446a05feb3ad81ced76d0cf3b7ab333"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":127,\"id\":\"artifact:fixtures/after.py\",\"relative_path\":\"fixtures/after.py\",\"sha256\":\"1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942\",\"type\":\"Artifact\"}}",
+        "index": 12,
+        "leaf_sha256": "2d81e2616fde6144b77663a76f3df609afdbd44d0dc5e2343fa1f21a399bf411"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":370,\"id\":\"artifact:rules/fallback.yaml\",\"relative_path\":\"rules/fallback.yaml\",\"sha256\":\"d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0\",\"type\":\"Artifact\"}}",
+        "index": 13,
+        "leaf_sha256": "c538f6a1220a2288d363bbddbb3b9a3e37c26c46dc5fd563794c4dc6c963163b"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":992,\"id\":\"artifact:docs/ONBOARDING_REQUESTS_011.md\",\"relative_path\":\"docs/ONBOARDING_REQUESTS_011.md\",\"sha256\":\"94bb3bb96f72c72b2969675d968c559becc7432a026301256ce4e5001c15df49\",\"type\":\"Artifact\"}}",
+        "index": 14,
+        "leaf_sha256": "cc933d97e8e6de363f33662e621d181c2abc845ba4b95f7755dc46a34c6cb36f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":633,\"id\":\"artifact:vercel.json\",\"relative_path\":\"vercel.json\",\"sha256\":\"ca32b06bdd5830cd03465feda4bc31a19ec1ddad62cda07944b06026fe56911c\",\"type\":\"Artifact\"}}",
+        "index": 15,
+        "leaf_sha256": "34411bec151458edffbaf935aae0184574997f3c6dca7f47ca6e2badcd1d2f3f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":4389,\"id\":\"artifact:agent/akash021.py\",\"relative_path\":\"agent/akash021.py\",\"sha256\":\"30150fe6a9f61ce7bb0502cb405f2c2587c118b0d9a93329e4bdb85c204ca067\",\"type\":\"Artifact\"}}",
+        "index": 16,
+        "leaf_sha256": "15339f0af149c2e1eda5b3d266e1c77cdca4f546924bdbc8243e0d173c457a7f"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"node\",\"value\":{\"bytes\":722,\"id\":\"artifact:docs/ADDENDUM_020.md\",\"relative_path\":\"docs/ADDENDUM_020.md\",\"sha256\":\"40f22132f349185b1fd525a34d66a1bba501ab4d7020abf1b61d04692f11cdb0\",\"type\":\"Artifact\"}}",
+        "index": 17,
+        "leaf_sha256": "209cff18d7ab4c096b8983ca4cf1bb7e5fe4ba84db46114df182cd895035cbab"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"project:antigense-011\",\"target\":\"group:governed\"}}",
+        "index": 18,
+        "leaf_sha256": "0e43eeedc21f0959296e77cbb5d59578d10c1dcffc88c50c2fc8c6e4685ddcd6"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:agent/agent011.py\"}}",
+        "index": 19,
+        "leaf_sha256": "6ec6b718130b4b7a81c5015e635034dbf0ff4c8bda89b788ebfdf501b2af92df"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:CUSTODY_CONTRACT_011.json\"}}",
+        "index": 20,
+        "leaf_sha256": "0b0b021e2c3eeb0e42ee00ad22c0bb52665c8e5228d31ed8bc7dd9d6783fec9e"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:CUSTODY_CONTRACT_008.json\"}}",
+        "index": 21,
+        "leaf_sha256": "0b1342f9a8d35a5f07f0275ef4c8176d6bde5b627ce24455b3cb69468dbec6c2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:RELEASE_009.json\"}}",
+        "index": 22,
+        "leaf_sha256": "78c72baf1f7b9efea8de0cdb5879f96c2287b40762bdb65a7f9d56fff56bb7a8"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:src/custody.py\"}}",
+        "index": 23,
+        "leaf_sha256": "206f4f0a63abb9ae1107ef307bc5bc5aa24039e6c37c2d7adf63e0cfc0c7b0ce"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:src/cascade.py\"}}",
+        "index": 24,
+        "leaf_sha256": "0670fd975e2f03d70f97f5f752b904bcaad3d31630b8cc6869d0f3f59cb1e7a0"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:fixtures/before.py\"}}",
+        "index": 25,
+        "leaf_sha256": "4677d435a08baba23e0316b85c524d6379b9350105ea984f5c1e5d227c4f9429"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:fixtures/after.py\"}}",
+        "index": 26,
+        "leaf_sha256": "03daef818aaf7031d87e13f205083999e4874f2023af2214b45d1f379105f023"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:rules/fallback.yaml\"}}",
+        "index": 27,
+        "leaf_sha256": "70e71bcff82df42874a187f53d4d2c618c42d1248a766ed7c057412ed1528517"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:docs/ONBOARDING_REQUESTS_011.md\"}}",
+        "index": 28,
+        "leaf_sha256": "a703c8628b21e63c56081ff44d57b65fb427e00fd11d31530b6a2bf05d7df7cd"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:vercel.json\"}}",
+        "index": 29,
+        "leaf_sha256": "a8e808cfd47fcc892f39f38ec87cb5b19d1c70ee75663cf5b431a77ceb974fc4"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:agent/akash021.py\"}}",
+        "index": 30,
+        "leaf_sha256": "8f8a6624caa2fe28b6ab6abb2dc3251f2436476a6af8dd3ddf0e50ca0f3568aa"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"edge\",\"value\":{\"predicate\":\"CONTAINS\",\"source\":\"group:governed\",\"target\":\"artifact:docs/ADDENDUM_020.md\"}}",
+        "index": 31,
+        "leaf_sha256": "e1639781219d3615b03b707432cf9705832700843ad613e278ed98a805c18fd7"
+      }
+    ],
+    "root": "07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845"
+  },
+  "g_star_reference": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 0,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 0
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "graph": {
+    "PARENT": "009R2",
+    "contract": {
+      "G_star": "unvalidated adapted diagnostic; delta-G* likewise",
+      "PARENT": "009R2",
+      "human_identity": "UNVERIFIED",
+      "inherits_unchanged": "CUSTODY_CONTRACT_008.json merkle, mmr, classification and diagnostic definitions; src/custody.py functions reused without modification",
+      "predecessor": {
+        "leaf_count": 12,
+        "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+        "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+        "relationship": "SUCCESSOR; historical roots and evidence/final_custody not modified; 010/011 receipt chains are separate and NOT admitted to this MMR"
+      },
+      "schema": "cyberhack.custody.contract.v011",
+      "scope": "Bounded manual agent run 011: public-MVP monitor, local Semgrep, sponsor probes, sanitized status publication + readback. Not hardware, not whole repository, not truth/safety.",
+      "signatures": "NOT_SIGNED",
+      "source_vs_occurrence": "observation.source = bytes identity (sha256, blob path); observation.occurrence = run id, sequence, UTC timestamp, URL/context",
+      "sponsor_ceilings": {
+        "Akash": "Managed AkashML inference only if actually called; no GPU lease, attestation, confidentiality or private deployment claim",
+        "Pi": "Only an actual Pi Security job/report counts; packets, human gate and local models do not",
+        "Semgrep": "Local CE scan of a teaching fixture with one custom rule; zero findings means this scan found none"
+      },
+      "step_vocabulary": "observation.state in custody.derive list; blocked sponsor operations use NOT_TESTED (QUARANTINED); negative tests that behaved as expected use OBSERVED with true/false checks"
+    },
+    "edges": [
+      {
+        "predicate": "CONTAINS",
+        "source": "project:antigense-011",
+        "target": "group:governed"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:agent/agent011.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:CUSTODY_CONTRACT_011.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:CUSTODY_CONTRACT_008.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:RELEASE_009.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:src/custody.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:src/cascade.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:fixtures/before.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:fixtures/after.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:rules/fallback.yaml"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:docs/ONBOARDING_REQUESTS_011.md"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:vercel.json"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:agent/akash021.py"
+      },
+      {
+        "predicate": "CONTAINS",
+        "source": "group:governed",
+        "target": "artifact:docs/ADDENDUM_020.md"
+      }
+    ],
+    "g_star_reference": {
+      "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+      "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+      "delta_g_star": "0.000000",
+      "g_star": "0.000000",
+      "inputs": {
+        "admitted": 0,
+        "quarantined": 0,
+        "rejected": 0,
+        "steps": 0
+      },
+      "normalized_entropy": "-0.000000",
+      "reference_g_star": "0.000000",
+      "tau": "0.35"
+    },
+    "initial_classification": {
+      "anticube": {
+        "identity": "UNKNOWN",
+        "safety": "UNKNOWN",
+        "self_safe": null
+      },
+      "checks": {
+        "artifact_hashes_calculated": true,
+        "edge_endpoints_exist": true
+      }
+    },
+    "nodes": [
+      {
+        "id": "project:antigense-011",
+        "scope": "Antigense 011 agent run; successor of 009R2; NOT hardware or portfolio",
+        "state": "PROPOSED",
+        "type": "Project"
+      },
+      {
+        "id": "group:governed",
+        "type": "Group"
+      },
+      {
+        "bytes": 20334,
+        "id": "artifact:agent/agent011.py",
+        "relative_path": "agent/agent011.py",
+        "sha256": "ca75ffd1057473d6916b65b530306cbe8b7a19f3e11412f60ff79a9561e90127",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 1667,
+        "id": "artifact:CUSTODY_CONTRACT_011.json",
+        "relative_path": "CUSTODY_CONTRACT_011.json",
+        "sha256": "4016ed5e8641616b7a7919f35f8028836da8d509bc2334178fb3ca84540e45a7",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 3059,
+        "id": "artifact:CUSTODY_CONTRACT_008.json",
+        "relative_path": "CUSTODY_CONTRACT_008.json",
+        "sha256": "5c80807838112d660a69d9845dcac9fab68203fb3804326d4e2c263adadbea19",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 919,
+        "id": "artifact:RELEASE_009.json",
+        "relative_path": "RELEASE_009.json",
+        "sha256": "225af7929a41937606efec53dbdc6a7f323e488e6ca123cc4b5a8b24426dd00e",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 15492,
+        "id": "artifact:src/custody.py",
+        "relative_path": "src/custody.py",
+        "sha256": "f457da59ecb1fb236bad9e1e7961a1b224139b43cb71e4a7ea272497310f2391",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 10826,
+        "id": "artifact:src/cascade.py",
+        "relative_path": "src/cascade.py",
+        "sha256": "9cf6586c363002c1afb1b53e6f41d825823f63c0370765438bba9331954dae27",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 187,
+        "id": "artifact:fixtures/before.py",
+        "relative_path": "fixtures/before.py",
+        "sha256": "65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 127,
+        "id": "artifact:fixtures/after.py",
+        "relative_path": "fixtures/after.py",
+        "sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 370,
+        "id": "artifact:rules/fallback.yaml",
+        "relative_path": "rules/fallback.yaml",
+        "sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 992,
+        "id": "artifact:docs/ONBOARDING_REQUESTS_011.md",
+        "relative_path": "docs/ONBOARDING_REQUESTS_011.md",
+        "sha256": "94bb3bb96f72c72b2969675d968c559becc7432a026301256ce4e5001c15df49",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 633,
+        "id": "artifact:vercel.json",
+        "relative_path": "vercel.json",
+        "sha256": "ca32b06bdd5830cd03465feda4bc31a19ec1ddad62cda07944b06026fe56911c",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 4389,
+        "id": "artifact:agent/akash021.py",
+        "relative_path": "agent/akash021.py",
+        "sha256": "30150fe6a9f61ce7bb0502cb405f2c2587c118b0d9a93329e4bdb85c204ca067",
+        "type": "Artifact"
+      },
+      {
+        "bytes": 722,
+        "id": "artifact:docs/ADDENDUM_020.md",
+        "relative_path": "docs/ADDENDUM_020.md",
+        "sha256": "40f22132f349185b1fd525a34d66a1bba501ab4d7020abf1b61d04692f11cdb0",
+        "type": "Artifact"
+      }
+    ],
+    "schema": "cyberhack.frozen-fractal-graph.v011"
+  },
+  "project_root": "07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845",
+  "scope": "Antigense 011 agent run; successor of 009R2; NOT hardware or portfolio"
+}

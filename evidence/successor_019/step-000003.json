@@ -1,0 +1,136 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": false,
+      "provided.actual_akash_call": false,
+      "provided.advice_applied": false,
+      "provided.advice_schema_valid": false,
+      "provided.attestation_verified": false,
+      "provided.gpu_lease_established": false,
+      "provided.inference_id_returned": false,
+      "provided.model_identity_returned": false,
+      "provided.usage_returned": false,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "NO",
+      "provided.actual_akash_call": "NO",
+      "provided.advice_applied": "NO",
+      "provided.advice_schema_valid": "NO",
+      "provided.attestation_verified": "NO",
+      "provided.gpu_lease_established": "NO",
+      "provided.inference_id_returned": "NO",
+      "provided.model_identity_returned": "NO",
+      "provided.usage_returned": "NO",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "REJECTED",
+    "state": "FAILED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"a3e91fe8d8b3ba370c02ccc4c27c37f3dddb222dd671e221c80f29dc381af7d2\"}",
+        "index": 0,
+        "leaf_sha256": "56f9aad5c6758ecbac3dc77e9ada45128a8533fe63eee7716d8dcbe730a578af"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:ec8b48c60bfc2f5cfbaff21e19cf8546b2acb0df6542e923ed3cb1e499537a11\"}",
+        "index": 1,
+        "leaf_sha256": "d01bfdfd9e22dcac8d52b52fdf0b7cfe6105475653295de9770b84feecb65313"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"783a5d5d71534ba76d58eda0c419245e0ac8ff0e6aaf4738c7f30efce454c441\"}",
+        "index": 2,
+        "leaf_sha256": "5a21bd3e0d8b2a93842e046319ed654c92431404e074f6e0375607f0f028fa68"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"actual_akash_call\":false,\"advice_applied\":false,\"advice_schema_valid\":false,\"attestation_verified\":false,\"gpu_lease_established\":false,\"inference_id_returned\":false,\"model_identity_returned\":false,\"usage_returned\":false},\"details\":{\"http\":401,\"reason\":\"HTTPError\",\"state\":\"FAILED\"},\"name\":\"akash_inference\",\"occurrence\":{\"run_id\":\"run011-1f9c5620a1c2\",\"seq\":2,\"ts\":\"2026-10-09T19:11:51+00:00\"},\"state\":\"FAILED\"}}",
+        "index": 3,
+        "leaf_sha256": "4d7fa93b4be08a4c02a582f7ca94ff22d149d7ff0d004e32992fed6918697836"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":false,\"provided.actual_akash_call\":false,\"provided.advice_applied\":false,\"provided.advice_schema_valid\":false,\"provided.attestation_verified\":false,\"provided.gpu_lease_established\":false,\"provided.inference_id_returned\":false,\"provided.model_identity_returned\":false,\"provided.usage_returned\":false,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"NO\",\"provided.actual_akash_call\":\"NO\",\"provided.advice_applied\":\"NO\",\"provided.advice_schema_valid\":\"NO\",\"provided.attestation_verified\":\"NO\",\"provided.gpu_lease_established\":\"NO\",\"provided.inference_id_returned\":\"NO\",\"provided.model_identity_returned\":\"NO\",\"provided.usage_returned\":\"NO\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"REJECTED\",\"state\":\"FAILED\"}}",
+        "index": 4,
+        "leaf_sha256": "a531982e03f6c072a083e9384326c4fdcddae4826814ff0fae332a1b0c27ce0d"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.325000\",\"g_star\":\"0.325000\",\"inputs\":{\"admitted\":1,\"quarantined\":0,\"rejected\":1,\"steps\":2},\"normalized_entropy\":\"0.500000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "d660166cb66a9f85c52d219576de2527422b072c017a1a237322a6d844cba706"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "9fd909444fccd88ba1f8832f798d5d3053902763ee37e1b5e390e1f380e91ec5"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.325000",
+    "g_star": "0.325000",
+    "inputs": {
+      "admitted": 1,
+      "quarantined": 0,
+      "rejected": 1,
+      "steps": 2
+    },
+    "normalized_entropy": "0.500000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:9fd909444fccd88ba1f8832f798d5d3053902763ee37e1b5e390e1f380e91ec5",
+  "observation": {
+    "checks": {
+      "actual_akash_call": false,
+      "advice_applied": false,
+      "advice_schema_valid": false,
+      "attestation_verified": false,
+      "gpu_lease_established": false,
+      "inference_id_returned": false,
+      "model_identity_returned": false,
+      "usage_returned": false
+    },
+    "details": {
+      "http": 401,
+      "reason": "HTTPError",
+      "state": "FAILED"
+    },
+    "name": "akash_inference",
+    "occurrence": {
+      "run_id": "run011-1f9c5620a1c2",
+      "seq": 2,
+      "ts": "2026-10-09T19:11:51+00:00"
+    },
+    "state": "FAILED"
+  },
+  "parent_fco_id": "fco:sha256:ec8b48c60bfc2f5cfbaff21e19cf8546b2acb0df6542e923ed3cb1e499537a11",
+  "previous_mmr_root": "783a5d5d71534ba76d58eda0c419245e0ac8ff0e6aaf4738c7f30efce454c441",
+  "project_root": "a3e91fe8d8b3ba370c02ccc4c27c37f3dddb222dd671e221c80f29dc381af7d2",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

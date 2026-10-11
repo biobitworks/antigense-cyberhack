@@ -1,0 +1,106 @@
+{
+ "frames": 6132,
+ "fps": 30,
+ "transitions": [
+  {
+   "first_frame": 391,
+   "video_s": 13.0333,
+   "scene_from": 1,
+   "scene_to": 2,
+   "diff": 4.39,
+   "ocr_before_frame": 389,
+   "ocr_after_frame": 392
+  },
+  {
+   "first_frame": 689,
+   "video_s": 22.9667,
+   "scene_from": 2,
+   "scene_to": 3,
+   "diff": 5.93,
+   "ocr_before_frame": 687,
+   "ocr_after_frame": 690
+  },
+  {
+   "first_frame": 1142,
+   "video_s": 38.0667,
+   "scene_from": 3,
+   "scene_to": 4,
+   "diff": 6.85,
+   "ocr_before_frame": 1140,
+   "ocr_after_frame": 1143
+  },
+  {
+   "first_frame": 1454,
+   "video_s": 48.4667,
+   "scene_from": 4,
+   "scene_to": 5,
+   "diff": 6.9,
+   "ocr_before_frame": 1452,
+   "ocr_after_frame": 1455
+  },
+  {
+   "first_frame": 1958,
+   "video_s": 65.2667,
+   "scene_from": 5,
+   "scene_to": 6,
+   "diff": 7.28,
+   "ocr_before_frame": 1956,
+   "ocr_after_frame": 1959
+  },
+  {
+   "first_frame": 2341,
+   "video_s": 78.0333,
+   "scene_from": 6,
+   "scene_to": 7,
+   "diff": 6.46,
+   "ocr_before_frame": 2339,
+   "ocr_after_frame": 2342
+  },
+  {
+   "first_frame": 2896,
+   "video_s": 96.5333,
+   "scene_from": 7,
+   "scene_to": 8,
+   "diff": 6.77,
+   "ocr_before_frame": 2894,
+   "ocr_after_frame": 2897
+  },
+  {
+   "first_frame": 3481,
+   "video_s": 116.0333,
+   "scene_from": 8,
+   "scene_to": 9,
+   "diff": 8.08,
+   "ocr_before_frame": 3479,
+   "ocr_after_frame": 3482
+  },
+  {
+   "first_frame": 3833,
+   "video_s": 127.7667,
+   "scene_from": 9,
+   "scene_to": 10,
+   "diff": 5.46,
+   "ocr_before_frame": 3831,
+   "ocr_after_frame": 3834
+  },
+  {
+   "first_frame": 4357,
+   "video_s": 145.2333,
+   "scene_from": 10,
+   "scene_to": 11,
+   "diff": 6.86,
+   "ocr_before_frame": 4355,
+   "ocr_after_frame": 4358
+  },
+  {
+   "first_frame": 4957,
+   "video_s": 165.2333,
+   "scene_from": 11,
+   "scene_to": 12,
+   "diff": 11.88,
+   "ocr_before_frame": 4955,
+   "ocr_after_frame": 4958
+  }
+ ],
+ "unresolved": []
+}

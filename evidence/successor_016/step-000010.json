@@ -1,0 +1,291 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.returned_rows": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.returned_rows": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"f4a535d67825ffc0f804e9fa7b96a75d93181a102bdcac98571d2ede698095c5\"}",
+        "index": 0,
+        "leaf_sha256": "18c05e60b9e4f5353c36d41c5b5a2a5af629fda5ed7c53a4552ec5921ba30e12"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:733287d940fb8879da96c157a40b8ae08998f26831b227e78795846a132d9d3f\"}",
+        "index": 1,
+        "leaf_sha256": "9a5c71ca2b20f1c2ea8109f4b96f37b19fa642175cf5e2cf8870cf758bb37811"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"623c3d9b31febbd81010743c9b94a9b387dd2e6c80e6603b2911a14437029516\"}",
+        "index": 2,
+        "leaf_sha256": "7b738776a35081a1c209fd634b2bd1a78e309dd2d9c11232bbd3d283ab6640a8"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"returned_rows\":true},\"details\":{\"http\":200,\"ms\":134.7,\"query_id\":\"ag015-fc73b892caa54d5e\",\"result\":[{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"preflight\",\"seq\":1,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:07+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"neg_non_allowlisted_url\",\"seq\":2,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:07+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":26.7,\"http_status\":null,\"name\":\"neg_unreachable_source\",\"seq\":3,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:07+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":524.6,\"http_status\":null,\"name\":\"neg_timeout\",\"seq\":4,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:10+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"neg_request_limit\",\"seq\":5,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:10+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"neg_missing_akash_credentials\",\"seq\":6,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:10+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"neg_malformed_ai_advice\",\"seq\":7,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:10+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":161.9,\"http_status\":200,\"name\":\"monitor_\",\"seq\":8,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:11+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":116,\"http_status\":200,\"name\":\"monitor_demo.mp4\",\"seq\":9,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:11+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":178.5,\"http_status\":200,\"name\":\"monitor_data_run.json\",\"seq\":10,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:11+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"semgrep_before\",\"seq\":11,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:14+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"semgrep_after\",\"seq\":12,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:17+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"semgrep_regression_matrix\",\"seq\":13,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:17+00:00\"},{\"admission\":\"QUARANTINED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"akash_inference\",\"seq\":14,\"state\":\"NOT_TESTED\",\"ts\":\"2026-10-09T18:23:18+00:00\"},{\"admission\":\"QUARANTINED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"pi_security_review\",\"seq\":15,\"state\":\"NOT_TESTED\",\"ts\":\"2026-10-09T18:23:18+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"neg_tamper_detection\",\"seq\":16,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:18+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"neg_publication_authorization\",\"seq\":17,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:18+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":null,\"http_status\":null,\"name\":\"publication\",\"seq\":18,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:26+00:00\"},{\"admission\":\"ADMITTED\",\"elapsed_ms\":332.2,\"http_status\":200,\"name\":\"publication_readback\",\"seq\":19,\"state\":\"OBSERVED\",\"ts\":\"2026-10-09T18:23:26+00:00\"}],\"result_sha256\":\"babe2332f3f73cf22ea6a71c2eb9ef4dcf09f4c1ce177b79d687294abbac2a5e\",\"rows\":19,\"sql\":\"SELECT seq,name,state,admission,ts,http_status,elapsed_ms FROM antigense_events_016 FINAL WHERE run_id=(SELECT run_id FROM antigense_events_016 FINAL WHERE name='publication_readback' AND state='OBSERVED' ORDER BY event_index DESC LIMIT 1) ORDER BY seq\"},\"name\":\"ch015_query_timeline\",\"occurrence\":{\"run_id\":\"run011-92b0a70d7bc2\",\"seq\":9,\"ts\":\"2026-10-09T18:55:51+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "3efb1e621d3a15761b7d959ebd3235f7a6b87c3b1c1b5739bd6c178594a0d2de"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.returned_rows\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.returned_rows\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "d464c532b2ca2f55c1e067ffe329ef424ab20d721dcdc3920eecee664e1cfed2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":9,\"quarantined\":0,\"rejected\":0,\"steps\":9},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "288e98c6ca6e595f5429de930211e074897ebb7d6765abbaaa4d7c93bbd1a069"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "cb06b9d8ba641f24d9c722fc435413560ed5bd8d91a4878a4d6d443a70abd51f"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 9,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 9
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:cb06b9d8ba641f24d9c722fc435413560ed5bd8d91a4878a4d6d443a70abd51f",
+  "observation": {
+    "checks": {
+      "returned_rows": true
+    },
+    "details": {
+      "http": 200,
+      "ms": 134.7,
+      "query_id": "ag015-fc73b892caa54d5e",
+      "result": [
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "preflight",
+          "seq": 1,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:07+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "neg_non_allowlisted_url",
+          "seq": 2,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:07+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": 26.7,
+          "http_status": null,
+          "name": "neg_unreachable_source",
+          "seq": 3,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:07+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": 524.6,
+          "http_status": null,
+          "name": "neg_timeout",
+          "seq": 4,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:10+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "neg_request_limit",
+          "seq": 5,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:10+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "neg_missing_akash_credentials",
+          "seq": 6,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:10+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "neg_malformed_ai_advice",
+          "seq": 7,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:10+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": 161.9,
+          "http_status": 200,
+          "name": "monitor_",
+          "seq": 8,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:11+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": 116,
+          "http_status": 200,
+          "name": "monitor_demo.mp4",
+          "seq": 9,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:11+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": 178.5,
+          "http_status": 200,
+          "name": "monitor_data_run.json",
+          "seq": 10,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:11+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "semgrep_before",
+          "seq": 11,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:14+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "semgrep_after",
+          "seq": 12,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:17+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "semgrep_regression_matrix",
+          "seq": 13,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:17+00:00"
+        },
+        {
+          "admission": "QUARANTINED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "akash_inference",
+          "seq": 14,
+          "state": "NOT_TESTED",
+          "ts": "2026-10-09T18:23:18+00:00"
+        },
+        {
+          "admission": "QUARANTINED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "pi_security_review",
+          "seq": 15,
+          "state": "NOT_TESTED",
+          "ts": "2026-10-09T18:23:18+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "neg_tamper_detection",
+          "seq": 16,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:18+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "neg_publication_authorization",
+          "seq": 17,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:18+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": null,
+          "http_status": null,
+          "name": "publication",
+          "seq": 18,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:26+00:00"
+        },
+        {
+          "admission": "ADMITTED",
+          "elapsed_ms": 332.2,
+          "http_status": 200,
+          "name": "publication_readback",
+          "seq": 19,
+          "state": "OBSERVED",
+          "ts": "2026-10-09T18:23:26+00:00"
+        }
+      ],
+      "result_sha256": "babe2332f3f73cf22ea6a71c2eb9ef4dcf09f4c1ce177b79d687294abbac2a5e",
+      "rows": 19,
+      "sql": "SELECT seq,name,state,admission,ts,http_status,elapsed_ms FROM antigense_events_016 FINAL WHERE run_id=(SELECT run_id FROM antigense_events_016 FINAL WHERE name='publication_readback' AND state='OBSERVED' ORDER BY event_index DESC LIMIT 1) ORDER BY seq"
+    },
+    "name": "ch015_query_timeline",
+    "occurrence": {
+      "run_id": "run011-92b0a70d7bc2",
+      "seq": 9,
+      "ts": "2026-10-09T18:55:51+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:733287d940fb8879da96c157a40b8ae08998f26831b227e78795846a132d9d3f",
+  "previous_mmr_root": "623c3d9b31febbd81010743c9b94a9b387dd2e6c80e6603b2911a14437029516",
+  "project_root": "f4a535d67825ffc0f804e9fa7b96a75d93181a102bdcac98571d2ede698095c5",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

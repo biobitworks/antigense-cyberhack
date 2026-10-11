@@ -1,0 +1,22 @@
+{
+  "schema": "cyberhack.custody.contract.v011",
+  "PARENT": "009R2",
+  "scope": "Bounded manual agent run 011: public-MVP monitor, local Semgrep, sponsor probes, sanitized status publication + readback. Not hardware, not whole repository, not truth/safety.",
+  "inherits_unchanged": "CUSTODY_CONTRACT_008.json merkle, mmr, classification and diagnostic definitions; src/custody.py functions reused without modification",
+  "predecessor": {
+    "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+    "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+    "leaf_count": 12,
+    "relationship": "SUCCESSOR; historical roots and evidence/final_custody not modified; 010/011 receipt chains are separate and NOT admitted to this MMR"
+  },
+  "step_vocabulary": "observation.state in custody.derive list; blocked sponsor operations use NOT_TESTED (QUARANTINED); negative tests that behaved as expected use OBSERVED with true/false checks",
+  "source_vs_occurrence": "observation.source = bytes identity (sha256, blob path); observation.occurrence = run id, sequence, UTC timestamp, URL/context",
+  "G_star": "unvalidated adapted diagnostic; delta-G* likewise",
+  "signatures": "NOT_SIGNED",
+  "human_identity": "UNVERIFIED",
+  "sponsor_ceilings": {
+    "Semgrep": "Local CE scan of a teaching fixture with one custom rule; zero findings means this scan found none",
+    "Akash": "Managed AkashML inference only if actually called; no GPU lease, attestation, confidentiality or private deployment claim",
+    "Pi": "Only an actual Pi Security job/report counts; packets, human gate and local models do not"
+  }
+}

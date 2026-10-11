@@ -1,0 +1,575 @@
+{
+  "active_policy": "after",
+  "human_action": {
+    "actor": "local-browser-action",
+    "approved_mmr": "d1df9102ca7b0c1aaff0824aed1771260c7c0d5bcc5c7b07561e844efabec26a",
+    "identity": "UNVERIFIED",
+    "provenance": "CODEX_DELEGATED_REHEARSAL_USER_REQUEST_009",
+    "signature": "NOT_SIGNED"
+  },
+  "id": "run-20261009T174023Z-8c9e7378",
+  "leaf_count": 12,
+  "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+  "mode": "EXECUTED_CONTROLLED_SIMULATION",
+  "phase": "verified",
+  "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+  "sponsors": {
+    "Akash": "NOT_TESTED",
+    "Pi": "NOT_TESTED",
+    "Semgrep": "OBSERVED"
+  },
+  "stages": [
+    {
+      "checks": {
+        "arithmetic_matches": true
+      },
+      "name": "01 Baseline worker",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "0.000000",
+          "g_star": "0.000000",
+          "inputs": {
+            "admitted": 1,
+            "quarantined": 0,
+            "rejected": 0,
+            "steps": 1
+          },
+          "normalized_entropy": "-0.000000",
+          "reference_g_star": "0.000000",
+          "tau": "0.35"
+        },
+        "mmr_root": "e9785cd148959c45bda9db61751f5b65e70192c25bfa439cc7f265f6782dfa86",
+        "step_fco_id": "fco:sha256:c084e5c9e9b81890610340924137edc7265849b844d3e58c328f5ba2c2fb39ef",
+        "step_merkle_root": "c084e5c9e9b81890610340924137edc7265849b844d3e58c328f5ba2c2fb39ef",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "arithmetic": 332833500,
+        "elapsed_ms": 0.058,
+        "expected": 332833500,
+        "fault": "NONE",
+        "output_sha256": "14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748"
+      }
+    },
+    {
+      "checks": {
+        "fault_detected": true,
+        "physical_fault_observed": false
+      },
+      "name": "02 Injected integrity fault",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "0.000000",
+          "g_star": "0.000000",
+          "inputs": {
+            "admitted": 2,
+            "quarantined": 0,
+            "rejected": 0,
+            "steps": 2
+          },
+          "normalized_entropy": "-0.000000",
+          "reference_g_star": "0.000000",
+          "tau": "0.35"
+        },
+        "mmr_root": "45e798ad4c3d53a583ac1a610d6132cf98bd4d598bdb4f6b5f8523ad3bcfb8d5",
+        "step_fco_id": "fco:sha256:a670e3e437e2b5346b941e25a6e22034df18757a0a1bbd1cd5cbb26c7307d4b8",
+        "step_merkle_root": "a670e3e437e2b5346b941e25a6e22034df18757a0a1bbd1cd5cbb26c7307d4b8",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "byte_index": 0,
+        "corrupted_sha256": "c1141ba6e77d0f6230607c8b2aab95a82a98c2b030ed18df6eb77e0b46884130",
+        "detected": true,
+        "fault": "SIMULATED_BYTE_XOR",
+        "hardware_fault_observed": false,
+        "original_sha256": "14fcb6c10cf6c57141a1d4dcb1a2ed11bf74b0b5a57b5ba9fb79132481f2d748",
+        "xor_mask": 1
+      }
+    },
+    {
+      "checks": {
+        "bypass_reproduced": true,
+        "security_policy_pass": false
+      },
+      "name": "03 Unsafe fallback reproduced",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "0.000000",
+          "g_star": "0.000000",
+          "inputs": {
+            "admitted": 3,
+            "quarantined": 0,
+            "rejected": 0,
+            "steps": 3
+          },
+          "normalized_entropy": "-0.000000",
+          "reference_g_star": "0.000000",
+          "tau": "0.35"
+        },
+        "mmr_root": "5286881049bea01152046263c84597e9d87de16322364ea7edabe0b8603528ea",
+        "step_fco_id": "fco:sha256:813a0725b8218506db27d8909f4e4288a2a999150a21fc437db2f275e9439354",
+        "step_merkle_root": "813a0725b8218506db27d8909f4e4288a2a999150a21fc437db2f275e9439354",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "scope": "pure boolean teaching fixture; no real access granted",
+        "unauthorized_request_allowed": true
+      }
+    },
+    {
+      "checks": {
+        "finding_present": true
+      },
+      "name": "04 Semgrep before scan",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "0.000000",
+          "g_star": "0.000000",
+          "inputs": {
+            "admitted": 4,
+            "quarantined": 0,
+            "rejected": 0,
+            "steps": 4
+          },
+          "normalized_entropy": "-0.000000",
+          "reference_g_star": "0.000000",
+          "tau": "0.35"
+        },
+        "mmr_root": "e9adc5306606eaec9b289bea00b9be16f76e8186702937874ba7c47f8a6c1228",
+        "step_fco_id": "fco:sha256:6bec10865ef4107b02b75f39cf5a4f872e479bf15185aabcba6a4bc85131395a",
+        "step_merkle_root": "6bec10865ef4107b02b75f39cf5a4f872e479bf15185aabcba6a4bc85131395a",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "count": 1,
+        "findings": [
+          {
+            "line": 3,
+            "message": "A failed hardware health check must not bypass authorization.",
+            "rule": "rules.antigense.fail-open-on-hardware-health"
+          }
+        ],
+        "json_output_sha256": "0ea967e778c1e8a039517414ed7231ffc43a2bde69e488e117c00b54b6de7b47",
+        "metrics": "off",
+        "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+        "state": "OBSERVED",
+        "target": "fixtures/before.py",
+        "target_sha256": "65067d715e01e5a722311de36da916a8da815d6c7212e771f403996286fc85f3",
+        "version": "1.180.0"
+      }
+    },
+    {
+      "checks": {
+        "advice_schema_valid": true,
+        "ai_authorized_to_patch": false,
+        "akash_attestation_verified": false,
+        "response_observed": true
+      },
+      "name": "05 AI incident analysis",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "0.000000",
+          "g_star": "0.000000",
+          "inputs": {
+            "admitted": 5,
+            "quarantined": 0,
+            "rejected": 0,
+            "steps": 5
+          },
+          "normalized_entropy": "-0.000000",
+          "reference_g_star": "0.000000",
+          "tau": "0.35"
+        },
+        "mmr_root": "76d6099fd5c95354173ad9a9593f81ab5eba971178fff40a48b936f150aa1bbb",
+        "step_fco_id": "fco:sha256:5116e4353fc0fea0b93ba0e00d522e1965b9b2f267e5091ec61a68b8d5da4f63",
+        "step_merkle_root": "5116e4353fc0fea0b93ba0e00d522e1965b9b2f267e5091ec61a68b8d5da4f63",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "advice_quality": "REQUIRES_REVIEW",
+        "attestation": "NOT_TESTED",
+        "claim": "observed model advice; no execution authority; endpoint ownership unverified for Akash",
+        "elapsed_ms": 27026.076,
+        "gpu_execution": "NOT_TESTED",
+        "model": "qwen2.5-coder:7b",
+        "request_sha256": "174e5a3ffb3c8821dce44950f3c54cdefcf26c3565ef69436844bc6b56648b5a",
+        "response": "{\n  \"hypothesis\": \"The software-injected byte corruption and integrity mismatch indicate a potential security vulnerability in the system's authorization mechanism. The fail-open fallback, where the system returns True for health checks without proper authorization, exacerbates this issue by allowing unauthorized access when the system is compromised.\",\n  \"recommendation\": \"To mitigate this risk, the system should be configured to deny access when health checks fail. This ensures that the system remains secure even in the event of a software fault. Additionally, implementing robust integrity checks and secure authorization mechanisms can help prevent such vulnerabilities from occurring in the first place.\",\n  \"evidence_limit\": \"The evidence provided includes a simulated software-injected byte corruption and an integrity mismatch, which suggest that the system's security measures may be compromised. The fail-open fallback further supports this hypothesis by allowing unauthorized access when the system is not functioning properly.\"\n}",
+        "response_sha256": "a86baefbe2b14abddff934f9487140750035651dc6d27259f76a1f9b299272ea",
+        "route": "local",
+        "schema_valid": true,
+        "state": "OBSERVED"
+      }
+    },
+    {
+      "checks": {
+        "intake_prepared": true,
+        "pi_execution_observed": false
+      },
+      "name": "06 Pi review handoff",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "0.052913",
+          "g_star": "0.052913",
+          "inputs": {
+            "admitted": 5,
+            "quarantined": 1,
+            "rejected": 0,
+            "steps": 6
+          },
+          "normalized_entropy": "0.325011",
+          "reference_g_star": "0.000000",
+          "tau": "0.35"
+        },
+        "mmr_root": "cb586b398df0159077cc2a63259de668c7fb083a70b6eea5bec613a9ebc7fba1",
+        "step_fco_id": "fco:sha256:255646cce0b089aa4181665c3ba6795051f28d80d80990c578a9ed0f95b6359f",
+        "step_merkle_root": "255646cce0b089aa4181665c3ba6795051f28d80d80990c578a9ed0f95b6359f",
+        "verified": true
+      },
+      "state": "NOT_TESTED",
+      "value": {
+        "api": "UNKNOWN",
+        "local_deployment": "UNKNOWN",
+        "not_a_pi_response": true,
+        "packet": "docs/PI_INTAKE.md",
+        "request": "reproduce, review attack path and patch, verify no variants",
+        "state": "NOT_TESTED"
+      }
+    },
+    {
+      "checks": {
+        "gate_enforced": true,
+        "patch_applied": false
+      },
+      "name": "07 Review gate",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "-0.013599",
+          "g_star": "0.039314",
+          "inputs": {
+            "admitted": 6,
+            "quarantined": 1,
+            "rejected": 0,
+            "steps": 7
+          },
+          "normalized_entropy": "0.295836",
+          "reference_g_star": "0.052913",
+          "tau": "0.35"
+        },
+        "mmr_root": "d1df9102ca7b0c1aaff0824aed1771260c7c0d5bcc5c7b07561e844efabec26a",
+        "step_fco_id": "fco:sha256:fdd4f16cf64da8df814a1dda22bd2311802b180e6110eb86f8f08420e167d7f1",
+        "step_merkle_root": "fdd4f16cf64da8df814a1dda22bd2311802b180e6110eb86f8f08420e167d7f1",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "action": "requires current MMR-bound local action; signature NOT_SIGNED",
+        "pending": true,
+        "pinned_patch_sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942"
+      }
+    },
+    {
+      "checks": {
+        "cryptographic_identity_verified": false,
+        "mmr_bound": true
+      },
+      "name": "08 Local review action",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "-0.009438",
+          "g_star": "0.029876",
+          "inputs": {
+            "admitted": 7,
+            "quarantined": 1,
+            "rejected": 0,
+            "steps": 8
+          },
+          "normalized_entropy": "0.271782",
+          "reference_g_star": "0.039314",
+          "tau": "0.35"
+        },
+        "mmr_root": "128d5693b65188ceacadeee06d1a64c64d9c248d91036115016652d35d99fbc4",
+        "step_fco_id": "fco:sha256:4abe56f37dde00508cb82d3d76aac0c759f9e947b55f316ab9aa9582f82707df",
+        "step_merkle_root": "4abe56f37dde00508cb82d3d76aac0c759f9e947b55f316ab9aa9582f82707df",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "actor": "local-browser-action",
+        "approved_mmr": "d1df9102ca7b0c1aaff0824aed1771260c7c0d5bcc5c7b07561e844efabec26a",
+        "identity": "UNVERIFIED",
+        "provenance": "CODEX_DELEGATED_REHEARSAL_USER_REQUEST_009",
+        "signature": "NOT_SIGNED"
+      }
+    },
+    {
+      "checks": {
+        "pinned_fix_selected": true
+      },
+      "name": "09 Pinned fail-closed fix",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "-0.006835",
+          "g_star": "0.023041",
+          "inputs": {
+            "admitted": 8,
+            "quarantined": 1,
+            "rejected": 0,
+            "steps": 9
+          },
+          "normalized_entropy": "0.251629",
+          "reference_g_star": "0.029876",
+          "tau": "0.35"
+        },
+        "mmr_root": "468d36e48ff99a781671dd308fa58a9c97848804868b27eb45704bca4875cfcc",
+        "step_fco_id": "fco:sha256:ed9cde9b51cd8c4bd0539a26ae379ab3a6ab12237ed9c0c56e0448162c60f3f1",
+        "step_merkle_root": "ed9cde9b51cd8c4bd0539a26ae379ab3a6ab12237ed9c0c56e0448162c60f3f1",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "scope": "teaching fixture selected; no host patch",
+        "sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942"
+      }
+    },
+    {
+      "checks": {
+        "healthy_authorized_continues": true,
+        "matrix_pass": true,
+        "unauthorized_on_failure_denied": true
+      },
+      "name": "10 Recovery and negative checks",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "-0.005115",
+          "g_star": "0.017926",
+          "inputs": {
+            "admitted": 9,
+            "quarantined": 1,
+            "rejected": 0,
+            "steps": 10
+          },
+          "normalized_entropy": "0.234498",
+          "reference_g_star": "0.023041",
+          "tau": "0.35"
+        },
+        "mmr_root": "e67631e580618ea27e3a27059a2155afe0ffe8976d731d72c5565c89247b5dfe",
+        "step_fco_id": "fco:sha256:2789bb42630631f7c9ed1f7e99d5272494ea396e8ecf67beac726cdb119fedfd",
+        "step_merkle_root": "2789bb42630631f7c9ed1f7e99d5272494ea396e8ecf67beac726cdb119fedfd",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "cases": [
+          {
+            "allowed": false,
+            "authorized": false,
+            "expected": false,
+            "worker_healthy": false
+          },
+          {
+            "allowed": false,
+            "authorized": false,
+            "expected": false,
+            "worker_healthy": true
+          },
+          {
+            "allowed": false,
+            "authorized": true,
+            "expected": false,
+            "worker_healthy": false
+          },
+          {
+            "allowed": true,
+            "authorized": true,
+            "expected": true,
+            "worker_healthy": true
+          }
+        ],
+        "expected": 332833500,
+        "known_workload": 332833500
+      }
+    },
+    {
+      "checks": {
+        "custom_rule_clear": true,
+        "scanner_executed": true
+      },
+      "name": "11 Semgrep after scan",
+      "receipt": {
+        "anticube": {
+          "authorization_validation": "NOT_TESTED",
+          "classification_executed": true,
+          "identity": "UNKNOWN",
+          "proof_of_possession": "NOT_TESTED",
+          "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+          "safety": "UNKNOWN",
+          "self_safe": null
+        },
+        "g_star": {
+          "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+          "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+          "delta_g_star": "-0.003929",
+          "g_star": "0.013997",
+          "inputs": {
+            "admitted": 10,
+            "quarantined": 1,
+            "rejected": 0,
+            "steps": 11
+          },
+          "normalized_entropy": "0.219748",
+          "reference_g_star": "0.017926",
+          "tau": "0.35"
+        },
+        "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+        "step_fco_id": "fco:sha256:6cdd8cd154e1a3df55312e0660fcf18cb157cec0085b8e2896d3878c9fe09a41",
+        "step_merkle_root": "6cdd8cd154e1a3df55312e0660fcf18cb157cec0085b8e2896d3878c9fe09a41",
+        "verified": true
+      },
+      "state": "OBSERVED",
+      "value": {
+        "count": 0,
+        "findings": [],
+        "json_output_sha256": "537cc253fa766671ef14b369dba32974e098930010b945e698c294b2532b5753",
+        "metrics": "off",
+        "rule_sha256": "d2cdf0cb2c58f8a26ed890f26beb0f8c24c6784b25ecacda1b913d7019292ed0",
+        "state": "OBSERVED",
+        "target": "fixtures/after.py",
+        "target_sha256": "1e9ee1335f0983b4586b5c7d278c5f2c0caa1f0871ba69c8178789357b0d9942",
+        "version": "1.180.0"
+      }
+    }
+  ],
+  "verification": {
+    "PASS": true,
+    "SIGNATURE": "NOT_SIGNED",
+    "YES_NO": "YES",
+    "checks": {
+      "all_mmr_prefixes_recomputed": true,
+      "all_steps_recomputed": true,
+      "expected_root_matches": true,
+      "genesis_bytes_and_root": true,
+      "initial_classification_calculated": true,
+      "nonempty_ledger": true
+    },
+    "claim_ceiling": "Declared-byte integrity and calculated classification only; no authenticity/safety/causality proof",
+    "leaf_count": 12,
+    "mmr_root": "26bdf817ac6a91e8b700ac57a447f2054b0bd633e134ccb8c50d5891ae6557f1",
+    "project_root": "fba525103ba732a408339629c24798b3e5f8d243e5e097336d564e4a0bf479b6",
+    "trusted_expected_root_supplied": true
+  }
+}

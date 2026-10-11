@@ -1,0 +1,18 @@
+{
+  "algorithm": "HYDRALAMP_MMR_V1",
+  "leaf_count": 1,
+  "leaves": [
+    {
+      "body": {
+        "cfmo_version_id": "fco:sha256:07ef1d1d4669a65e7913fadf70a13c3ab136281cc534751deb36ecaec336d845",
+        "event_hash": "461665d6078254d21e77dcd5c21a151927802e136a927d89ef917c6896eac4ff",
+        "event_index": 1
+      },
+      "leaf_sha256": "a2262c6fedb9b55a765db3a1fe3ed535a627035dd5411d8ca61c3d2e10a3e791"
+    }
+  ],
+  "peaks": [
+    "a2262c6fedb9b55a765db3a1fe3ed535a627035dd5411d8ca61c3d2e10a3e791"
+  ],
+  "root": "212f48dd9923848f4bca237871f93dd3d8691ca0f6189a9a95ec44f351f311ef"
+}

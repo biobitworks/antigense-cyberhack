@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Antigense Daisy · Walkthrough 035</title>
+<style>
+:root{color-scheme:dark;--bg:#101411;--panel:#19201a;--line:#354336;--text:#edf2e5;--muted:#a7b4a3;--green:#c4f280;--orange:#ffac65;--red:#ff6868}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:20px/1.5 system-ui;height:100vh;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 48px;border-bottom:1px solid var(--line)}
+.brand{font-size:26px;font-weight:800;letter-spacing:-1px}.brand span{color:var(--green)}
+.tag{font:13px monospace;letter-spacing:2px;color:var(--orange)}
+.bar{height:4px;background:var(--line)}.bar i{display:block;height:4px;background:var(--green);width:0}
+main{padding:34px 48px;height:calc(100vh - 140px)}
+.scene{display:none;height:100%;animation:fade .5s}.scene.on{display:block}@keyframes fade{from{opacity:0}to{opacity:1}}
+.kicker{font:13px monospace;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+h1{font-size:54px;line-height:1.05;letter-spacing:-2px;margin:10px 0 18px}h1 em{color:var(--green);font-style:normal}
+h2{font-size:38px;margin:8px 0 18px;letter-spacing:-1px}p{color:var(--muted);max-width:1100px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:20px}
+.big{font:44px monospace;color:var(--green)}.warn{color:var(--orange)}.bad{color:var(--red)}.good{color:var(--green)}
+code,.mono{font:15px/1.6 monospace;overflow-wrap:anywhere}
+table{border-collapse:collapse;width:100%;font:16px monospace}td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left}
+pre{white-space:pre-wrap;font:15px/1.5 monospace;background:#111913;border-radius:10px;padding:14px;margin:0;max-height:330px;overflow:hidden}
+.leaves{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.leaf{width:62px;height:38px;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;font:14px monospace;color:var(--muted)}
+.leaf.ok{border-color:var(--green);color:var(--green)}
+footer{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;padding:10px 48px;font:13px monospace;color:var(--muted);border-top:1px solid var(--line);background:var(--bg)}
+</style></head><body>
+<header><div class="brand">antigense<span>.</span> daisy</div><div class="tag" id="label">Recorded sponsor execution · live browser proof recomputation.</div></header>
+<div class="bar"><i id="prog"></i></div>
+<main>
+<section class="scene" data-t="13.0"><div class="kicker">The incident</div><h1>A worker returns a <em>corrupted result.</em></h1><p style="font-size:26px">What decision changed, which boundary was crossed, and can useful work recover?</p><div class="card" style="margin-top:28px;max-width:900px"><div class="kicker">Recorded incident</div><div class="mono" id="incid"></div></div></section>
+
+<section class="scene" data-t="9.9"><div class="kicker">Device first</div><h1>Keep the incident <em>inspectable.</em></h1><div class="grid"><div class="card"><div class="kicker">Roles</div><p id="roles" style="color:var(--text)"></p></div><div class="card"><div class="kicker">This page</div><p id="lbl2" style="color:var(--text)"></p></div></div></section>
+
+<section class="scene" data-t="15.1"><div class="kicker">01 · Controlled fault</div><h2>Software-injected byte fault. <span class="warn">No physical failure observed.</span></h2><div class="grid"><div class="card"><div class="kicker">Integrity check</div><table id="fault"></table></div><div class="card"><div class="kicker">Teaching fixture: unsafe fallback</div><pre>def authorize(authorized, worker_healthy):
+    if not worker_healthy:
+        return True      # fails OPEN
+    return authorized</pre><p class="bad" id="fallback"></p></div></div></section>
+
+<section class="scene" data-t="10.4"><div class="kicker">02 · Semgrep</div><h2>Semgrep finds the fallback. The fix keeps good work.</h2><div class="grid3"><div class="card"><div class="kicker">Before fix</div><div class="big bad" id="sgb"></div><div class="mono" id="sgbm"></div></div><div class="card"><div class="kicker">After pinned fix</div><div class="big good" id="sga"></div><div class="mono" id="sgam"></div></div><div class="card"><div class="kicker">Recovery matrix</div><table id="matrix"></table></div></div><p>AI advice has no authority to apply a patch.</p></section>
+
+<section class="scene" data-t="16.8"><div class="kicker">03 · Custody</div><h2>Each step has an address. <em class="good">Your browser recomputes the proof.</em></h2><div class="card"><div class="kicker" id="inc-k">Incident MMR, recomputed now from recorded leaves</div><div class="leaves" id="inc-leaves"></div><div class="mono">expected <span id="inc-exp"></span><br>computed <span id="inc-got">…</span></div><div class="big" id="inc-res" style="font-size:32px;margin-top:10px"></div></div><p>Integrity preserves the record; it does not prove that every claim is true.</p></section>
+
+<section class="scene" data-t="12.6"><div class="kicker">04 · ClickHouse Cloud</div><h2>Same incident. Replayed. Read back exactly.</h2><div class="grid3"><div class="card"><div class="kicker">Checkpoints sent</div><div class="big" id="ch-rows"></div><div class="mono" id="ch-replay"></div></div><div class="card"><div class="kicker">Readback</div><div class="big" id="ch-back"></div><div class="mono" id="ch-exact"></div></div><div class="card"><div class="kicker">Readback query</div><div class="big" id="ch-ms"></div><div class="mono">measured once</div></div></div><div class="card" style="margin-top:20px"><code id="ch-q"></code></div></section>
+
+<section class="scene" data-t="18.5"><div class="kicker">05 · Akash GPU (separate branch)</div><h2>Deployed on Akash. Advice in <em id="gpu-s"></em>.</h2><div class="grid"><div class="card"><table id="gpu-t"></table></div><div class="card"><div class="kicker">Model advice (untrusted · <span class="warn">not applied</span>)</div><pre id="gpu-adv"></pre></div></div></section>
+
+<section class="scene" data-t="19.5"><div class="kicker">06 · Separate custody branch</div><h2>All <span id="gpu-n"></span> leaves verify, including the close.</h2><div class="card"><div class="kicker">GPU MMR, recomputed now · not part of the incident MMR</div><div class="leaves" id="gpu-leaves"></div><div class="mono">expected <span id="gpu-exp"></span><br>computed <span id="gpu-got">…</span></div><div class="big" id="gpu-res" style="font-size:32px;margin-top:10px"></div></div><div class="grid" style="margin-top:20px"><div class="card"><div class="kicker">Close request</div><div class="mono" id="gpu-close"></div><div class="mono" id="gpu-vram"></div></div><div class="card"><div class="kicker">Not claimed</div><div class="mono warn" id="gpu-not"></div></div></div></section>
+
+<section class="scene" data-t="11.7"><div class="kicker">Live vs replay</div><h2>Public site: <em>recorded replay.</em> magicPRO: live OS polling.</h2><div class="grid"><div class="card"><p style="color:var(--text)">This page makes no sponsor requests. It replays recorded receipts and recomputes their commitments in your browser.</p></div><div class="card"><p style="color:var(--text)">Lower troubleshooting and inference costs are <span class="warn">goals we still need to measure.</span></p></div></div></section>
+
+<section class="scene" data-t="17.5"><div class="kicker">Privacy and rights</div><h1>From error to recovery, <em>easier to inspect.</em></h1><div class="grid"><div class="card"><p style="color:var(--text)">Credentials and proprietary internals stay private. Earlier failures stay in the record.</p></div><div class="card"><p style="color:var(--text)">Original explanatory content © 2026 Biobitworks, CC BY-NC-ND 4.0. Third-party rights retained. Software license not established.</p></div></div><p class="mono">sources: <span id="srcs"></span></p></section>
+</main>
+<footer><span id="clock">0:00</span><span>Hashes establish byte integrity, not truth, safety or causality.</span><span id="sc"></span></footer>
+<script>
+const $=id=>document.getElementById(id);
+const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+const unhex=h=>new Uint8Array(h.match(/../g).map(x=>parseInt(x,16)));
+const sha=async u=>hex(await crypto.subtle.digest('SHA-256',u));
+const cat=(...a)=>{const n=a.reduce((s,x)=>s+x.length,0),o=new Uint8Array(n);let i=0;for(const x of a){o.set(x,i);i+=x.length}return o};
+// HYDRALAMP_MMR_V1 as in src/custody.py
+async function mmr(rows,onLeaf){const peaks=[];for(let i=0;i<rows.length;i++){const r=rows[i];
+ let h=await sha(new TextEncoder().encode(JSON.stringify({cfmo_version_id:r.fco_id,event_hash:r.event_hash,event_index:r.event_index})));
+ let size=i+1;while(size%2===0){h=await sha(cat(unhex(peaks.pop()),unhex(h)));size/=2}peaks.push(h);onLeaf&&await onLeaf(i)}
+ let acc=peaks[0];for(const p of peaks.slice(1))acc=await sha(cat(unhex(acc),unhex(p)));
+ return sha(cat(new TextEncoder().encode('HYDRALAMP_MMR_BAG_V1:'),unhex(acc)))}
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+async function showChain(prefix,rows,expected){const box=$(prefix+'-leaves');box.replaceChildren();
+ rows.forEach((r,i)=>{const d=document.createElement('div');d.className='leaf';d.textContent='#'+r.event_index;box.append(d)});
+ $(prefix+'-exp').textContent=expected;const got=await mmr(rows,async i=>{box.children[i].classList.add('ok');await sleep(260)});
+ $(prefix+'-got').textContent=got;const ok=got===expected;$(prefix+'-res').textContent=ok?'PASS · roots match':'FAIL · roots differ';$(prefix+'-res').className='big '+(ok?'good':'bad')}
+let D;const scenes=[...document.querySelectorAll('.scene')];
+const fill=()=>{const I=D.incident,G=D.gpu;
+ $('incid').textContent=`${I.id} · ${I.leaf_count} custody leaves`;$('roles').textContent=D.roles;$('lbl2').textContent=D.label;
+ $('fault').innerHTML=`<tr><td>fault</td><td>${I.fault.fault} (xor ${I.fault.xor_mask})</td></tr><tr><td>original</td><td>${I.fault.original_sha256.slice(0,24)}…</td></tr><tr><td>corrupted</td><td class="bad">${I.fault.corrupted_sha256.slice(0,24)}…</td></tr><tr><td>hardware fault observed</td><td>${I.fault.hardware_fault_observed}</td></tr>`;
+ $('fallback').textContent=`Unauthorized request allowed: ${I.fallback.unauthorized_request_allowed} (${I.fallback.scope})`;
+ $('sgb').textContent=I.semgrep_before.count+' finding';$('sgbm').textContent=`${I.semgrep_before.target} line ${I.semgrep_before.findings[0].line}\nSemgrep ${I.semgrep_before.version}`;
+ $('sga').textContent=I.semgrep_after.count+' findings';$('sgam').textContent=`${I.semgrep_after.target}\nsame rule ${I.semgrep_after.rule_sha256.slice(0,12)}…`;
+ $('matrix').innerHTML='<tr><th>healthy</th><th>auth</th><th>allowed</th></tr>'+I.matrix.map(c=>`<tr><td>${c.worker_healthy}</td><td>${c.authorized}</td><td class="${c.allowed===c.expected?'good':'bad'}">${c.allowed}</td></tr>`).join('');
+ const C=I.clickhouse;$('ch-rows').textContent=C.rows_sent;$('ch-replay').textContent=`replay sent ${C.replay_rows_sent}; occurrence count preserved: ${C.occurrence_count_preserved}`;
+ $('ch-back').textContent=C.readback_rows;$('ch-exact').textContent=`exact values match: ${C.exact_values_match}\nreadback ${C.readback_sha256.slice(0,16)}…`;$('ch-ms').textContent=C.query_ms+' ms';$('ch-q').textContent=C.query;
+ const N=G.inference;$('gpu-s').textContent=(N.ms/1000).toFixed(2)+' s';
+ $('gpu-t').innerHTML=`<tr><td>record</td><td>${G.record}</td></tr><tr><td>model</td><td>${N.model}</td></tr><tr><td>HTTP</td><td class="good">${N.status}</td></tr><tr><td>latency</td><td>${N.ms} ms</td></tr><tr><td>schema valid</td><td>${N.schema_valid}</td></tr><tr><td>tokens in/out</td><td>${N.prompt_eval_count} / ${N.eval_count}</td></tr>`;
+ $('gpu-adv').textContent=N.advice_excerpt;$('gpu-n').textContent=G.leaf_count;
+ $('gpu-close').textContent=`HTTP ${G.close.status} · success: ${G.close.response.success}`;
+ $('gpu-vram').textContent=`server-reported VRAM ${G.vram[0].size_vram.toLocaleString()} bytes (not hardware attestation)`;
+ $('gpu-not').textContent=G.not_claimed.join('\n');
+ $('srcs').textContent=Object.entries(D.sources).map(([k,v])=>k+' '+v.slice(0,12)+'…').join(' · ')};
+const run=async(i)=>{scenes.forEach((s,j)=>s.classList.toggle('on',j===i));$('sc').textContent=`scene ${i+1}/${scenes.length}`;
+ if(i===4)showChain('inc',D.incident.ledger,D.incident.expected_mmr_root);if(i===7)showChain('gpu',D.gpu.ledger,D.gpu.expected_mmr_root)};
+(async()=>{D=await (await fetch('data/walkthrough-034.json',{cache:'no-store'})).json();fill();
+ const durs=scenes.map(s=>parseFloat(s.dataset.t)*1000);durs[durs.length-1]+=2856;const total=durs.reduce((a,b)=>a+b,0);
+ const auto=new URLSearchParams(location.search).has('autoplay');let i=0;run(0);
+ if(!auto){addEventListener('keydown',e=>{if(e.key==='ArrowRight')run(i=Math.min(i+1,scenes.length-1));if(e.key==='ArrowLeft')run(i=Math.max(i-1,0))});return}
+ const t0=performance.now();let next=durs[0];
+ (function tick(){const t=performance.now()-t0;$('prog').style.width=Math.min(100,100*t/total)+'%';$('clock').textContent=`${Math.floor(t/60000)}:${String(Math.floor(t/1000)%60).padStart(2,'0')}`;
+  if(t>=next&&i<scenes.length-1){i++;next+=durs[i];run(i)}if(t<total)requestAnimationFrame(tick);else document.title+=' · done'})()})();
+</script></body></html>

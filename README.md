@@ -62,6 +62,14 @@ python3 agent/judge_live050.py --port 8850 --output .runtime/new-publication-tes
 
 For 042, use `python3 agent/intervention042.py verify` on the 042 branch; its verified 6-leaf root is `43522a82b0c2a4428cda56366f65689757d70085031e26997e90b583b846e5a0` (NOT_SIGNED). The older root-level chain verifier can report preserved `CHAIN_ONLY` failure records; this is a known historical gap rather than evidence to silently discard.
 
+## Verify the PR #1 custody records
+
+```sh
+.venv/bin/python agent/verify_all.py          # add --json for machine-readable output
+```
+
+Recomputes every Merkle/MMR prefix and checks frozen files against the commit they were frozen from: 8 records PASS and 3 kept failure records report `CHAIN_ONLY` with reasons. Claim-by-claim detail: [docs/EVIDENCE.md](docs/EVIDENCE.md); machine-readable summary: [evidence/INDEX.json](evidence/INDEX.json).
+
 ## Sponsor and claim boundaries
 
 | Sponsor | Status |

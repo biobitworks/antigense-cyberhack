@@ -1,0 +1,64 @@
+{
+  "schema": "antigense.requirement-map.017",
+  "ID": "017",
+  "PARENT": "016",
+  "source": "User-supplied hackathon challenge text",
+  "interpretation": "DECLARED_MANUAL_MAPPING; Seedgraph execution NOT_TESTED",
+  "rights": "Original explanatory content CC BY-NC-ND 4.0; third-party terms unchanged; implementation software LICENSE_NOT_ESTABLISHED",
+  "atoms": [
+    {
+      "id": "Q1",
+      "text": "What should your agent know before it writes?",
+      "actor": "agent",
+      "verb": "know",
+      "object": "application context",
+      "constraints": [
+        "source",
+        "allowed scope",
+        "state",
+        "rights"
+      ],
+      "gate": "CONTEXT_CHECK"
+    },
+    {
+      "id": "Q2",
+      "text": "Which security boundaries could its changes affect?",
+      "actor": "agent changes",
+      "verb": "affect",
+      "object": "security boundaries",
+      "constraints": [
+        "identity",
+        "authorization",
+        "data egress",
+        "publication"
+      ],
+      "gate": "BOUNDARY_CHECK"
+    },
+    {
+      "id": "Q3",
+      "text": "And which decisions are you leaving it to guess?",
+      "actor": "operator",
+      "verb": "declare",
+      "object": "unresolved decisions",
+      "constraints": [
+        "policy",
+        "approval authority",
+        "missing inputs"
+      ],
+      "gate": "UNKNOWN_CHECK"
+    }
+  ],
+  "checks": {
+    "unique_ids": true,
+    "required_fields_present": true,
+    "mapping_semantics_proven": false
+  },
+  "unknowns": [
+    "Seedgraph prior parser contract",
+    "Akash execution",
+    "cost savings",
+    "speed improvement versus baseline",
+    "software license exception"
+  ],
+  "claim_ceiling": "Structural mapping and integrity; interpretation is not proven truth"
+}

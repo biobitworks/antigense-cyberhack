@@ -1,0 +1,230 @@
+{
+ "claims": {
+  "full_frame_semantics": "NOT_TESTED",
+  "live_calculation_attestation": "NOT_TESTED (recorder log only)",
+  "narration_alignment": "SEE align040",
+  "signature": "NOT_SIGNED"
+ },
+ "event_count": 42,
+ "event_mmr_root": "da2b763b108e11399a32862fbae4f7b2d7e5da62e14b15e0ae151e7670824000",
+ "event_prefix_mismatches": [],
+ "frame_count": 4633,
+ "frame_framemd5_equals_ledger": true,
+ "frame_mmr_peaks": [
+  "c18b5a35b6597f3b7a6c91e8c169f86ac1c890ff8c18c51fb19824d6a4cfaf22",
+  "0021f4aec271437e6252dfa87e5c9cc83499eac7fd2486a6abebeba52f85f182",
+  "2b9670c093cf0be12d882d091211d80e44f88afda80926949a65cd068b9f6809",
+  "495200a8bef279042e6bbffd936eb1a0e874d6865a6115b08c9f70bf74fcd635",
+  "046f253a431bd4273b5699f2556ca07b930dd7afe87f8813a460e5c711aa821a"
+ ],
+ "frame_mmr_root": "984462948841f116c456a2b0a72e1c19deb4fd7f6b1bdbcad2ac350ecb9458af",
+ "frame_prefix_mismatches": [],
+ "frame_prefixes_checked": 57,
+ "label": "run040b",
+ "sample_frames": [
+  {
+   "event": "scene_activation",
+   "frame": 5,
+   "leaf_index": null,
+   "ocr_scene": 1,
+   "png_sha256": "b97bf6f24e803fa6c37e94cad79e9918de912e3eb6304cf416339eab9474d8cc",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 0.1667
+  },
+  {
+   "event": "scene_activation",
+   "frame": 395,
+   "leaf_index": null,
+   "ocr_scene": 2,
+   "png_sha256": "325ddfe643e8393456df55cb6e822d33f3fc91a99d6788799411176b4ad086fe",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 13.1667
+  },
+  {
+   "event": "scene_activation",
+   "frame": 693,
+   "leaf_index": null,
+   "ocr_scene": 3,
+   "png_sha256": "3d018f5860ae7bbcc36bec322329dc8c03d1d5eb8d34e5f70af9e48d5ddd56c3",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 23.1
+  },
+  {
+   "event": "scene_activation",
+   "frame": 1145,
+   "leaf_index": null,
+   "ocr_scene": 4,
+   "png_sha256": "7e31a15ff1b4a6811226b5b2631c3f97b3817ac22d58d4ad812ce2039bb7f888",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 38.1667
+  },
+  {
+   "event": "scene_activation",
+   "frame": 1457,
+   "leaf_index": null,
+   "ocr_scene": 5,
+   "png_sha256": "dc0091da3808c6c2c69df4a12c632e1c274ef446cd83811ff7f29b50587a1901",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 48.5667
+  },
+  {
+   "event": "proof_start",
+   "frame": 1457,
+   "leaf_index": null,
+   "ocr_scene": 5,
+   "png_sha256": "dc0091da3808c6c2c69df4a12c632e1c274ef446cd83811ff7f29b50587a1901",
+   "proof": "inc",
+   "video_pts_s": 48.5667
+  },
+  {
+   "event": "proof_leaf_progress",
+   "frame": 1457,
+   "leaf_index": 1,
+   "ocr_scene": 5,
+   "png_sha256": "dc0091da3808c6c2c69df4a12c632e1c274ef446cd83811ff7f29b50587a1901",
+   "proof": "inc",
+   "video_pts_s": 48.5667
+  },
+  {
+   "event": "proof_leaf_progress",
+   "frame": 1504,
+   "leaf_index": 7,
+   "ocr_scene": 5,
+   "png_sha256": "ac3c03799d241f9f85fbab4df7d63ce5e3651639f25a8bbb9454bf3c4fcce4bb",
+   "proof": "inc",
+   "video_pts_s": 50.1333
+  },
+  {
+   "event": "proof_leaf_progress",
+   "frame": 1551,
+   "leaf_index": 13,
+   "ocr_scene": 5,
+   "png_sha256": "e73c3b194e825f852c70ba4d9a2196b43d019cf5542c142ba2cb1c66432f9189",
+   "proof": "inc",
+   "video_pts_s": 51.7
+  },
+  {
+   "event": "proof_result",
+   "frame": 1559,
+   "leaf_index": null,
+   "ocr_scene": 5,
+   "ocr_shows_PASS": true,
+   "png_sha256": "3d2e6b9f5fd45310afbbb102562919e50b8c0bedf2dfae0facea420d3dd000b7",
+   "proof": "inc",
+   "video_pts_s": 51.9667
+  },
+  {
+   "event": "scene_activation",
+   "frame": 1961,
+   "leaf_index": null,
+   "ocr_scene": 6,
+   "png_sha256": "7ac5a2dcbe13ccfcc1df6a020ab3562e8c57e251984e9d61daee11dbbb858ef3",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 65.3667
+  },
+  {
+   "event": "scene_activation",
+   "frame": 2339,
+   "leaf_index": null,
+   "ocr_scene": 7,
+   "png_sha256": "f1b31b4a40bc7db235afe49c958bd833096d9eb8daac7c8c0c2b86de4e94a644",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 77.9667
+  },
+  {
+   "event": "scene_activation",
+   "frame": 2899,
+   "leaf_index": null,
+   "ocr_scene": 8,
+   "png_sha256": "a28175ae622dc6f29717c45290f4fe75db4cad9279b8b6ff77aabde4d5a08951",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 96.6333
+  },
+  {
+   "event": "proof_start",
+   "frame": 2899,
+   "leaf_index": null,
+   "ocr_scene": 8,
+   "png_sha256": "a28175ae622dc6f29717c45290f4fe75db4cad9279b8b6ff77aabde4d5a08951",
+   "proof": "gpu",
+   "video_pts_s": 96.6333
+  },
+  {
+   "event": "proof_leaf_progress",
+   "frame": 2899,
+   "leaf_index": 1,
+   "ocr_scene": 8,
+   "png_sha256": "a28175ae622dc6f29717c45290f4fe75db4cad9279b8b6ff77aabde4d5a08951",
+   "proof": "gpu",
+   "video_pts_s": 96.6333
+  },
+  {
+   "event": "proof_leaf_progress",
+   "frame": 2938,
+   "leaf_index": 6,
+   "ocr_scene": 8,
+   "png_sha256": "899146c8045dc26bb51f268256dfacb9a9149f3a30d56c0a8b230c68ba3c5acd",
+   "proof": "gpu",
+   "video_pts_s": 97.9333
+  },
+  {
+   "event": "proof_leaf_progress",
+   "frame": 2977,
+   "leaf_index": 11,
+   "ocr_scene": 8,
+   "png_sha256": "f6e869bfd98b105d328f50ae2a5a17ab1e5ee20a98704e6b18690567479cadda",
+   "proof": "gpu",
+   "video_pts_s": 99.2333
+  },
+  {
+   "event": "proof_result",
+   "frame": 2985,
+   "leaf_index": null,
+   "ocr_scene": 8,
+   "ocr_shows_PASS": true,
+   "png_sha256": "550f168258f873f02a2ab43f2502d19b2dcb4c4a30d5202db12c449fe9eb5d9d",
+   "proof": "gpu",
+   "video_pts_s": 99.5
+  },
+  {
+   "event": "scene_activation",
+   "frame": 3490,
+   "leaf_index": null,
+   "ocr_scene": 9,
+   "png_sha256": "2d016a838572d75d5f9c0e76e9c720440f64362ac60e183269640fb9d7016ed0",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 116.3333
+  },
+  {
+   "event": "scene_activation",
+   "frame": 3837,
+   "leaf_index": null,
+   "ocr_scene": 10,
+   "png_sha256": "81554373159fca66c4488f682f4c9fabd290073842ee666395c972fad896cd21",
+   "proof": null,
+   "scene_matches_event": true,
+   "video_pts_s": 127.9
+  }
+ ],
+ "scene_manifest_observed_sha256": "ae79234f1de02ce1c04da15f9bacdabf6829488b809f70d852c800d0f8831eb2",
+ "tamper_detection": {
+  "alter_event_time": true,
+  "append_record": true,
+  "delete_record": true,
+  "flip_one_frame_hash": true,
+  "flip_one_video_byte_detected_by_file_hash": true,
+  "flip_one_video_byte_detected_by_frame_hashes": true,
+  "relabel_scene": true,
+  "swap_two_records": true
+ },
+ "video_sha256": "86375ed1bb588cca1fe70486e9c7a6248a1850e8eae3d5141dd55c4b5e8b3151"
+}

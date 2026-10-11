@@ -1,0 +1,218 @@
+{
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 15,
+    "leaf_sha256": [
+      "defdfbab80fc3dedfca43ead0627d2180cb2a90381474ab48e623e076070ffc8",
+      "260c580cc1ca9f6bf0e47160e78d652ebb593ba7414267aa24a3607a1e05352f",
+      "437dde96eef428f32f84207f91fe362740f30f6c5f470424c17eb7266a977cc2",
+      "cce2f861efc3a71d0230c6a744dc592bb2f6b9f1dbfad63833c3fbbbd9d2094b",
+      "ac62052560daf4b584a0ed5105bd5873eee3f6ae768dec798e5f91de4e75a32c",
+      "e0aa85fca42b00b2ffb8bbbb7b0e4754b2249ddbf3131b0248fd0fdda62ab9a2",
+      "7211d715f9a8097f65c9c0266edb761ff84f75899e57097e865745116469e916",
+      "f70b584939b14dc22158179728192ea903d5f7f5c0f479cd3577f179d4886368",
+      "e48b9ea6d72b37ae3d178ca5e8b1e99e506211a485aed094aae39bb03ec5961c",
+      "1111d51c2408824cb16154974e853c8a2ab9655707e69d2d352fc141d4b6f7b3",
+      "063d600c5903060ad24252a06e5c77eedf507a290b236c9411c6e2bde8046203",
+      "e6104a4ef3d912642f1b7dd6af275ad88a893139f40380c1a0d96973f695b1e1",
+      "e49edbaa7a50eb7a24a6e83a87c9d8d2e32edda047e8ba45549b3848def83440",
+      "9c8f7962fe13abebba0b5161a8bf622196da96eb6293d1ef8245bb30018cbda7",
+      "b6fe1c7fb81f3c58d0391419138b89ac42cf8d4c9e17997bac8794d48f3fa630"
+    ],
+    "root": "cd359165d41e63bcfab4653b42c887728395762bc1d76aef022d713395c10c4e"
+  },
+  "construction_version": "walkthrough-manifest/035.2",
+  "incident": {
+    "id": "run-20261009T191354Z-a98b5c03",
+    "leaves": 13,
+    "mmr_root": "66c3e6e8a64f36f1290a598606d6b9034de1bca62ef559d058e5013d95c12723"
+  },
+  "label": "Recorded sponsor execution · live browser proof recomputation.",
+  "mp4_reproducibility": "NOT_GUARANTEED (encoder/capture timing); bound by recorded hashes, verified by frame check",
+  "narration": {
+    "location": "operator iCloud Drive: Hackathon/ (local, not public)",
+    "name": "AWS Builder Loft.m4a",
+    "seconds": 142.144,
+    "sha256": "12be0853fee931726ae48ff98e02a94e33e2f0a71c3d1f3e09da0cf0085389ba"
+  },
+  "pages": {
+    "public/walkthrough-034.html": "176d4e5a7cd64dc9c72e6d06c5978142425ba219fbd00daae344ae365fa37fb0",
+    "public/walkthrough-035.html": "0dff97c3acac7835538d609854115d4fb7826ea96b1ae2fdeb9898a79bdfca04"
+  },
+  "predecessor": "evidence/walkthrough/manifest-035.json (035.1) bound public/data/proof.json and run.json by hash, but those bytes were in no commit; 035.2 binds committed snapshots recovered byte-identical from the live site",
+  "recordings": [
+    {
+      "attempt": "A",
+      "hash_source": "receipt_034",
+      "location": "media/walkthrough-034/screen-034.mov (local, git-ignored path)",
+      "page": "public/walkthrough-034.html",
+      "receipt_state": "NO_RECEIPT (recorder path error after encoding; video valid)",
+      "seconds": 144.966667,
+      "sha256": "7e957b52839196697e6cfff8b65576f5784e16aaa1cb9fb60a2f5f0c99e9e658"
+    },
+    {
+      "attempt": "B",
+      "hash_source": "receipt_034",
+      "location": "media/walkthrough-034b/screen-034.mov (local, git-ignored path)",
+      "page": "public/walkthrough-034.html",
+      "receipt_state": "RECEIPT media/walkthrough-034b/screen-034.receipt.json",
+      "seconds": 145.0,
+      "sha256": "d00e168f5426754c25e2329b036430c8c6a4347ef175fa47d56626de17fb2fcf"
+    },
+    {
+      "attempt": "B-review",
+      "hash_source": "receipt_034",
+      "inputs": [
+        "B screen-034.mov",
+        "narration"
+      ],
+      "location": "media/walkthrough-034b/demo-034-review.mp4 (local, git-ignored path)",
+      "receipt_state": "RECEIPT media/walkthrough-034b/demo-034-review.mp4.receipt.json",
+      "seconds": 142.166667,
+      "sha256": "ab69925bd19105f0876e06c79de48009bc5dd525a368081f683ce60217d0231c"
+    }
+  ],
+  "scenes_034": [
+    {
+      "kicker": "The incident",
+      "order": 1,
+      "seconds": 13.0,
+      "start_s": 0.0
+    },
+    {
+      "kicker": "Device first",
+      "order": 2,
+      "seconds": 9.9,
+      "start_s": 13.0
+    },
+    {
+      "kicker": "01 · Controlled fault",
+      "order": 3,
+      "seconds": 15.1,
+      "start_s": 22.9
+    },
+    {
+      "kicker": "02 · Semgrep",
+      "order": 4,
+      "seconds": 10.4,
+      "start_s": 38.0
+    },
+    {
+      "kicker": "03 · Custody",
+      "order": 5,
+      "seconds": 16.8,
+      "start_s": 48.4
+    },
+    {
+      "kicker": "04 · ClickHouse Cloud",
+      "order": 6,
+      "seconds": 12.6,
+      "start_s": 65.2
+    },
+    {
+      "kicker": "05 · Akash GPU (separate branch)",
+      "order": 7,
+      "seconds": 18.5,
+      "start_s": 77.8
+    },
+    {
+      "kicker": "06 · Separate custody branch",
+      "order": 8,
+      "seconds": 19.5,
+      "start_s": 96.3
+    },
+    {
+      "kicker": "Live vs replay",
+      "order": 9,
+      "seconds": 11.7,
+      "start_s": 115.8
+    },
+    {
+      "kicker": "Privacy and rights",
+      "order": 10,
+      "seconds": 20.356,
+      "start_s": 127.5
+    }
+  ],
+  "scenes_035": [
+    {
+      "kicker": "The incident",
+      "order": 1,
+      "seconds": 13.0,
+      "start_s": 0.0
+    },
+    {
+      "kicker": "Device first",
+      "order": 2,
+      "seconds": 9.9,
+      "start_s": 13.0
+    },
+    {
+      "kicker": "01 · Controlled fault",
+      "order": 3,
+      "seconds": 15.1,
+      "start_s": 22.9
+    },
+    {
+      "kicker": "02 · Semgrep",
+      "order": 4,
+      "seconds": 10.4,
+      "start_s": 38.0
+    },
+    {
+      "kicker": "03 · Custody",
+      "order": 5,
+      "seconds": 16.8,
+      "start_s": 48.4
+    },
+    {
+      "kicker": "04 · ClickHouse Cloud",
+      "order": 6,
+      "seconds": 12.6,
+      "start_s": 65.2
+    },
+    {
+      "kicker": "05 · Akash GPU (separate branch)",
+      "order": 7,
+      "seconds": 18.5,
+      "start_s": 77.8
+    },
+    {
+      "kicker": "06 · Separate custody branch",
+      "order": 8,
+      "seconds": 19.5,
+      "start_s": 96.3
+    },
+    {
+      "kicker": "Live vs replay",
+      "order": 9,
+      "seconds": 11.7,
+      "start_s": 115.8
+    },
+    {
+      "kicker": "Privacy and rights",
+      "order": 10,
+      "seconds": 20.356,
+      "start_s": 127.5
+    }
+  ],
+  "scope": "Walkthrough presentation bound to recorded receipts. Not interaction-generated or persistent FCG state; that requirement is separate and untested.",
+  "signature": "NOT_SIGNED",
+  "source_records": [
+    {
+      "genesis_id": "fco:sha256:e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+      "leaves": 11,
+      "mmr_root": "f67a3e74aa52f606784faec7cece9da6b071ff1984e762d72c662031a881b244",
+      "project_root": "e2a47c5a16853ebc35718bbd644754d7d510e401691d3308138d4106291d082a",
+      "record": "evidence/successor_024"
+    }
+  ],
+  "sources": {
+    "agent/walkthrough034.py": "2ebb6cc952880f25ff85ab3721a570ceaef86a01b9a13a81b89eaf3691055e52",
+    "evidence/successor_024/ledger.jsonl": "f7e98fa5a04dc7d280f914ea493ebdd440b864b15d1f81ad2e77965e217c45a7",
+    "evidence/walkthrough/sources/proof.json": "725b090a135418ca97550705c80a9b9b09a31cfa02af0da66058b19b345d1999",
+    "evidence/walkthrough/sources/run.json": "f10c1ad9d536191e14fb441e3a89d993a3ec4e6f25f19f70520e4566f29e0523",
+    "public/data/walkthrough-034.json": "a6eb4a92c6289203ea670ccb3cbb4b261c929432366ba948e9f69cc76edc7933"
+  },
+  "timeline": "page timeline 147.856 s (scene data-t sum 145.0 + 2.856 s added to the last scene by the page script); recordings capture the first 145.0 s; final scene starts at 127.5 s"
+}

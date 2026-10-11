@@ -1,0 +1,111 @@
+{
+  "PASS": true,
+  "check": "frame_check035",
+  "claim_ceiling": "frames match committed page/data renders; not proof of truth, timing of creation, or narration alignment; not a watermark",
+  "manifest_root": "633f61c1c7b309bceac1ec94729df8f94129e8178bfccdd7c4dbc0dcebd22b24",
+  "min_ssim": 0.97,
+  "ocr_note": "OCR is a secondary, non-gating check; hex OCR can misread characters",
+  "page": "public/walkthrough-034.html",
+  "page_sha256": "176d4e5a7cd64dc9c72e6d06c5978142425ba219fbd00daae344ae365fa37fb0",
+  "scenes": [
+    {
+      "kicker": "The incident",
+      "reference_sha256": "6f4dfc8334aeaea1b16c499e578ad86a00d94d6c0c445874d5cff40acf9cc906",
+      "scene": 1,
+      "ssim": 0.99671,
+      "ssim_pass": true,
+      "video_frame_sha256": "1aa08d63ca7c9a3d53a860bf0f5e42f66f7d57b307270ad9ca1464c1c1edbfcb",
+      "video_t": 12.2
+    },
+    {
+      "kicker": "Device first",
+      "reference_sha256": "c6c43aa573d32a06b2fc6554db9442775effad6f2feeba0a2a3a9e46a147af71",
+      "scene": 2,
+      "ssim": 0.99731,
+      "ssim_pass": true,
+      "video_frame_sha256": "35e87d7e30d658f3a11d25f607a9e46dc6a1628f595e444d5a38357f6d292b99",
+      "video_t": 22.1
+    },
+    {
+      "kicker": "01 \u00b7 Controlled fault",
+      "reference_sha256": "1db13a70b52f07fa1a08e9801060dcd52c1e11e08593452350f19dc39a137ad4",
+      "scene": 3,
+      "ssim": 0.99548,
+      "ssim_pass": true,
+      "video_frame_sha256": "38811e3fe5683085ea3c85a8a59e23f095610b16bcd4d77c3bc307c8c7b644dd",
+      "video_t": 37.2
+    },
+    {
+      "kicker": "02 \u00b7 Semgrep",
+      "reference_sha256": "ba394a135f04549c2c57f65570319139ad7fe6b8168b6957e3ed3f13fd3babed",
+      "scene": 4,
+      "ssim": 0.99673,
+      "ssim_pass": true,
+      "video_frame_sha256": "f08bb28e745bcab7b47328cd30de6c52f72b817ec0b58fa7381c6046eac150d3",
+      "video_t": 47.6
+    },
+    {
+      "kicker": "03 \u00b7 Custody",
+      "ocr_expected_root": "66c3e6e8a64f36f1290a598606d6b9034de1bca62ef559d058e5013d95c12723",
+      "ocr_prefix16_found": true,
+      "ocr_root_found": true,
+      "reference_sha256": "fff1664c78e3f28b7365e4765c40c11daf2650fb0dc5adcde167c6eaa02e27c3",
+      "scene": 5,
+      "ssim": 0.99631,
+      "ssim_pass": true,
+      "video_frame_sha256": "f84ba638de49b0a5cd33aacf4ab224a4becc7cd6122e643f80373237742c48c7",
+      "video_t": 64.4
+    },
+    {
+      "kicker": "04 \u00b7 ClickHouse Cloud",
+      "reference_sha256": "a6d4cdb8cbf02a15d94160c3682d0fd4b58d345323b2fb4fd0a647e5a6688e12",
+      "scene": 6,
+      "ssim": 0.99718,
+      "ssim_pass": true,
+      "video_frame_sha256": "42edf9cf708089deabdf697f9283f170362fb33f962c9f0c5e00efa61052e76c",
+      "video_t": 77.0
+    },
+    {
+      "kicker": "05 \u00b7 Akash GPU (separate branch)",
+      "reference_sha256": "d9c5a4da9b82a031046b9fcdc183f5eae901c2c8e930b657ed0128509e1272ab",
+      "scene": 7,
+      "ssim": 0.99508,
+      "ssim_pass": true,
+      "video_frame_sha256": "e7e7422ffbc22c05b60f8ad38c7d23d0547dd7d05c35420e376b9f9810f396d4",
+      "video_t": 95.5
+    },
+    {
+      "kicker": "06 \u00b7 Separate custody branch",
+      "ocr_expected_root": "f67a3e74aa52f606784faec7cece9da6b071ff1984e762d72c662031a881b244",
+      "ocr_prefix16_found": true,
+      "ocr_root_found": true,
+      "reference_sha256": "ea947069d80c196eebca233582cb7daa0b32ea5055022ef085d77334b45ec396",
+      "scene": 8,
+      "ssim": 0.99473,
+      "ssim_pass": true,
+      "video_frame_sha256": "8d38ba6567df2e9b905fd823d522ed8816095e04e2a4b7e4b6064b2de3dc0d20",
+      "video_t": 115.0
+    },
+    {
+      "kicker": "Live vs replay",
+      "reference_sha256": "695ddc1c7b60b4aad167b3478dae12896b14b6c97cfbbbfd074f6017dc9e306f",
+      "scene": 9,
+      "ssim": 0.99687,
+      "ssim_pass": true,
+      "video_frame_sha256": "83f6a97eee3aed99651dfd2fa942115851459ff2d45f0cf511f7f945055ee023",
+      "video_t": 126.7
+    },
+    {
+      "kicker": "Privacy and rights",
+      "reference_sha256": "351086df74fddf8f131f44089918f2f6abd817601a6a20115e1d4310b639fd75",
+      "scene": 10,
+      "ssim": 0.99652,
+      "ssim_pass": true,
+      "video_frame_sha256": "3fb4b437c21e777d6031de38f89b69229965a247a5fcd799e36b3587aa6c6d65",
+      "video_t": 141.967
+    }
+  ],
+  "video": "media/walkthrough-034b/demo-034-review.mp4",
+  "video_seconds": 142.166667,
+  "video_sha256": "ab69925bd19105f0876e06c79de48009bc5dd525a368081f683ce60217d0231c"
+}

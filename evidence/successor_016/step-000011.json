@@ -1,0 +1,132 @@
+{
+  "SIGNATURE": "NOT_SIGNED",
+  "classification": {
+    "anticube": {
+      "authorization_validation": "NOT_TESTED",
+      "classification_executed": true,
+      "identity": "UNKNOWN",
+      "proof_of_possession": "NOT_TESTED",
+      "reason": "No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE",
+      "safety": "UNKNOWN",
+      "self_safe": null
+    },
+    "checks": {
+      "name_declared": true,
+      "observation_available": true,
+      "provided.returned_rows": true,
+      "runtime_operation_validated": false,
+      "state_declared": true
+    },
+    "checks_yes_no": {
+      "name_declared": "YES",
+      "observation_available": "YES",
+      "provided.returned_rows": "YES",
+      "runtime_operation_validated": "NO",
+      "state_declared": "YES"
+    },
+    "custody_admission": "ADMITTED",
+    "state": "OBSERVED"
+  },
+  "commitment": {
+    "algorithm": "fco-ordered-v1",
+    "leaf_count": 8,
+    "leaves": [
+      {
+        "canonical_utf8": "{\"type\":\"project_root\",\"value\":\"f4a535d67825ffc0f804e9fa7b96a75d93181a102bdcac98571d2ede698095c5\"}",
+        "index": 0,
+        "leaf_sha256": "18c05e60b9e4f5353c36d41c5b5a2a5af629fda5ed7c53a4552ec5921ba30e12"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"parent_fco_id\",\"value\":\"fco:sha256:cb06b9d8ba641f24d9c722fc435413560ed5bd8d91a4878a4d6d443a70abd51f\"}",
+        "index": 1,
+        "leaf_sha256": "a1907e69112747ff9f6e3bdd79607c298140d3a65a5bb020531b0644e2d93ba8"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"previous_mmr_root\",\"value\":\"9a6470d31c7b327644012d4723a9b30a897d6ab88bccb600a0d2e7b54eedfb8a\"}",
+        "index": 2,
+        "leaf_sha256": "add398cc866bf39f89fa9edcfcbb5233a853188db82be89d973d10954ca4dbd0"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"observation\",\"value\":{\"checks\":{\"returned_rows\":true},\"details\":{\"http\":200,\"ms\":145.7,\"query_id\":\"ag015-c0c927b444494728\",\"result\":[{\"n\":1,\"state\":\"FAILED\"},{\"n\":7,\"state\":\"NOT_TESTED\"},{\"n\":47,\"state\":\"OBSERVED\"}],\"result_sha256\":\"6acd48d7bd2d1cc39c30d442b91f69fa72c0a2a3ca22f7547cb3efe27851d36b\",\"rows\":3,\"sql\":\"SELECT state,count() AS n FROM antigense_events_016 FINAL GROUP BY state ORDER BY state\"},\"name\":\"ch015_query_state_counts\",\"occurrence\":{\"run_id\":\"run011-92b0a70d7bc2\",\"seq\":10,\"ts\":\"2026-10-09T18:55:51+00:00\"},\"state\":\"OBSERVED\"}}",
+        "index": 3,
+        "leaf_sha256": "a8917dab08b88a9c5e0f1e7b497c96f4f75912e7c48219ebe5744c4d6d227a84"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"classification\",\"value\":{\"anticube\":{\"authorization_validation\":\"NOT_TESTED\",\"classification_executed\":true,\"identity\":\"UNKNOWN\",\"proof_of_possession\":\"NOT_TESTED\",\"reason\":\"No identity proof or independent safety oracle supplied; local custody admission is not SELF_SAFE\",\"safety\":\"UNKNOWN\",\"self_safe\":null},\"checks\":{\"name_declared\":true,\"observation_available\":true,\"provided.returned_rows\":true,\"runtime_operation_validated\":false,\"state_declared\":true},\"checks_yes_no\":{\"name_declared\":\"YES\",\"observation_available\":\"YES\",\"provided.returned_rows\":\"YES\",\"runtime_operation_validated\":\"NO\",\"state_declared\":\"YES\"},\"custody_admission\":\"ADMITTED\",\"state\":\"OBSERVED\"}}",
+        "index": 4,
+        "leaf_sha256": "d464c532b2ca2f55c1e067ffe329ef424ab20d721dcdc3920eecee664e1cfed2"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"diagnostic\",\"value\":{\"algorithm\":\"CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP\",\"claim_ceiling\":\"UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY\",\"delta_g_star\":\"0.000000\",\"g_star\":\"0.000000\",\"inputs\":{\"admitted\":10,\"quarantined\":0,\"rejected\":0,\"steps\":10},\"normalized_entropy\":\"-0.000000\",\"reference_g_star\":\"0.000000\",\"tau\":\"0.35\"}}",
+        "index": 5,
+        "leaf_sha256": "a03da063d5ff6d7b9f14a225e219f5ff5916231f4d553ac55d678ca083fe214a"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"relation\",\"value\":\"DEPENDS_ON_RECORDED_PREDECESSOR\"}",
+        "index": 6,
+        "leaf_sha256": "679a1803b140d088eba828a8b67e8e889fb695b7ce0006dbffd72908ce5d4740"
+      },
+      {
+        "canonical_utf8": "{\"type\":\"SIGNATURE\",\"value\":\"NOT_SIGNED\"}",
+        "index": 7,
+        "leaf_sha256": "a3be0b0a01026668cdc4e037919dcacd59e9f871e756976ca18f28840393f2b1"
+      }
+    ],
+    "root": "7da25cdd57c45eba5b723796604581115902041a5ed9fbf9e90e43764d33fe20"
+  },
+  "diagnostic": {
+    "algorithm": "CYBERHACK_CUSTODY_GSTAR_V1_ADAPTED_HYDRALAMP",
+    "claim_ceiling": "UNVALIDATED_INFORMATION_STATE_DIAGNOSTIC; NOT SAFETY, ACCURACY OR PHYSICAL ENERGY",
+    "delta_g_star": "0.000000",
+    "g_star": "0.000000",
+    "inputs": {
+      "admitted": 10,
+      "quarantined": 0,
+      "rejected": 0,
+      "steps": 10
+    },
+    "normalized_entropy": "-0.000000",
+    "reference_g_star": "0.000000",
+    "tau": "0.35"
+  },
+  "fco_id": "fco:sha256:7da25cdd57c45eba5b723796604581115902041a5ed9fbf9e90e43764d33fe20",
+  "observation": {
+    "checks": {
+      "returned_rows": true
+    },
+    "details": {
+      "http": 200,
+      "ms": 145.7,
+      "query_id": "ag015-c0c927b444494728",
+      "result": [
+        {
+          "n": 1,
+          "state": "FAILED"
+        },
+        {
+          "n": 7,
+          "state": "NOT_TESTED"
+        },
+        {
+          "n": 47,
+          "state": "OBSERVED"
+        }
+      ],
+      "result_sha256": "6acd48d7bd2d1cc39c30d442b91f69fa72c0a2a3ca22f7547cb3efe27851d36b",
+      "rows": 3,
+      "sql": "SELECT state,count() AS n FROM antigense_events_016 FINAL GROUP BY state ORDER BY state"
+    },
+    "name": "ch015_query_state_counts",
+    "occurrence": {
+      "run_id": "run011-92b0a70d7bc2",
+      "seq": 10,
+      "ts": "2026-10-09T18:55:51+00:00"
+    },
+    "state": "OBSERVED"
+  },
+  "parent_fco_id": "fco:sha256:cb06b9d8ba641f24d9c722fc435413560ed5bd8d91a4878a4d6d443a70abd51f",
+  "previous_mmr_root": "9a6470d31c7b327644012d4723a9b30a897d6ab88bccb600a0d2e7b54eedfb8a",
+  "project_root": "f4a535d67825ffc0f804e9fa7b96a75d93181a102bdcac98571d2ede698095c5",
+  "relation": "DEPENDS_ON_RECORDED_PREDECESSOR",
+  "schema": "cyberhack.StepFCO.v008r1"
+}

@@ -1,0 +1,397 @@
+{
+ "every_prefix_recomputed_independently": true,
+ "independent_root": "187866e60ebaf3cf1243caa2454133f2948aad18715e1ba330d1727db6714728",
+ "mmr": {
+  "algorithm": "HYDRALAMP_MMR_V1",
+  "leaf_count": 8,
+  "leaves": [
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+     "event_hash": "8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+     "event_index": 1
+    },
+    "leaf_sha256": "c3760ef89c5b2f846a83f08c03f8009c458e20313a93393221bd44e9338aa5a5"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:491317c2742e975374e9a040bc2d7f5beea4d80b1fb8fc473660e3c5fa340d58",
+     "event_hash": "491317c2742e975374e9a040bc2d7f5beea4d80b1fb8fc473660e3c5fa340d58",
+     "event_index": 2
+    },
+    "leaf_sha256": "45b0a447ba02cea8226086267d22cb619afca032a39dca2e08247aee118e6cac"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:1722c43c28b64c981b338ad423433d10fff630154ec07a09dabf07c755ad1255",
+     "event_hash": "1722c43c28b64c981b338ad423433d10fff630154ec07a09dabf07c755ad1255",
+     "event_index": 3
+    },
+    "leaf_sha256": "7f09885ae00638469f7f35989347705cf35f219593848fcf57199b13770ff521"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:0a263a625ab0693769596b00b57b4a8c357e94393604ef1a916642d36aa32e21",
+     "event_hash": "0a263a625ab0693769596b00b57b4a8c357e94393604ef1a916642d36aa32e21",
+     "event_index": 4
+    },
+    "leaf_sha256": "6f237bd4c7f12de6d1bcfe315b378c6d972c4140390338a4a56e81b011a99996"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:714cc6a4b433db375179ba244faa481eb27b799a6e032d818ca3f8c67deb93f3",
+     "event_hash": "714cc6a4b433db375179ba244faa481eb27b799a6e032d818ca3f8c67deb93f3",
+     "event_index": 5
+    },
+    "leaf_sha256": "e9c9c64c404ff1ba6503e27afc1fef7e2a08f0b15fbd97dabd0d060b51a0f941"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:300e426a81679ecceb3702a19815644ba08a783c2d9389b0869d322e0b9af5c6",
+     "event_hash": "300e426a81679ecceb3702a19815644ba08a783c2d9389b0869d322e0b9af5c6",
+     "event_index": 6
+    },
+    "leaf_sha256": "765f664abb7160053bf932f734449c444656f72abfd406548124891bd674b8a5"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:fd041efb734a956eb6e0d7ec51c79765f0b2046e67fa3685ea849e8545f9df48",
+     "event_hash": "fd041efb734a956eb6e0d7ec51c79765f0b2046e67fa3685ea849e8545f9df48",
+     "event_index": 7
+    },
+    "leaf_sha256": "2cb049f73e85e8fd0484d969ba4d8f3a135ad15ac2db5aea59cd876903ea4b7e"
+   },
+   {
+    "body": {
+     "cfmo_version_id": "fco:sha256:91af023250bcaa9334bc20d0c153ff6d01c225e86c97c7bce7893d2dcf2f2000",
+     "event_hash": "91af023250bcaa9334bc20d0c153ff6d01c225e86c97c7bce7893d2dcf2f2000",
+     "event_index": 8
+    },
+    "leaf_sha256": "3fb64fe9becc45f774af9905350401d88548f92c7d346c6ccca10a28d7136122"
+   }
+  ],
+  "peaks": [
+   "d4ca842dbc32862433621a34d880ed464a4719232867dc823b1eb927ebafeef2"
+  ],
+  "root": "187866e60ebaf3cf1243caa2454133f2948aad18715e1ba330d1727db6714728"
+ },
+ "records": [
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "all_inclusion_proofs_verify": true,
+    "file_hashes_recomputed_from_bytes": true,
+    "root_equals_custody_merkle": true
+   },
+   "checks_false": 0,
+   "checks_true": 3,
+   "details": {
+    "commit": "7433431a78225e8e2d171ec4a4177f19f48d342b",
+    "leaf_count": 25,
+    "tree_root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "scope_tree",
+   "parent_fco_id": "genesis",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 1
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "exactly_one_finding": true,
+    "scanner_errors_zero": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "configs": [
+     "p/python",
+     "p/security-audit",
+     "p/secrets"
+    ],
+    "files_scanned": 31,
+    "findings": [
+     {
+      "at": [
+       "exec-detected@89"
+      ],
+      "id": "agent/agent011.py"
+     }
+    ],
+    "rules_retained": false,
+    "scan_json_sha256": "d9245d6e8e206dad82d724dc9642f44ff9f3ede1dd8ddafef5c8fd679dc64e52",
+    "version": "1.180.0"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "semgrep_full_scan",
+   "parent_fco_id": "fco:sha256:8cd60a6c97f038ecc6cb6dfa1367d3b59599a90c047f1590a0c1a662cc52c8cd",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 2
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "every_leaf_has_depth_label": true,
+    "unreviewed_remainder_declared": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "depth_counts": {
+     "READ_FULL": 23,
+     "READ_PARTIAL": 1,
+     "SKIMMED_PATTERNS": 1
+    },
+    "reviews_sha256": "7832ee655246e526f79f6754e33576d7cfb44c50189197baa9494442ec86fca9"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "review_verdicts",
+   "parent_fco_id": "fco:sha256:491317c2742e975374e9a040bc2d7f5beea4d80b1fb8fc473660e3c5fa340d58",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 3
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "most_findings_not_semgrep_detectable": true,
+    "semgrep_ce_found_exactly_the_exec_finding": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "by_severity": {
+     "info": 8,
+     "low": 4,
+     "low-medium": 2,
+     "medium": 2
+    },
+    "findings": 16,
+    "semgrep_detectable": 1
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "findings_registry",
+   "parent_fco_id": "fco:sha256:1722c43c28b64c981b338ad423433d10fff630154ec07a09dabf07c755ad1255",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 4
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "F12_check035_blind_to_offset": true,
+    "F1_admission_ignores_checks": true,
+    "F2_cascade_exec_runs_fixture_code": true
+   },
+   "checks_false": 0,
+   "checks_true": 3,
+   "details": {
+    "demos_sha256": "f40bc5895031baf8f0215c7dcd7379b82cdaf4d4b2f1405a016bfc292811e257"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "executed_demonstrations",
+   "parent_fco_id": "fco:sha256:0a263a625ab0693769596b00b57b4a8c357e94393604ef1a916642d36aa32e21",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 5
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "all_tamper_located_correctly": true,
+    "fewer_comparisons_than_linear": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "trials": [
+     {
+      "correct": true,
+      "hash_comparisons": 6,
+      "linear_scan_comparisons": 25,
+      "located_index": 0,
+      "path": "agent/agent011.py",
+      "root_changed": true,
+      "tampered_index": 0
+     },
+     {
+      "correct": true,
+      "hash_comparisons": 10,
+      "linear_scan_comparisons": 25,
+      "located_index": 23,
+      "path": "src/custody.py",
+      "root_changed": true,
+      "tampered_index": 23
+     },
+     {
+      "correct": true,
+      "hash_comparisons": 8,
+      "linear_scan_comparisons": 25,
+      "located_index": 24,
+      "path": "src/server.py",
+      "root_changed": true,
+      "tampered_index": 24
+     },
+     {
+      "correct": true,
+      "hash_comparisons": 6,
+      "linear_scan_comparisons": 25,
+      "located_index": 0,
+      "path": "agent/agent011.py",
+      "root_changed": true,
+      "tampered_index": 0
+     }
+    ]
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "breakpoint_localization",
+   "parent_fco_id": "fco:sha256:714cc6a4b433db375179ba244faa481eb27b799a6e032d818ca3f8c67deb93f3",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 6
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "scenario_is_hypothetical_prior_review": true,
+    "set_derived_from_hash_diff": true
+   },
+   "checks_false": 0,
+   "checks_true": 2,
+   "details": {
+    "baseline_commit": "43c2c65",
+    "baseline_root": "2951248d94c75e8a02b608d1d9823d55800715494702d9505986dd27bd20a1cb",
+    "changed": 8,
+    "head_root": "8ea49f12d309acca8e534785a917e7e06c8157e14d8eba760059b37efc865d57",
+    "lines_changed_files": 491,
+    "lines_total": 1778,
+    "modified": 0,
+    "new": 8,
+    "of_files": 25,
+    "semgrep_changed_only_s": [
+     [
+      2.69,
+      0,
+      0
+     ],
+     [
+      2.33,
+      0,
+      0
+     ],
+     [
+      2.42,
+      0,
+      0
+     ]
+    ],
+    "semgrep_full_s": [
+     [
+      6.74,
+      1,
+      0
+     ],
+     [
+      4.75,
+      1,
+      0
+     ],
+     [
+      3.85,
+      1,
+      0
+     ]
+    ]
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "incremental_rereview_set",
+   "parent_fco_id": "fco:sha256:300e426a81679ecceb3702a19815644ba08a783c2d9389b0869d322e0b9af5c6",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "OBSERVED",
+   "step": 7
+  },
+  {
+   "anticube": {
+    "identity": "UNKNOWN",
+    "safety": "UNKNOWN",
+    "self_safe": null
+   },
+   "checks": {
+    "time_saving_measured": false
+   },
+   "checks_false": 1,
+   "checks_true": 0,
+   "details": {
+    "reason": "no matched baseline of human or model review time; only set sizes, hash comparisons and Semgrep wall time are measured"
+   },
+   "edge_count_total": 114,
+   "g_star": "UNVALIDATED",
+   "name": "review_time_saving",
+   "parent_fco_id": "fco:sha256:fd041efb734a956eb6e0d7ec51c79765f0b2046e67fa3685ea849e8545f9df48",
+   "relations": "declared, not proof of causality",
+   "schema": "antigense.ReviewStepFCO.v040",
+   "signature": "NOT_SIGNED",
+   "state": "NOT_TESTED",
+   "step": 8
+  }
+ ],
+ "tamper_detected": {
+  "alter_reviewed_leaf_changes_tree_root": true,
+  "alter_step_content": true,
+  "delete_step": true,
+  "swap_steps": true,
+  "upgrade_NOT_TESTED_to_OBSERVED": true
+ }
+}
